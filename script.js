@@ -6,6 +6,9 @@ const IMAGE_EXTENSION = "jpg";
 const INTRO_DURATION = 3500;
 const INTRO_FADE_DURATION = 1000;
 
+const DOUBLE_TAP_DELAY = 350;
+const TAP_MOVE_LIMIT = 10;
+
 const audioTracks = [
   {
     title: "track 01",
@@ -18,14 +21,6 @@ const audioTracks = [
   {
     title: "track 03",
     file: "audio/track03.mp3"
-  },
-  {
-    title: "track 04",
-    file: "audio/track04.mp3"
-  },
-  {
-    title: "track 05",
-    file: "audio/track05.mp3"
   }
 ];
 
@@ -69,47 +64,54 @@ let initialScale = 1;
 let currentTrackIndex = 0;
 let hasTriedToStartAudio = false;
 
+let hasMovedDuringPointer = false;
+let lastTapTime = 0;
+let lastTappedScan = null;
+
 initializeIntro();
 initializeSound();
+initializeScans();
 
-shuffle(imagePaths);
+function initializeScans() {
+  shuffle(imagePaths);
 
-imagePaths.forEach((imagePath, index) => {
-  const scan = document.createElement("img");
+  imagePaths.forEach((imagePath, index) => {
+    const scan = document.createElement("img");
 
-  scan.src = imagePath;
-  scan.className = "scan";
-  scan.alt = `Scan ${index + 1}`;
+    scan.src = imagePath;
+    scan.className = "scan";
+    scan.alt = `Scan ${index + 1}`;
 
-  scan.draggable = false;
+    scan.draggable = false;
 
-  scan.dataset.scale = 1;
-  scan.dataset.filename = imagePath.split("/").pop();
+    scan.dataset.scale = 1;
+    scan.dataset.filename = imagePath.split("/").pop();
 
-  workspace.appendChild(scan);
+    workspace.appendChild(scan);
 
-  scan.addEventListener("dragstart", (event) => {
-    event.preventDefault();
+    scan.addEventListener("dragstart", (event) => {
+      event.preventDefault();
+    });
+
+    scan.addEventListener("pointerdown", pointerDown);
+    scan.addEventListener("pointermove", pointerMove);
+    scan.addEventListener("pointerup", pointerUp);
+    scan.addEventListener("pointercancel", pointerUp);
+    scan.addEventListener("pointerleave", pointerUp);
+
+    scan.addEventListener("wheel", resizeWithTrackpad, {
+      passive: false
+    });
+
+    scan.addEventListener("dblclick", showInfoCardFromEvent);
+
+    if (scan.complete) {
+      randomizeImage(scan, index);
+    } else {
+      scan.onload = () => randomizeImage(scan, index);
+    }
   });
-
-  scan.addEventListener("pointerdown", pointerDown);
-  scan.addEventListener("pointermove", pointerMove);
-  scan.addEventListener("pointerup", pointerUp);
-  scan.addEventListener("pointercancel", pointerUp);
-  scan.addEventListener("pointerleave", pointerUp);
-
-  scan.addEventListener("wheel", resizeWithTrackpad, {
-    passive: false
-  });
-
-  scan.addEventListener("dblclick", showInfoCard);
-
-  if (scan.complete) {
-    randomizeImage(scan, index);
-  } else {
-    scan.onload = () => randomizeImage(scan, index);
-  }
-});
+}
 
 function initializeIntro() {
   if (!introOverlay) {
@@ -306,6 +308,7 @@ function pointerDown(event) {
   event.preventDefault();
 
   activeScan = event.currentTarget;
+  hasMovedDuringPointer = false;
 
   activeScan.setPointerCapture(event.pointerId);
 
@@ -326,6 +329,8 @@ function pointerDown(event) {
   }
 
   if (pointers.size === 2) {
+    closeInfoCard();
+
     const points = Array.from(pointers.values());
 
     initialPinchDistance = getDistance(
@@ -354,11 +359,22 @@ function pointerMove(event) {
     const dx = event.clientX - dragStartX;
     const dy = event.clientY - dragStartY;
 
+    if (
+      Math.abs(dx) > TAP_MOVE_LIMIT ||
+      Math.abs(dy) > TAP_MOVE_LIMIT
+    ) {
+      hasMovedDuringPointer = true;
+      closeInfoCard();
+    }
+
     activeScan.style.left = `${imageStartX + dx}px`;
     activeScan.style.top = `${imageStartY + dy}px`;
   }
 
   if (pointers.size === 2) {
+    hasMovedDuringPointer = true;
+    closeInfoCard();
+
     const points = Array.from(pointers.values());
 
     const newDistance = getDistance(
@@ -384,6 +400,8 @@ function pointerMove(event) {
 }
 
 function pointerUp(event) {
+  const releasedScan = event.currentTarget;
+
   pointers.delete(event.pointerId);
 
   if (
@@ -393,9 +411,40 @@ function pointerUp(event) {
     activeScan.releasePointerCapture(event.pointerId);
   }
 
+  if (
+    event.pointerType === "touch" &&
+    !hasMovedDuringPointer
+  ) {
+    handleMobileDoubleTap(
+      releasedScan,
+      event.clientX,
+      event.clientY
+    );
+  }
+
   if (pointers.size === 0) {
     activeScan = null;
   }
+}
+
+function handleMobileDoubleTap(scan, x, y) {
+  const now = Date.now();
+
+  const isDoubleTap =
+    lastTappedScan === scan &&
+    now - lastTapTime < DOUBLE_TAP_DELAY;
+
+  if (isDoubleTap) {
+    showInfoCard(scan, x, y);
+
+    lastTapTime = 0;
+    lastTappedScan = null;
+
+    return;
+  }
+
+  lastTapTime = now;
+  lastTappedScan = scan;
 }
 
 function randomizeImage(scan, index) {
@@ -441,6 +490,8 @@ function randomizeImage(scan, index) {
 function resizeWithTrackpad(event) {
   event.preventDefault();
 
+  closeInfoCard();
+
   const scan = event.currentTarget;
 
   let scale =
@@ -461,12 +512,18 @@ function resizeWithTrackpad(event) {
   applyTransform(scan);
 }
 
-function showInfoCard(event) {
+function showInfoCardFromEvent(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  const scan = event.currentTarget;
+  showInfoCard(
+    event.currentTarget,
+    event.clientX,
+    event.clientY
+  );
+}
 
+function showInfoCard(scan, x, y) {
   const filename =
     scan.dataset.filename;
 
@@ -487,17 +544,22 @@ function showInfoCard(event) {
       objectInfo.description;
   }
 
-  infoCard.style.left =
-    `${event.clientX + 20}px`;
-
-  infoCard.style.top =
-    `${event.clientY + 20}px`;
+  infoCard.style.left = `${x + 20}px`;
+  infoCard.style.top = `${y + 20}px`;
 
   infoCard.classList.remove("hidden");
 }
 
-closeInfo.addEventListener("click", () => {
+function closeInfoCard() {
+  if (!infoCard) {
+    return;
+  }
+
   infoCard.classList.add("hidden");
+}
+
+closeInfo.addEventListener("click", () => {
+  closeInfoCard();
 });
 
 function applyTransform(scan) {
