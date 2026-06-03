@@ -3,19 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Shoebox Viewer</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div id="workspace">
-    <img src="images/scan1.jpg" class="scan" alt="Scan 1" />
-    <img src="images/scan2.jpg" class="scan" alt="Scan 2" />
-    <img src="images/scan3.jpg" class="scan" alt="Scan 3" />
-    <img src="images/scan4.jpg" class="scan" alt="Scan 4" />
-    <img src="images/scan5.jpg" class="scan" alt="Scan 5" />
+  <div id="introOverlay">
+    <img
+      id="introAnimation"
+      src="assets/intro.png"
+      alt=""
+    />
   </div>
 
+  <div id="workspace"></div>
+
+  <div id="legend" class="legend">
+    <p>drag to move</p>
+    <p>scroll or pinch to resize</p>
+    <p>double-click to learn more</p>
+  </div>
+
+  <div id="infoCard" class="info-card hidden">
+    <button id="closeInfo">×</button>
+
+    <h3 id="infoTitle"></h3>
+
+    <p id="infoText"></p>
+  </div>
+
+  <script src="blurbs.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>

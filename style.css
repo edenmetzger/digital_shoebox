@@ -1,8 +1,40 @@
+:root {
+  --background: #b9a27f;
+  --paper: #f4ead8;
+  --ink: #2d241c;
+  --muted-ink: #6f6254;
+  --shadow: rgba(34, 24, 14, 0.28);
+}
+
+#introOverlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+
+  z-index: 99999;
+
+  pointer-events: none;
+}
+
+#introAnimation {
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   overflow: hidden;
-  background: #d8c7a3;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 #workspace {
@@ -13,17 +45,86 @@ body {
 
 .scan {
   position: absolute;
+
+  width: auto;
+  height: auto;
+  max-width: 45vw;
+  max-height: 70vh;
+
   cursor: grab;
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
   touch-action: none;
-  width: auto;
-  height: auto;
-  max-width: 45vw;
-  max-height: 70vh;
 }
 
 .scan:active {
   cursor: grabbing;
+}
+
+.legend {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 9998;
+
+  padding: 10px 14px;
+  background: rgba(244, 234, 216, 0.78);
+  color: var(--muted-ink);
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(45, 36, 28, 0.18);
+  box-shadow: 0 5px 16px var(--shadow);
+  backdrop-filter: blur(4px);
+}
+
+.legend p {
+  margin: 3px 0;
+}
+
+.info-card {
+  position: absolute;
+  max-width: 280px;
+  padding: 16px 20px;
+  background: var(--paper);
+  color: var(--ink);
+
+  border: 1px solid rgba(45, 36, 28, 0.22);
+  box-shadow: 0 8px 24px var(--shadow);
+
+  font-size: 15px;
+  line-height: 1.35;
+  z-index: 9999;
+}
+
+.info-card.hidden {
+  display: none;
+}
+
+#closeInfo {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+
+  border: none;
+  background: transparent;
+  color: var(--muted-ink);
+
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#infoTitle {
+  margin: 0 20px 8px 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#infoText {
+  margin: 0;
 }
