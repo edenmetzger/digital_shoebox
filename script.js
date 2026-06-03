@@ -1,10 +1,33 @@
-const IMAGE_COUNT = 12;
+const IMAGE_COUNT = 500;
 const IMAGE_FOLDER = "images";
 const IMAGE_PREFIX = "scan";
 const IMAGE_EXTENSION = "jpg";
 
 const INTRO_DURATION = 3500;
 const INTRO_FADE_DURATION = 1000;
+
+const audioTracks = [
+  {
+    title: "track 01",
+    file: "audio/track01.mp3"
+  },
+  {
+    title: "track 02",
+    file: "audio/track02.mp3"
+  },
+  {
+    title: "track 03",
+    file: "audio/track03.mp3"
+  },
+  {
+    title: "track 04",
+    file: "audio/track04.mp3"
+  },
+  {
+    title: "track 05",
+    file: "audio/track05.mp3"
+  }
+];
 
 const imagePaths = [];
 
@@ -21,6 +44,15 @@ const infoTitle = document.getElementById("infoTitle");
 const infoText = document.getElementById("infoText");
 const closeInfo = document.getElementById("closeInfo");
 
+const backgroundAudio = document.getElementById("backgroundAudio");
+const audioTrackTitle = document.getElementById("audioTrackTitle");
+const audioStatus = document.getElementById("audioStatus");
+const playPauseButton = document.getElementById("playPauseButton");
+const muteButton = document.getElementById("muteButton");
+const prevTrackButton = document.getElementById("prevTrackButton");
+const nextTrackButton = document.getElementById("nextTrackButton");
+const volumeSlider = document.getElementById("volumeSlider");
+
 let topZ = 1;
 let activeScan = null;
 
@@ -34,7 +66,11 @@ let imageStartY = 0;
 let initialPinchDistance = 0;
 let initialScale = 1;
 
+let currentTrackIndex = 0;
+let hasTriedToStartAudio = false;
+
 initializeIntro();
+initializeSound();
 
 shuffle(imagePaths);
 
@@ -80,15 +116,16 @@ function initializeIntro() {
     return;
   }
 
-  const introSeen =
-    sessionStorage.getItem("introSeen");
+  const navigationEntry =
+    performance.getEntriesByType("navigation")[0];
 
-  if (introSeen) {
+  const isRefresh =
+    navigationEntry && navigationEntry.type === "reload";
+
+  if (isRefresh) {
     introOverlay.remove();
     return;
   }
-
-  sessionStorage.setItem("introSeen", "true");
 
   setTimeout(() => {
     introOverlay.style.transition =
@@ -100,6 +137,169 @@ function initializeIntro() {
       introOverlay.remove();
     }, INTRO_FADE_DURATION);
   }, INTRO_DURATION);
+}
+
+function initializeSound() {
+  if (
+    !backgroundAudio ||
+    !playPauseButton ||
+    !muteButton ||
+    !prevTrackButton ||
+    !nextTrackButton ||
+    !volumeSlider ||
+    !audioTrackTitle ||
+    !audioStatus
+  ) {
+    return;
+  }
+
+  backgroundAudio.volume = Number(volumeSlider.value);
+
+  loadTrack(currentTrackIndex);
+
+  document.addEventListener(
+    "pointerdown",
+    startAudioAfterInteraction,
+    {
+      once: true
+    }
+  );
+
+  playPauseButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    togglePlayPause();
+  });
+
+  muteButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    toggleMute();
+  });
+
+  prevTrackButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    playPreviousTrack();
+  });
+
+  nextTrackButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    playNextTrack();
+  });
+
+  volumeSlider.addEventListener("input", () => {
+    backgroundAudio.volume = Number(volumeSlider.value);
+
+    if (backgroundAudio.volume > 0) {
+      backgroundAudio.muted = false;
+      muteButton.textContent = "mute";
+    }
+  });
+
+  backgroundAudio.addEventListener("play", updateAudioUI);
+  backgroundAudio.addEventListener("pause", updateAudioUI);
+}
+
+function loadTrack(index) {
+  if (!audioTracks.length) {
+    return;
+  }
+
+  const track = audioTracks[index];
+
+  backgroundAudio.src = track.file;
+  audioTrackTitle.textContent = track.title;
+  audioStatus.textContent = "paused";
+  playPauseButton.textContent = "play";
+}
+
+function startAudioAfterInteraction(event) {
+  if (
+    !backgroundAudio ||
+    hasTriedToStartAudio ||
+    event.target.closest("#audioWidget")
+  ) {
+    return;
+  }
+
+  hasTriedToStartAudio = true;
+
+  playAudio();
+}
+
+function playAudio() {
+  backgroundAudio.play()
+    .then(() => {
+      updateAudioUI();
+    })
+    .catch(() => {
+      audioStatus.textContent = "paused";
+      playPauseButton.textContent = "play";
+    });
+}
+
+function togglePlayPause() {
+  if (backgroundAudio.paused) {
+    playAudio();
+    return;
+  }
+
+  backgroundAudio.pause();
+  updateAudioUI();
+}
+
+function toggleMute() {
+  backgroundAudio.muted = !backgroundAudio.muted;
+
+  if (backgroundAudio.muted) {
+    muteButton.textContent = "unmute";
+  } else {
+    muteButton.textContent = "mute";
+  }
+}
+
+function playPreviousTrack() {
+  currentTrackIndex =
+    (currentTrackIndex - 1 + audioTracks.length) %
+    audioTracks.length;
+
+  const wasPlaying = !backgroundAudio.paused;
+
+  loadTrack(currentTrackIndex);
+
+  if (wasPlaying) {
+    playAudio();
+  }
+}
+
+function playNextTrack() {
+  currentTrackIndex =
+    (currentTrackIndex + 1) %
+    audioTracks.length;
+
+  const wasPlaying = !backgroundAudio.paused;
+
+  loadTrack(currentTrackIndex);
+
+  if (wasPlaying) {
+    playAudio();
+  }
+}
+
+function updateAudioUI() {
+  if (backgroundAudio.paused) {
+    audioStatus.textContent = "paused";
+    playPauseButton.textContent = "play";
+  } else {
+    audioStatus.textContent = "playing";
+    playPauseButton.textContent = "pause";
+  }
 }
 
 function pointerDown(event) {
