@@ -1,4 +1,4 @@
-const IMAGE_COUNT = 5;
+const IMAGE_COUNT = 12;
 const IMAGE_FOLDER = "images";
 const IMAGE_PREFIX = "scan";
 const IMAGE_EXTENSION = "jpg";
