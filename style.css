@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #d8c7a3;
+}
+
+#workspace {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scan {
+  position: absolute;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
+  width: auto;
+  height: auto;
+  max-width: 45vw;
+  max-height: 70vh;
+}
+
+.scan:active {
+  cursor: grabbing;
+}
