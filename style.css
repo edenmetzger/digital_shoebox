@@ -52,10 +52,15 @@ body {
   max-height: 70vh;
 
   cursor: grab;
+
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
+
   touch-action: none;
+
+  pointer-events: auto;
+  transform-origin: center center;
 }
 
 .scan:active {

@@ -1,4 +1,4 @@
-const IMAGE_COUNT = 500;
+const IMAGE_COUNT = 12;
 const IMAGE_FOLDER = "images";
 const IMAGE_PREFIX = "scan";
 const IMAGE_EXTENSION = "jpg";
@@ -10,18 +10,9 @@ const DOUBLE_TAP_DELAY = 350;
 const TAP_MOVE_LIMIT = 10;
 
 const audioTracks = [
-  {
-    title: "track 01",
-    file: "audio/track01.mp3"
-  },
-  {
-    title: "track 02",
-    file: "audio/track02.mp3"
-  },
-  {
-    title: "track 03",
-    file: "audio/track03.mp3"
-  }
+  { title: "track 01", file: "audio/track01.mp3" },
+  { title: "track 02", file: "audio/track02.mp3" },
+  { title: "track 03", file: "audio/track03.mp3" }
 ];
 
 const imagePaths = [];
@@ -31,7 +22,6 @@ for (let i = 1; i <= IMAGE_COUNT; i++) {
 }
 
 const workspace = document.getElementById("workspace");
-
 const introOverlay = document.getElementById("introOverlay");
 
 const infoCard = document.getElementById("infoCard");
@@ -49,15 +39,16 @@ const nextTrackButton = document.getElementById("nextTrackButton");
 const volumeSlider = document.getElementById("volumeSlider");
 
 let topZ = 1;
-let activeScan = null;
 
-let pointers = new Map();
+let activeScan = null;
+let activePointerId = null;
 
 let dragStartX = 0;
 let dragStartY = 0;
 let imageStartX = 0;
 let imageStartY = 0;
 
+let pointers = new Map();
 let initialPinchDistance = 0;
 let initialScale = 1;
 
@@ -94,16 +85,11 @@ function initializeScans() {
     });
 
     scan.addEventListener("pointerdown", pointerDown);
-    scan.addEventListener("pointermove", pointerMove);
-    scan.addEventListener("pointerup", pointerUp);
-    scan.addEventListener("pointercancel", pointerUp);
-    scan.addEventListener("pointerleave", pointerUp);
+    scan.addEventListener("dblclick", showInfoCardFromEvent);
 
     scan.addEventListener("wheel", resizeWithTrackpad, {
       passive: false
     });
-
-    scan.addEventListener("dblclick", showInfoCardFromEvent);
 
     if (scan.complete) {
       randomizeImage(scan, index);
@@ -111,6 +97,269 @@ function initializeScans() {
       scan.onload = () => randomizeImage(scan, index);
     }
   });
+}
+
+function pointerDown(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const selectedScan = event.currentTarget;
+
+  if (activeScan && activeScan !== selectedScan) {
+    return;
+  }
+
+  activeScan = selectedScan;
+  activePointerId = event.pointerId;
+  hasMovedDuringPointer = false;
+
+  pointers.set(event.pointerId, {
+    x: event.clientX,
+    y: event.clientY
+  });
+
+  lockOtherScans(activeScan);
+
+  topZ++;
+  activeScan.style.zIndex = topZ;
+
+  dragStartX = event.clientX;
+  dragStartY = event.clientY;
+
+  imageStartX = parseFloat(activeScan.style.left) || 0;
+  imageStartY = parseFloat(activeScan.style.top) || 0;
+
+  if (pointers.size === 2) {
+    closeInfoCard();
+
+    const points = Array.from(pointers.values());
+
+    initialPinchDistance = getDistance(points[0], points[1]);
+    initialScale = Number(activeScan.dataset.scale) || 1;
+  }
+
+  window.addEventListener("pointermove", pointerMove, {
+    passive: false
+  });
+
+  window.addEventListener("pointerup", pointerUp);
+  window.addEventListener("pointercancel", pointerUp);
+}
+
+function pointerMove(event) {
+  if (!activeScan || !pointers.has(event.pointerId)) {
+    return;
+  }
+
+  event.preventDefault();
+  event.stopPropagation();
+
+  pointers.set(event.pointerId, {
+    x: event.clientX,
+    y: event.clientY
+  });
+
+  if (pointers.size === 1) {
+    const dx = event.clientX - dragStartX;
+    const dy = event.clientY - dragStartY;
+
+    if (
+      Math.abs(dx) > TAP_MOVE_LIMIT ||
+      Math.abs(dy) > TAP_MOVE_LIMIT
+    ) {
+      hasMovedDuringPointer = true;
+      closeInfoCard();
+    }
+
+    activeScan.style.left = `${imageStartX + dx}px`;
+    activeScan.style.top = `${imageStartY + dy}px`;
+  }
+
+  if (pointers.size === 2) {
+    hasMovedDuringPointer = true;
+    closeInfoCard();
+
+    const points = Array.from(pointers.values());
+
+    const newDistance = getDistance(points[0], points[1]);
+    const scaleChange = newDistance / initialPinchDistance;
+
+    let newScale = initialScale * scaleChange;
+    newScale = Math.max(0.5, Math.min(1.5, newScale));
+
+    activeScan.dataset.scale = newScale;
+  }
+
+  applyTransform(activeScan);
+}
+
+function pointerUp(event) {
+  if (!activeScan) {
+    return;
+  }
+
+  const releasedScan = activeScan;
+
+  pointers.delete(event.pointerId);
+
+  if (
+    event.pointerType === "touch" &&
+    !hasMovedDuringPointer &&
+    event.pointerId === activePointerId
+  ) {
+    handleMobileDoubleTap(
+      releasedScan,
+      event.clientX,
+      event.clientY
+    );
+  }
+
+  if (pointers.size === 0) {
+    unlockAllScans();
+
+    activeScan = null;
+    activePointerId = null;
+
+    window.removeEventListener("pointermove", pointerMove);
+    window.removeEventListener("pointerup", pointerUp);
+    window.removeEventListener("pointercancel", pointerUp);
+  }
+}
+
+function lockOtherScans(selectedScan) {
+  const scans = document.querySelectorAll(".scan");
+
+  scans.forEach((scan) => {
+    if (scan !== selectedScan) {
+      scan.style.pointerEvents = "none";
+    }
+  });
+
+  selectedScan.style.pointerEvents = "auto";
+}
+
+function unlockAllScans() {
+  const scans = document.querySelectorAll(".scan");
+
+  scans.forEach((scan) => {
+    scan.style.pointerEvents = "auto";
+  });
+}
+
+function handleMobileDoubleTap(scan, x, y) {
+  const now = Date.now();
+
+  const isDoubleTap =
+    lastTappedScan === scan &&
+    now - lastTapTime < DOUBLE_TAP_DELAY;
+
+  if (isDoubleTap) {
+    showInfoCard(scan, x, y);
+
+    lastTapTime = 0;
+    lastTappedScan = null;
+
+    return;
+  }
+
+  lastTapTime = now;
+  lastTappedScan = scan;
+}
+
+function showInfoCardFromEvent(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  showInfoCard(
+    event.currentTarget,
+    event.clientX,
+    event.clientY
+  );
+}
+
+function showInfoCard(scan, x, y) {
+  const filename = scan.dataset.filename;
+  const objectInfo = blurbs[filename];
+
+  if (!objectInfo) {
+    infoTitle.textContent = "Untitled Object";
+    infoText.textContent =
+      "No information has been added for this object yet.";
+  } else {
+    infoTitle.textContent = objectInfo.title;
+    infoText.textContent = objectInfo.description;
+  }
+
+  infoCard.style.left = `${x + 20}px`;
+  infoCard.style.top = `${y + 20}px`;
+
+  infoCard.classList.remove("hidden");
+}
+
+function closeInfoCard() {
+  if (!infoCard) {
+    return;
+  }
+
+  infoCard.classList.add("hidden");
+}
+
+closeInfo.addEventListener("click", () => {
+  closeInfoCard();
+});
+
+function randomizeImage(scan, index) {
+  const baseRotation = Math.random() * 24 - 12;
+  const randomScale = 0.75 + Math.random() * 0.5;
+  const rotation = baseRotation * (0.75 + Math.random() * 0.5);
+
+  const maxX =
+    window.innerWidth - scan.offsetWidth * randomScale;
+
+  const maxY =
+    window.innerHeight - scan.offsetHeight * randomScale;
+
+  const x = Math.max(0, Math.random() * maxX);
+  const y = Math.max(0, Math.random() * maxY);
+
+  scan.style.left = `${x}px`;
+  scan.style.top = `${y}px`;
+
+  scan.dataset.rotation = rotation;
+  scan.dataset.scale = randomScale;
+
+  scan.style.zIndex = index + 1;
+
+  applyTransform(scan);
+}
+
+function resizeWithTrackpad(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  closeInfoCard();
+
+  const scan = event.currentTarget;
+
+  let scale = Number(scan.dataset.scale) || 1;
+
+  scale += -event.deltaY * 0.0015;
+  scale = Math.max(0.5, Math.min(1.5, scale));
+
+  scan.dataset.scale = scale;
+
+  topZ++;
+  scan.style.zIndex = topZ;
+
+  applyTransform(scan);
+}
+
+function applyTransform(scan) {
+  const rotation = Number(scan.dataset.rotation) || 0;
+  const scale = Number(scan.dataset.scale) || 1;
+
+  scan.style.transform =
+    `rotate(${rotation}deg) scale(${scale})`;
 }
 
 function initializeIntro() {
@@ -162,9 +411,7 @@ function initializeSound() {
   document.addEventListener(
     "pointerdown",
     startAudioAfterInteraction,
-    {
-      once: true
-    }
+    { once: true }
   );
 
   playPauseButton.addEventListener("click", (event) => {
@@ -237,9 +484,7 @@ function startAudioAfterInteraction(event) {
 
 function playAudio() {
   backgroundAudio.play()
-    .then(() => {
-      updateAudioUI();
-    })
+    .then(updateAudioUI)
     .catch(() => {
       audioStatus.textContent = "paused";
       playPauseButton.textContent = "play";
@@ -259,11 +504,8 @@ function togglePlayPause() {
 function toggleMute() {
   backgroundAudio.muted = !backgroundAudio.muted;
 
-  if (backgroundAudio.muted) {
-    muteButton.textContent = "unmute";
-  } else {
-    muteButton.textContent = "mute";
-  }
+  muteButton.textContent =
+    backgroundAudio.muted ? "unmute" : "mute";
 }
 
 function playPreviousTrack() {
@@ -282,8 +524,7 @@ function playPreviousTrack() {
 
 function playNextTrack() {
   currentTrackIndex =
-    (currentTrackIndex + 1) %
-    audioTracks.length;
+    (currentTrackIndex + 1) % audioTracks.length;
 
   const wasPlaying = !backgroundAudio.paused;
 
@@ -304,304 +545,19 @@ function updateAudioUI() {
   }
 }
 
-function pointerDown(event) {
-  event.preventDefault();
-
-  activeScan = event.currentTarget;
-  hasMovedDuringPointer = false;
-
-  activeScan.setPointerCapture(event.pointerId);
-
-  pointers.set(event.pointerId, {
-    x: event.clientX,
-    y: event.clientY
-  });
-
-  topZ++;
-  activeScan.style.zIndex = topZ;
-
-  if (pointers.size === 1) {
-    dragStartX = event.clientX;
-    dragStartY = event.clientY;
-
-    imageStartX = parseFloat(activeScan.style.left) || 0;
-    imageStartY = parseFloat(activeScan.style.top) || 0;
-  }
-
-  if (pointers.size === 2) {
-    closeInfoCard();
-
-    const points = Array.from(pointers.values());
-
-    initialPinchDistance = getDistance(
-      points[0],
-      points[1]
-    );
-
-    initialScale =
-      Number(activeScan.dataset.scale) || 1;
-  }
-}
-
-function pointerMove(event) {
-  if (!activeScan || !pointers.has(event.pointerId)) {
-    return;
-  }
-
-  event.preventDefault();
-
-  pointers.set(event.pointerId, {
-    x: event.clientX,
-    y: event.clientY
-  });
-
-  if (pointers.size === 1) {
-    const dx = event.clientX - dragStartX;
-    const dy = event.clientY - dragStartY;
-
-    if (
-      Math.abs(dx) > TAP_MOVE_LIMIT ||
-      Math.abs(dy) > TAP_MOVE_LIMIT
-    ) {
-      hasMovedDuringPointer = true;
-      closeInfoCard();
-    }
-
-    activeScan.style.left = `${imageStartX + dx}px`;
-    activeScan.style.top = `${imageStartY + dy}px`;
-  }
-
-  if (pointers.size === 2) {
-    hasMovedDuringPointer = true;
-    closeInfoCard();
-
-    const points = Array.from(pointers.values());
-
-    const newDistance = getDistance(
-      points[0],
-      points[1]
-    );
-
-    const scaleChange =
-      newDistance / initialPinchDistance;
-
-    let newScale =
-      initialScale * scaleChange;
-
-    newScale = Math.max(
-      0.5,
-      Math.min(1.5, newScale)
-    );
-
-    activeScan.dataset.scale = newScale;
-  }
-
-  applyTransform(activeScan);
-}
-
-function pointerUp(event) {
-  const releasedScan = event.currentTarget;
-
-  pointers.delete(event.pointerId);
-
-  if (
-    activeScan &&
-    activeScan.hasPointerCapture(event.pointerId)
-  ) {
-    activeScan.releasePointerCapture(event.pointerId);
-  }
-
-  if (
-    event.pointerType === "touch" &&
-    !hasMovedDuringPointer
-  ) {
-    handleMobileDoubleTap(
-      releasedScan,
-      event.clientX,
-      event.clientY
-    );
-  }
-
-  if (pointers.size === 0) {
-    activeScan = null;
-  }
-}
-
-function handleMobileDoubleTap(scan, x, y) {
-  const now = Date.now();
-
-  const isDoubleTap =
-    lastTappedScan === scan &&
-    now - lastTapTime < DOUBLE_TAP_DELAY;
-
-  if (isDoubleTap) {
-    showInfoCard(scan, x, y);
-
-    lastTapTime = 0;
-    lastTappedScan = null;
-
-    return;
-  }
-
-  lastTapTime = now;
-  lastTappedScan = scan;
-}
-
-function randomizeImage(scan, index) {
-  const baseRotation =
-    Math.random() * 24 - 12;
-
-  const randomScale =
-    0.75 + Math.random() * 0.5;
-
-  const rotation =
-    baseRotation *
-    (0.75 + Math.random() * 0.5);
-
-  const maxX =
-    window.innerWidth -
-    scan.offsetWidth * randomScale;
-
-  const maxY =
-    window.innerHeight -
-    scan.offsetHeight * randomScale;
-
-  const x = Math.max(
-    0,
-    Math.random() * maxX
-  );
-
-  const y = Math.max(
-    0,
-    Math.random() * maxY
-  );
-
-  scan.style.left = `${x}px`;
-  scan.style.top = `${y}px`;
-
-  scan.dataset.rotation = rotation;
-  scan.dataset.scale = randomScale;
-
-  scan.style.zIndex = index + 1;
-
-  applyTransform(scan);
-}
-
-function resizeWithTrackpad(event) {
-  event.preventDefault();
-
-  closeInfoCard();
-
-  const scan = event.currentTarget;
-
-  let scale =
-    Number(scan.dataset.scale) || 1;
-
-  const zoomAmount =
-    -event.deltaY * 0.0015;
-
-  scale += zoomAmount;
-
-  scale = Math.max(
-    0.5,
-    Math.min(1.5, scale)
-  );
-
-  scan.dataset.scale = scale;
-
-  applyTransform(scan);
-}
-
-function showInfoCardFromEvent(event) {
-  event.preventDefault();
-  event.stopPropagation();
-
-  showInfoCard(
-    event.currentTarget,
-    event.clientX,
-    event.clientY
-  );
-}
-
-function showInfoCard(scan, x, y) {
-  const filename =
-    scan.dataset.filename;
-
-  const objectInfo =
-    blurbs[filename];
-
-  if (!objectInfo) {
-    infoTitle.textContent =
-      "Untitled Object";
-
-    infoText.textContent =
-      "No information has been added for this object yet.";
-  } else {
-    infoTitle.textContent =
-      objectInfo.title;
-
-    infoText.textContent =
-      objectInfo.description;
-  }
-
-  infoCard.style.left = `${x + 20}px`;
-  infoCard.style.top = `${y + 20}px`;
-
-  infoCard.classList.remove("hidden");
-}
-
-function closeInfoCard() {
-  if (!infoCard) {
-    return;
-  }
-
-  infoCard.classList.add("hidden");
-}
-
-closeInfo.addEventListener("click", () => {
-  closeInfoCard();
-});
-
-function applyTransform(scan) {
-  const rotation =
-    Number(scan.dataset.rotation) || 0;
-
-  const scale =
-    Number(scan.dataset.scale) || 1;
-
-  scan.style.transform =
-    `rotate(${rotation}deg) scale(${scale})`;
-}
-
 function getDistance(point1, point2) {
-  const dx =
-    point2.x - point1.x;
+  const dx = point2.x - point1.x;
+  const dy = point2.y - point1.y;
 
-  const dy =
-    point2.y - point1.y;
-
-  return Math.sqrt(
-    dx * dx + dy * dy
-  );
+  return Math.sqrt(dx * dx + dy * dy);
 }
 
 function shuffle(array) {
-  for (
-    let i = array.length - 1;
-    i > 0;
-    i--
-  ) {
+  for (let i = array.length - 1; i > 0; i--) {
     const randomIndex =
-      Math.floor(
-        Math.random() * (i + 1)
-      );
+      Math.floor(Math.random() * (i + 1));
 
-    [
-      array[i],
-      array[randomIndex]
-    ] = [
-      array[randomIndex],
-      array[i]
-    ];
+    [array[i], array[randomIndex]] =
+      [array[randomIndex], array[i]];
   }
 }
