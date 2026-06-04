@@ -12,20 +12,28 @@
 <body>
 
   <div id="introOverlay">
-    <img
-      id="introAnimation"
-      src="assets/intro.png"
-      alt=""
-    />
+    <img id="introAnimation" src="assets/intro.png" alt="" />
   </div>
 
   <div id="workspace"></div>
 
-  <div id="legend" class="legend">
-    <p>drag to move</p>
-    <p>scroll or pinch to resize</p>
-    <p>double-click to learn more</p>
+  <div id="helpWidget" class="help-widget">
+    <button id="helpToggle" title="help">?</button>
+
+    <div id="legend" class="legend hidden">
+      <p>drag to move</p>
+      <p>scroll or pinch to resize</p>
+      <p>double-click/tap twice to learn more</p>
+      <p>hold space for metadata</p>
+      <p>← gather / spread →</p>
+      <p>tab to center an object</p>
+      <p id="foundCounter">found 0 / 0</p>
+    </div>
   </div>
+
+  <button id="randomMemoryButton" class="random-memory-float" title="random memory">
+    ✫
+  </button>
 
   <div id="audioWidget" class="audio-widget">
     <div class="audio-screen">
@@ -37,6 +45,7 @@
       <button id="prevTrackButton">prev</button>
       <button id="playPauseButton">play</button>
       <button id="nextTrackButton">next</button>
+      <button id="shuffleButton" title="shuffle">⤮</button>
       <button id="muteButton">mute</button>
     </div>
 
@@ -53,18 +62,36 @@
     </label>
   </div>
 
-  <audio id="backgroundAudio" loop></audio>
+  <audio id="backgroundAudio"></audio>
 
   <div id="infoCard" class="info-card hidden">
     <button id="closeInfo">×</button>
 
     <h3 id="infoTitle"></h3>
-
     <p id="infoText"></p>
+
+    <button id="noteButton" class="note-button hidden">pull out note</button>
+    <div id="notePanel" class="note-panel hidden"></div>
+
+    <div id="relatedObjects" class="related-objects"></div>
+    <div id="memoryTrail" class="memory-trail"></div>
   </div>
 
   <script src="blurbs.js"></script>
-  <script src="script.js"></script>
+
+  <script src="scripts/config.js"></script>
+  <script src="scripts/state.js"></script>
+  <script src="scripts/dom.js"></script>
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/intro.js"></script>
+  <script src="scripts/metadata.js"></script>
+  <script src="scripts/infoCard.js"></script>
+  <script src="scripts/audio.js"></script>
+  <script src="scripts/help.js"></script>
+  <script src="scripts/scans.js"></script>
+  <script src="scripts/dragPhysics.js"></script>
+  <script src="scripts/keyboard.js"></script>
+  <script src="scripts/main.js"></script>
 
 </body>
 </html>
