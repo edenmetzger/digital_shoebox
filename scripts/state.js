@@ -31,4 +31,8 @@ let lastTappedScan = null;
 
 let focusQueue = [];
 
+let rifleDirection = null;
+let rifleQueue = [];
+let rifleCursor = 0;
+
 const tossAnimations = new Map();

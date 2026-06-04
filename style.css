@@ -122,11 +122,8 @@ body.metadata-mode .scan:hover {
 .help-widget {
   position: fixed;
 
-  /* audio player is 280px wide and sits 18px from right */
-  right: 264px;
-
-  /* audio player top is about 18px + its height (~110px) */
-  bottom: 128px;
+ left: 18px;
+  top: 128px;
 
   z-index: 10000;
 
@@ -149,17 +146,22 @@ body.metadata-mode .scan:hover {
 }
 
 .help-widget .legend {
-   position: absolute;
-  right: 0;
-  top: 42px;
+  position: absolute;
+
+  left: 42px;
+  top: 0;
+
   width: 220px;
   padding: 10px 14px;
+
   background: rgba(242, 231, 213, 0.94);
   color: var(--muted-ink);
+
   font-family: Georgia, "Times New Roman", serif;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
   border: 1px solid rgba(47, 36, 26, 0.18);
   box-shadow: 0 5px 16px var(--shadow);
   backdrop-filter: blur(4px);
@@ -187,7 +189,7 @@ body.metadata-mode .scan:hover {
   box-shadow: 0 8px 24px var(--shadow);
   font-size: 15px;
   line-height: 1.35;
-  z-index: 9999;
+  z-index: 10001;
 }
 
 .info-card.hidden {
@@ -257,8 +259,8 @@ body.metadata-mode .scan:hover {
 
 .audio-widget {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
+  left: 18px;
+  top: 18px;
   z-index: 9998;
   width: 280px;
   padding: 8px;
@@ -354,8 +356,8 @@ body.metadata-mode .scan:hover {
 
 .random-memory-float {
   position: fixed;
-  right: 306px;
-  bottom: 18px;
+   left: 306px;
+  top: 18px;
   z-index: 10000;
 
   width: 34px;

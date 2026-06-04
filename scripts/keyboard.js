@@ -4,13 +4,21 @@ function initializeShoeboxControls() {
 
     if (event.key === "ArrowRight") {
       event.preventDefault();
-      stopAllTossAnimations();
-      spreadObjects();
+      spreadRight();
     }
 
     if (event.key === "ArrowLeft") {
       event.preventDefault();
-      stopAllTossAnimations();
+      spreadLeft();
+    }
+
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      surfaceObjects();
+    }
+
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
       gatherObjects();
     }
 
@@ -18,6 +26,18 @@ function initializeShoeboxControls() {
       event.preventDefault();
       focusNextScan();
     }
+    if (event.key.toLowerCase() === "x") {
+  event.preventDefault();
+  closeInfoCard();
+
+  if (legend) {
+    legend.classList.add("hidden");
+  }
+}
+    if (event.key.toLowerCase() === "s") {
+  event.preventDefault();
+  shakeBox();
+}
   });
 }
 
@@ -62,5 +82,10 @@ function handleAudioKeyboardControls(event) {
   ) {
     event.preventDefault();
     toggleMute();
+  }
+
+    if (key === "~" || key === "`") {
+    event.preventDefault();
+    showRandomMemory();
   }
 }

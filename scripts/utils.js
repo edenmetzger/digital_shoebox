@@ -24,3 +24,40 @@ function isTypingInInput(event) {
     event.target.isContentEditable
   );
 }
+
+function nudgeAwayFromRadio(x, y, scan, scale) {
+  const radio = document.getElementById("audioWidget");
+
+  if (!radio) {
+    return { x, y };
+  }
+
+  const rect = radio.getBoundingClientRect();
+  const padding = 30;
+
+  const zone = {
+    left: rect.left - padding,
+    top: rect.top - padding,
+    right: rect.right + padding,
+    bottom: rect.bottom + padding
+  };
+
+  const overlaps =
+    x < zone.right &&
+    x + scan.offsetWidth * scale > zone.left &&
+    y < zone.bottom &&
+    y + scan.offsetHeight * scale > zone.top;
+
+  if (!overlaps) {
+    return { x, y };
+  }
+
+  if (Math.random() < 0.8) {
+    return {
+      x,
+      y: zone.bottom + 20 + Math.random() * 40
+    };
+  }
+
+  return { x, y };
+}
