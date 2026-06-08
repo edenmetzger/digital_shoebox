@@ -15,7 +15,6 @@ function showInfoCard(scan, x, y, offsetFromClick = true) {
 
   renderNote(objectInfo);
   renderRelatedObjects(objectInfo);
-  renderMemoryTrail(objectInfo);
 
   infoCard.style.left = `${offsetFromClick ? x + 20 : x}px`;
   infoCard.style.top = `${offsetFromClick ? y + 20 : y}px`;
@@ -126,44 +125,6 @@ function renderRelatedObjects(objectInfo) {
 
     relatedObjects.appendChild(button);
   });
-}
-
-function renderMemoryTrail(objectInfo) {
-  memoryTrail.innerHTML = "";
-
-  if (!objectInfo) return;
-
-  if (
-    objectInfo.previous &&
-    document.querySelector(
-      `.scan[data-filename="${objectInfo.previous}"]`
-    )
-  ) {
-    const previousButton = document.createElement("button");
-    previousButton.textContent = "← earlier";
-
-    previousButton.addEventListener("click", () => {
-      openObjectByFilename(objectInfo.previous);
-    });
-
-    memoryTrail.appendChild(previousButton);
-  }
-
-  if (
-    objectInfo.next &&
-    document.querySelector(
-      `.scan[data-filename="${objectInfo.next}"]`
-    )
-  ) {
-    const nextButton = document.createElement("button");
-    nextButton.textContent = "later →";
-
-    nextButton.addEventListener("click", () => {
-      openObjectByFilename(objectInfo.next);
-    });
-
-    memoryTrail.appendChild(nextButton);
-  }
 }
 
 function openObjectByFilename(filename, shouldHighlight = false) {

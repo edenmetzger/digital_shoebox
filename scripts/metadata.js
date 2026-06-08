@@ -27,7 +27,7 @@ function getMetadataText(filename) {
   }
 
   const lines = [
-    item.year || item.date || "unknown date",
+    item.date || "unknown date",
     item.type || "object",
     item.category || "",
     item.location || "",

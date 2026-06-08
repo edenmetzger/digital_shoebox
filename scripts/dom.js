@@ -8,7 +8,6 @@ const closeInfo = document.getElementById("closeInfo");
 const noteButton = document.getElementById("noteButton");
 const notePanel = document.getElementById("notePanel");
 const relatedObjects = document.getElementById("relatedObjects");
-const memoryTrail = document.getElementById("memoryTrail");
 const foundCounter = document.getElementById("foundCounter");
 
 const backgroundAudio = document.getElementById("backgroundAudio");
