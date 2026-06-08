@@ -220,8 +220,7 @@ body.metadata-mode .scan:hover {
 }
 
 .note-button,
-.related-objects button,
-.memory-trail button {
+.related-objects button {
   margin-top: 8px;
   margin-right: 6px;
   padding: 4px 7px;
@@ -242,8 +241,7 @@ body.metadata-mode .scan:hover {
   white-space: pre-line;
 }
 
-.related-objects,
-.memory-trail {
+.related-objects{
   margin-top: 10px;
 }
 

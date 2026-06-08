@@ -1,218 +1,170 @@
 const archive = {
   "scan1.jpg": {
-    id: "0001",
     filename: "scan1.jpg",
     title: "le nain rouge patch",
     description: "fabled detroit creature said to bring misfortune to white settlers in the area",
     category: "folklore",
     type: "patch",
     date: "",
-    year: "",
     location: "Detroit, MI",
     source: "",
     tags: ["detroit", "folklore", "creature"],
     note: "A little talisman from Detroit mythology. It feels like both a warning and a souvenir.",
-    related: ["scan9.jpg", "scan12.jpg"],
-    previous: null,
-    next: "scan2.jpg"
+    related: ["scan9.jpg", "scan12.jpg"]
   },
 
   "scan2.jpg": {
-    id: "0002",
     filename: "scan2.jpg",
     title: "MTA MARC ticket",
     description: "baltimore to washington, d.c. train ticket from 2021",
     category: "transit",
     type: "ticket",
     date: "",
-    year: "2021",
     location: "Baltimore, MD / Washington, DC",
     source: "",
     tags: ["baltimore", "washington dc", "transit"],
     note: "A small receipt of movement between two cities.",
-    related: ["scan10.jpg"],
-    previous: "scan1.jpg",
-    next: "scan3.jpg"
+    related: ["scan10.jpg"]
   },
 
   "scan3.jpg": {
-    id: "0003",
     filename: "scan3.jpg",
     title: "open gesture of an i by d.a. powell",
     description: "poem from a 2019 issue of the new yorker magazine",
     category: "literature",
     type: "poem",
     date: "",
-    year: "2019",
     location: "",
     source: "The New Yorker",
     tags: ["poetry", "magazine", "new yorker"],
     note: "A saved fragment of someone else’s language that felt worth keeping.",
-    related: ["scan4.jpg", "scan12.jpg"],
-    previous: "scan2.jpg",
-    next: "scan4.jpg"
+    related: ["scan4.jpg", "scan12.jpg"]
   },
 
   "scan4.jpg": {
-    id: "0004",
     filename: "scan4.jpg",
     title: "GQ style profile",
     description: "kurt cobain's 2021 GQ style profile",
     category: "music",
     type: "magazine clipping",
     date: "",
-    year: "2021",
     location: "",
     source: "GQ",
     tags: ["music", "fashion", "magazine"],
     note: "A clipping about image, mythology, and the afterlife of style.",
-    related: ["scan7.jpg", "scan3.jpg"],
-    previous: "scan3.jpg",
-    next: "scan5.jpg"
+    related: ["scan7.jpg", "scan3.jpg"]
   },
 
   "scan5.jpg": {
-    id: "0005",
     filename: "scan5.jpg",
     title: "learn spanish with bazooka joe",
     description: "cómic educativo de Bazooka Joe",
     category: "ephemera",
     type: "comic",
     date: "",
-    year: "",
     location: "",
     source: "Bazooka Joe",
     tags: ["comic", "language", "ephemera"],
     note: "Tiny disposable language lesson, preserved long after the gum is gone.",
-    related: ["scan6.jpg"],
-    previous: "scan4.jpg",
-    next: "scan6.jpg"
+    related: ["scan6.jpg"]
   },
 
   "scan6.jpg": {
-    id: "0006",
     filename: "scan6.jpg",
     title: "collage materials",
     description: "various body parts",
     category: "art material",
     type: "collage material",
     date: "",
-    year: "",
     location: "",
     source: "",
     tags: ["collage", "body", "materials"],
     note: "Fragments waiting to become something else.",
-    related: ["scan5.jpg"],
-    previous: "scan5.jpg",
-    next: "scan7.jpg"
+    related: ["scan5.jpg"]
   },
 
   "scan7.jpg": {
-    id: "0007",
     filename: "scan7.jpg",
     title: "schlagenheim sticker",
     description: "from the plastic sleeve of black midi's 2019 album schlagenheim",
     category: "music",
     type: "sticker",
     date: "",
-    year: "2019",
     location: "",
     source: "black midi, Schlagenheim",
     tags: ["music", "black midi", "album"],
     note: "A remnant from the packaging, kept because the packaging became part of the object.",
-    related: ["scan4.jpg"],
-    previous: "scan6.jpg",
-    next: "scan8.jpg"
+    related: ["scan4.jpg"]
   },
 
   "scan8.jpg": {
-    id: "0008",
     filename: "scan8.jpg",
     title: "3d glasses",
     description: "from the belcourt's summer 2023 showing of 'Creature from the Black Lagoon' in 3D",
     category: "film",
     type: "glasses",
     date: "summer 2023",
-    year: "2023",
     location: "Nashville, TN",
     source: "The Belcourt",
     tags: ["movie", "belcourt", "3d"],
     note: "Evidence of watching a monster movie the old-fashioned way.",
-    related: ["scan9.jpg", "scan1.jpg"],
-    previous: "scan7.jpg",
-    next: "scan9.jpg"
+    related: ["scan9.jpg", "scan1.jpg"]
   },
 
   "scan9.jpg": {
-    id: "0009",
     filename: "scan9.jpg",
     title: "darkrai pokémon card",
     description: "found at a halloween party",
     category: "game",
     type: "trading card",
     date: "",
-    year: "",
     location: "",
     source: "",
     tags: ["pokemon", "halloween", "party"],
     note: "A small dark thing found in a social place.",
-    related: ["scan1.jpg", "scan8.jpg"],
-    previous: "scan8.jpg",
-    next: "scan10.jpg"
+    related: ["scan1.jpg", "scan8.jpg"]
   },
 
   "scan10.jpg": {
-    id: "0010",
     filename: "scan10.jpg",
     title: "vigilante coffee bag",
     description: "the front panel of a paper bag from a hyattsville, md coffee shop",
     category: "packaging",
     type: "coffee bag",
     date: "",
-    year: "",
     location: "Hyattsville, MD",
     source: "Vigilante Coffee",
     tags: ["coffee", "hyattsville", "maryland"],
     note: "Packaging kept because the design felt too good to throw away.",
-    related: ["scan2.jpg", "scan11.jpg"],
-    previous: "scan9.jpg",
-    next: "scan11.jpg"
+    related: ["scan2.jpg", "scan11.jpg"]
   },
 
   "scan11.jpg": {
-    id: "0011",
     filename: "scan11.jpg",
     title: "hand wipe",
     description: "from rendezvous bbq in memphis, tn",
     category: "restaurant",
     type: "wrapper",
     date: "",
-    year: "",
     location: "Memphis, TN",
     source: "Rendezvous BBQ",
     tags: ["memphis", "bbq", "restaurant"],
     note: "A throwaway object from a very specific place.",
-    related: ["scan10.jpg"],
-    previous: "scan10.jpg",
-    next: "scan12.jpg"
+    related: ["scan10.jpg"]
   },
 
   "scan12.jpg": {
-    id: "0012",
     filename: "scan12.jpg",
     title: "'some butterflies' by jack goldstein",
     description: "postcard from c/o berlin",
     category: "art",
     type: "postcard",
     date: "",
-    year: "",
     location: "Berlin, Germany",
     source: "C/O Berlin",
     tags: ["art", "berlin", "postcard"],
     note: "An art object turned souvenir turned archive item.",
-    related: ["scan3.jpg", "scan1.jpg"],
-    previous: "scan11.jpg",
-    next: null
+    related: ["scan3.jpg", "scan1.jpg"]
   }
 };
 
