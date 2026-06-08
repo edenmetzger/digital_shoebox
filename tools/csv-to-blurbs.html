@@ -24,12 +24,25 @@
       padding: 8px 12px;
       cursor: pointer;
     }
+
+    code {
+      background: rgba(47, 36, 26, 0.08);
+      padding: 2px 4px;
+    }
   </style>
 </head>
 <body>
   <h1>CSV to blurbs.js</h1>
 
-  <p>Upload your archive CSV. This will generate code you can paste into <code>blurbs.js</code>.</p>
+  <p>
+    Upload <code>archive.csv</code>. This will generate code you can paste into
+    <code>blurbs.js</code>.
+  </p>
+
+  <p>
+    Expected CSV fields:
+    <code>filename,title,description,category,type,date,location,source,tags,note,related</code>
+  </p>
 
   <input id="csvInput" type="file" accept=".csv" />
   <button id="copyButton">copy output</button>
@@ -58,6 +71,7 @@
     copyButton.addEventListener("click", async () => {
       await navigator.clipboard.writeText(output.value);
       copyButton.textContent = "copied";
+
       setTimeout(() => {
         copyButton.textContent = "copy output";
       }, 1200);
@@ -66,25 +80,21 @@
     function buildArchive(rows) {
       const archive = {};
 
-      rows.forEach((row, index) => {
+      rows.forEach((row) => {
         if (!row.filename) return;
 
         archive[row.filename] = {
-          id: row.id || String(index + 1).padStart(4, "0"),
-          filename: row.filename,
+          filename: row.filename || "",
           title: row.title || "",
           description: row.description || "",
           category: row.category || "",
           type: row.type || "",
           date: row.date || "",
-          year: row.year || "",
           location: row.location || "",
           source: row.source || "",
           tags: splitList(row.tags),
           note: row.note || "",
-          related: splitList(row.related),
-          previous: row.previous || null,
-          next: row.next || null
+          related: splitList(row.related)
         };
       });
 
@@ -102,20 +112,27 @@
 
     function parseCSV(text) {
       const lines = text.trim().split(/\r?\n/);
-      const headers = parseCSVLine(lines.shift());
 
-      return lines.map((line) => {
-        const values = parseCSVLine(line);
-        const row = {};
+      if (!lines.length) return [];
 
-        headers.forEach((header, index) => {
-          row[header.trim()] = values[index]
-            ? values[index].trim()
-            : "";
+      const headers = parseCSVLine(lines.shift()).map((header) =>
+        header.trim()
+      );
+
+      return lines
+        .filter((line) => line.trim() !== "")
+        .map((line) => {
+          const values = parseCSVLine(line);
+          const row = {};
+
+          headers.forEach((header, index) => {
+            row[header] = values[index]
+              ? values[index].trim()
+              : "";
+          });
+
+          return row;
         });
-
-        return row;
-      });
     }
 
     function parseCSVLine(line) {
