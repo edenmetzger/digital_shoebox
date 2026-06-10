@@ -509,11 +509,10 @@ function shakeBox(intensity = 1) {
         currentRotation +
         Math.random() * rotationAmount -
         rotationAmount / 2,
-      transition: "left 0.18s ease, top 0.18s ease, transform 0.18s ease"
-    };
+        transition: "left 0.1s linear, top 0.1s linear, transform 0.1s linear"    };
   });
 
-  applyPlannedMoves(plans, 220);
+  applyPlannedMoves(plans, 115);
 }
 
 function startHeldShake() {
@@ -524,8 +523,8 @@ function startHeldShake() {
   shakeBox(getHeldShakeIntensity());
 
   heldShakeInterval = setInterval(() => {
-    shakeBox(getHeldShakeIntensity());
-  }, 190);
+  shakeBox(getHeldShakeIntensity());
+  }, 105);
 }
 
 function stopHeldShake() {

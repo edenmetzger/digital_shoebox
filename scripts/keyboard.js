@@ -70,38 +70,55 @@ function initializeAudioKeyboardControls() {
 function handleAudioKeyboardControls(event) {
   if (isTypingInInput(event)) return;
 
-  const key = event.key;
+  const key = event.key.toLowerCase();
 
-  if (
-    key === "MediaPlayPause" ||
-    (key === " " && event.shiftKey)
-  ) {
+  if (key === "p") {
+    event.preventDefault();
+    togglePlayPause();
+  }
+
+  if (event.key === "]") {
+    event.preventDefault();
+    playNextTrack();
+  }
+
+  if (event.key === "[") {
+    event.preventDefault();
+    playPreviousTrack();
+  }
+
+  if (key === "m" || event.key === "/") {
+    event.preventDefault();
+    toggleMute();
+  }
+
+  if (key === "r") {
+    event.preventDefault();
+    playRandomTrack();
+  }
+
+  if (event.key === "MediaPlayPause") {
     event.preventDefault();
     togglePlayPause();
   }
 
   if (
-    key === "MediaTrackNext" ||
-    key === "AudioTrackNext" ||
-    key === "]"
+    event.key === "MediaTrackNext" ||
+    event.key === "AudioTrackNext"
   ) {
     event.preventDefault();
     playNextTrack();
   }
 
   if (
-    key === "MediaTrackPrevious" ||
-    key === "AudioTrackPrevious" ||
-    key === "["
+    event.key === "MediaTrackPrevious" ||
+    event.key === "AudioTrackPrevious"
   ) {
     event.preventDefault();
     playPreviousTrack();
   }
 
-  if (
-    key === "AudioVolumeMute" ||
-    key.toLowerCase() === "m"
-  ) {
+  if (event.key === "AudioVolumeMute") {
     event.preventDefault();
     toggleMute();
   }
