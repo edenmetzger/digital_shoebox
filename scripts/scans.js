@@ -48,6 +48,8 @@ function createScan(imagePath, index) {
   scan.alt = `Scan ${index + 1}`;
   scan.draggable = false;
   scan.dataset.scale = 1;
+  scan.dataset.translateX = 0;
+  scan.dataset.translateY = 0;
   scan.dataset.filename = filename;
 
   workspace.appendChild(scan);
@@ -106,6 +108,8 @@ function randomizeImage(scan, index) {
 
   scan.dataset.rotation = rotation;
   scan.dataset.scale = randomScale;
+  scan.dataset.translateX = 0;
+  scan.dataset.translateY = 0;
   scan.style.zIndex = index + 1;
 
   applyTransform(scan);
@@ -192,6 +196,8 @@ function showRandomMemory() {
   randomScan.style.left = `${position.x}px`;
   randomScan.style.top = `${position.y - 12}px`;
   randomScan.dataset.rotation = rotation;
+  randomScan.dataset.translateX = 0;
+  randomScan.dataset.translateY = 0;
 
   applyTransform(randomScan);
   positionMetadataLabel(randomScan);
@@ -268,6 +274,8 @@ function bringScanToCenter(scan) {
   scan.style.left = `${position.x}px`;
   scan.style.top = `${position.y}px`;
   scan.dataset.rotation = rotation;
+  scan.dataset.translateX = 0;
+  scan.dataset.translateY = 0;
 
   applyTransform(scan);
   positionMetadataLabel(scan);
@@ -280,7 +288,6 @@ function bringScanToCenter(scan) {
 function gatherObjects() {
   closeInfoCard();
   stopAllTossAnimations();
-  clearPileMotionClass();
 
   rifleDirection = null;
   rifleQueue = [];
@@ -292,30 +299,32 @@ function gatherObjects() {
   const centerY = window.innerHeight / 2;
 
   scans.forEach((scan) => {
-    const scale = Number(scan.dataset.scale) || 1;
-
     const spreadX = Math.min(500, 120 + scans.length * 12);
     const spreadY = Math.min(350, 80 + scans.length * 8);
 
-    const jitterX = Math.random() * spreadX - spreadX / 2;
-    const jitterY = Math.random() * spreadY - spreadY / 2;
+    const targetX =
+      centerX -
+      scan.offsetWidth / 2 +
+      Math.random() * spreadX -
+      spreadX / 2;
 
-    const x = centerX - scan.offsetWidth / 2 + jitterX;
-    const y = centerY - scan.offsetHeight / 2 + jitterY;
+    const targetY =
+      centerY -
+      scan.offsetHeight / 2 +
+      Math.random() * spreadY -
+      spreadY / 2;
 
-    const position = nudgeAwayFromRadio(x, y, scan, scale);
+    const scale = Number(scan.dataset.scale) || 1;
 
-    scan.classList.add("moving-pile");
+    const position =
+      nudgeAwayFromRadio(targetX, targetY, scan, scale);
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = Math.random() * 18 - 9;
-
-    applyTransform(scan);
-
-    if (document.body.classList.contains("metadata-mode")) {
-      positionMetadataLabel(scan);
-    }
+    moveScanWithTransform(
+      scan,
+      position.x,
+      position.y,
+      Math.random() * 18 - 9
+    );
   });
 }
 
@@ -407,6 +416,8 @@ function moveRifledScan(scan, direction, index) {
   scan.style.left = `${position.x}px`;
   scan.style.top = `${position.y}px`;
   scan.dataset.rotation = rotation;
+  scan.dataset.translateX = 0;
+  scan.dataset.translateY = 0;
 
   topZ++;
   scan.style.zIndex = topZ + index;
@@ -422,7 +433,6 @@ function moveRifledScan(scan, direction, index) {
 function surfaceObjects() {
   closeInfoCard();
   stopAllTossAnimations();
-  clearPileMotionClass();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
 
@@ -430,150 +440,85 @@ function surfaceObjects() {
   const centerY = window.innerHeight / 2;
 
   scans.forEach((scan) => {
+    const targetX =
+      centerX -
+      scan.offsetWidth / 2 +
+      Math.random() * 700 -
+      350;
+
+    const targetY =
+      centerY -
+      scan.offsetHeight / 2 +
+      Math.random() * 500 -
+      250;
+
     const scale = Number(scan.dataset.scale) || 1;
 
-    const jitterX = Math.random() * 700 - 350;
-    const jitterY = Math.random() * 500 - 250;
+    const position =
+      nudgeAwayFromRadio(targetX, targetY, scan, scale);
 
-    const x = centerX - scan.offsetWidth / 2 + jitterX;
-    const y = centerY - scan.offsetHeight / 2 + jitterY;
-
-    const position = nudgeAwayFromRadio(x, y, scan, scale);
-
-    scan.classList.add("moving-pile");
-
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = Math.random() * 26 - 13;
-
-    applyTransform(scan);
-
-    if (document.body.classList.contains("metadata-mode")) {
-      positionMetadataLabel(scan);
-    }
+    moveScanWithTransform(
+      scan,
+      position.x,
+      position.y,
+      Math.random() * 26 - 13
+    );
   });
 }
 
 function shakeBox() {
   closeInfoCard();
   stopAllTossAnimations();
-  clearPileMotionClass();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
 
   scans.forEach((scan) => {
-    const scale = Number(scan.dataset.scale) || 1;
-
     const currentX = parseFloat(scan.style.left) || 0;
     const currentY = parseFloat(scan.style.top) || 0;
     const currentRotation = Number(scan.dataset.rotation) || 0;
+    const scale = Number(scan.dataset.scale) || 1;
 
-    const x = currentX + Math.random() * 70 - 35;
-    const y = currentY + Math.random() * 50 - 25;
+    const targetX = currentX + Math.random() * 70 - 35;
+    const targetY = currentY + Math.random() * 50 - 25;
 
-    const position = nudgeAwayFromRadio(x, y, scan, scale);
+    const position =
+      nudgeAwayFromRadio(targetX, targetY, scan, scale);
 
-    scan.classList.add("moving-pile");
+    moveScanWithTransform(
+      scan,
+      position.x,
+      position.y,
+      currentRotation + Math.random() * 18 - 9
+    );
+  });
+}
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation =
-      currentRotation + Math.random() * 18 - 9;
+function moveScanWithTransform(scan, targetX, targetY, rotation) {
+  const currentX = parseFloat(scan.style.left) || 0;
+  const currentY = parseFloat(scan.style.top) || 0;
 
+  scan.classList.add("moving-pile");
+
+  scan.dataset.translateX = targetX - currentX;
+  scan.dataset.translateY = targetY - currentY;
+  scan.dataset.rotation = rotation;
+
+  applyTransform(scan);
+
+  setTimeout(() => {
+    scan.style.left = `${targetX}px`;
+    scan.style.top = `${targetY}px`;
+
+    scan.dataset.translateX = 0;
+    scan.dataset.translateY = 0;
+
+    scan.classList.remove("moving-pile");
     applyTransform(scan);
 
     if (document.body.classList.contains("metadata-mode")) {
       positionMetadataLabel(scan);
     }
-  });
-}
-
-function moveScansInBatches(scans, moveFunction, batchSize, delay) {
-  let cursor = 0;
-
-  function moveBatch() {
-    const batch = scans.slice(cursor, cursor + batchSize);
-
-    batch.forEach((scan, index) => {
-      moveFunction(scan, cursor + index);
-    });
-
-    cursor += batchSize;
-
-    if (cursor < scans.length) {
-      setTimeout(moveBatch, delay);
-    }
-  }
-
-  moveBatch();
-}
-
-function moveSurfaceScan(scan, index) {
-  scan.style.transition =
-    "left 0.45s ease, top 0.45s ease, transform 0.45s ease";
-
-  const scale = Number(scan.dataset.scale) || 1;
-
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  const jitterX = Math.random() * 700 - 350;
-  const jitterY = Math.random() * 500 - 250;
-
-  const x = centerX - scan.offsetWidth / 2 + jitterX;
-  const y = centerY - scan.offsetHeight / 2 + jitterY;
-
-  const position = nudgeAwayFromRadio(x, y, scan, scale);
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = Math.random() * 26 - 13;
-
-  topZ++;
-  scan.style.zIndex = topZ + index;
-
-  applyTransform(scan);
-  positionMetadataLabel(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 500);
-}
-
-function moveShakenScan(scan, index) {
-  scan.style.transition =
-    "left 0.22s ease, top 0.22s ease, transform 0.22s ease";
-
-  const scale = Number(scan.dataset.scale) || 1;
-
-  const currentX = parseFloat(scan.style.left) || 0;
-  const currentY = parseFloat(scan.style.top) || 0;
-  const currentRotation = Number(scan.dataset.rotation) || 0;
-
-  const x = currentX + Math.random() * 50 - 25;
-  const y = currentY + Math.random() * 36 - 18;
-
-  const position = nudgeAwayFromRadio(x, y, scan, scale);
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = currentRotation + Math.random() * 10 - 5;
-
-  topZ++;
-  scan.style.zIndex = topZ + index;
-
-  applyTransform(scan);
-  positionMetadataLabel(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 260);
-}
-
-function clearPileMotionClass() {
-  document.querySelectorAll(".scan.moving-pile").forEach((scan) => {
-    scan.classList.remove("moving-pile");
-  });
+  }, 280);
 }
 
 function keepScanInView(scan) {

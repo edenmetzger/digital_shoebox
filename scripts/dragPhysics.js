@@ -34,6 +34,9 @@ function pointerDown(event) {
   velocityX = 0;
   velocityY = 0;
 
+  activeScan.dataset.translateX = 0;
+  activeScan.dataset.translateY = 0;
+
   if (pointers.size === 2) {
     closeInfoCard();
 
@@ -117,7 +120,7 @@ function resizeActiveScanByPinch() {
   );
 
   activeScan.dataset.scale = newScale;
-keepScanInView(activeScan);
+  keepScanInView(activeScan);
 }
 
 function pointerUp(event) {
@@ -178,6 +181,7 @@ function resizeWithTrackpad(event) {
   );
 
   scan.dataset.scale = scale;
+  keepScanInView(scan);
 
   bringScanToFront(scan);
   applyTransform(scan);
@@ -242,6 +246,8 @@ function startTossAnimation(scan, vx, vy) {
 
     scan.style.left = `${x}px`;
     scan.style.top = `${y}px`;
+    scan.dataset.translateX = 0;
+    scan.dataset.translateY = 0;
 
     applyTransform(scan);
     positionMetadataLabel(scan);
@@ -341,9 +347,11 @@ function handleDoubleTapOrClick(scan, x, y) {
 }
 
 function applyTransform(scan) {
+  const x = Number(scan.dataset.translateX) || 0;
+  const y = Number(scan.dataset.translateY) || 0;
   const rotation = Number(scan.dataset.rotation) || 0;
   const scale = Number(scan.dataset.scale) || 1;
 
   scan.style.transform =
-    `rotate(${rotation}deg) scale(${scale})`;
+    `translate(${x}px, ${y}px) rotate(${rotation}deg) scale(${scale})`;
 }
