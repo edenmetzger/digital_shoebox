@@ -53,6 +53,22 @@ function nudgeAwayFromZone(x, y, width, height, zone) {
   return { x, y };
 }
 
+function keepPlannedPositionInView(scan, x, y) {
+  const scale = Number(scan.dataset.scale) || 1;
+  const visibleMargin = 140;
+
+  const minX = -scan.offsetWidth * scale + visibleMargin;
+  const minY = -scan.offsetHeight * scale + visibleMargin;
+
+  const maxX = window.innerWidth - visibleMargin;
+  const maxY = window.innerHeight - visibleMargin;
+
+  return {
+    x: Math.min(maxX, Math.max(minX, x)),
+    y: Math.min(maxY, Math.max(minY, y))
+  };
+}
+
 function applyPlannedMoves(plans, duration) {
   requestAnimationFrame(() => {
     plans.forEach((plan) => {
@@ -188,7 +204,14 @@ function randomizeImage(scan, index) {
 }
 
 function bringScanToFront(scan) {
-  topZ++;
+  const scans = Array.from(document.querySelectorAll(".scan"));
+
+  const highestZ = scans.reduce((highest, currentScan) => {
+    const z = Number(currentScan.style.zIndex) || 0;
+    return Math.max(highest, z);
+  }, 0);
+
+  topZ = highestZ + 1;
 
   scan.style.zIndex = topZ;
   positionMetadataLabel(scan);
@@ -393,23 +416,31 @@ function gatherObjects() {
       Math.random() * spreadY -
       spreadY / 2;
 
-    const position = nudgeAwayFromZone(
-      x,
-      y,
-      width * scale,
-      height * scale,
-      zone
-    );
+    const nudgedPosition = nudgeAwayFromZone(
+  x,
+  y,
+  width * scale,
+  height * scale,
+  zone
+);
+
+const position = keepPlannedPositionInView(
+  scan,
+  nudgedPosition.x,
+  nudgedPosition.y
+);
 
     return {
       scan,
       x: position.x,
       y: position.y,
       rotation: Math.random() * 18 - 9,
-    transition: "left 0.36s ease, top 0.36s ease, transform 0.36s ease"    };
+      transition:
+        "left 0.36s ease, top 0.36s ease, transform 0.36s ease"
+    };
   });
 
-  applyPlannedMoves(plans, 600);
+  applyPlannedMoves(plans, 390);
 }
 
 function surfaceObjects() {
@@ -443,24 +474,31 @@ function surfaceObjects() {
       Math.random() * 500 -
       250;
 
-    const position = nudgeAwayFromZone(
-      x,
-      y,
-      width * scale,
-      height * scale,
-      zone
-    );
+    const nudgedPosition = nudgeAwayFromZone(
+  x,
+  y,
+  width * scale,
+  height * scale,
+  zone
+);
+
+const position = keepPlannedPositionInView(
+  scan,
+  nudgedPosition.x,
+  nudgedPosition.y
+);
 
     return {
       scan,
       x: position.x,
       y: position.y,
       rotation: Math.random() * 26 - 13,
-      transition: "left 0.36s ease, top 0.36s ease, transform 0.36s ease"
+      transition:
+        "left 0.36s ease, top 0.36s ease, transform 0.36s ease"
     };
   });
 
-  applyPlannedMoves(plans, 600);
+  applyPlannedMoves(plans, 390);
 }
 
 function shakeBox(intensity = 1) {
@@ -493,13 +531,19 @@ function shakeBox(intensity = 1) {
       Math.random() * moveYAmount -
       moveYAmount / 2;
 
-    const position = nudgeAwayFromZone(
-      x,
-      y,
-      width * scale,
-      height * scale,
-      zone
-    );
+    const nudgedPosition = nudgeAwayFromZone(
+  x,
+  y,
+  width * scale,
+  height * scale,
+  zone
+);
+
+const position = keepPlannedPositionInView(
+  scan,
+  nudgedPosition.x,
+  nudgedPosition.y
+);
 
     return {
       scan,
@@ -509,10 +553,12 @@ function shakeBox(intensity = 1) {
         currentRotation +
         Math.random() * rotationAmount -
         rotationAmount / 2,
-        transition: "left 0.1s linear, top 0.1s linear, transform 0.1s linear"    };
+      transition:
+        "left 0.14s ease-out, top 0.14s ease-out, transform 0.14s ease-out"
+    };
   });
 
-  applyPlannedMoves(plans, 115);
+  applyPlannedMoves(plans, 155);
 }
 
 function startHeldShake() {
@@ -523,8 +569,8 @@ function startHeldShake() {
   shakeBox(getHeldShakeIntensity());
 
   heldShakeInterval = setInterval(() => {
-  shakeBox(getHeldShakeIntensity());
-  }, 105);
+    shakeBox(getHeldShakeIntensity());
+  }, 145);
 }
 
 function stopHeldShake() {

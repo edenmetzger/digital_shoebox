@@ -14,8 +14,8 @@ const IMAGE_FOLDER = "images-web";
 const SESSION_SHOWN_SCANS_KEY =
   "shoeboxSessionShownScans";
 
-const INTRO_DURATION = 6500;
-const INTRO_FADE_DURATION = 1000;
+const INTRO_DURATION = 1800;
+const INTRO_FADE_DURATION = 700;
 
 const DOUBLE_TAP_DELAY = 350;
 const TAP_MOVE_LIMIT = 10;

@@ -5,7 +5,7 @@ function initializeHelpToggle() {
     <p>drag to move</p>
     <p>scroll or pinch to resize</p>
     <p>double-click/tap twice to learn more</p>
-    <p>hold space for metadata</p>
+    <p>hold space for x-ray mode</p>
     <p>s shake the box</p>
     <p>hold s for chaos</p>
     <p>← spread left / spread right →</p>
@@ -14,7 +14,7 @@ function initializeHelpToggle() {
     <p>tab to center an object</p>
     <p>~ random memory</p>
     <p id="foundCounter">found 0 / 0 in this pile</p>
-    <p id="totalCounter">archive total: ${TOTAL_IMAGE_COUNT} objects</p>
+    <p id="totalCounter">pile: ${IMAGE_COUNT} / archive: ${TOTAL_IMAGE_COUNT}</p>
   `;
 
   helpToggle.addEventListener("click", (event) => {

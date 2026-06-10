@@ -19,41 +19,44 @@ function initializeMetadataMode() {
   });
 }
 
-function getMetadataText(filename) {
+function getMetadataText(filename, index = null) {
   const item = archiveData[filename];
 
   if (!item) {
-    return "unknown<br>object";
+    return index === null
+      ? "unknown object"
+      : `${index} / unknown object`;
   }
 
-  const lines = [
-    item.date || "unknown date",
+  const parts = [
     item.type || "object",
     item.category || "",
-    item.location || "",
-    item.source || ""
-  ];
+    item.date || "",
+    item.location || ""
+  ].filter((part) => part && part.trim() !== "");
 
-  return lines
-    .filter((line) => line && line.trim() !== "")
-    .join("<br>");
+  const label = parts.join(" / ");
+
+  if (index === null) return label;
+
+  return `${index} / ${label}`;
 }
 
-function getOrCreateMetadataLabel(scan) {
+function getOrCreateMetadataLabel(scan, index) {
   const filename = scan.dataset.filename;
 
   let label = document.querySelector(
     `.metadata-label[data-filename="${filename}"]`
   );
 
-  if (label) return label;
+  if (!label) {
+    label = document.createElement("div");
+    label.className = "metadata-label";
+    label.dataset.filename = filename;
+    workspace.appendChild(label);
+  }
 
-  label = document.createElement("div");
-  label.className = "metadata-label";
-  label.dataset.filename = filename;
-  label.innerHTML = getMetadataText(filename);
-
-  workspace.appendChild(label);
+  label.textContent = getMetadataText(filename, index);
 
   return label;
 }
@@ -68,14 +71,15 @@ function updateAllMetadataLabels() {
 
       return bZ - aZ;
     })
-    .slice(0, 7);
+    .slice(0, 12);
 
   document.querySelectorAll(".metadata-label").forEach((label) => {
     label.classList.remove("visible-metadata");
   });
 
-  topScans.forEach((scan) => {
-    const label = getOrCreateMetadataLabel(scan);
+  topScans.forEach((scan, index) => {
+    const labelNumber = String(index + 1).padStart(2, "0");
+    const label = getOrCreateMetadataLabel(scan, labelNumber);
 
     positionMetadataLabel(scan);
 
@@ -86,7 +90,11 @@ function updateAllMetadataLabels() {
 function positionMetadataLabel(scan) {
   if (!document.body.classList.contains("metadata-mode")) return;
 
-  const label = getOrCreateMetadataLabel(scan);
+  const label = document.querySelector(
+    `.metadata-label[data-filename="${scan.dataset.filename}"]`
+  );
+
+  if (!label) return;
 
   const left = parseFloat(scan.style.left) || 0;
   const top = parseFloat(scan.style.top) || 0;
@@ -96,7 +104,7 @@ function positionMetadataLabel(scan) {
   const scanHeight = scan.offsetHeight * scale;
 
   label.style.left = `${left + scanWidth / 2}px`;
-  label.style.top = `${top + scanHeight / 2}px`;
-  label.style.transform = "translate(-50%, -50%)";
+  label.style.top = `${top + scanHeight + 8}px`;
+  label.style.transform = "translateX(-50%)";
   label.style.zIndex = Number(scan.style.zIndex || 1) + 1;
 }
