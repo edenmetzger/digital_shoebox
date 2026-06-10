@@ -375,3 +375,8 @@ body.metadata-mode .scan:hover {
 
   cursor: pointer;
 }
+
+.scan.moving-pile {
+  transition: left 0.45s ease, top 0.45s ease, transform 0.45s ease;
+  will-change: left, top, transform;
+}

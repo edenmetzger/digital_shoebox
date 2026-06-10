@@ -280,6 +280,7 @@ function bringScanToCenter(scan) {
 function gatherObjects() {
   closeInfoCard();
   stopAllTossAnimations();
+  clearPileMotionClass();
 
   rifleDirection = null;
   rifleQueue = [];
@@ -304,8 +305,7 @@ function gatherObjects() {
 
     const position = nudgeAwayFromRadio(x, y, scan, scale);
 
-    scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+    scan.classList.add("moving-pile");
 
     scan.style.left = `${position.x}px`;
     scan.style.top = `${position.y}px`;
@@ -316,10 +316,6 @@ function gatherObjects() {
     if (document.body.classList.contains("metadata-mode")) {
       positionMetadataLabel(scan);
     }
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 600);
   });
 }
 
@@ -426,6 +422,7 @@ function moveRifledScan(scan, direction, index) {
 function surfaceObjects() {
   closeInfoCard();
   stopAllTossAnimations();
+  clearPileMotionClass();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
 
@@ -443,8 +440,7 @@ function surfaceObjects() {
 
     const position = nudgeAwayFromRadio(x, y, scan, scale);
 
-    scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+    scan.classList.add("moving-pile");
 
     scan.style.left = `${position.x}px`;
     scan.style.top = `${position.y}px`;
@@ -455,16 +451,13 @@ function surfaceObjects() {
     if (document.body.classList.contains("metadata-mode")) {
       positionMetadataLabel(scan);
     }
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 600);
   });
 }
 
 function shakeBox() {
   closeInfoCard();
   stopAllTossAnimations();
+  clearPileMotionClass();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
 
@@ -480,8 +473,7 @@ function shakeBox() {
 
     const position = nudgeAwayFromRadio(x, y, scan, scale);
 
-    scan.style.transition =
-      "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
+    scan.classList.add("moving-pile");
 
     scan.style.left = `${position.x}px`;
     scan.style.top = `${position.y}px`;
@@ -493,10 +485,6 @@ function shakeBox() {
     if (document.body.classList.contains("metadata-mode")) {
       positionMetadataLabel(scan);
     }
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 320);
   });
 }
 
@@ -580,4 +568,10 @@ function moveShakenScan(scan, index) {
   setTimeout(() => {
     scan.style.transition = "";
   }, 260);
+}
+
+function clearPileMotionClass() {
+  document.querySelectorAll(".scan.moving-pile").forEach((scan) => {
+    scan.classList.remove("moving-pile");
+  });
 }
