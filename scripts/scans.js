@@ -222,49 +222,45 @@ function surfaceObjects() {
 }
 
 function shakeBox() {
-  startChunkedShake();
+  startHeldShake();
 
   setTimeout(() => {
-    if (isShakingBox && shakeIntensity <= 1.05) {
-      stopChunkedShake();
+    if (isShakingBox) {
+      stopHeldShake();
     }
-  }, 320);
+  }, 520);
 }
 
 function startHeldShake() {
-  startChunkedShake();
-}
-
-function stopHeldShake() {
-  stopChunkedShake();
-}
-
-function startChunkedShake() {
-  if (isShakingBox) {
-    shakeIntensity = Math.min(shakeIntensity + 0.12, 2.8);
-    return;
-  }
+  if (isShakingBox) return;
 
   isShakingBox = true;
-  shakeIntensity = 1;
+  shakeStartedAt = performance.now();
   shakeGroupIndex = 0;
+  shakeWaveCount = 0;
 
   closeInfoCard();
   stopAllTossAnimations();
 
+  chooseShakeDirection();
   buildShakeGroups();
-  runShakeGroup();
+  runShakeWave();
 }
 
-function stopChunkedShake() {
+function stopHeldShake() {
   isShakingBox = false;
-  shakeIntensity = 1;
+  shakeStartedAt = 0;
   shakeGroupIndex = 0;
+  shakeWaveCount = 0;
 
   if (shakeTimeoutId) {
     clearTimeout(shakeTimeoutId);
     shakeTimeoutId = null;
   }
+
+  document.querySelectorAll(".scan").forEach((scan) => {
+    scan.style.transition = "";
+  });
 }
 
 function buildShakeGroups() {
@@ -272,7 +268,7 @@ function buildShakeGroups() {
 
   shuffle(scans);
 
-  const groupSize = 45;
+  const groupSize = 30;
   shakeGroups = [];
 
   for (let i = 0; i < scans.length; i += groupSize) {
@@ -280,29 +276,92 @@ function buildShakeGroups() {
   }
 }
 
-function runShakeGroup() {
+function chooseShakeDirection() {
+  const scans = Array.from(document.querySelectorAll(".scan"));
+
+  if (!scans.length) {
+    shakeDirectionX = Math.random() * 2 - 1;
+    shakeDirectionY = Math.random() * 2 - 1;
+    return;
+  }
+
+  let totalX = 0;
+  let totalY = 0;
+
+  scans.forEach((scan) => {
+    const scale = Number(scan.dataset.scale) || 1;
+    const x = parseFloat(scan.style.left) || 0;
+    const y = parseFloat(scan.style.top) || 0;
+
+    totalX += x + (scan.offsetWidth * scale) / 2;
+    totalY += y + (scan.offsetHeight * scale) / 2;
+  });
+
+  const averageX = totalX / scans.length;
+  const averageY = totalY / scans.length;
+
+  const viewportCenterX = window.innerWidth / 2;
+  const viewportCenterY = window.innerHeight / 2;
+
+  let directionX = viewportCenterX - averageX;
+  let directionY = viewportCenterY - averageY;
+
+  directionX += Math.random() * 0.8 - 0.4;
+  directionY += Math.random() * 0.8 - 0.4;
+
+  const distance =
+    Math.sqrt(directionX * directionX + directionY * directionY) || 1;
+
+  shakeDirectionX = directionX / distance;
+  shakeDirectionY = directionY / distance;
+}
+
+function getShakeIntensity() {
+  if (!shakeStartedAt) return 1;
+
+  const heldFor = performance.now() - shakeStartedAt;
+  const ramp = 1 + heldFor / 850;
+
+  return Math.min(3.2, ramp);
+}
+
+function runShakeWave() {
   if (!isShakingBox || !shakeGroups.length) return;
 
+  const intensity = getShakeIntensity();
   const group = shakeGroups[shakeGroupIndex];
 
+  const isClunkWave = shakeWaveCount % 9 === 0;
+  const waveForce = isClunkWave ? 1.75 : 1;
+
   group.forEach((scan) => {
-    moveScanForShake(scan, shakeIntensity);
+    moveScanForShake(scan, intensity, waveForce);
   });
 
   shakeGroupIndex++;
+  shakeWaveCount++;
 
   if (shakeGroupIndex >= shakeGroups.length) {
     shakeGroupIndex = 0;
-    shakeIntensity = Math.min(shakeIntensity + 0.08, 2.8);
+    chooseShakeDirection();
     buildShakeGroups();
   }
 
-  shakeTimeoutId = setTimeout(runShakeGroup, 55);
+  const nextDelay = isClunkWave
+    ? 62 + Math.random() * 24
+    : 28 + Math.random() * 22;
+
+  shakeTimeoutId = setTimeout(runShakeWave, nextDelay);
 }
 
-function moveScanForShake(scan, intensity) {
+function moveScanForShake(scan, intensity, waveForce) {
+  const transitionTime =
+    waveForce > 1
+      ? 0.22 + Math.random() * 0.08
+      : 0.13 + Math.random() * 0.07;
+
   scan.style.transition =
-    "left 0.16s linear, top 0.16s linear, transform 0.16s linear";
+    `left ${transitionTime}s ease-out, top ${transitionTime}s ease-out, transform ${transitionTime}s ease-out`;
 
   const scale = Number(scan.dataset.scale) || 1;
 
@@ -310,26 +369,34 @@ function moveScanForShake(scan, intensity) {
   const currentY = parseFloat(scan.style.top) || 0;
   const currentRotation = Number(scan.dataset.rotation) || 0;
 
-  const x =
-    currentX + (Math.random() * 46 - 23) * intensity;
+  const individualForce = 0.45 + Math.random() * 1.35;
 
-  const y =
-    currentY + (Math.random() * 36 - 18) * intensity;
+  const shoveX =
+    shakeDirectionX * (42 + Math.random() * 52) * intensity * waveForce * individualForce;
+
+  const shoveY =
+    shakeDirectionY * (34 + Math.random() * 44) * intensity * waveForce * individualForce;
+
+  const scatterX =
+    (Math.random() * 38 - 19) * intensity * waveForce;
+
+  const scatterY =
+    (Math.random() * 30 - 15) * intensity * waveForce;
+
+  const spin =
+    (Math.random() * 18 - 9) * intensity * waveForce * individualForce;
+
+  const x = currentX + shoveX + scatterX;
+  const y = currentY + shoveY + scatterY;
 
   const position =
     nudgeAwayFromRadio(x, y, scan, scale);
 
   scan.style.left = `${position.x}px`;
   scan.style.top = `${position.y}px`;
-
-  scan.dataset.rotation =
-    currentRotation + (Math.random() * 14 - 7) * intensity;
+  scan.dataset.rotation = currentRotation + spin;
 
   applyTransform(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 180);
 }
 
 function movePileBatch(actionType) {

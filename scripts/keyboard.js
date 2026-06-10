@@ -38,7 +38,10 @@ function initializeShoeboxControls() {
 
     if (event.key.toLowerCase() === "s") {
       event.preventDefault();
-      startHeldShake();
+
+      if (!event.repeat) {
+        startHeldShake();
+      }
     }
   });
 
