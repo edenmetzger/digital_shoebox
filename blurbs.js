@@ -2056,6 +2056,1191 @@ const archive = {
       "scan75.jpg",
       "scan90.jpg"
     ]
+  },
+  "scan92.jpg": {
+    "filename": "scan92.jpg",
+    "title": "spock trading card",
+    "description": "dave and busters star trek original series spock collectible card",
+    "category": "pop culture",
+    "type": "trading card",
+    "date": "",
+    "location": "",
+    "source": "Dave & Buster's",
+    "tags": [
+      "star trek,spock,collectible,arcade"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan93.jpg": {
+    "filename": "scan93.jpg",
+    "title": "iceland scent note card",
+    "description": "handwritten fragrance notes on a fischersund perfume card from iceland",
+    "category": "ephemera",
+    "type": "note",
+    "date": "",
+    "location": "",
+    "source": "Fischersund",
+    "tags": [
+      "iceland,perfume,handwritten,travel"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan94.jpg": {
+    "filename": "scan94.jpg",
+    "title": "shattuckite crystal label",
+    "description": "crystal shop identification card for shattuckite crystal",
+    "category": "found object",
+    "type": "label",
+    "date": "",
+    "location": "",
+    "source": "Crystal Farmacy",
+    "tags": [
+      "crystal,shattuckite,metaphysical,label"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan95.jpg": {
+    "filename": "scan95.jpg",
+    "title": "sugilite crystal label",
+    "description": "crystal shop identification card for sugilite crystal",
+    "category": "found object",
+    "type": "label",
+    "date": "",
+    "location": "",
+    "source": "Crystal Farmacy",
+    "tags": [
+      "crystal,sugilite,metaphysical,label"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan96.jpg": {
+    "filename": "scan96.jpg",
+    "title": "arcanine pokemon card",
+    "description": "2003 pokemon arcanine trading card from the expedition era",
+    "category": "pop culture",
+    "type": "trading card",
+    "date": "",
+    "location": "",
+    "source": "Pokémon",
+    "tags": [
+      "pokemon,arcanine,trading card,game"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan97.jpg": {
+    "filename": "scan97.jpg",
+    "title": "ametrine crystal label",
+    "description": "crystal shop identification card for ametrine crystal",
+    "category": "found object",
+    "type": "label",
+    "date": "",
+    "location": "",
+    "source": "Crystal Farmacy",
+    "tags": [
+      "crystal,ametrine,metaphysical,label"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan98.jpg": {
+    "filename": "scan98.jpg",
+    "title": "add to cart note",
+    "description": "small torn scrap of paper with add to cart written in blue marker",
+    "category": "ephemera",
+    "type": "note",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "shopping,handwritten,note,scrap"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan99.jpg": {
+    "filename": "scan99.jpg",
+    "title": "folk tree illustration",
+    "description": "folded illustration featuring a fruit tree birds and folkloric figures",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "folk art,tree,birds,illustration,fruit"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan100.jpg": {
+    "filename": "scan100.jpg",
+    "title": "pressed botanical print",
+    "description": "detailed botanical illustration of dried flowering stems and leaves",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "botanical,flowers,plants,nature,illustration"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan101.jpg": {
+    "filename": "scan101.jpg",
+    "title": "reykjavik city map",
+    "description": "foldout illustrated tourist map of downtown reykjavik iceland",
+    "category": "travel",
+    "type": "map",
+    "date": "",
+    "location": "",
+    "source": "Iceland",
+    "tags": [
+      "reykjavik,iceland,map,travel"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan102.jpg": {
+    "filename": "scan102.jpg",
+    "title": "iceland road trip map",
+    "description": "illustrated map of south and north iceland travel routes",
+    "category": "travel",
+    "type": "map",
+    "date": "",
+    "location": "",
+    "source": "Iceland",
+    "tags": [
+      "iceland,map,road trip,travel"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan103.jpg": {
+    "filename": "scan103.jpg",
+    "title": "eyes black print",
+    "description": "reproduction of eyes black painting by stan street from 2018",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "Stan Street",
+    "tags": [
+      "painting,portrait,art print,colorful"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan104.jpg": {
+    "filename": "scan104.jpg",
+    "title": "a24 performance still",
+    "description": "promotional image of a performer on stage from an a24 publication",
+    "category": "pop culture",
+    "type": "magazine clipping",
+    "date": "",
+    "location": "",
+    "source": "A24",
+    "tags": [
+      "film,music,performance,a24"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan105.jpg": {
+    "filename": "scan105.jpg",
+    "title": "michigan liquor age sign",
+    "description": "retail sign explaining legal drinking age requirements in michigan",
+    "category": "ephemera",
+    "type": "sign",
+    "date": "",
+    "location": "",
+    "source": "Michigan Licensed Beverage Association",
+    "tags": [
+      "michigan,sign,alcohol,retail"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan106.jpg": {
+    "filename": "scan106.jpg",
+    "title": "first friday poster",
+    "description": "hand drawn first friday event poster dated march 7 2025",
+    "category": "artwork",
+    "type": "poster",
+    "date": "",
+    "location": "",
+    "source": "Andie Peach",
+    "tags": [
+      "poster,first friday,community,event"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan107.jpg": {
+    "filename": "scan107.jpg",
+    "title": "snake wrapped hand print",
+    "description": "black and white illustration of a snake coiled around an open hand",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "snake,hand,illustration,black and white"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan108.jpg": {
+    "filename": "scan108.jpg",
+    "title": "greetings from nashville postcard",
+    "description": "vintage style nashville tennessee postcard graphic",
+    "category": "travel",
+    "type": "postcard",
+    "date": "",
+    "location": "",
+    "source": "Nashville",
+    "tags": [
+      "nashville,tennessee,postcard,travel"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan109.jpg": {
+    "filename": "scan109.jpg",
+    "title": "bridge at sunset print",
+    "description": "colorful illustration of a bridge over water beneath a sunset sky",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "bridge,sunset,illustration,landscape"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan110.jpg": {
+    "filename": "scan110.jpg",
+    "title": "kim chi signed poster",
+    "description": "signed promotional poster featuring drag performer kim chi",
+    "category": "pop culture",
+    "type": "poster",
+    "date": "",
+    "location": "",
+    "source": "Kim Chi",
+    "tags": [
+      "drag,kim chi,signed poster,lgbtq"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan111.jpg": {
+    "filename": "scan111.jpg",
+    "title": "the dj and mosh magazine clipping",
+    "description": "magazine clipping featuring the phrase the dj and mosh over a photograph",
+    "category": "pop culture",
+    "type": "magazine clipping",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "music,dj,mosh,magazine,clipping"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan112.jpg": {
+    "filename": "scan112.jpg",
+    "title": "michigan moustache hall of fame certificate",
+    "description": "certificate recognizing membership in the michigan moustache hall of fame from 1988",
+    "category": "ephemera",
+    "type": "certificate",
+    "date": "",
+    "location": "",
+    "source": "Michigan Moustache Hall of Fame",
+    "tags": [
+      "michigan,moustache,certificate,novelty"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan113.jpg": {
+    "filename": "scan113.jpg",
+    "title": "all seeing eye print",
+    "description": "vintage style illustration of a single eye surrounded by radiating lines",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "eye,occult,symbol,illustration"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan114.jpg": {
+    "filename": "scan114.jpg",
+    "title": "lodz fabryczna poster",
+    "description": "polish poster depicting an industrial factory cityscape with smokestacks",
+    "category": "artwork",
+    "type": "poster",
+    "date": "",
+    "location": "",
+    "source": "Ryszard Kaja",
+    "tags": [
+      "poland,poster,factory,industrial"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan115.jpg": {
+    "filename": "scan115.jpg",
+    "title": "so weiter card",
+    "description": "minimalist card printed with the german phrase so weiter and three raised dots",
+    "category": "ephemera",
+    "type": "card",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "german,text,minimal,conceptual"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan116.jpg": {
+    "filename": "scan116.jpg",
+    "title": "420 leaf drawing",
+    "description": "hand drawn cartoon cannabis leaf holding a small figure dated 4.20.20",
+    "category": "artwork",
+    "type": "drawing",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "420,cannabis,drawing,cartoon"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan117.jpg": {
+    "filename": "scan117.jpg",
+    "title": "crab with knife illustration",
+    "description": "black and white illustration of a crab carrying a kitchen knife",
+    "category": "artwork",
+    "type": "print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "crab,knife,illustration,humor"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan118.jpg": {
+    "filename": "scan118.jpg",
+    "title": "stress melting zine page",
+    "description": "illustrated zine page about anxiety and overthinking featuring a melting figure",
+    "category": "artwork",
+    "type": "zine page",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "anxiety,zine,mental health,illustration"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan119.jpg": {
+    "filename": "scan119.jpg",
+    "title": "childless billionaires cartoon",
+    "description": "new yorker cartoon about the cost of raising children from february 2025",
+    "category": "pop culture",
+    "type": "magazine clipping",
+    "date": "",
+    "location": "",
+    "source": "The New Yorker",
+    "tags": [
+      "new yorker,cartoon,children,satire"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan120.jpg": {
+    "filename": "scan120.jpg",
+    "title": "greetings from detroit postcard",
+    "description": "vintage style postcard celebrating detroit michigan as the motor capital of the world",
+    "category": "travel",
+    "type": "postcard",
+    "date": "",
+    "location": "",
+    "source": "Detroit",
+    "tags": [
+      "detroit,michigan,postcard,travel"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan121.jpg": {
+    "filename": "scan121.jpg",
+    "title": "ramones beat on the brat flyer",
+    "description": "red and black punk style ramones graphic featuring beat on the brat",
+    "category": "music",
+    "type": "flyer",
+    "date": "",
+    "location": "",
+    "source": "Ramones",
+    "tags": [
+      "punk,ramones,music,flyer,concert"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan122.jpg": {
+    "filename": "scan122.jpg",
+    "title": "lizard with lime and shot",
+    "description": "photograph of a lounging lizard with a lime wedge and drink on a red booth",
+    "category": "pop culture",
+    "type": "photograph",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "lizard,reptile,humor,drink"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan123.jpg": {
+    "filename": "scan123.jpg",
+    "title": "a letter about rage artist statement",
+    "description": "typed artist statement reflecting on rage creativity and self preservation",
+    "category": "writing",
+    "type": "artist statement",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "rage,writing,artist statement,reflection"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan124.jpg": {
+    "filename": "scan124.jpg",
+    "title": "camille thank you note",
+    "description": "handwritten note from artist camille thanking eden for support and purchase",
+    "category": "correspondence",
+    "type": "letter",
+    "date": "",
+    "location": "",
+    "source": "Camille",
+    "tags": [
+      "letter,artist,thank you,handwritten"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan125.jpg": {
+    "filename": "scan125.jpg",
+    "title": "fischersund no 8 fragrance card",
+    "description": "scent description card for fischersund no 8 fragrance in icelandic",
+    "category": "ephemera",
+    "type": "fragrance card",
+    "date": "",
+    "location": "",
+    "source": "Fischersund",
+    "tags": [
+      "perfume,fragrance,icelandic,scent"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan126.jpg": {
+    "filename": "scan126.jpg",
+    "title": "eden squishdate tag",
+    "description": "collectible squishmallows hang tag featuring the name eden and a character biography",
+    "category": "ephemera",
+    "type": "tag",
+    "date": "",
+    "location": "",
+    "source": "Squishmallows",
+    "tags": [
+      "eden,squishmallows,toy,tag"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan127.jpg": {
+    "filename": "scan127.jpg",
+    "title": "hot sass cash scratch ticket",
+    "description": "novelty scratch off card promising hot sass cash and humorous prizes",
+    "category": "ephemera",
+    "type": "novelty card",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "scratch off,novelty,humor,prize"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan128.jpg": {
+    "filename": "scan128.jpg",
+    "title": "frog with knife drawing",
+    "description": "simple black ink drawing of a frog holding a knife",
+    "category": "artwork",
+    "type": "drawing",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "frog,knife,doodle,drawing"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan129.jpg": {
+    "filename": "scan129.jpg",
+    "title": "ivo doodle napkin",
+    "description": "small napkin doodle of a smiling character labeled ivo",
+    "category": "artwork",
+    "type": "doodle",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "doodle,napkin,ivo,cartoon"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan130.jpg": {
+    "filename": "scan130.jpg",
+    "title": "love you note",
+    "description": "handwritten note reading love you xoxo on pale paper",
+    "category": "correspondence",
+    "type": "note",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "love,note,handwritten,xoxo"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan131.jpg": {
+    "filename": "scan131.jpg",
+    "title": "die sonne scheint poem card",
+    "description": "german poem card about sunshine growth and inner strength with smiling sun illustration",
+    "category": "writing",
+    "type": "poem",
+    "date": "",
+    "location": "",
+    "source": "Frances Hodgson Burnett",
+    "tags": [
+      "german,poem,sunshine,inspiration"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan132.jpg": {
+    "filename": "scan132.jpg",
+    "title": "suss ist's den reiz der welt poem card",
+    "description": "german poem card about seeing the world through a child's eyes with flower illustration",
+    "category": "writing",
+    "type": "poem",
+    "date": "",
+    "location": "",
+    "source": "Emanuel Geibel",
+    "tags": [
+      "german,poem,childhood,wonder"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan133.jpg": {
+    "filename": "scan133.jpg",
+    "title": "wie die zarten blumen poem card",
+    "description": "german poem card about flowers unfolding and receiving sunlight with flowering branch illustration",
+    "category": "writing",
+    "type": "poem",
+    "date": "",
+    "location": "",
+    "source": "Gerhard Tersteegen",
+    "tags": [
+      "german,poem,flowers,nature"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan134.jpg": {
+    "filename": "scan134.jpg",
+    "title": "beech mountain resort lift ticket",
+    "description": "ski resort lift ticket featuring topographic contour line design",
+    "category": "travel",
+    "type": "ticket",
+    "date": "",
+    "location": "",
+    "source": "Beech Mountain Resort",
+    "tags": [
+      "skiing,resort,ticket,topography"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan135.jpg": {
+    "filename": "scan135.jpg",
+    "title": "oceanografic valencia photo claim ticket",
+    "description": "claim ticket for souvenir photo pickup at oceanografic valencia",
+    "category": "travel",
+    "type": "ticket",
+    "date": "",
+    "location": "",
+    "source": "Oceanogràfic Valencia",
+    "tags": [
+      "valencia,aquarium,photo,ticket"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan136.jpg": {
+    "filename": "scan136.jpg",
+    "title": "montserrat funicular ticket",
+    "description": "ticket for the montserrat rack railway and funicular system in catalonia",
+    "category": "travel",
+    "type": "ticket",
+    "date": "",
+    "location": "",
+    "source": "FGC Montserrat",
+    "tags": [
+      "spain,montserrat,train,funicular"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan137.jpg": {
+    "filename": "scan137.jpg",
+    "title": "country music hall of fame hatch print tour ticket",
+    "description": "admission ticket for the hatch show print tour at the country music hall of fame",
+    "category": "travel",
+    "type": "ticket",
+    "date": "",
+    "location": "",
+    "source": "Country Music Hall of Fame",
+    "tags": [
+      "nashville,museum,ticket,music"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan138.jpg": {
+    "filename": "scan138.jpg",
+    "title": "party frog doodle",
+    "description": "black ink drawing of a frog wearing a party hat",
+    "category": "artwork",
+    "type": "drawing",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "frog,party,doodle,illustration"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan139.jpg": {
+    "filename": "scan139.jpg",
+    "title": "roshen candy wrapper",
+    "description": "yellow floral wrapper from roshen confectionery candy",
+    "category": "ephemera",
+    "type": "packaging",
+    "date": "",
+    "location": "",
+    "source": "Roshen",
+    "tags": [
+      "candy,wrapper,ukraine,packaging"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan140.jpg": {
+    "filename": "scan140.jpg",
+    "title": "keith haring sticker",
+    "description": "small sticker featuring a keith haring style dancing figure on a pink background",
+    "category": "artwork",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Keith Haring",
+    "tags": [
+      "sticker,art,pop art,figure"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan141.jpg": {
+    "filename": "scan141.jpg",
+    "title": "bazooka joe fortune comic",
+    "description": "bazooka joe comic strip wrapper with fortune about becoming a celebrated traveler",
+    "category": "ephemera",
+    "type": "candy wrapper",
+    "date": "",
+    "location": "",
+    "source": "Bazooka Joe",
+    "tags": [
+      "gum,comic,fortune,nostalgia"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan142.jpg": {
+    "filename": "scan142.jpg",
+    "title": "rakovye sheiki candy wrapper",
+    "description": "russian candy wrapper featuring pink crayfish illustrations and cyrillic text",
+    "category": "ephemera",
+    "type": "packaging",
+    "date": "",
+    "location": "",
+    "source": "Red October",
+    "tags": [
+      "russia,candy,wrapper,crayfish"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan143.jpg": {
+    "filename": "scan143.jpg",
+    "title": "coda tasting menu menu page",
+    "description": "experimental tasting menu featuring caviar popsicle tomato and cacao courses",
+    "category": "food",
+    "type": "menu",
+    "date": "",
+    "location": "",
+    "source": "CODA Berlin",
+    "tags": [
+      "restaurant,tasting menu,berlin,fine dining"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan144.jpg": {
+    "filename": "scan144.jpg",
+    "title": "coda tasting menu second page",
+    "description": "menu page listing gummy bear rhubarb eggplant and raclette waffle courses",
+    "category": "food",
+    "type": "menu",
+    "date": "",
+    "location": "",
+    "source": "CODA Berlin",
+    "tags": [
+      "restaurant,tasting menu,dessert,berlin"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan145.jpg": {
+    "filename": "scan145.jpg",
+    "title": "everybody is doing it in michigan postcard",
+    "description": "vintage promotional postcard encouraging travel and tourism in michigan",
+    "category": "ephemera",
+    "type": "postcard",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "michigan,vintage,travel,pennant"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan146.jpg": {
+    "filename": "scan146.jpg",
+    "title": "animal bar scene illustration",
+    "description": "whimsical illustration of anthropomorphic animals gathered at a bar",
+    "category": "artwork",
+    "type": "illustration",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "animals,bar,cartoon,party"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan147.jpg": {
+    "filename": "scan147.jpg",
+    "title": "the catbird seat menu signed",
+    "description": "signed tasting menu from the catbird seat featuring seasonal multi course dinner",
+    "category": "food",
+    "type": "menu",
+    "date": "",
+    "location": "",
+    "source": "The Catbird Seat",
+    "tags": [
+      "nashville,tasting menu,fine dining,signed"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan148.jpg": {
+    "filename": "scan148.jpg",
+    "title": "june birthday dinner menu",
+    "description": "personalized birthday tasting menu from march 2024 at june restaurant",
+    "category": "food",
+    "type": "menu",
+    "date": "",
+    "location": "",
+    "source": "June",
+    "tags": [
+      "birthday,restaurant,menu,nashville"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan149.jpg": {
+    "filename": "scan149.jpg",
+    "title": "tennessee must pegasus collage",
+    "description": "handmade collage featuring newspaper clippings and a photo arranged into a surreal headline",
+    "category": "artwork",
+    "type": "collage",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "collage,pegasus,tennessee,newspaper"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan150.jpg": {
+    "filename": "scan150.jpg",
+    "title": "nashville punk rock flea market poster",
+    "description": "illustrated poster advertising the nashville punk rock flea market at eastside bowl",
+    "category": "ephemera",
+    "type": "flyer",
+    "date": "",
+    "location": "",
+    "source": "Nashville Punk Rock Flea Market",
+    "tags": [
+      "poster,punk,nashville,event"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan151.jpg": {
+    "filename": "scan151.jpg",
+    "title": "rock n roll half marathon bib",
+    "description": "race bib from the st jude rock n roll half marathon in nashville",
+    "category": "ephemera",
+    "type": "race bib",
+    "date": "",
+    "location": "",
+    "source": "Rock 'n' Roll Running Series",
+    "tags": [
+      "running,half marathon,nashville,st jude"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan152.jpg": {
+    "filename": "scan152.jpg",
+    "title": "co berlin napkin",
+    "description": "paper napkin from co berlin museum or cultural institution",
+    "category": "ephemera",
+    "type": "memorabilia",
+    "date": "",
+    "location": "",
+    "source": "C/O Berlin",
+    "tags": [
+      "berlin,museum,design,travel"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan153.jpg": {
+    "filename": "scan153.jpg",
+    "title": "kunst ist schön postcard bag",
+    "description": "german postcard shop bag printed with karl valentin quote about art and work",
+    "category": "ephemera",
+    "type": "bag",
+    "date": "",
+    "location": "",
+    "source": "Karl Valentin",
+    "tags": [
+      "german,art,quote,berlin"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan154.jpg": {
+    "filename": "scan154.jpg",
+    "title": "rainbow butterfly spinner",
+    "description": "psychedelic butterfly shaped spinner or decorative toy with rainbow gradient design",
+    "category": "object",
+    "type": "toy",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "butterfly,rainbow,toy,psychedelic"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan155.jpg": {
+    "filename": "scan155.jpg",
+    "title": "tasting menu scorecard",
+    "description": "hand marked dining scorecard evaluating courses from a tasting menu experience",
+    "category": "food",
+    "type": "memorabilia",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "restaurant,tasting menu,ratings,notes"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan156.jpg": {
+    "filename": "scan156.jpg",
+    "title": "new yorker office cartoon",
+    "description": "printed new yorker cartoon by amy hwang about looking busy to avoid helping others",
+    "category": "ephemera",
+    "type": "cartoon",
+    "date": "",
+    "location": "",
+    "source": "The New Yorker",
+    "tags": [
+      "cartoon,office,humor,new yorker"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan157.jpg": {
+    "filename": "scan157.jpg",
+    "title": "alebrijes exhibit placard",
+    "description": "informational exhibit text explaining the history and cultural origins of alebrijes",
+    "category": "ephemera",
+    "type": "placard",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "mexico,alebrijes,folk art,museum"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan158.jpg": {
+    "filename": "scan158.jpg",
+    "title": "new york times crossword page",
+    "description": "new york times crossword puzzle page dated march 20 2025",
+    "category": "ephemera",
+    "type": "newspaper clipping",
+    "date": "",
+    "location": "",
+    "source": "The New York Times",
+    "tags": [
+      "crossword,puzzle,newspaper,2025"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan159.jpg": {
+    "filename": "scan159.jpg",
+    "title": "glerb collage fragment",
+    "description": "small collage element featuring a cartoon character saying glerb on red patterned paper",
+    "category": "artwork",
+    "type": "collage",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "collage,cartoon,humor,found paper"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan160.jpg": {
+    "filename": "scan160.jpg",
+    "title": "happy birthday crow card",
+    "description": "greeting card featuring crows in top hats and fans with birthday message",
+    "category": "ephemera",
+    "type": "greeting card",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "birthday,crows,greeting card,illustration"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan161.jpg": {
+    "filename": "scan161.jpg",
+    "title": "zingermans reuben sticker",
+    "description": "sticker from zingermans delicatessen celebrating its famous reuben sandwiches",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Zingerman's Delicatessen",
+    "tags": [
+      "food,sticker,reuben,deli"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan162.jpg": {
+    "filename": "scan162.jpg",
+    "title": "yo quiero baja burrito sticker",
+    "description": "black and white promotional sticker for baja burrito restaurant",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Baja Burrito",
+    "tags": [
+      "nashville,restaurant,sticker,food"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan163.jpg": {
+    "filename": "scan163.jpg",
+    "title": "chicago revolution brewing sticker",
+    "description": "square sticker from revolution brewing featuring a stylized red star and grain graphic",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Revolution Brewing",
+    "tags": [
+      "chicago,beer,brewery,sticker"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan164.jpg": {
+    "filename": "scan164.jpg",
+    "title": "grimeys record store sticker",
+    "description": "sticker from grimeys new and pre loved music and books in nashville",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Grimey's",
+    "tags": [
+      "music,record store,nashville,sticker"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan165.jpg": {
+    "filename": "scan165.jpg",
+    "title": "rabbit rabbit carrot sticker",
+    "description": "sticker from rabbit rabbit in asheville featuring an illustrated carrot",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Rabbit Rabbit",
+    "tags": [
+      "asheville,sticker,carrot,venue"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan166.jpg": {
+    "filename": "scan166.jpg",
+    "title": "safelight berlin postcard",
+    "description": "spongebob themed postcard or promotional card from safelight berlin photography shop",
+    "category": "ephemera",
+    "type": "postcard",
+    "date": "",
+    "location": "",
+    "source": "Safelight Berlin",
+    "tags": [
+      "berlin,photography,spongebob,postcard"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan167.jpg": {
+    "filename": "scan167.jpg",
+    "title": "fannys house of music card",
+    "description": "illustrated promotional card from fanny's house of music in nashville",
+    "category": "ephemera",
+    "type": "card",
+    "date": "",
+    "location": "",
+    "source": "Fanny's House of Music",
+    "tags": [
+      "music,nashville,guitar,shop"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan168.jpg": {
+    "filename": "scan168.jpg",
+    "title": "hatch show print sticker",
+    "description": "round red sticker from hatch show print in nashville",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "Hatch Show Print",
+    "tags": [
+      "nashville,letterpress,sticker,design"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan169.jpg": {
+    "filename": "scan169.jpg",
+    "title": "the taue vine record shop sticker",
+    "description": "sticker from the taue vine record shop",
+    "category": "ephemera",
+    "type": "sticker",
+    "date": "",
+    "location": "",
+    "source": "The Taue Vine Record Shop",
+    "tags": [
+      "music,records,sticker,shop"
+    ],
+    "note": "",
+    "related": []
+  },
+  "scan170.jpg": {
+    "filename": "scan170.jpg",
+    "title": "bird in hand sketch card",
+    "description": "illustrated card depicting a communal table at bird in hand bookstore cafe in baltimore",
+    "category": "ephemera",
+    "type": "illustration",
+    "date": "",
+    "location": "",
+    "source": "Bird in Hand",
+    "tags": [
+      "baltimore,books,cafe,community"
+    ],
+    "note": "",
+    "related": []
   }
 };
 
