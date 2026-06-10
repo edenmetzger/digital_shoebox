@@ -2,6 +2,38 @@ let pileActionType = null;
 let pileQueue = [];
 let pileCursor = 0;
 
+function animateScanToPosition(scan, x, y, rotation, duration = 550) {
+  const currentX = parseFloat(scan.style.left) || 0;
+  const currentY = parseFloat(scan.style.top) || 0;
+
+  scan.dataset.translateX = x - currentX;
+  scan.dataset.translateY = y - currentY;
+  scan.dataset.rotation = rotation;
+
+  applyTransform(scan);
+
+  setTimeout(() => {
+    const previousTransition = scan.style.transition;
+
+    scan.style.transition = "none";
+
+    scan.style.left = `${x}px`;
+    scan.style.top = `${y}px`;
+    scan.dataset.translateX = 0;
+    scan.dataset.translateY = 0;
+
+    applyTransform(scan);
+
+    scan.offsetHeight;
+
+    scan.style.transition = previousTransition;
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
+  }, duration);
+}
+
 function initializeScans() {
   shuffle(imagePaths);
 
@@ -56,6 +88,8 @@ function createScan(imagePath, index) {
   scan.dataset.vx = 0;
   scan.dataset.vy = 0;
   scan.dataset.spin = 0;
+  scan.dataset.translateX = 0;
+  scan.dataset.translateY = 0;
 
   workspace.appendChild(scan);
 
@@ -116,6 +150,8 @@ function randomizeImage(scan, index) {
   scan.dataset.vx = 0;
   scan.dataset.vy = 0;
   scan.dataset.spin = 0;
+  scan.dataset.translateX = 0;
+  scan.dataset.translateY = 0;
   scan.style.zIndex = index + 1;
 
   applyTransform(scan);
@@ -156,24 +192,29 @@ function showRandomMemory() {
     const startY = parseFloat(scan.style.top) || 0;
     const direction = index % 2 === 0 ? -1 : 1;
 
-    scan.style.transition =
-      "left 0.22s ease, top 0.22s ease";
+    scan.style.transition = "transform 0.22s ease";
 
-    scan.style.left = `${startX + direction * (8 + index * 3)}px`;
-    scan.style.top = `${startY + 3}px`;
+    const originalRotation = Number(scan.dataset.rotation) || 0;
+
+    animateScanToPosition(
+      scan,
+      startX + direction * (8 + index * 3),
+      startY + 3,
+      originalRotation,
+      220
+    );
 
     setTimeout(() => {
-      scan.style.left = `${startX}px`;
-      scan.style.top = `${startY}px`;
-
-      setTimeout(() => {
-        scan.style.transition = "";
-      }, 240);
+      animateScanToPosition(scan, startX, startY, originalRotation, 220);
     }, 160);
+
+    setTimeout(() => {
+      scan.style.transition = "";
+    }, 420);
   });
 
   randomScan.style.transition =
-    "left 0.46s cubic-bezier(.2, 1.35, .35, 1), top 0.46s cubic-bezier(.2, 1.35, .35, 1), transform 0.46s cubic-bezier(.2, 1.35, .35, 1)";
+    "transform 0.46s cubic-bezier(.2, 1.35, .35, 1)";
 
   const scale = Number(randomScan.dataset.scale) || 1;
 
@@ -192,19 +233,20 @@ function showRandomMemory() {
 
   const rotation = Math.random() * 8 - 4;
 
-  randomScan.style.left = `${position.x}px`;
-  randomScan.style.top = `${position.y - 12}px`;
-  randomScan.dataset.rotation = rotation;
   randomScan.dataset.vx = 0;
   randomScan.dataset.vy = 0;
   randomScan.dataset.spin = 0;
 
-  applyTransform(randomScan);
-  positionMetadataLabel(randomScan);
+  animateScanToPosition(
+    randomScan,
+    position.x,
+    position.y - 12,
+    rotation,
+    460
+  );
 
   setTimeout(() => {
-    randomScan.style.top = `${position.y}px`;
-    positionMetadataLabel(randomScan);
+    animateScanToPosition(randomScan, position.x, position.y, rotation, 280);
   }, 180);
 
   setTimeout(() => {
@@ -254,7 +296,7 @@ function bringScanToCenter(scan) {
   bringScanToFront(scan);
 
   scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+    "transform 0.55s ease";
 
   const scale = Number(scan.dataset.scale) || 1;
 
@@ -271,15 +313,11 @@ function bringScanToCenter(scan) {
 
   const rotation = Math.random() * 10 - 5;
 
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = rotation;
   scan.dataset.vx = 0;
   scan.dataset.vy = 0;
   scan.dataset.spin = 0;
 
-  applyTransform(scan);
-  positionMetadataLabel(scan);
+  animateScanToPosition(scan, position.x, position.y, rotation, 550);
 
   setTimeout(() => {
     scan.style.transition = "";
@@ -305,7 +343,7 @@ function gatherObjects() {
 
   scans.forEach((scan, index) => {
     scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+      "transform 0.55s ease";
 
     const scale = Number(scan.dataset.scale) || 1;
 
@@ -334,9 +372,8 @@ function gatherObjects() {
     const position =
       nudgeAwayFromRadio(x, y, scan, scale);
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = Math.random() * 18 - 9;
+    const rotation = Math.random() * 18 - 9;
+
     scan.dataset.vx = 0;
     scan.dataset.vy = 0;
     scan.dataset.spin = 0;
@@ -344,11 +381,7 @@ function gatherObjects() {
     topZ++;
     scan.style.zIndex = topZ + index;
 
-    applyTransform(scan);
-
-    if (document.body.classList.contains("metadata-mode")) {
-      positionMetadataLabel(scan);
-    }
+    animateScanToPosition(scan, position.x, position.y, rotation, 550);
 
     setTimeout(() => {
       scan.style.transition = "";
@@ -371,7 +404,7 @@ function surfaceObjects() {
 
   scans.forEach((scan, index) => {
     scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+      "transform 0.55s ease";
 
     const scale = Number(scan.dataset.scale) || 1;
 
@@ -391,9 +424,8 @@ function surfaceObjects() {
     const position =
       nudgeAwayFromRadio(x, y, scan, scale);
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = Math.random() * 26 - 13;
+    const rotation = Math.random() * 26 - 13;
+
     scan.dataset.vx = 0;
     scan.dataset.vy = 0;
     scan.dataset.spin = 0;
@@ -401,11 +433,7 @@ function surfaceObjects() {
     topZ++;
     scan.style.zIndex = topZ + index;
 
-    applyTransform(scan);
-
-    if (document.body.classList.contains("metadata-mode")) {
-      positionMetadataLabel(scan);
-    }
+    animateScanToPosition(scan, position.x, position.y, rotation, 550);
 
     setTimeout(() => {
       scan.style.transition = "";
@@ -421,7 +449,7 @@ function shakeBox() {
 
   scans.forEach((scan, index) => {
     scan.style.transition =
-      "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
+      "transform 0.34s cubic-bezier(.2, 1.15, .35, 1)";
 
     const scale = Number(scan.dataset.scale) || 1;
 
@@ -429,9 +457,9 @@ function shakeBox() {
     const currentY = parseFloat(scan.style.top) || 0;
     const currentRotation = Number(scan.dataset.rotation) || 0;
 
-    const shakeX = Math.random() * 70 - 35;
-    const shakeY = Math.random() * 50 - 25;
-    const rotationShift = Math.random() * 18 - 9;
+    const shakeX = Math.random() * 150 - 75;
+    const shakeY = Math.random() * 110 - 55;
+    const rotationShift = Math.random() * 26 - 13;
 
     const position =
       nudgeAwayFromRadio(
@@ -441,9 +469,8 @@ function shakeBox() {
         scale
       );
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = currentRotation + rotationShift;
+    const rotation = currentRotation + rotationShift;
+
     scan.dataset.vx = 0;
     scan.dataset.vy = 0;
     scan.dataset.spin = 0;
@@ -451,15 +478,11 @@ function shakeBox() {
     topZ++;
     scan.style.zIndex = topZ + index;
 
-    applyTransform(scan);
-
-    if (document.body.classList.contains("metadata-mode")) {
-      positionMetadataLabel(scan);
-    }
+    animateScanToPosition(scan, position.x, position.y, rotation, 340);
 
     setTimeout(() => {
       scan.style.transition = "";
-    }, 320);
+    }, 390);
   });
 }
 
@@ -518,7 +541,7 @@ function movePileBatch(actionType) {
 
 function moveGatheredScan(scan, index) {
   scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+    "transform 0.55s ease";
 
   const scale = Number(scan.dataset.scale) || 1;
   const scans = Array.from(document.querySelectorAll(".scan"));
@@ -544,9 +567,8 @@ function moveGatheredScan(scan, index) {
   const position =
     nudgeAwayFromRadio(x, y, scan, scale);
 
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = Math.random() * 18 - 9;
+  const rotation = Math.random() * 18 - 9;
+
   scan.dataset.vx = 0;
   scan.dataset.vy = 0;
   scan.dataset.spin = 0;
@@ -554,11 +576,7 @@ function moveGatheredScan(scan, index) {
   topZ++;
   scan.style.zIndex = topZ + index;
 
-  applyTransform(scan);
-
-  if (document.body.classList.contains("metadata-mode")) {
-    positionMetadataLabel(scan);
-  }
+  animateScanToPosition(scan, position.x, position.y, rotation, 550);
 
   setTimeout(() => {
     scan.style.transition = "";
@@ -567,7 +585,7 @@ function moveGatheredScan(scan, index) {
 
 function moveSurfacedScan(scan, index) {
   scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+    "transform 0.55s ease";
 
   const scale = Number(scan.dataset.scale) || 1;
 
@@ -589,9 +607,8 @@ function moveSurfacedScan(scan, index) {
   const position =
     nudgeAwayFromRadio(x, y, scan, scale);
 
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = Math.random() * 26 - 13;
+  const rotation = Math.random() * 26 - 13;
+
   scan.dataset.vx = 0;
   scan.dataset.vy = 0;
   scan.dataset.spin = 0;
@@ -599,11 +616,7 @@ function moveSurfacedScan(scan, index) {
   topZ++;
   scan.style.zIndex = topZ + index;
 
-  applyTransform(scan);
-
-  if (document.body.classList.contains("metadata-mode")) {
-    positionMetadataLabel(scan);
-  }
+  animateScanToPosition(scan, position.x, position.y, rotation, 550);
 
   setTimeout(() => {
     scan.style.transition = "";
@@ -665,7 +678,7 @@ function rifleObjects(direction) {
 
 function moveRifledScan(scan, direction, index) {
   scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+    "transform 0.55s ease";
 
   const scale = Number(scan.dataset.scale) || 1;
 
@@ -699,9 +712,6 @@ function moveRifledScan(scan, direction, index) {
       ? Math.random() * 34 - 26
       : Math.random() * 34 - 8;
 
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = rotation;
   scan.dataset.vx = 0;
   scan.dataset.vy = 0;
   scan.dataset.spin = 0;
@@ -709,11 +719,7 @@ function moveRifledScan(scan, direction, index) {
   topZ++;
   scan.style.zIndex = topZ + index;
 
-  applyTransform(scan);
-
-  if (document.body.classList.contains("metadata-mode")) {
-    positionMetadataLabel(scan);
-  }
+  animateScanToPosition(scan, position.x, position.y, rotation, 550);
 
   setTimeout(() => {
     scan.style.transition = "";
