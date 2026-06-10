@@ -56,22 +56,19 @@ function getFoundObjects() {
 }
 
 function updateFoundCounter() {
-  if (!foundCounter) return;
-
-  const visibleFilenames = imagePaths.map((path) =>
-    path.split("/").pop()
-  );
+  const counter = document.getElementById("foundCounter");
+  if (!counter) return;
 
   const found = getFoundObjects().filter((filename) =>
-    visibleFilenames.includes(filename)
+    activeScanFilenames.includes(filename)
   );
 
-  const percentage = visibleFilenames.length
-    ? Math.round((found.length / visibleFilenames.length) * 100)
+  const percentage = activeScanFilenames.length
+    ? Math.round((found.length / activeScanFilenames.length) * 100)
     : 0;
 
-  foundCounter.textContent =
-    `found ${found.length} / ${visibleFilenames.length} (${percentage}%)`;
+  counter.textContent =
+    `found ${found.length} / ${activeScanFilenames.length} in this pile (${percentage}%)`;
 }
 
 function renderNote(objectInfo) {
@@ -103,12 +100,18 @@ function renderRelatedObjects(objectInfo) {
     return;
   }
 
+  const availableRelated = objectInfo.related.filter((filename) =>
+    document.querySelector(`.scan[data-filename="${filename}"]`)
+  );
+
+  if (!availableRelated.length) return;
+
   const heading = document.createElement("div");
   heading.className = "related-heading";
-  heading.textContent = "related objects";
+  heading.textContent = "related objects in this pile";
   relatedObjects.appendChild(heading);
 
-  objectInfo.related.forEach((filename) => {
+  availableRelated.forEach((filename) => {
     const relatedItem = archiveData[filename];
     const relatedScan = document.querySelector(
       `.scan[data-filename="${filename}"]`

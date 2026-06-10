@@ -39,11 +39,8 @@ function nudgeAwayFromZone(x, y, width, height, zone) {
 }
 
 function applyPlannedMoves(plans, duration) {
-  const baseZ = topZ;
-  topZ += plans.length;
-
   requestAnimationFrame(() => {
-    plans.forEach((plan, index) => {
+    plans.forEach((plan) => {
       const scan = plan.scan;
 
       scan.style.transition = plan.transition;
@@ -53,7 +50,6 @@ function applyPlannedMoves(plans, duration) {
       scan.dataset.vx = 0;
       scan.dataset.vy = 0;
       scan.dataset.spin = 0;
-      scan.style.zIndex = baseZ + index + 1;
 
       applyTransform(scan);
       positionMetadataLabel(scan);
@@ -395,8 +391,7 @@ function gatherObjects() {
       x: position.x,
       y: position.y,
       rotation: Math.random() * 18 - 9,
-      transition: "left 0.55s ease, top 0.55s ease, transform 0.55s ease"
-    };
+    transition: "left 0.36s ease, top 0.36s ease, transform 0.36s ease"    };
   });
 
   applyPlannedMoves(plans, 600);
@@ -446,7 +441,7 @@ function surfaceObjects() {
       x: position.x,
       y: position.y,
       rotation: Math.random() * 26 - 13,
-      transition: "left 0.55s ease, top 0.55s ease, transform 0.55s ease"
+      transition: "left 0.36s ease, top 0.36s ease, transform 0.36s ease"
     };
   });
 
@@ -485,7 +480,7 @@ function shakeBox() {
       x: position.x,
       y: position.y,
       rotation: currentRotation + Math.random() * 26 - 13,
-      transition: "left 0.28s ease, top 0.28s ease, transform 0.28s ease"
+      transition: "left 0.22s ease, top 0.22s ease, transform 0.22s ease"
     };
   });
 

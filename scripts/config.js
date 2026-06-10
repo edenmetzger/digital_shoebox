@@ -1,10 +1,15 @@
 const archiveData =
   typeof archive !== "undefined" ? archive : blurbs;
 
-const IMAGE_COUNT = Object.keys(archiveData).length;
+const TOTAL_IMAGE_COUNT = Object.keys(archiveData).length;
+const ACTIVE_SCAN_COUNT = 70;
+
+const IMAGE_COUNT = Math.min(ACTIVE_SCAN_COUNT, TOTAL_IMAGE_COUNT);
 const IMAGE_FOLDER = "images-web";
 
-const INTRO_DURATION = 3500;
+const SESSION_SHOWN_SCANS_KEY = "shoeboxSessionShownScans";
+
+const INTRO_DURATION = 6500;
 const INTRO_FADE_DURATION = 1000;
 
 const DOUBLE_TAP_DELAY = 350;
