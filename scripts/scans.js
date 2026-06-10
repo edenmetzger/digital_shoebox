@@ -2,6 +2,69 @@ let pileActionType = null;
 let pileQueue = [];
 let pileCursor = 0;
 
+function getRadioAvoidanceZone() {
+  const radio = document.getElementById("audioWidget");
+  if (!radio) return null;
+
+  const rect = radio.getBoundingClientRect();
+  const padding = 30;
+
+  return {
+    left: rect.left - padding,
+    top: rect.top - padding,
+    right: rect.right + padding,
+    bottom: rect.bottom + padding
+  };
+}
+
+function nudgeAwayFromZone(x, y, width, height, zone) {
+  if (!zone) return { x, y };
+
+  const overlaps =
+    x < zone.right &&
+    x + width > zone.left &&
+    y < zone.bottom &&
+    y + height > zone.top;
+
+  if (!overlaps) return { x, y };
+
+  if (Math.random() < 0.8) {
+    return {
+      x,
+      y: zone.bottom + 20 + Math.random() * 40
+    };
+  }
+
+  return { x, y };
+}
+
+function applyPlannedMoves(plans, duration) {
+  const baseZ = topZ;
+  topZ += plans.length;
+
+  requestAnimationFrame(() => {
+    plans.forEach((plan, index) => {
+      const scan = plan.scan;
+
+      scan.style.transition = plan.transition;
+      scan.style.left = `${plan.x}px`;
+      scan.style.top = `${plan.y}px`;
+      scan.dataset.rotation = plan.rotation;
+      scan.dataset.vx = 0;
+      scan.dataset.vy = 0;
+      scan.dataset.spin = 0;
+      scan.style.zIndex = baseZ + index + 1;
+
+      applyTransform(scan);
+      positionMetadataLabel(scan);
+
+      setTimeout(() => {
+        scan.style.transition = "";
+      }, duration);
+    });
+  });
+}
+
 function initializeScans() {
   shuffle(imagePaths);
 
@@ -291,58 +354,52 @@ function gatherObjects() {
   rifleCursor = 0;
 
   const scans = Array.from(document.querySelectorAll(".scan"));
+  const zone = getRadioAvoidanceZone();
 
   const centerX = window.innerWidth / 2;
   const centerY = window.innerHeight / 2;
 
-  scans.forEach((scan, index) => {
-    scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+  const spreadX =
+    Math.min(500, 120 + scans.length * 12);
 
+  const spreadY =
+    Math.min(350, 80 + scans.length * 8);
+
+  const plans = scans.map((scan) => {
     const scale = Number(scan.dataset.scale) || 1;
-
-    const spreadX =
-      Math.min(500, 120 + scans.length * 12);
-
-    const spreadY =
-      Math.min(350, 80 + scans.length * 8);
-
-    const jitterX =
-      Math.random() * spreadX - spreadX / 2;
-
-    const jitterY =
-      Math.random() * spreadY - spreadY / 2;
+    const width = scan.offsetWidth;
+    const height = scan.offsetHeight;
 
     const x =
       centerX -
-      scan.offsetWidth / 2 +
-      jitterX;
+      width / 2 +
+      Math.random() * spreadX -
+      spreadX / 2;
 
     const y =
       centerY -
-      scan.offsetHeight / 2 +
-      jitterY;
+      height / 2 +
+      Math.random() * spreadY -
+      spreadY / 2;
 
-    const position =
-      nudgeAwayFromRadio(x, y, scan, scale);
+    const position = nudgeAwayFromZone(
+      x,
+      y,
+      width * scale,
+      height * scale,
+      zone
+    );
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = Math.random() * 18 - 9;
-    scan.dataset.vx = 0;
-    scan.dataset.vy = 0;
-    scan.dataset.spin = 0;
-
-    topZ++;
-    scan.style.zIndex = topZ + index;
-
-    applyTransform(scan);
-    positionMetadataLabel(scan);
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 600);
+    return {
+      scan,
+      x: position.x,
+      y: position.y,
+      rotation: Math.random() * 18 - 9,
+      transition: "left 0.55s ease, top 0.55s ease, transform 0.55s ease"
+    };
   });
+
+  applyPlannedMoves(plans, 600);
 }
 
 function surfaceObjects() {
@@ -354,49 +411,46 @@ function surfaceObjects() {
   pileCursor = 0;
 
   const scans = Array.from(document.querySelectorAll(".scan"));
+  const zone = getRadioAvoidanceZone();
 
   const centerX = window.innerWidth / 2;
   const centerY = window.innerHeight / 2;
 
-  scans.forEach((scan, index) => {
-    scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
-
+  const plans = scans.map((scan) => {
     const scale = Number(scan.dataset.scale) || 1;
-
-    const jitterX = Math.random() * 700 - 350;
-    const jitterY = Math.random() * 500 - 250;
+    const width = scan.offsetWidth;
+    const height = scan.offsetHeight;
 
     const x =
       centerX -
-      scan.offsetWidth / 2 +
-      jitterX;
+      width / 2 +
+      Math.random() * 700 -
+      350;
 
     const y =
       centerY -
-      scan.offsetHeight / 2 +
-      jitterY;
+      height / 2 +
+      Math.random() * 500 -
+      250;
 
-    const position =
-      nudgeAwayFromRadio(x, y, scan, scale);
+    const position = nudgeAwayFromZone(
+      x,
+      y,
+      width * scale,
+      height * scale,
+      zone
+    );
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = Math.random() * 26 - 13;
-    scan.dataset.vx = 0;
-    scan.dataset.vy = 0;
-    scan.dataset.spin = 0;
-
-    topZ++;
-    scan.style.zIndex = topZ + index;
-
-    applyTransform(scan);
-    positionMetadataLabel(scan);
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 600);
+    return {
+      scan,
+      x: position.x,
+      y: position.y,
+      rotation: Math.random() * 26 - 13,
+      transition: "left 0.55s ease, top 0.55s ease, transform 0.55s ease"
+    };
   });
+
+  applyPlannedMoves(plans, 600);
 }
 
 function shakeBox() {
@@ -404,46 +458,38 @@ function shakeBox() {
   stopAllTossAnimations();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
+  const zone = getRadioAvoidanceZone();
 
-  scans.forEach((scan, index) => {
-    scan.style.transition =
-      "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
-
+  const plans = scans.map((scan) => {
     const scale = Number(scan.dataset.scale) || 1;
+    const width = scan.offsetWidth;
+    const height = scan.offsetHeight;
 
     const currentX = parseFloat(scan.style.left) || 0;
     const currentY = parseFloat(scan.style.top) || 0;
     const currentRotation = Number(scan.dataset.rotation) || 0;
 
-    const shakeX = Math.random() * 150 - 75;
-    const shakeY = Math.random() * 110 - 55;
-    const rotationShift = Math.random() * 26 - 13;
+    const x = currentX + Math.random() * 150 - 75;
+    const y = currentY + Math.random() * 110 - 55;
 
-    const position =
-      nudgeAwayFromRadio(
-        currentX + shakeX,
-        currentY + shakeY,
-        scan,
-        scale
-      );
+    const position = nudgeAwayFromZone(
+      x,
+      y,
+      width * scale,
+      height * scale,
+      zone
+    );
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = currentRotation + rotationShift;
-    scan.dataset.vx = 0;
-    scan.dataset.vy = 0;
-    scan.dataset.spin = 0;
-
-    topZ++;
-    scan.style.zIndex = topZ + index;
-
-    applyTransform(scan);
-    positionMetadataLabel(scan);
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 320);
+    return {
+      scan,
+      x: position.x,
+      y: position.y,
+      rotation: currentRotation + Math.random() * 26 - 13,
+      transition: "left 0.28s ease, top 0.28s ease, transform 0.28s ease"
+    };
   });
+
+  applyPlannedMoves(plans, 320);
 }
 
 function movePileBatch(actionType) {
