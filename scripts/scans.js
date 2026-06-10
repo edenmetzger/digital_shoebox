@@ -1,97 +1,3 @@
-let pileActionType = null;
-let pileQueue = [];
-let pileCursor = 0;
-
-let heldShakeInterval = null;
-let heldShakeStartTime = 0;
-
-function getHeldShakeIntensity() {
-  if (!heldShakeStartTime) return 1;
-
-  const heldFor = Date.now() - heldShakeStartTime;
-
-  if (heldFor > 1800) return 3.2;
-  if (heldFor > 1100) return 2.4;
-  if (heldFor > 500) return 1.7;
-
-  return 1.2;
-}
-
-function getRadioAvoidanceZone() {
-  const radio = document.getElementById("audioWidget");
-  if (!radio) return null;
-
-  const rect = radio.getBoundingClientRect();
-  const padding = 30;
-
-  return {
-    left: rect.left - padding,
-    top: rect.top - padding,
-    right: rect.right + padding,
-    bottom: rect.bottom + padding
-  };
-}
-
-function nudgeAwayFromZone(x, y, width, height, zone) {
-  if (!zone) return { x, y };
-
-  const overlaps =
-    x < zone.right &&
-    x + width > zone.left &&
-    y < zone.bottom &&
-    y + height > zone.top;
-
-  if (!overlaps) return { x, y };
-
-  if (Math.random() < 0.8) {
-    return {
-      x,
-      y: zone.bottom + 20 + Math.random() * 40
-    };
-  }
-
-  return { x, y };
-}
-
-function keepPlannedPositionInView(scan, x, y) {
-  const scale = Number(scan.dataset.scale) || 1;
-  const visibleMargin = 140;
-
-  const minX = -scan.offsetWidth * scale + visibleMargin;
-  const minY = -scan.offsetHeight * scale + visibleMargin;
-
-  const maxX = window.innerWidth - visibleMargin;
-  const maxY = window.innerHeight - visibleMargin;
-
-  return {
-    x: Math.min(maxX, Math.max(minX, x)),
-    y: Math.min(maxY, Math.max(minY, y))
-  };
-}
-
-function applyPlannedMoves(plans, duration) {
-  requestAnimationFrame(() => {
-    plans.forEach((plan) => {
-      const scan = plan.scan;
-
-      scan.style.transition = plan.transition;
-      scan.style.left = `${plan.x}px`;
-      scan.style.top = `${plan.y}px`;
-      scan.dataset.rotation = plan.rotation;
-      scan.dataset.vx = 0;
-      scan.dataset.vy = 0;
-      scan.dataset.spin = 0;
-
-      applyTransform(scan);
-      positionMetadataLabel(scan);
-
-      setTimeout(() => {
-        scan.style.transition = "";
-      }, duration);
-    });
-  });
-}
-
 function initializeScans() {
   shuffle(imagePaths);
 
@@ -102,14 +8,18 @@ function initializeScans() {
     createScan(imagePath, index);
   });
 
-  loadRemainingScansInBatches(remainingPaths, INITIAL_SCAN_LOAD_COUNT);
+  loadRemainingScansInBatches(
+    remainingPaths,
+    INITIAL_SCAN_LOAD_COUNT
+  );
 }
 
 function loadRemainingScansInBatches(paths, startIndex) {
   let cursor = 0;
 
   function loadBatch() {
-    const batch = paths.slice(cursor, cursor + SCAN_LOAD_BATCH_SIZE);
+    const batch =
+      paths.slice(cursor, cursor + SCAN_LOAD_BATCH_SIZE);
 
     batch.forEach((imagePath, batchIndex) => {
       createScan(imagePath, startIndex + cursor + batchIndex);
@@ -127,7 +37,6 @@ function loadRemainingScansInBatches(paths, startIndex) {
 
 function createScan(imagePath, index) {
   const scan = document.createElement("img");
-
   const imageFilename = imagePath.split("/").pop();
 
   const filename = imageFilename.replace(
@@ -141,11 +50,11 @@ function createScan(imagePath, index) {
   scan.className = "scan";
   scan.alt = `Scan ${index + 1}`;
   scan.draggable = false;
+
   scan.dataset.scale = 1;
   scan.dataset.filename = filename;
-  scan.dataset.vx = 0;
-  scan.dataset.vy = 0;
-  scan.dataset.spin = 0;
+
+  resetScanMotion(scan);
 
   workspace.appendChild(scan);
 
@@ -192,128 +101,16 @@ function randomizeImage(scan, index) {
 
   scan.style.left = `${position.x}px`;
   scan.style.top = `${position.y}px`;
-
   scan.dataset.rotation = rotation;
   scan.dataset.scale = randomScale;
-  scan.dataset.vx = 0;
-  scan.dataset.vy = 0;
-  scan.dataset.spin = 0;
   scan.style.zIndex = index + 1;
 
+  resetScanMotion(scan);
   applyTransform(scan);
 }
 
-function bringScanToFront(scan) {
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  const highestZ = scans.reduce((highest, currentScan) => {
-    const z = Number(currentScan.style.zIndex) || 0;
-    return Math.max(highest, z);
-  }, 0);
-
-  topZ = highestZ + 1;
-
-  scan.style.zIndex = topZ;
-  positionMetadataLabel(scan);
-}
-
-function showRandomMemory() {
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  if (!scans.length) return;
-
-  closeInfoCard();
-  stopAllTossAnimations();
-
-  const randomScan =
-    scans[Math.floor(Math.random() * scans.length)];
-
-  bringScanToFront(randomScan);
-
-  const nearbyScans = scans
-    .filter((scan) => scan !== randomScan)
-    .sort((a, b) => {
-      const aZ = Number(a.style.zIndex) || 0;
-      const bZ = Number(b.style.zIndex) || 0;
-
-      return bZ - aZ;
-    })
-    .slice(0, 3);
-
-  nearbyScans.forEach((scan, index) => {
-    const startX = parseFloat(scan.style.left) || 0;
-    const startY = parseFloat(scan.style.top) || 0;
-    const direction = index % 2 === 0 ? -1 : 1;
-
-    scan.style.transition =
-      "left 0.22s ease, top 0.22s ease";
-
-    scan.style.left = `${startX + direction * (8 + index * 3)}px`;
-    scan.style.top = `${startY + 3}px`;
-
-    setTimeout(() => {
-      scan.style.left = `${startX}px`;
-      scan.style.top = `${startY}px`;
-
-      setTimeout(() => {
-        scan.style.transition = "";
-      }, 240);
-    }, 160);
-  });
-
-  randomScan.style.transition =
-    "left 0.46s cubic-bezier(.2, 1.35, .35, 1), top 0.46s cubic-bezier(.2, 1.35, .35, 1), transform 0.46s cubic-bezier(.2, 1.35, .35, 1)";
-
-  const scale = Number(randomScan.dataset.scale) || 1;
-
-  const x =
-    window.innerWidth / 2 -
-    (randomScan.offsetWidth * scale) / 2 +
-    Math.random() * 160 - 80;
-
-  const y =
-    window.innerHeight / 2 -
-    (randomScan.offsetHeight * scale) / 2 +
-    Math.random() * 100 - 50;
-
-  const position =
-    nudgeAwayFromRadio(x, y, randomScan, scale);
-
-  const rotation = Math.random() * 8 - 4;
-
-  randomScan.style.left = `${position.x}px`;
-  randomScan.style.top = `${position.y - 12}px`;
-  randomScan.dataset.rotation = rotation;
-  randomScan.dataset.vx = 0;
-  randomScan.dataset.vy = 0;
-  randomScan.dataset.spin = 0;
-
-  applyTransform(randomScan);
-  positionMetadataLabel(randomScan);
-
-  setTimeout(() => {
-    randomScan.style.top = `${position.y}px`;
-    positionMetadataLabel(randomScan);
-  }, 180);
-
-  setTimeout(() => {
-    randomScan.style.transition = "";
-
-    const rect = randomScan.getBoundingClientRect();
-
-    showInfoCard(
-      randomScan,
-      rect.left + rect.width * 0.62,
-      rect.top + rect.height * 0.55,
-      false
-    );
-  }, 520);
-}
-
 function buildFocusQueue() {
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  focusQueue = scans.map((scan) => scan.dataset.filename);
+  focusQueue = getScans().map((scan) => scan.dataset.filename);
   shuffle(focusQueue);
 }
 
@@ -342,9 +139,6 @@ function focusNextScan() {
 function bringScanToCenter(scan) {
   bringScanToFront(scan);
 
-  scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
-
   const scale = Number(scan.dataset.scale) || 1;
 
   const x =
@@ -358,495 +152,12 @@ function bringScanToCenter(scan) {
   const position =
     nudgeAwayFromRadio(x, y, scan, scale);
 
-  const rotation = Math.random() * 10 - 5;
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = rotation;
-  scan.dataset.vx = 0;
-  scan.dataset.vy = 0;
-  scan.dataset.spin = 0;
-
-  applyTransform(scan);
-  positionMetadataLabel(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 600);
-}
-
-function gatherObjects() {
-  closeInfoCard();
-  stopAllTossAnimations();
-
-  pileActionType = null;
-  pileQueue = [];
-  pileCursor = 0;
-
-  rifleDirection = null;
-  rifleQueue = [];
-  rifleCursor = 0;
-
-  const scans = Array.from(document.querySelectorAll(".scan"));
-  const zone = getRadioAvoidanceZone();
-
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  const spreadX =
-    Math.min(500, 120 + scans.length * 12);
-
-  const spreadY =
-    Math.min(350, 80 + scans.length * 8);
-
-  const plans = scans.map((scan) => {
-    const scale = Number(scan.dataset.scale) || 1;
-    const width = scan.offsetWidth;
-    const height = scan.offsetHeight;
-
-    const x =
-      centerX -
-      width / 2 +
-      Math.random() * spreadX -
-      spreadX / 2;
-
-    const y =
-      centerY -
-      height / 2 +
-      Math.random() * spreadY -
-      spreadY / 2;
-
-    const nudgedPosition = nudgeAwayFromZone(
-  x,
-  y,
-  width * scale,
-  height * scale,
-  zone
-);
-
-const position = keepPlannedPositionInView(
-  scan,
-  nudgedPosition.x,
-  nudgedPosition.y
-);
-
-    return {
-      scan,
-      x: position.x,
-      y: position.y,
-      rotation: Math.random() * 18 - 9,
-      transition:
-        "left 0.36s ease, top 0.36s ease, transform 0.36s ease"
-    };
+  moveScan(scan, {
+    x: position.x,
+    y: position.y,
+    rotation: Math.random() * 10 - 5,
+    transition:
+      "left 0.55s ease, top 0.55s ease, transform 0.55s ease",
+    duration: 600
   });
-
-  applyPlannedMoves(plans, 390);
-}
-
-function surfaceObjects() {
-  closeInfoCard();
-  stopAllTossAnimations();
-
-  pileActionType = null;
-  pileQueue = [];
-  pileCursor = 0;
-
-  const scans = Array.from(document.querySelectorAll(".scan"));
-  const zone = getRadioAvoidanceZone();
-
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  const plans = scans.map((scan) => {
-    const scale = Number(scan.dataset.scale) || 1;
-    const width = scan.offsetWidth;
-    const height = scan.offsetHeight;
-
-    const x =
-      centerX -
-      width / 2 +
-      Math.random() * 700 -
-      350;
-
-    const y =
-      centerY -
-      height / 2 +
-      Math.random() * 500 -
-      250;
-
-    const nudgedPosition = nudgeAwayFromZone(
-  x,
-  y,
-  width * scale,
-  height * scale,
-  zone
-);
-
-const position = keepPlannedPositionInView(
-  scan,
-  nudgedPosition.x,
-  nudgedPosition.y
-);
-
-    return {
-      scan,
-      x: position.x,
-      y: position.y,
-      rotation: Math.random() * 26 - 13,
-      transition:
-        "left 0.36s ease, top 0.36s ease, transform 0.36s ease"
-    };
-  });
-
-  applyPlannedMoves(plans, 390);
-}
-
-function shakeBox(intensity = 1) {
-  closeInfoCard();
-  stopAllTossAnimations();
-
-  const scans = Array.from(document.querySelectorAll(".scan"));
-  const zone = getRadioAvoidanceZone();
-
-  const moveXAmount = 150 * intensity;
-  const moveYAmount = 110 * intensity;
-  const rotationAmount = 26 * intensity;
-
-  const plans = scans.map((scan) => {
-    const scale = Number(scan.dataset.scale) || 1;
-    const width = scan.offsetWidth;
-    const height = scan.offsetHeight;
-
-    const currentX = parseFloat(scan.style.left) || 0;
-    const currentY = parseFloat(scan.style.top) || 0;
-    const currentRotation = Number(scan.dataset.rotation) || 0;
-
-    const x =
-      currentX +
-      Math.random() * moveXAmount -
-      moveXAmount / 2;
-
-    const y =
-      currentY +
-      Math.random() * moveYAmount -
-      moveYAmount / 2;
-
-    const nudgedPosition = nudgeAwayFromZone(
-  x,
-  y,
-  width * scale,
-  height * scale,
-  zone
-);
-
-const position = keepPlannedPositionInView(
-  scan,
-  nudgedPosition.x,
-  nudgedPosition.y
-);
-
-    return {
-      scan,
-      x: position.x,
-      y: position.y,
-      rotation:
-        currentRotation +
-        Math.random() * rotationAmount -
-        rotationAmount / 2,
-      transition:
-        "left 0.14s ease-out, top 0.14s ease-out, transform 0.14s ease-out"
-    };
-  });
-
-  applyPlannedMoves(plans, 155);
-}
-
-function startHeldShake() {
-  if (heldShakeInterval) return;
-
-  heldShakeStartTime = Date.now();
-
-  shakeBox(getHeldShakeIntensity());
-
-  heldShakeInterval = setInterval(() => {
-    shakeBox(getHeldShakeIntensity());
-  }, 145);
-}
-
-function stopHeldShake() {
-  heldShakeStartTime = 0;
-
-  if (heldShakeInterval) {
-    clearInterval(heldShakeInterval);
-    heldShakeInterval = null;
-  }
-}
-
-function movePileBatch(actionType) {
-  closeInfoCard();
-  stopAllTossAnimations();
-
-  if (actionType === "gather") {
-    rifleDirection = null;
-    rifleQueue = [];
-    rifleCursor = 0;
-  }
-
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  if (!scans.length) return;
-
-  if (
-    pileActionType !== actionType ||
-    !pileQueue.length ||
-    pileCursor >= pileQueue.length
-  ) {
-    pileActionType = actionType;
-    pileCursor = 0;
-
-    pileQueue = scans
-      .slice()
-      .sort((a, b) => {
-        const aZ = Number(a.style.zIndex) || 0;
-        const bZ = Number(b.style.zIndex) || 0;
-
-        return bZ - aZ;
-      });
-  }
-
-  const batchSize =
-    pileCursor === 0
-      ? Math.ceil(scans.length * 0.3)
-      : Math.ceil(scans.length * 0.1);
-
-  const scansToMove =
-    pileQueue.slice(pileCursor, pileCursor + batchSize);
-
-  pileCursor += batchSize;
-
-  scansToMove.forEach((scan, index) => {
-    if (actionType === "gather") {
-      moveGatheredScan(scan, index);
-    }
-
-    if (actionType === "surface") {
-      moveSurfacedScan(scan, index);
-    }
-  });
-}
-
-function moveGatheredScan(scan, index) {
-  scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
-
-  const scale = Number(scan.dataset.scale) || 1;
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  const spreadX = Math.min(500, 120 + scans.length * 12);
-  const spreadY = Math.min(350, 80 + scans.length * 8);
-
-  const x =
-    centerX -
-    scan.offsetWidth / 2 +
-    Math.random() * spreadX -
-    spreadX / 2;
-
-  const y =
-    centerY -
-    scan.offsetHeight / 2 +
-    Math.random() * spreadY -
-    spreadY / 2;
-
-  const position =
-    nudgeAwayFromRadio(x, y, scan, scale);
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = Math.random() * 18 - 9;
-  scan.dataset.vx = 0;
-  scan.dataset.vy = 0;
-  scan.dataset.spin = 0;
-
-  topZ++;
-  scan.style.zIndex = topZ + index;
-
-  applyTransform(scan);
-  positionMetadataLabel(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 600);
-}
-
-function moveSurfacedScan(scan, index) {
-  scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
-
-  const scale = Number(scan.dataset.scale) || 1;
-
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  const x =
-    centerX -
-    scan.offsetWidth / 2 +
-    Math.random() * 700 -
-    350;
-
-  const y =
-    centerY -
-    scan.offsetHeight / 2 +
-    Math.random() * 500 -
-    250;
-
-  const position =
-    nudgeAwayFromRadio(x, y, scan, scale);
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = Math.random() * 26 - 13;
-  scan.dataset.vx = 0;
-  scan.dataset.vy = 0;
-  scan.dataset.spin = 0;
-
-  topZ++;
-  scan.style.zIndex = topZ + index;
-
-  applyTransform(scan);
-  positionMetadataLabel(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 600);
-}
-
-function spreadLeft() {
-  rifleObjects("left");
-}
-
-function spreadRight() {
-  rifleObjects("right");
-}
-
-function rifleObjects(direction) {
-  closeInfoCard();
-  stopAllTossAnimations();
-
-  pileActionType = null;
-  pileQueue = [];
-  pileCursor = 0;
-
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  if (!scans.length) return;
-
-  if (
-    rifleDirection !== direction ||
-    !rifleQueue.length ||
-    rifleCursor >= rifleQueue.length
-  ) {
-    rifleDirection = direction;
-    rifleCursor = 0;
-
-    rifleQueue = scans
-      .slice()
-      .sort((a, b) => {
-        const aZ = Number(a.style.zIndex) || 0;
-        const bZ = Number(b.style.zIndex) || 0;
-
-        return bZ - aZ;
-      });
-  }
-
-  const batchSize =
-    rifleCursor === 0
-      ? Math.ceil(scans.length * 0.3)
-      : Math.ceil(scans.length * 0.1);
-
-  const scansToMove =
-    rifleQueue.slice(rifleCursor, rifleCursor + batchSize);
-
-  rifleCursor += batchSize;
-
-  scansToMove.forEach((scan, index) => {
-    moveRifledScan(scan, direction, index);
-  });
-}
-
-function moveRifledScan(scan, direction, index) {
-  scan.style.transition =
-    "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
-
-  const scale = Number(scan.dataset.scale) || 1;
-
-  const minX =
-    direction === "left"
-      ? -scan.offsetWidth * scale * 0.85
-      : window.innerWidth * 0.42;
-
-  const maxX =
-    direction === "left"
-      ? window.innerWidth * 0.32
-      : window.innerWidth -
-        scan.offsetWidth * scale * 0.15;
-
-  const x =
-    minX + Math.random() * (maxX - minX);
-
-  const maxY =
-    window.innerHeight -
-    scan.offsetHeight * scale -
-    170;
-
-  const y =
-    30 + Math.random() * Math.max(1, maxY);
-
-  const position =
-    nudgeAwayFromRadio(x, y, scan, scale);
-
-  const rotation =
-    direction === "left"
-      ? Math.random() * 34 - 26
-      : Math.random() * 34 - 8;
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation = rotation;
-  scan.dataset.vx = 0;
-  scan.dataset.vy = 0;
-  scan.dataset.spin = 0;
-
-  topZ++;
-  scan.style.zIndex = topZ + index;
-
-  applyTransform(scan);
-  positionMetadataLabel(scan);
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 600);
-}
-
-function keepScanInView(scan) {
-  const scale = Number(scan.dataset.scale) || 1;
-
-  let x = parseFloat(scan.style.left) || 0;
-  let y = parseFloat(scan.style.top) || 0;
-
-  const visibleMargin = 140;
-
-  const minX = -scan.offsetWidth * scale + visibleMargin;
-  const minY = -scan.offsetHeight * scale + visibleMargin;
-
-  const maxX = window.innerWidth - visibleMargin;
-  const maxY = window.innerHeight - visibleMargin;
-
-  x = Math.min(maxX, Math.max(minX, x));
-  y = Math.min(maxY, Math.max(minY, y));
-
-  scan.style.left = `${x}px`;
-  scan.style.top = `${y}px`;
 }

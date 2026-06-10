@@ -1,66 +1,81 @@
+const shoeboxKeyActions = {
+  ArrowRight: spreadRight,
+  ArrowLeft: spreadLeft,
+  ArrowUp: surfaceObjects,
+  ArrowDown: gatherObjects,
+  Tab: focusNextScan
+};
+
+const audioKeyActions = {
+  p: togglePlayPause,
+  "]": playNextTrack,
+  "[": playPreviousTrack,
+  m: toggleMute,
+  "/": toggleMute,
+  r: playRandomTrack,
+  MediaPlayPause: togglePlayPause,
+  MediaTrackNext: playNextTrack,
+  AudioTrackNext: playNextTrack,
+  MediaTrackPrevious: playPreviousTrack,
+  AudioTrackPrevious: playPreviousTrack,
+  AudioVolumeMute: toggleMute
+};
+
 function initializeShoeboxControls() {
-  document.addEventListener("keydown", (event) => {
-    if (isTypingInInput(event)) return;
+  document.addEventListener("keydown", handleShoeboxKeydown);
+  document.addEventListener("keyup", handleShoeboxKeyup);
+}
 
-    if (event.key === "ArrowRight") {
-      event.preventDefault();
-      spreadRight();
+function handleShoeboxKeydown(event) {
+  if (isTypingInInput(event)) return;
+
+  const directAction = shoeboxKeyActions[event.key];
+
+  if (directAction) {
+    event.preventDefault();
+    directAction();
+    return;
+  }
+
+  const key = event.key.toLowerCase();
+
+  if (key === "x") {
+    event.preventDefault();
+    closeInfoCard();
+
+    if (legend) {
+      legend.classList.add("hidden");
     }
 
-    if (event.key === "ArrowLeft") {
-      event.preventDefault();
-      spreadLeft();
+    return;
+  }
+
+  if (key === "s") {
+    event.preventDefault();
+
+    if (!event.repeat) {
+      startHeldShake();
     }
 
-    if (event.key === "ArrowUp") {
-      event.preventDefault();
-      surfaceObjects();
+    return;
+  }
+
+  if (event.key === "~" || event.key === "`") {
+    event.preventDefault();
+
+    if (!event.repeat) {
+      showRandomMemory();
     }
+  }
+}
 
-    if (event.key === "ArrowDown") {
-      event.preventDefault();
-      gatherObjects();
-    }
+function handleShoeboxKeyup(event) {
+  if (isTypingInInput(event)) return;
 
-    if (event.key === "Tab") {
-      event.preventDefault();
-      focusNextScan();
-    }
-
-    if (event.key.toLowerCase() === "x") {
-      event.preventDefault();
-      closeInfoCard();
-
-      if (legend) {
-        legend.classList.add("hidden");
-      }
-    }
-
-    if (event.key.toLowerCase() === "s") {
-      event.preventDefault();
-
-      if (!event.repeat) {
-        startHeldShake();
-      }
-    }
-
-    if (event.key === "~" || event.key === "`") {
-      event.preventDefault();
-
-      if (!event.repeat) {
-        showRandomMemory();
-      }
-    }
-  });
-
-  document.addEventListener("keyup", (event) => {
-    if (isTypingInInput(event)) return;
-
-    if (event.key.toLowerCase() === "s") {
-      event.preventDefault();
-      stopHeldShake();
-    }
-  });
+  if (event.key.toLowerCase() === "s") {
+    event.preventDefault();
+    stopHeldShake();
+  }
 }
 
 function initializeAudioKeyboardControls() {
@@ -70,56 +85,14 @@ function initializeAudioKeyboardControls() {
 function handleAudioKeyboardControls(event) {
   if (isTypingInInput(event)) return;
 
-  const key = event.key.toLowerCase();
+  const key = event.key.length === 1
+    ? event.key.toLowerCase()
+    : event.key;
 
-  if (key === "p") {
-    event.preventDefault();
-    togglePlayPause();
-  }
+  const action = audioKeyActions[key];
 
-  if (event.key === "]") {
-    event.preventDefault();
-    playNextTrack();
-  }
+  if (!action) return;
 
-  if (event.key === "[") {
-    event.preventDefault();
-    playPreviousTrack();
-  }
-
-  if (key === "m" || event.key === "/") {
-    event.preventDefault();
-    toggleMute();
-  }
-
-  if (key === "r") {
-    event.preventDefault();
-    playRandomTrack();
-  }
-
-  if (event.key === "MediaPlayPause") {
-    event.preventDefault();
-    togglePlayPause();
-  }
-
-  if (
-    event.key === "MediaTrackNext" ||
-    event.key === "AudioTrackNext"
-  ) {
-    event.preventDefault();
-    playNextTrack();
-  }
-
-  if (
-    event.key === "MediaTrackPrevious" ||
-    event.key === "AudioTrackPrevious"
-  ) {
-    event.preventDefault();
-    playPreviousTrack();
-  }
-
-  if (event.key === "AudioVolumeMute") {
-    event.preventDefault();
-    toggleMute();
-  }
+  event.preventDefault();
+  action();
 }

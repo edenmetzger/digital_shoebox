@@ -25,32 +25,31 @@ function isTypingInInput(event) {
   );
 }
 
-function nudgeAwayFromRadio(x, y, scan, scale) {
+function getRadioAvoidanceZone() {
   const radio = document.getElementById("audioWidget");
-
-  if (!radio) {
-    return { x, y };
-  }
+  if (!radio) return null;
 
   const rect = radio.getBoundingClientRect();
   const padding = 30;
 
-  const zone = {
+  return {
     left: rect.left - padding,
     top: rect.top - padding,
     right: rect.right + padding,
     bottom: rect.bottom + padding
   };
+}
+
+function nudgeAwayFromZone(x, y, width, height, zone) {
+  if (!zone) return { x, y };
 
   const overlaps =
     x < zone.right &&
-    x + scan.offsetWidth * scale > zone.left &&
+    x + width > zone.left &&
     y < zone.bottom &&
-    y + scan.offsetHeight * scale > zone.top;
+    y + height > zone.top;
 
-  if (!overlaps) {
-    return { x, y };
-  }
+  if (!overlaps) return { x, y };
 
   if (Math.random() < 0.8) {
     return {
@@ -60,4 +59,14 @@ function nudgeAwayFromRadio(x, y, scan, scale) {
   }
 
   return { x, y };
+}
+
+function nudgeAwayFromRadio(x, y, scan, scale) {
+  return nudgeAwayFromZone(
+    x,
+    y,
+    scan.offsetWidth * scale,
+    scan.offsetHeight * scale,
+    getRadioAvoidanceZone()
+  );
 }
