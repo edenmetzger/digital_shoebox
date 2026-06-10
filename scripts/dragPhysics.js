@@ -117,6 +117,7 @@ function resizeActiveScanByPinch() {
   );
 
   activeScan.dataset.scale = newScale;
+keepScanInView(activeScan);
 }
 
 function pointerUp(event) {

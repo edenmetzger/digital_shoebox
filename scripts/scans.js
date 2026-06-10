@@ -575,3 +575,24 @@ function clearPileMotionClass() {
     scan.classList.remove("moving-pile");
   });
 }
+
+function keepScanInView(scan) {
+  const scale = Number(scan.dataset.scale) || 1;
+
+  let x = parseFloat(scan.style.left) || 0;
+  let y = parseFloat(scan.style.top) || 0;
+
+  const visibleMargin = 80;
+
+  const minX = -scan.offsetWidth * scale + visibleMargin;
+  const minY = -scan.offsetHeight * scale + visibleMargin;
+
+  const maxX = window.innerWidth - visibleMargin;
+  const maxY = window.innerHeight - visibleMargin;
+
+  x = Math.min(maxX, Math.max(minX, x));
+  y = Math.min(maxY, Math.max(minY, y));
+
+  scan.style.left = `${x}px`;
+  scan.style.top = `${y}px`;
+}

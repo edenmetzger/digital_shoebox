@@ -377,6 +377,10 @@ body.metadata-mode .scan:hover {
 }
 
 .scan.moving-pile {
-  transition: left 0.45s ease, top 0.45s ease, transform 0.45s ease;
-  will-change: left, top, transform;
+  transition: left 0.28s ease, top 0.28s ease, transform 0.28s ease;
+}
+
+.scan {
+  contain: layout paint;
+  backface-visibility: hidden;
 }
