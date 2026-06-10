@@ -39,6 +39,25 @@ function getMetadataText(filename) {
     .join("<br>");
 }
 
+function getOrCreateMetadataLabel(scan) {
+  const filename = scan.dataset.filename;
+
+  let label = document.querySelector(
+    `.metadata-label[data-filename="${filename}"]`
+  );
+
+  if (label) return label;
+
+  label = document.createElement("div");
+  label.className = "metadata-label";
+  label.dataset.filename = filename;
+  label.innerHTML = getMetadataText(filename);
+
+  workspace.appendChild(label);
+
+  return label;
+}
+
 function updateAllMetadataLabels() {
   const scans = Array.from(document.querySelectorAll(".scan"));
 
@@ -56,25 +75,18 @@ function updateAllMetadataLabels() {
   });
 
   topScans.forEach((scan) => {
+    const label = getOrCreateMetadataLabel(scan);
+
     positionMetadataLabel(scan);
 
-    const label = document.querySelector(
-      `.metadata-label[data-filename="${scan.dataset.filename}"]`
-    );
-
-    if (label) {
-      label.classList.add("visible-metadata");
-    }
+    label.classList.add("visible-metadata");
   });
 }
 
 function positionMetadataLabel(scan) {
-  const filename = scan.dataset.filename;
-  const label = document.querySelector(
-    `.metadata-label[data-filename="${filename}"]`
-  );
+  if (!document.body.classList.contains("metadata-mode")) return;
 
-  if (!label) return;
+  const label = getOrCreateMetadataLabel(scan);
 
   const left = parseFloat(scan.style.left) || 0;
   const top = parseFloat(scan.style.top) || 0;

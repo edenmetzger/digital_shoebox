@@ -34,9 +34,6 @@ function pointerDown(event) {
   velocityX = 0;
   velocityY = 0;
 
-  activeScan.dataset.translateX = 0;
-  activeScan.dataset.translateY = 0;
-
   if (pointers.size === 2) {
     closeInfoCard();
 
@@ -246,8 +243,6 @@ function startTossAnimation(scan, vx, vy) {
 
     scan.style.left = `${x}px`;
     scan.style.top = `${y}px`;
-    scan.dataset.translateX = 0;
-    scan.dataset.translateY = 0;
 
     applyTransform(scan);
     positionMetadataLabel(scan);
@@ -349,9 +344,7 @@ function handleDoubleTapOrClick(scan, x, y) {
 function applyTransform(scan) {
   const rotation = Number(scan.dataset.rotation) || 0;
   const scale = Number(scan.dataset.scale) || 1;
-  const translateX = Number(scan.dataset.translateX) || 0;
-  const translateY = Number(scan.dataset.translateY) || 0;
 
   scan.style.transform =
-    `translate3d(${translateX}px, ${translateY}px, 0) rotate(${rotation}deg) scale(${scale})`;
+    `rotate(${rotation}deg) scale(${scale})`;
 }
