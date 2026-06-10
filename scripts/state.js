@@ -41,7 +41,6 @@ let shakeTimeoutId = null;
 let shakeStartedAt = 0;
 let shakeGroups = [];
 let shakeGroupIndex = 0;
-let shakeWaveCount = 0;
 let shakeDirectionX = 1;
 let shakeDirectionY = 0;
 
