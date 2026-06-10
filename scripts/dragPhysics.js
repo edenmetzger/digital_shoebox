@@ -347,11 +347,9 @@ function handleDoubleTapOrClick(scan, x, y) {
 }
 
 function applyTransform(scan) {
-  const x = Number(scan.dataset.translateX) || 0;
-  const y = Number(scan.dataset.translateY) || 0;
   const rotation = Number(scan.dataset.rotation) || 0;
   const scale = Number(scan.dataset.scale) || 1;
 
   scan.style.transform =
-    `translate(${x}px, ${y}px) rotate(${rotation}deg) scale(${scale})`;
+    `rotate(${rotation}deg) scale(${scale})`;
 }

@@ -376,10 +376,6 @@ body.metadata-mode .scan:hover {
   cursor: pointer;
 }
 
-.scan.moving-pile {
-  transition: transform 0.28s ease;
-}
-
 .scan {
   contain: layout paint;
   backface-visibility: hidden;

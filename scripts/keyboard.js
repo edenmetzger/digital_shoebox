@@ -36,8 +36,14 @@ function initializeShoeboxControls() {
 }
     if (event.key.toLowerCase() === "s") {
   event.preventDefault();
-  shakeBox();
+  startHeldShake();
 }
+
+document.addEventListener("keyup", (event) => {
+  if (event.key.toLowerCase() === "s") {
+    stopHeldShake();
+  }
+});
   });
 }
 
