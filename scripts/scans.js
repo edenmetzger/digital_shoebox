@@ -443,88 +443,110 @@ function surfaceObjects() {
   closeInfoCard();
   stopAllTossAnimations();
 
-  const scans = Array.from(document.querySelectorAll(".scan"));
+  const scans = Array.from(document.querySelectorAll(".scan"))
+    .sort((a, b) => {
+      const aZ = Number(a.style.zIndex) || 0;
+      const bZ = Number(b.style.zIndex) || 0;
+      return bZ - aZ;
+    })
+    .slice(0, 45);
 
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  scans.forEach((scan, index) => {
-    scan.style.transition =
-      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
-
-    const scale = Number(scan.dataset.scale) || 1;
-
-    const jitterX = Math.random() * 700 - 350;
-    const jitterY = Math.random() * 500 - 250;
-    const rotation = Math.random() * 26 - 13;
-
-    const x =
-      centerX -
-      scan.offsetWidth / 2 +
-      jitterX;
-
-    const y =
-      centerY -
-      scan.offsetHeight / 2 +
-      jitterY;
-
-    const position =
-      nudgeAwayFromRadio(x, y, scan, scale);
-
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = rotation;
-
-    topZ++;
-    scan.style.zIndex = topZ + index;
-
-    applyTransform(scan);
-    positionMetadataLabel(scan);
-
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 600);
-  });
+  moveScansInBatches(scans, moveSurfaceScan, 10, 80);
 }
 
 function shakeBox() {
   closeInfoCard();
   stopAllTossAnimations();
 
-  const scans = Array.from(document.querySelectorAll(".scan"));
+  const scans = Array.from(document.querySelectorAll(".scan"))
+    .sort((a, b) => {
+      const aZ = Number(a.style.zIndex) || 0;
+      const bZ = Number(b.style.zIndex) || 0;
+      return bZ - aZ;
+    })
+    .slice(0, 35);
 
-  scans.forEach((scan, index) => {
-    scan.style.transition =
-      "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
+  moveScansInBatches(scans, moveShakenScan, 8, 60);
+}
 
-    const scale = Number(scan.dataset.scale) || 1;
+function moveScansInBatches(scans, moveFunction, batchSize, delay) {
+  let cursor = 0;
 
-    const currentX = parseFloat(scan.style.left) || 0;
-    const currentY = parseFloat(scan.style.top) || 0;
-    const currentRotation = Number(scan.dataset.rotation) || 0;
+  function moveBatch() {
+    const batch = scans.slice(cursor, cursor + batchSize);
 
-    const shakeX = Math.random() * 70 - 35;
-    const shakeY = Math.random() * 50 - 25;
-    const rotationShift = Math.random() * 18 - 9;
+    batch.forEach((scan, index) => {
+      moveFunction(scan, cursor + index);
+    });
 
-    const x = currentX + shakeX;
-    const y = currentY + shakeY;
+    cursor += batchSize;
 
-    const position =
-      nudgeAwayFromRadio(x, y, scan, scale);
+    if (cursor < scans.length) {
+      setTimeout(moveBatch, delay);
+    }
+  }
 
-    scan.style.left = `${position.x}px`;
-    scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = currentRotation + rotationShift;
+  moveBatch();
+}
 
-    topZ++;
-    scan.style.zIndex = topZ + index;
+function moveSurfaceScan(scan, index) {
+  scan.style.transition =
+    "left 0.45s ease, top 0.45s ease, transform 0.45s ease";
 
-    applyTransform(scan);
-    positionMetadataLabel(scan);
+  const scale = Number(scan.dataset.scale) || 1;
 
-    setTimeout(() => {
-      scan.style.transition = "";
-    }, 320);
-  });
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  const jitterX = Math.random() * 700 - 350;
+  const jitterY = Math.random() * 500 - 250;
+
+  const x = centerX - scan.offsetWidth / 2 + jitterX;
+  const y = centerY - scan.offsetHeight / 2 + jitterY;
+
+  const position = nudgeAwayFromRadio(x, y, scan, scale);
+
+  scan.style.left = `${position.x}px`;
+  scan.style.top = `${position.y}px`;
+  scan.dataset.rotation = Math.random() * 26 - 13;
+
+  topZ++;
+  scan.style.zIndex = topZ + index;
+
+  applyTransform(scan);
+  positionMetadataLabel(scan);
+
+  setTimeout(() => {
+    scan.style.transition = "";
+  }, 500);
+}
+
+function moveShakenScan(scan, index) {
+  scan.style.transition =
+    "left 0.22s ease, top 0.22s ease, transform 0.22s ease";
+
+  const scale = Number(scan.dataset.scale) || 1;
+
+  const currentX = parseFloat(scan.style.left) || 0;
+  const currentY = parseFloat(scan.style.top) || 0;
+  const currentRotation = Number(scan.dataset.rotation) || 0;
+
+  const x = currentX + Math.random() * 50 - 25;
+  const y = currentY + Math.random() * 36 - 18;
+
+  const position = nudgeAwayFromRadio(x, y, scan, scale);
+
+  scan.style.left = `${position.x}px`;
+  scan.style.top = `${position.y}px`;
+  scan.dataset.rotation = currentRotation + Math.random() * 10 - 5;
+
+  topZ++;
+  scan.style.zIndex = topZ + index;
+
+  applyTransform(scan);
+  positionMetadataLabel(scan);
+
+  setTimeout(() => {
+    scan.style.transition = "";
+  }, 260);
 }
