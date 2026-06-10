@@ -122,14 +122,7 @@ function randomizeImage(scan, index) {
 }
 
 function bringScanToFront(scan) {
-  const scans = Array.from(document.querySelectorAll(".scan"));
-
-  const highestZ = scans.reduce((highest, currentScan) => {
-    const z = Number(currentScan.style.zIndex) || 0;
-    return Math.max(highest, z);
-  }, topZ);
-
-  topZ = highestZ + 1;
+  topZ++;
 
   scan.style.zIndex = topZ;
   positionMetadataLabel(scan);
@@ -294,11 +287,130 @@ function bringScanToCenter(scan) {
 }
 
 function gatherObjects() {
-  movePileBatch("gather");
+  closeInfoCard();
+  stopAllTossAnimations();
+
+  pileActionType = null;
+  pileQueue = [];
+  pileCursor = 0;
+
+  rifleDirection = null;
+  rifleQueue = [];
+  rifleCursor = 0;
+
+  const scans = Array.from(document.querySelectorAll(".scan"));
+
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  scans.forEach((scan, index) => {
+    scan.style.transition =
+      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+
+    const scale = Number(scan.dataset.scale) || 1;
+
+    const spreadX =
+      Math.min(500, 120 + scans.length * 12);
+
+    const spreadY =
+      Math.min(350, 80 + scans.length * 8);
+
+    const jitterX =
+      Math.random() * spreadX - spreadX / 2;
+
+    const jitterY =
+      Math.random() * spreadY - spreadY / 2;
+
+    const x =
+      centerX -
+      scan.offsetWidth / 2 +
+      jitterX;
+
+    const y =
+      centerY -
+      scan.offsetHeight / 2 +
+      jitterY;
+
+    const position =
+      nudgeAwayFromRadio(x, y, scan, scale);
+
+    scan.style.left = `${position.x}px`;
+    scan.style.top = `${position.y}px`;
+    scan.dataset.rotation = Math.random() * 18 - 9;
+    scan.dataset.vx = 0;
+    scan.dataset.vy = 0;
+    scan.dataset.spin = 0;
+
+    topZ++;
+    scan.style.zIndex = topZ + index;
+
+    applyTransform(scan);
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
+
+    setTimeout(() => {
+      scan.style.transition = "";
+    }, 600);
+  });
 }
 
 function surfaceObjects() {
-  movePileBatch("surface");
+  closeInfoCard();
+  stopAllTossAnimations();
+
+  pileActionType = null;
+  pileQueue = [];
+  pileCursor = 0;
+
+  const scans = Array.from(document.querySelectorAll(".scan"));
+
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  scans.forEach((scan, index) => {
+    scan.style.transition =
+      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+
+    const scale = Number(scan.dataset.scale) || 1;
+
+    const jitterX = Math.random() * 700 - 350;
+    const jitterY = Math.random() * 500 - 250;
+
+    const x =
+      centerX -
+      scan.offsetWidth / 2 +
+      jitterX;
+
+    const y =
+      centerY -
+      scan.offsetHeight / 2 +
+      jitterY;
+
+    const position =
+      nudgeAwayFromRadio(x, y, scan, scale);
+
+    scan.style.left = `${position.x}px`;
+    scan.style.top = `${position.y}px`;
+    scan.dataset.rotation = Math.random() * 26 - 13;
+    scan.dataset.vx = 0;
+    scan.dataset.vy = 0;
+    scan.dataset.spin = 0;
+
+    topZ++;
+    scan.style.zIndex = topZ + index;
+
+    applyTransform(scan);
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
+
+    setTimeout(() => {
+      scan.style.transition = "";
+    }, 600);
+  });
 }
 
 function shakeBox() {
@@ -306,63 +418,49 @@ function shakeBox() {
   stopAllTossAnimations();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
-  if (!scans.length) return;
 
-  workspace.classList.add("shaking-box");
+  scans.forEach((scan, index) => {
+    scan.style.transition =
+      "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
 
-  const shuffledScans = scans.slice();
-  shuffle(shuffledScans);
-
-  shuffledScans.forEach((scan, index) => {
     const scale = Number(scan.dataset.scale) || 1;
+
     const currentX = parseFloat(scan.style.left) || 0;
     const currentY = parseFloat(scan.style.top) || 0;
     const currentRotation = Number(scan.dataset.rotation) || 0;
 
-    const looseness = 0.5 + Math.random() * 1.4;
+    const shakeX = Math.random() * 70 - 35;
+    const shakeY = Math.random() * 50 - 25;
+    const rotationShift = Math.random() * 18 - 9;
 
-    const moveX = (Math.random() * 180 - 90) * looseness;
-    const moveY = (Math.random() * 140 - 70) * looseness;
+    const position =
+      nudgeAwayFromRadio(
+        currentX + shakeX,
+        currentY + shakeY,
+        scan,
+        scale
+      );
 
-    const rotation =
-      currentRotation + Math.random() * 34 - 17;
+    scan.style.left = `${position.x}px`;
+    scan.style.top = `${position.y}px`;
+    scan.dataset.rotation = currentRotation + rotationShift;
+    scan.dataset.vx = 0;
+    scan.dataset.vy = 0;
+    scan.dataset.spin = 0;
 
-    const position = nudgeAwayFromRadio(
-      currentX + moveX,
-      currentY + moveY,
-      scan,
-      scale
-    );
+    topZ++;
+    scan.style.zIndex = topZ + index;
 
-    scan.style.transition =
-      "left 0.45s cubic-bezier(.2, 1.15, .35, 1), top 0.45s cubic-bezier(.2, 1.15, .35, 1), transform 0.45s cubic-bezier(.2, 1.15, .35, 1)";
+    applyTransform(scan);
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
 
     setTimeout(() => {
-      scan.style.left = `${position.x}px`;
-      scan.style.top = `${position.y}px`;
-      scan.dataset.rotation = rotation;
-      scan.dataset.vx = 0;
-      scan.dataset.vy = 0;
-      scan.dataset.spin = 0;
-
-      topZ++;
-      scan.style.zIndex = topZ + index;
-
-      applyTransform(scan);
-
-      if (document.body.classList.contains("metadata-mode")) {
-        positionMetadataLabel(scan);
-      }
-    }, index * 6);
-  });
-
-  setTimeout(() => {
-    workspace.classList.remove("shaking-box");
-
-    scans.forEach((scan) => {
       scan.style.transition = "";
-    });
-  }, 700);
+    }, 320);
+  });
 }
 
 function movePileBatch(actionType) {

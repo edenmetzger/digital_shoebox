@@ -40,17 +40,8 @@ function initializeShoeboxControls() {
       event.preventDefault();
 
       if (!event.repeat) {
-        startHeldShake();
+        shakeBox();
       }
-    }
-  });
-
-  document.addEventListener("keyup", (event) => {
-    if (isTypingInInput(event)) return;
-
-    if (event.key.toLowerCase() === "s") {
-      event.preventDefault();
-      stopHeldShake();
     }
   });
 }
