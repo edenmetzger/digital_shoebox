@@ -416,3 +416,40 @@ body.metadata-mode .scan:hover {
     transform: translate(-4px, 3px) rotate(-0.35deg);
   }
 }
+
+.mobile-controls {
+  display: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .mobile-controls {
+    display: flex;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 99999;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 170px;
+    pointer-events: auto;
+  }
+
+  .mobile-controls button {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.88);
+    color: black;
+    padding: 7px 9px;
+    border-radius: 999px;
+    box-shadow: 1px 1px 0 black;
+    touch-action: manipulation;
+  }
+
+  .mobile-controls button:active {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+  }
+}

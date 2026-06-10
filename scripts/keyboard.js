@@ -6,6 +6,16 @@ const shoeboxKeyActions = {
   Tab: focusNextScan
 };
 
+const mobileShoeboxActions = {
+  "spread-left": spreadLeft,
+  "spread-right": spreadRight,
+  surface: surfaceObjects,
+  gather: gatherObjects,
+  next: focusNextScan,
+  shake: shakeBoxOnce,
+  random: showRandomMemory
+};
+
 const audioKeyActions = {
   p: togglePlayPause,
   "]": playNextTrack,
@@ -24,6 +34,36 @@ const audioKeyActions = {
 function initializeShoeboxControls() {
   document.addEventListener("keydown", handleShoeboxKeydown);
   document.addEventListener("keyup", handleShoeboxKeyup);
+
+  initializeMobileShoeboxControls();
+}
+
+function initializeMobileShoeboxControls() {
+  const mobileControls = document.getElementById("mobileControls");
+  if (!mobileControls) return;
+
+  mobileControls.addEventListener("click", handleMobileShoeboxClick);
+}
+
+function handleMobileShoeboxClick(event) {
+  const button = event.target.closest("button[data-mobile-action]");
+  if (!button) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+
+  const action = mobileShoeboxActions[button.dataset.mobileAction];
+  if (!action) return;
+
+  action();
+}
+
+function shakeBoxOnce() {
+  startHeldShake();
+
+  window.setTimeout(() => {
+    stopHeldShake();
+  }, 450);
 }
 
 function handleShoeboxKeydown(event) {
