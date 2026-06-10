@@ -37,7 +37,9 @@ let rifleQueue = [];
 let rifleCursor = 0;
 
 let isShakingBox = false;
-let shakeAnimationId = null;
+let shakeTimeoutId = null;
 let shakeIntensity = 1;
+let shakeGroups = [];
+let shakeGroupIndex = 0;
 
 const tossAnimations = new Map();

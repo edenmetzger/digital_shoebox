@@ -380,3 +380,40 @@ body.metadata-mode .scan:hover {
   contain: layout paint;
   backface-visibility: hidden;
 }
+
+.scan {
+  contain: layout paint;
+  backface-visibility: hidden;
+}
+
+#workspace.shaking-box {
+  animation: shoeboxShake 0.11s infinite linear;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+#workspace.shaking-box.shaking-hard {
+  animation-duration: 0.075s;
+}
+
+@keyframes shoeboxShake {
+  0% {
+    transform: translate(-4px, 3px) rotate(-0.35deg);
+  }
+
+  25% {
+    transform: translate(5px, -4px) rotate(0.45deg);
+  }
+
+  50% {
+    transform: translate(-6px, -2px) rotate(-0.5deg);
+  }
+
+  75% {
+    transform: translate(4px, 5px) rotate(0.35deg);
+  }
+
+  100% {
+    transform: translate(-4px, 3px) rotate(-0.35deg);
+  }
+}

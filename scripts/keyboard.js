@@ -26,24 +26,29 @@ function initializeShoeboxControls() {
       event.preventDefault();
       focusNextScan();
     }
+
     if (event.key.toLowerCase() === "x") {
-  event.preventDefault();
-  closeInfoCard();
+      event.preventDefault();
+      closeInfoCard();
 
-  if (legend) {
-    legend.classList.add("hidden");
-  }
-}
+      if (legend) {
+        legend.classList.add("hidden");
+      }
+    }
+
     if (event.key.toLowerCase() === "s") {
-  event.preventDefault();
-  startHeldShake();
-}
+      event.preventDefault();
+      startHeldShake();
+    }
+  });
 
-document.addEventListener("keyup", (event) => {
-  if (event.key.toLowerCase() === "s") {
-    stopHeldShake();
-  }
-});
+  document.addEventListener("keyup", (event) => {
+    if (isTypingInInput(event)) return;
+
+    if (event.key.toLowerCase() === "s") {
+      event.preventDefault();
+      stopHeldShake();
+    }
   });
 }
 
@@ -90,7 +95,7 @@ function handleAudioKeyboardControls(event) {
     toggleMute();
   }
 
-    if (key === "~" || key === "`") {
+  if (key === "~" || key === "`") {
     event.preventDefault();
     showRandomMemory();
   }

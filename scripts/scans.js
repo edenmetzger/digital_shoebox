@@ -222,65 +222,87 @@ function surfaceObjects() {
 }
 
 function shakeBox() {
-  movePileBatch("shake");
+  startChunkedShake();
+
+  setTimeout(() => {
+    if (isShakingBox && shakeIntensity <= 1.05) {
+      stopChunkedShake();
+    }
+  }, 320);
 }
 
 function startHeldShake() {
+  startChunkedShake();
+}
+
+function stopHeldShake() {
+  stopChunkedShake();
+}
+
+function startChunkedShake() {
   if (isShakingBox) {
-    shakeIntensity = Math.min(shakeIntensity + 0.15, 2.6);
+    shakeIntensity = Math.min(shakeIntensity + 0.12, 2.8);
     return;
   }
 
   isShakingBox = true;
   shakeIntensity = 1;
+  shakeGroupIndex = 0;
 
   closeInfoCard();
   stopAllTossAnimations();
 
-  runShakeFrame();
+  buildShakeGroups();
+  runShakeGroup();
 }
 
-function stopHeldShake() {
+function stopChunkedShake() {
   isShakingBox = false;
   shakeIntensity = 1;
+  shakeGroupIndex = 0;
 
-  if (shakeAnimationId) {
-    cancelAnimationFrame(shakeAnimationId);
-    shakeAnimationId = null;
+  if (shakeTimeoutId) {
+    clearTimeout(shakeTimeoutId);
+    shakeTimeoutId = null;
   }
 }
 
-function runShakeFrame() {
-  if (!isShakingBox) return;
+function buildShakeGroups() {
+  const scans = Array.from(document.querySelectorAll(".scan"));
 
-  const scans = Array.from(document.querySelectorAll(".scan"))
-    .sort((a, b) => {
-      const aZ = Number(a.style.zIndex) || 0;
-      const bZ = Number(b.style.zIndex) || 0;
-      return bZ - aZ;
-    });
+  shuffle(scans);
 
-  const batchSize = Math.min(
-    scans.length,
-    Math.ceil(scans.length * 0.18)
-  );
+  const groupSize = 45;
+  shakeGroups = [];
 
-  const scansToShake = scans.slice(0, batchSize);
-
-  scansToShake.forEach((scan, index) => {
-    shakeOneScan(scan, index, shakeIntensity);
-  });
-
-  shakeIntensity = Math.min(shakeIntensity + 0.08, 2.6);
-
-  setTimeout(() => {
-    shakeAnimationId = requestAnimationFrame(runShakeFrame);
-  }, 90);
+  for (let i = 0; i < scans.length; i += groupSize) {
+    shakeGroups.push(scans.slice(i, i + groupSize));
+  }
 }
 
-function shakeOneScan(scan, index, intensity = 1) {
+function runShakeGroup() {
+  if (!isShakingBox || !shakeGroups.length) return;
+
+  const group = shakeGroups[shakeGroupIndex];
+
+  group.forEach((scan) => {
+    moveScanForShake(scan, shakeIntensity);
+  });
+
+  shakeGroupIndex++;
+
+  if (shakeGroupIndex >= shakeGroups.length) {
+    shakeGroupIndex = 0;
+    shakeIntensity = Math.min(shakeIntensity + 0.08, 2.8);
+    buildShakeGroups();
+  }
+
+  shakeTimeoutId = setTimeout(runShakeGroup, 55);
+}
+
+function moveScanForShake(scan, intensity) {
   scan.style.transition =
-    "left 0.09s linear, top 0.09s linear, transform 0.09s linear";
+    "left 0.16s linear, top 0.16s linear, transform 0.16s linear";
 
   const scale = Number(scan.dataset.scale) || 1;
 
@@ -289,31 +311,25 @@ function shakeOneScan(scan, index, intensity = 1) {
   const currentRotation = Number(scan.dataset.rotation) || 0;
 
   const x =
-    currentX + (Math.random() * 34 - 17) * intensity;
+    currentX + (Math.random() * 46 - 23) * intensity;
 
   const y =
-    currentY + (Math.random() * 26 - 13) * intensity;
+    currentY + (Math.random() * 36 - 18) * intensity;
 
   const position =
     nudgeAwayFromRadio(x, y, scan, scale);
 
   scan.style.left = `${position.x}px`;
   scan.style.top = `${position.y}px`;
-  scan.dataset.rotation =
-    currentRotation + (Math.random() * 10 - 5) * intensity;
 
-  topZ++;
-  scan.style.zIndex = topZ + index;
+  scan.dataset.rotation =
+    currentRotation + (Math.random() * 14 - 7) * intensity;
 
   applyTransform(scan);
 
-  if (document.body.classList.contains("metadata-mode")) {
-    positionMetadataLabel(scan);
-  }
-
   setTimeout(() => {
     scan.style.transition = "";
-  }, 100);
+  }, 180);
 }
 
 function movePileBatch(actionType) {
@@ -366,10 +382,6 @@ function movePileBatch(actionType) {
     if (actionType === "surface") {
       moveSurfacedScan(scan, index);
     }
-
-    if (actionType === "shake") {
-      moveShakenScan(scan, index);
-    }
   });
 }
 
@@ -378,7 +390,6 @@ function moveGatheredScan(scan, index) {
     "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
 
   const scale = Number(scan.dataset.scale) || 1;
-
   const scans = Array.from(document.querySelectorAll(".scan"));
 
   const centerX = window.innerWidth / 2;
@@ -460,41 +471,6 @@ function moveSurfacedScan(scan, index) {
   setTimeout(() => {
     scan.style.transition = "";
   }, 600);
-}
-
-function moveShakenScan(scan, index) {
-  scan.style.transition =
-    "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
-
-  const scale = Number(scan.dataset.scale) || 1;
-
-  const currentX = parseFloat(scan.style.left) || 0;
-  const currentY = parseFloat(scan.style.top) || 0;
-  const currentRotation = Number(scan.dataset.rotation) || 0;
-
-  const x = currentX + Math.random() * 70 - 35;
-  const y = currentY + Math.random() * 50 - 25;
-
-  const position =
-    nudgeAwayFromRadio(x, y, scan, scale);
-
-  scan.style.left = `${position.x}px`;
-  scan.style.top = `${position.y}px`;
-  scan.dataset.rotation =
-    currentRotation + Math.random() * 18 - 9;
-
-  topZ++;
-  scan.style.zIndex = topZ + index;
-
-  applyTransform(scan);
-
-  if (document.body.classList.contains("metadata-mode")) {
-    positionMetadataLabel(scan);
-  }
-
-  setTimeout(() => {
-    scan.style.transition = "";
-  }, 320);
 }
 
 function spreadLeft() {
