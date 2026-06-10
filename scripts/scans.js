@@ -290,48 +290,32 @@ function gatherObjects() {
   const centerX = window.innerWidth / 2;
   const centerY = window.innerHeight / 2;
 
-  scans.forEach((scan, index) => {
+  scans.forEach((scan) => {
+    const scale = Number(scan.dataset.scale) || 1;
+
+    const spreadX = Math.min(500, 120 + scans.length * 12);
+    const spreadY = Math.min(350, 80 + scans.length * 8);
+
+    const jitterX = Math.random() * spreadX - spreadX / 2;
+    const jitterY = Math.random() * spreadY - spreadY / 2;
+
+    const x = centerX - scan.offsetWidth / 2 + jitterX;
+    const y = centerY - scan.offsetHeight / 2 + jitterY;
+
+    const position = nudgeAwayFromRadio(x, y, scan, scale);
+
     scan.style.transition =
       "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
 
-    const scale = Number(scan.dataset.scale) || 1;
-
-    const spreadX =
-      Math.min(500, 120 + scans.length * 12);
-
-    const spreadY =
-      Math.min(350, 80 + scans.length * 8);
-
-    const jitterX =
-      Math.random() * spreadX - spreadX / 2;
-
-    const jitterY =
-      Math.random() * spreadY - spreadY / 2;
-
-    const x =
-      centerX -
-      scan.offsetWidth / 2 +
-      jitterX;
-
-    const y =
-      centerY -
-      scan.offsetHeight / 2 +
-      jitterY;
-
-    const position =
-      nudgeAwayFromRadio(x, y, scan, scale);
-
-    const rotation = Math.random() * 18 - 9;
-
     scan.style.left = `${position.x}px`;
     scan.style.top = `${position.y}px`;
-    scan.dataset.rotation = rotation;
-
-    topZ++;
-    scan.style.zIndex = topZ + index;
+    scan.dataset.rotation = Math.random() * 18 - 9;
 
     applyTransform(scan);
-    positionMetadataLabel(scan);
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
 
     setTimeout(() => {
       scan.style.transition = "";
@@ -443,30 +427,77 @@ function surfaceObjects() {
   closeInfoCard();
   stopAllTossAnimations();
 
-  const scans = Array.from(document.querySelectorAll(".scan"))
-    .sort((a, b) => {
-      const aZ = Number(a.style.zIndex) || 0;
-      const bZ = Number(b.style.zIndex) || 0;
-      return bZ - aZ;
-    })
-    .slice(0, 45);
+  const scans = Array.from(document.querySelectorAll(".scan"));
 
-  moveScansInBatches(scans, moveSurfaceScan, 10, 80);
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  scans.forEach((scan) => {
+    const scale = Number(scan.dataset.scale) || 1;
+
+    const jitterX = Math.random() * 700 - 350;
+    const jitterY = Math.random() * 500 - 250;
+
+    const x = centerX - scan.offsetWidth / 2 + jitterX;
+    const y = centerY - scan.offsetHeight / 2 + jitterY;
+
+    const position = nudgeAwayFromRadio(x, y, scan, scale);
+
+    scan.style.transition =
+      "left 0.55s ease, top 0.55s ease, transform 0.55s ease";
+
+    scan.style.left = `${position.x}px`;
+    scan.style.top = `${position.y}px`;
+    scan.dataset.rotation = Math.random() * 26 - 13;
+
+    applyTransform(scan);
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
+
+    setTimeout(() => {
+      scan.style.transition = "";
+    }, 600);
+  });
 }
 
 function shakeBox() {
   closeInfoCard();
   stopAllTossAnimations();
 
-  const scans = Array.from(document.querySelectorAll(".scan"))
-    .sort((a, b) => {
-      const aZ = Number(a.style.zIndex) || 0;
-      const bZ = Number(b.style.zIndex) || 0;
-      return bZ - aZ;
-    })
-    .slice(0, 35);
+  const scans = Array.from(document.querySelectorAll(".scan"));
 
-  moveScansInBatches(scans, moveShakenScan, 8, 60);
+  scans.forEach((scan) => {
+    const scale = Number(scan.dataset.scale) || 1;
+
+    const currentX = parseFloat(scan.style.left) || 0;
+    const currentY = parseFloat(scan.style.top) || 0;
+    const currentRotation = Number(scan.dataset.rotation) || 0;
+
+    const x = currentX + Math.random() * 70 - 35;
+    const y = currentY + Math.random() * 50 - 25;
+
+    const position = nudgeAwayFromRadio(x, y, scan, scale);
+
+    scan.style.transition =
+      "left 0.28s ease, top 0.28s ease, transform 0.28s ease";
+
+    scan.style.left = `${position.x}px`;
+    scan.style.top = `${position.y}px`;
+    scan.dataset.rotation =
+      currentRotation + Math.random() * 18 - 9;
+
+    applyTransform(scan);
+
+    if (document.body.classList.contains("metadata-mode")) {
+      positionMetadataLabel(scan);
+    }
+
+    setTimeout(() => {
+      scan.style.transition = "";
+    }, 320);
+  });
 }
 
 function moveScansInBatches(scans, moveFunction, batchSize, delay) {
