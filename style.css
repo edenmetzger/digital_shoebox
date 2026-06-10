@@ -42,7 +42,6 @@ body {
   transform-origin: center center;
   contain: layout paint;
   backface-visibility: hidden;
-  will-change: transform, left, top;
 }
 
 .scan:active {

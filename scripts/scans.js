@@ -700,7 +700,7 @@ function keepScanInView(scan) {
   let x = parseFloat(scan.style.left) || 0;
   let y = parseFloat(scan.style.top) || 0;
 
-  const visibleMargin = 80;
+  const visibleMargin = 140;
 
   const minX = -scan.offsetWidth * scale + visibleMargin;
   const minY = -scan.offsetHeight * scale + visibleMargin;

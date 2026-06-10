@@ -43,6 +43,14 @@ function initializeShoeboxControls() {
         shakeBox();
       }
     }
+
+    if (event.key === "~" || event.key === "`") {
+      event.preventDefault();
+
+      if (!event.repeat) {
+        showRandomMemory();
+      }
+    }
   });
 }
 
@@ -87,10 +95,5 @@ function handleAudioKeyboardControls(event) {
   ) {
     event.preventDefault();
     toggleMute();
-  }
-
-  if (key === "~" || key === "`") {
-    event.preventDefault();
-    showRandomMemory();
   }
 }

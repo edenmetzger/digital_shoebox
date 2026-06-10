@@ -162,25 +162,25 @@ function resizeWithTrackpad(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  closeInfoCard();
-
   const scan = event.currentTarget;
 
+  closeInfoCard();
   stopTossAnimation(scan);
 
   let scale = Number(scan.dataset.scale) || 1;
 
-  scale += -event.deltaY * 0.0015;
+  const delta = Math.max(-40, Math.min(40, event.deltaY));
+  scale += -delta * 0.0008;
 
   scale = Math.max(
     getMinimumScale(),
-    Math.min(1.5, scale)
+    Math.min(1.35, scale)
   );
 
   scan.dataset.scale = scale;
-  keepScanInView(scan);
 
   bringScanToFront(scan);
+  keepScanInView(scan);
   applyTransform(scan);
   positionMetadataLabel(scan);
 }
