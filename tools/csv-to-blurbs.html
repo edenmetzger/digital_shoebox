@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSV to Blurbs Converter</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      padding: 24px;
+      background: #f2e7d5;
+      color: #2f241a;
+    }
+
+    textarea {
+      width: 100%;
+      height: 360px;
+      margin-top: 16px;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    code {
+      background: rgba(47, 36, 26, 0.08);
+      padding: 2px 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSV to blurbs.js</h1>
+
+  <p>
+    Upload <code>archive.csv</code>. This will generate code you can paste into
+    <code>blurbs.js</code>.
+  </p>
+
+  <p>
+    Expected CSV fields:
+    <code>filename,title,description,category,type,date,location,source,tags,note,related</code>
+  </p>
+
+  <input id="csvInput" type="file" accept=".csv" />
+  <button id="copyButton">copy output</button>
+
+  <textarea id="output" placeholder="generated blurbs.js will appear here"></textarea>
+
+  <script>
+    const csvInput = document.getElementById("csvInput");
+    const output = document.getElementById("output");
+    const copyButton = document.getElementById("copyButton");
+
+    csvInput.addEventListener("change", async () => {
+      const file = csvInput.files[0];
+      if (!file) return;
+
+      const text = await file.text();
+      const rows = parseCSV(text);
+      const archive = buildArchive(rows);
+
+      output.value =
+        "const archive = " +
+        JSON.stringify(archive, null, 2) +
+        ";\n\nconst blurbs = archive;";
+    });
+
+    copyButton.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(output.value);
+      copyButton.textContent = "copied";
+
+      setTimeout(() => {
+        copyButton.textContent = "copy output";
+      }, 1200);
+    });
+
+    function buildArchive(rows) {
+      const archive = {};
+
+      rows.forEach((row) => {
+        if (!row.filename) return;
+
+        archive[row.filename] = {
+          filename: row.filename || "",
+          title: row.title || "",
+          description: row.description || "",
+          category: row.category || "",
+          type: row.type || "",
+          date: row.date || "",
+          location: row.location || "",
+          source: row.source || "",
+          tags: splitList(row.tags),
+          note: row.note || "",
+          related: splitList(row.related)
+        };
+      });
+
+      return archive;
+    }
+
+    function splitList(value) {
+      if (!value) return [];
+
+      return value
+        .split("|")
+        .map((item) => item.trim())
+        .filter(Boolean);
+    }
+
+    function parseCSV(text) {
+      const lines = text.trim().split(/\r?\n/);
+
+      if (!lines.length) return [];
+
+      const headers = parseCSVLine(lines.shift()).map((header) =>
+        header.trim()
+      );
+
+      return lines
+        .filter((line) => line.trim() !== "")
+        .map((line) => {
+          const values = parseCSVLine(line);
+          const row = {};
+
+          headers.forEach((header, index) => {
+            row[header] = values[index]
+              ? values[index].trim()
+              : "";
+          });
+
+          return row;
+        });
+    }
+
+    function parseCSVLine(line) {
+      const values = [];
+      let current = "";
+      let insideQuotes = false;
+
+      for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        const nextChar = line[i + 1];
+
+        if (char === '"' && insideQuotes && nextChar === '"') {
+          current += '"';
+          i++;
+        } else if (char === '"') {
+          insideQuotes = !insideQuotes;
+        } else if (char === "," && !insideQuotes) {
+          values.push(current);
+          current = "";
+        } else {
+          current += char;
+        }
+      }
+
+      values.push(current);
+      return values;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+:root {
+  --background: #b89f79;
+  --paper: #f2e7d5;
+  --paper-dark: #e3d3bc;
+  --ink: #2f241a;
+  --muted-ink: #726252;
+  --accent: #5d6b5a;
+  --shadow: rgba(47, 36, 26, 0.25);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#workspace {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scan {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 45vw;
+  max-height: 70vh;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
+  pointer-events: auto;
+  transform-origin: center center;
+}
+
+.scan:active {
+  cursor: grabbing;
+}
+
+.scan-highlight {
+  animation: scanPulse 1.2s ease;
+}
+
+@keyframes scanPulse {
+  0% {
+    filter: brightness(1);
+  }
+
+  45% {
+    filter: brightness(1.6)
+      drop-shadow(0 0 18px rgba(242, 231, 213, 0.95));
+  }
+
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.metadata-label {
+  position: absolute;
+  z-index: 9997;
+
+  max-width: 160px;
+  padding: 6px 8px;
+
+  background: rgba(242, 231, 213, 0.9);
+  color: var(--ink);
+
+  border: 1px solid rgba(47, 36, 26, 0.22);
+  box-shadow: 0 5px 16px var(--shadow);
+
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  line-height: 1.25;
+  text-align: center;
+
+  pointer-events: none;
+  display: none;
+}
+
+body.metadata-mode .metadata-label.visible-metadata {
+  display: block;
+}
+
+body.metadata-mode .scan {
+  opacity: 0.35;
+}
+
+body.metadata-mode .scan:hover {
+  opacity: 0.65;
+}
+
+
+#introOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+#introAnimation {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Help widget */
+
+.help-widget {
+  position: fixed;
+
+ left: 18px;
+  top: 128px;
+
+  z-index: 10000;
+
+  font-family: "Courier New", monospace;
+}
+
+#helpToggle {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, #d7d7d7, #8f8f8f);
+  color: #1d2b1f;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.help-widget .legend {
+  position: absolute;
+
+  left: 42px;
+  top: 0;
+
+  width: 220px;
+  padding: 10px 14px;
+
+  background: rgba(242, 231, 213, 0.94);
+  color: var(--muted-ink);
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(47, 36, 26, 0.18);
+  box-shadow: 0 5px 16px var(--shadow);
+  backdrop-filter: blur(4px);
+}
+
+.help-widget .legend p {
+  margin: 3px 0;
+}
+
+#foundCounter {
+  margin-top: 7px;
+  color: var(--ink);
+  font-style: italic;
+}
+
+/* Info card */
+
+.info-card {
+  position: absolute;
+  max-width: 300px;
+  padding: 16px 20px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid rgba(47, 36, 26, 0.22);
+  box-shadow: 0 8px 24px var(--shadow);
+  font-size: 15px;
+  line-height: 1.35;
+  z-index: 10001;
+}
+
+.info-card.hidden {
+  display: none;
+}
+
+#closeInfo {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  color: var(--muted-ink);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#infoTitle {
+  margin: 0 20px 8px 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#infoText {
+  margin: 0 0 10px;
+}
+
+.note-button,
+.related-objects button {
+  margin-top: 8px;
+  margin-right: 6px;
+  padding: 4px 7px;
+  background: var(--paper-dark);
+  color: var(--ink);
+  border: 1px solid rgba(47, 36, 26, 0.28);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.note-panel {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff8e8;
+  border-left: 3px solid var(--accent);
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.related-objects{
+  margin-top: 10px;
+}
+
+.related-heading {
+  margin: 10px 0 4px;
+  font-size: 12px;
+  color: var(--muted-ink);
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+}
+
+/* MP3 player */
+
+.audio-widget {
+  position: fixed;
+  left: 18px;
+  top: 18px;
+  z-index: 9998;
+  width: 280px;
+  padding: 8px;
+  background: linear-gradient(135deg, #d7d7d7, #8f8f8f);
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  box-shadow: 0 5px 16px var(--shadow);
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  box-sizing: border-box;
+}
+
+.audio-screen {
+  padding: 6px;
+  margin-bottom: 7px;
+  background: #1d2b1f;
+  color: #b6ff9a;
+  border: 1px inset #666;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  text-shadow: 0 0 4px #b6ff9a;
+}
+
+#audioTrackTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#audioStatus {
+  flex-shrink: 0;
+}
+
+.audio-controls {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+  margin-bottom: 7px;
+}
+
+.audio-controls button {
+  min-width: 0;
+  height: 22px;
+  padding: 0;
+  background: #c9c9c9;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.audio-controls button:active {
+  border-top: 2px solid #555;
+  border-left: 2px solid #555;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.audio-button-muted {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.volume-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.volume-row input {
+  width: 100%;
+}
+
+#shuffleButton {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#randomMemoryButton {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.random-memory-float {
+  position: fixed;
+   left: 306px;
+  top: 18px;
+  z-index: 10000;
+
+  width: 34px;
+  height: 34px;
+
+  background: linear-gradient(135deg, #d7d7d7, #8f8f8f);
+  color: #1d2b1f;
+
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
