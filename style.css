@@ -381,11 +381,6 @@ body.metadata-mode .scan:hover {
   backface-visibility: hidden;
 }
 
-.scan {
-  contain: layout paint;
-  backface-visibility: hidden;
-}
-
 #workspace.shaking-box {
   animation: shoeboxShake 0.11s infinite linear;
   transform-origin: center center;

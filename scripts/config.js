@@ -16,9 +16,9 @@ const TOSS_FRICTION = 0.85;
 const TOSS_MIN_VELOCITY = 0.35;
 const OFFSCREEN_MARGIN_RATIO = 0.6;
 
-const INITIAL_SCAN_LOAD_COUNT = 30;
-const SCAN_LOAD_BATCH_SIZE = 15;
-const SCAN_LOAD_DELAY = 200;
+const INITIAL_SCAN_LOAD_COUNT = 18;
+const SCAN_LOAD_BATCH_SIZE = 8;
+const SCAN_LOAD_DELAY = 350;
 
 const audioTracks = [
   { title: "track 01", file: "audio/track01.mp3" },
