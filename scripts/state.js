@@ -1,3 +1,13 @@
+function shuffleFilenames(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const randomIndex =
+      Math.floor(Math.random() * (i + 1));
+
+    [array[i], array[randomIndex]] =
+      [array[randomIndex], array[i]];
+  }
+}
+
 function getSessionShownScans() {
   const stored = sessionStorage.getItem(SESSION_SHOWN_SCANS_KEY);
 
@@ -5,12 +15,7 @@ function getSessionShownScans() {
 
   try {
     const parsed = JSON.parse(stored);
-
-    if (Array.isArray(parsed)) {
-      return parsed;
-    }
-
-    return [];
+    return Array.isArray(parsed) ? parsed : [];
   } catch {
     return [];
   }
@@ -44,7 +49,7 @@ function chooseActiveScanFilenames() {
     unseen = allFilenames.slice();
   }
 
-  shuffle(unseen);
+  shuffleFilenames(unseen);
 
   const chosen = unseen.slice(0, ACTIVE_SCAN_COUNT);
 

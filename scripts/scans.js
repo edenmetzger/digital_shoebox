@@ -2,6 +2,21 @@ let pileActionType = null;
 let pileQueue = [];
 let pileCursor = 0;
 
+let heldShakeInterval = null;
+let heldShakeStartTime = 0;
+
+function getHeldShakeIntensity() {
+  if (!heldShakeStartTime) return 1;
+
+  const heldFor = Date.now() - heldShakeStartTime;
+
+  if (heldFor > 1800) return 3.2;
+  if (heldFor > 1100) return 2.4;
+  if (heldFor > 500) return 1.7;
+
+  return 1.2;
+}
+
 function getRadioAvoidanceZone() {
   const radio = document.getElementById("audioWidget");
   if (!radio) return null;
@@ -448,12 +463,16 @@ function surfaceObjects() {
   applyPlannedMoves(plans, 600);
 }
 
-function shakeBox() {
+function shakeBox(intensity = 1) {
   closeInfoCard();
   stopAllTossAnimations();
 
   const scans = Array.from(document.querySelectorAll(".scan"));
   const zone = getRadioAvoidanceZone();
+
+  const moveXAmount = 150 * intensity;
+  const moveYAmount = 110 * intensity;
+  const rotationAmount = 26 * intensity;
 
   const plans = scans.map((scan) => {
     const scale = Number(scan.dataset.scale) || 1;
@@ -464,8 +483,15 @@ function shakeBox() {
     const currentY = parseFloat(scan.style.top) || 0;
     const currentRotation = Number(scan.dataset.rotation) || 0;
 
-    const x = currentX + Math.random() * 150 - 75;
-    const y = currentY + Math.random() * 110 - 55;
+    const x =
+      currentX +
+      Math.random() * moveXAmount -
+      moveXAmount / 2;
+
+    const y =
+      currentY +
+      Math.random() * moveYAmount -
+      moveYAmount / 2;
 
     const position = nudgeAwayFromZone(
       x,
@@ -479,12 +505,36 @@ function shakeBox() {
       scan,
       x: position.x,
       y: position.y,
-      rotation: currentRotation + Math.random() * 26 - 13,
-      transition: "left 0.22s ease, top 0.22s ease, transform 0.22s ease"
+      rotation:
+        currentRotation +
+        Math.random() * rotationAmount -
+        rotationAmount / 2,
+      transition: "left 0.18s ease, top 0.18s ease, transform 0.18s ease"
     };
   });
 
-  applyPlannedMoves(plans, 320);
+  applyPlannedMoves(plans, 220);
+}
+
+function startHeldShake() {
+  if (heldShakeInterval) return;
+
+  heldShakeStartTime = Date.now();
+
+  shakeBox(getHeldShakeIntensity());
+
+  heldShakeInterval = setInterval(() => {
+    shakeBox(getHeldShakeIntensity());
+  }, 190);
+}
+
+function stopHeldShake() {
+  heldShakeStartTime = 0;
+
+  if (heldShakeInterval) {
+    clearInterval(heldShakeInterval);
+    heldShakeInterval = null;
+  }
 }
 
 function movePileBatch(actionType) {

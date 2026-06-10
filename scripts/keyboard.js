@@ -40,7 +40,7 @@ function initializeShoeboxControls() {
       event.preventDefault();
 
       if (!event.repeat) {
-        shakeBox();
+        startHeldShake();
       }
     }
 
@@ -50,6 +50,15 @@ function initializeShoeboxControls() {
       if (!event.repeat) {
         showRandomMemory();
       }
+    }
+  });
+
+  document.addEventListener("keyup", (event) => {
+    if (isTypingInInput(event)) return;
+
+    if (event.key.toLowerCase() === "s") {
+      event.preventDefault();
+      stopHeldShake();
     }
   });
 }
