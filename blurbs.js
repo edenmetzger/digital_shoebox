@@ -7,7 +7,7 @@ const archive = {
     "type": "patch",
     "date": "",
     "location": "Detroit, MI",
-    "source": "",
+    "source": "City Bird in Cass Corridor",
     "tags": [
       "detroit",
       "folklore",
@@ -15,8 +15,10 @@ const archive = {
     ],
     "note": "A little talisman from Detroit mythology. It feels like both a warning and a souvenir.",
     "related": [
-      "scan9.jpg",
-      "scan12.jpg"
+      "scan120.jpg",
+      "scan215.jpg",
+      "scan216.jpg",
+      "scan46.jpg"
     ]
   },
   "scan2.jpg": {
@@ -25,7 +27,7 @@ const archive = {
     "description": "baltimore to washington, d.c. train ticket from 2021",
     "category": "transit",
     "type": "ticket",
-    "date": "2021",
+    "date": "summer 2021",
     "location": "Baltimore, MD / Washington, DC",
     "source": "",
     "tags": [
@@ -33,9 +35,13 @@ const archive = {
       "washington dc",
       "transit"
     ],
-    "note": "A small receipt of movement between two cities.",
+    "note": "from a trip to meet a friend for dinner and drinks",
     "related": [
-      "scan10.jpg"
+      "scan68.jpg",
+      "scan67.jpg",
+      "scan10.jpg",
+      "scan136.jpg",
+      "scan170.jpg"
     ]
   },
   "scan3.jpg": {
@@ -52,9 +58,11 @@ const archive = {
       "magazine",
       "new yorker"
     ],
-    "note": "A saved fragment of someone else’s language that felt worth keeping.",
+    "note": "this poem lives on my wall permanently",
     "related": [
+      "scan57.jpg",
       "scan4.jpg",
+      "scan72.jpg",
       "scan12.jpg"
     ]
   },
@@ -72,10 +80,12 @@ const archive = {
       "fashion",
       "magazine"
     ],
-    "note": "A clipping about image, mythology, and the afterlife of style.",
+    "note": "an ode to a high school favorite",
     "related": [
+      "scan3.jpg",
       "scan7.jpg",
-      "scan3.jpg"
+      "scan111.jpg",
+      "scan104.jpg"
     ]
   },
   "scan5.jpg": {
@@ -92,9 +102,12 @@ const archive = {
       "language",
       "ephemera"
     ],
-    "note": "Tiny disposable language lesson, preserved long after the gum is gone.",
+    "note": "que bueno",
     "related": [
-      "scan6.jpg"
+      "scan141.jpg",
+      "scan139.jpg",
+      "scan142.jpg",
+      "scan127.jpg"
     ]
   },
   "scan6.jpg": {
@@ -111,9 +124,12 @@ const archive = {
       "body",
       "materials"
     ],
-    "note": "Fragments waiting to become something else.",
+    "note": "fragments waiting to become something else",
     "related": [
-      "scan5.jpg"
+      "scan14.jpg",
+      "scan15.jpg",
+      "scan203.jpg",
+      "scan149.jpg"
     ]
   },
   "scan7.jpg": {
@@ -123,16 +139,19 @@ const archive = {
     "category": "music",
     "type": "sticker",
     "date": "2019",
-    "location": "",
+    "location": "The Basement East",
     "source": "black midi, Schlagenheim",
     "tags": [
       "music",
       "black midi",
       "album"
     ],
-    "note": "A remnant from the packaging, kept because the packaging became part of the object.",
+    "note": "a remnant from the packaging, the packaging became the object",
     "related": [
-      "scan4.jpg"
+      "scan4.jpg",
+      "scan121.jpg",
+      "scan111.jpg",
+      "scan207.jpg"
     ]
   },
   "scan8.jpg": {
@@ -151,8 +170,11 @@ const archive = {
     ],
     "note": "Evidence of watching a monster movie the old-fashioned way.",
     "related": [
-      "scan9.jpg",
-      "scan1.jpg"
+      "scan181.jpg",
+      "scan38.jpg",
+      "scan171.jpg",
+      "scan180.jpg",
+      "scan41.jpg"
     ]
   },
   "scan9.jpg": {
@@ -161,7 +183,7 @@ const archive = {
     "description": "found at a halloween party",
     "category": "game",
     "type": "trading card",
-    "date": "",
+    "date": "halloween 2024",
     "location": "",
     "source": "",
     "tags": [
@@ -169,10 +191,12 @@ const archive = {
       "halloween",
       "party"
     ],
-    "note": "A small dark thing found in a social place.",
+    "note": "",
     "related": [
-      "scan1.jpg",
-      "scan8.jpg"
+      "scan96.jpg",
+      "scan29.jpg",
+      "scan126.jpg",
+      "scan92.jpg"
     ]
   },
   "scan10.jpg": {
@@ -189,10 +213,13 @@ const archive = {
       "hyattsville",
       "maryland"
     ],
-    "note": "Packaging kept because the design felt too good to throw away.",
+    "note": "",
     "related": [
       "scan2.jpg",
-      "scan11.jpg"
+      "scan170.jpg",
+      "scan11.jpg",
+      "scan39.jpg",
+      "scan67.jpg"
     ]
   },
   "scan11.jpg": {
@@ -201,7 +228,7 @@ const archive = {
     "description": "from rendezvous bbq in memphis, tn",
     "category": "restaurant",
     "type": "wrapper",
-    "date": "",
+    "date": "september 2023",
     "location": "Memphis, TN",
     "source": "Rendezvous BBQ",
     "tags": [
@@ -209,40 +236,47 @@ const archive = {
       "bbq",
       "restaurant"
     ],
-    "note": "A throwaway object from a very specific place.",
+    "note": "I received a job offer after a month of searching while at this restaurant",
     "related": [
+      "scan65.jpg",
+      "scan77.jpg",
+      "scan143.jpg",
+      "scan161.jpg",
       "scan10.jpg"
     ]
   },
   "scan12.jpg": {
     "filename": "scan12.jpg",
-    "title": "'some butterflies' by jack goldstein",
+    "title": "some butterflies' by jack goldstein",
     "description": "postcard from c/o berlin",
     "category": "art",
     "type": "postcard",
-    "date": "",
-    "location": "Berlin, Germany",
+    "date": "september 2024",
+    "location": "Berlin, DE",
     "source": "C/O Berlin",
     "tags": [
       "art",
       "berlin",
       "postcard"
     ],
-    "note": "An art object turned souvenir turned archive item.",
+    "note": "i love butterflies",
     "related": [
+      "scan152.jpg",
+      "scan153.jpg",
+      "scan166.jpg",
       "scan3.jpg",
-      "scan1.jpg"
+      "scan140.jpg"
     ]
   },
   "scan13.jpg": {
     "filename": "scan13.jpg",
     "title": "crushin' beers at lakeside",
-    "description": "vintage-style button reading 'crushin beers at lakeside'",
+    "description": "Lakeside Lounge coaster",
     "category": "ephemera",
     "type": "button",
-    "date": "",
-    "location": "",
-    "source": "",
+    "date": "fall 2023",
+    "location": "Nashville, TN",
+    "source": "Lakeside Lounge",
     "tags": [
       "beer",
       "baseball",
@@ -251,10 +285,12 @@ const archive = {
       "souvenir",
       "summer"
     ],
-    "note": "",
+    "note": "iykyk",
     "related": [
-      "scan21.jpg",
-      "scan27.jpg"
+      "scan163.jpg",
+      "scan27.jpg",
+      "scan71.jpg",
+      "scan40.jpg"
     ]
   },
   "scan14.jpg": {
@@ -274,16 +310,18 @@ const archive = {
       "collage",
       "absurdity"
     ],
-    "note": "",
+    "note": "bat shit crazy",
     "related": [
       "scan15.jpg",
-      "scan16.jpg"
+      "scan16.jpg",
+      "scan34.jpg",
+      "scan6.jpg"
     ]
   },
   "scan15.jpg": {
     "filename": "scan15.jpg",
     "title": "soup for the soul",
-    "description": "black and white collage page featuring text and illustrations",
+    "description": "more collage materials",
     "category": "print",
     "type": "collage page",
     "date": "",
@@ -299,14 +337,16 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan14.jpg",
       "scan16.jpg",
-      "scan34.jpg"
+      "scan17.jpg",
+      "scan6.jpg"
     ]
   },
   "scan16.jpg": {
     "filename": "scan16.jpg",
     "title": "revolutionary crush",
-    "description": "collage page centered on typography and found phrases",
+    "description": "even more collage materials",
     "category": "print",
     "type": "collage page",
     "date": "",
@@ -323,13 +363,15 @@ const archive = {
     "note": "",
     "related": [
       "scan15.jpg",
-      "scan34.jpg"
+      "scan34.jpg",
+      "scan14.jpg",
+      "scan35.jpg"
     ]
   },
   "scan17.jpg": {
     "filename": "scan17.jpg",
     "title": "vitality greens daily",
-    "description": "advertisement fragment for vitality greens daily",
+    "description": "cool typography",
     "category": "print",
     "type": "collage page",
     "date": "",
@@ -344,18 +386,21 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan48.jpg"
+      "scan48.jpg",
+      "scan15.jpg",
+      "scan20.jpg",
+      "scan202.jpg"
     ]
   },
   "scan18.jpg": {
     "filename": "scan18.jpg",
     "title": "society's most loathsome ideas",
-    "description": "typewritten clipping reading 'society's most loathsome ideas'",
+    "description": "from the 2021 GQ profile on Viagra Boys",
     "category": "print",
     "type": "text clipping",
     "date": "",
     "location": "",
-    "source": "",
+    "source": "GQ",
     "tags": [
       "quote",
       "typewriter",
@@ -366,15 +411,15 @@ const archive = {
     "note": "",
     "related": [
       "scan19.jpg",
-      "scan20.jpg",
       "scan26.jpg",
-      "scan30.jpg"
+      "scan30.jpg",
+      "scan20.jpg"
     ]
   },
-  "scan19.jpg": {
-    "filename": "scan19.jpg",
+  "scan19.webp": {
+    "filename": "scan19.webp",
     "title": "who let you in here?",
-    "description": "quote clipping about letting oneself in",
+    "description": "i fucking let myself in",
     "category": "print",
     "type": "text clipping",
     "date": "",
@@ -387,17 +432,18 @@ const archive = {
       "anxiety",
       "belonging"
     ],
-    "note": "",
+    "note": "i mean...yeah",
     "related": [
+      "scan42.jpg",
       "scan18.jpg",
       "scan20.jpg",
-      "scan42.jpg"
+      "scan21.jpg"
     ]
   },
   "scan20.jpg": {
     "filename": "scan20.jpg",
     "title": "chaos",
-    "description": "small black clipping reading 'chaos'",
+    "description": "chaos egg",
     "category": "print",
     "type": "text fragment",
     "date": "",
@@ -412,14 +458,16 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan33.jpg",
+      "scan19.jpg",
       "scan18.jpg",
-      "scan19.jpg"
+      "scan17.jpg"
     ]
   },
   "scan21.jpg": {
     "filename": "scan21.jpg",
     "title": "communism happens",
-    "description": "political clipping reading 'communism happens one law and one tax at a time'",
+    "description": "",
     "category": "print",
     "type": "text clipping",
     "date": "",
@@ -433,16 +481,18 @@ const archive = {
       "slogan",
       "ideology"
     ],
-    "note": "",
+    "note": "red scare propaganda",
     "related": [
-      "scan13.jpg",
-      "scan27.jpg"
+      "scan27.jpg",
+      "scan22.jpg",
+      "scan23.jpg",
+      "scan19.jpg"
     ]
   },
   "scan22.jpg": {
     "filename": "scan22.jpg",
     "title": "lighting the fuse",
-    "description": "illustration of a hand striking a match against an american flag matchbook",
+    "description": "collage bits",
     "category": "print",
     "type": "illustration clipping",
     "date": "",
@@ -460,13 +510,15 @@ const archive = {
     "related": [
       "scan23.jpg",
       "scan24.jpg",
-      "scan28.jpg"
+      "scan28.jpg",
+      "scan21.jpg",
+      "scan33.jpg"
     ]
   },
-  "scan23.jpg": {
-    "filename": "scan23.jpg",
+  "scan23.webp": {
+    "filename": "scan23.webp",
     "title": "resist!",
-    "description": "bold text clipping reading 'resist!'",
+    "description": "",
     "category": "print",
     "type": "text clipping",
     "date": "",
@@ -479,17 +531,18 @@ const archive = {
       "typography",
       "resistance"
     ],
-    "note": "",
+    "note": "may i offer you a nice egg in this trying time",
     "related": [
-      "scan22.jpg",
       "scan24.jpg",
+      "scan22.jpg",
+      "scan21.jpg",
       "scan28.jpg"
     ]
   },
   "scan24.jpg": {
     "filename": "scan24.jpg",
     "title": "resistance to tyranny",
-    "description": "new yorker page featuring a suffrage-era protest banner",
+    "description": "",
     "category": "print",
     "type": "magazine clipping",
     "date": "",
@@ -503,18 +556,19 @@ const archive = {
       "new yorker",
       "activism"
     ],
-    "note": "",
+    "note": "hell yeah!!!",
     "related": [
-      "scan22.jpg",
+      "scan119.jpg",
+      "scan156.jpg",
       "scan23.jpg",
       "scan28.jpg",
-      "scan46.jpg"
+      "scan22.jpg"
     ]
   },
   "scan25.jpg": {
     "filename": "scan25.jpg",
     "title": "garden family delivery",
-    "description": "sticker advertisement for a cannabis delivery service",
+    "description": "ripped bit of a Garden Family advertisement",
     "category": "ephemera",
     "type": "sticker",
     "date": "",
@@ -530,14 +584,16 @@ const archive = {
     "note": "",
     "related": [
       "scan37.jpg",
-      "scan38.jpg",
-      "scan39.jpg"
+      "scan39.jpg",
+      "scan162.jpg",
+      "scan168.jpg",
+      "scan70.jpg"
     ]
   },
   "scan26.jpg": {
     "filename": "scan26.jpg",
     "title": "green cheese",
-    "description": "quotation about proving the moon is not made of green cheese",
+    "description": "proving the moon is not made of green cheese",
     "category": "print",
     "type": "quotation clipping",
     "date": "",
@@ -550,22 +606,24 @@ const archive = {
       "samuel butler",
       "inquiry"
     ],
-    "note": "",
+    "note": "this makes me giggle",
     "related": [
+      "scan217.jpg",
       "scan18.jpg",
-      "scan30.jpg",
-      "scan44.jpg"
+      "scan44.jpg",
+      "scan33.jpg",
+      "scan209.jpg"
     ]
   },
   "scan27.jpg": {
     "filename": "scan27.jpg",
     "title": "the label wins",
-    "description": "cartoon about peeling labels from beer bottles",
+    "description": "",
     "category": "print",
     "type": "cartoon clipping",
     "date": "",
     "location": "",
-    "source": "",
+    "source": "The New Yorker",
     "tags": [
       "beer",
       "perfectionism",
@@ -575,15 +633,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan13.jpg",
       "scan21.jpg",
+      "scan13.jpg",
+      "scan71.jpg",
       "scan29.jpg"
     ]
   },
   "scan28.jpg": {
     "filename": "scan28.jpg",
     "title": "another world is possible",
-    "description": "grace lee boggs quote about another world being possible",
+    "description": "grace lee boggs quote",
     "category": "print",
     "type": "poster clipping",
     "date": "",
@@ -596,18 +655,19 @@ const archive = {
       "future",
       "imagination"
     ],
-    "note": "",
+    "note": "good reminder",
     "related": [
-      "scan22.jpg",
-      "scan23.jpg",
       "scan24.jpg",
-      "scan34.jpg"
+      "scan34.jpg",
+      "scan23.jpg",
+      "scan31.jpg",
+      "scan22.jpg"
     ]
   },
   "scan29.jpg": {
     "filename": "scan29.jpg",
     "title": "monster island",
-    "description": "cartoon depicting monsters overlooking a small island town",
+    "description": "",
     "category": "print",
     "type": "cartoon clipping",
     "date": "",
@@ -622,9 +682,10 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan1.jpg",
-      "scan8.jpg",
-      "scan27.jpg"
+      "scan9.jpg",
+      "scan27.jpg",
+      "scan32.jpg",
+      "scan122.jpg"
     ]
   },
   "scan30.jpg": {
@@ -647,19 +708,20 @@ const archive = {
     "note": "",
     "related": [
       "scan18.jpg",
-      "scan26.jpg",
-      "scan34.jpg"
+      "scan118.jpg",
+      "scan33.jpg",
+      "scan123.jpg"
     ]
   },
   "scan31.jpg": {
     "filename": "scan31.jpg",
-    "title": "miniature world",
-    "description": "illustration reading 'a world in miniature' surrounding a figure constructing a model city",
+    "title": "ave maria grotto paper clipping",
+    "description": "from the grotto in Alabama",
     "category": "print",
     "type": "logo clipping",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Cullman, AL",
+    "source": "Ave Maria Grotto",
     "tags": [
       "architecture",
       "scale",
@@ -670,14 +732,17 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan35.jpg",
-      "scan44.jpg"
+      "scan58.jpg",
+      "scan215.jpg",
+      "scan200.jpg",
+      "scan202.jpg",
+      "scan28.jpg"
     ]
   },
   "scan32.jpg": {
     "filename": "scan32.jpg",
     "title": "earth apology",
-    "description": "cartoon of the earth apologizing with the words 'i'm sorry'",
+    "description": "cartoon of the earth apologizing",
     "category": "print",
     "type": "illustration clipping",
     "date": "",
@@ -691,17 +756,18 @@ const archive = {
       "environment",
       "responsibility"
     ],
-    "note": "",
+    "note": "apology going the wrong way!",
     "related": [
       "scan40.jpg",
-      "scan41.jpg",
-      "scan42.jpg"
+      "scan29.jpg",
+      "scan56.jpg",
+      "scan122.jpg"
     ]
   },
   "scan33.jpg": {
     "filename": "scan33.jpg",
-    "title": "enemy",
-    "description": "blackletter typography clipping spelling the word 'enemy'",
+    "title": "pretty gothic",
+    "description": "",
     "category": "print",
     "type": "typography clipping",
     "date": "",
@@ -714,15 +780,18 @@ const archive = {
       "identity",
       "conflict"
     ],
-    "note": "",
+    "note": "one of my favorite pieces of type I've found in my clippings",
     "related": [
-      "scan20.jpg"
+      "scan20.jpg",
+      "scan26.jpg",
+      "scan30.jpg",
+      "scan22.jpg"
     ]
   },
   "scan34.jpg": {
     "filename": "scan34.jpg",
-    "title": "consumption collage",
-    "description": "handmade collage combining abolitionist, anarchist, and self-help fragments",
+    "title": "consumption collage materials",
+    "description": "collage pieces combining abolitionist, anarchist, and self-help fragments",
     "category": "art",
     "type": "collage",
     "date": "",
@@ -738,16 +807,17 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan28.jpg",
-      "scan30.jpg",
       "scan35.jpg",
-      "scan36.jpg"
+      "scan36.jpg",
+      "scan16.jpg",
+      "scan28.jpg",
+      "scan14.jpg"
     ]
   },
   "scan35.jpg": {
     "filename": "scan35.jpg",
     "title": "cutout parade",
-    "description": "surreal collage of fashion figures, animals, and miscellaneous cutouts",
+    "description": "surreal collage of fashion figures and animals",
     "category": "art",
     "type": "collage",
     "date": "",
@@ -764,13 +834,15 @@ const archive = {
     "note": "",
     "related": [
       "scan34.jpg",
-      "scan36.jpg"
+      "scan36.jpg",
+      "scan149.jpg",
+      "scan16.jpg"
     ]
   },
   "scan36.jpg": {
     "filename": "scan36.jpg",
     "title": "fake world",
-    "description": "collage featuring ghosts, mythic creatures, earth imagery, and the word 'fake'",
+    "description": "collage materials featuring ghosts, mythic creatures, earth imagery",
     "category": "art",
     "type": "collage",
     "date": "",
@@ -786,18 +858,19 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan34.jpg",
       "scan35.jpg",
-      "scan32.jpg"
+      "scan149.jpg",
+      "scan34.jpg",
+      "scan159.jpg"
     ]
   },
   "scan37.jpg": {
     "filename": "scan37.jpg",
     "title": "vote for nashville",
-    "description": "nashville transit advocacy sticker reading 'vote for nashville'",
+    "description": "from the transit bill watch party",
     "category": "ephemera",
     "type": "sticker",
-    "date": "",
+    "date": "november 2024",
     "location": "Nashville, TN",
     "source": "",
     "tags": [
@@ -807,21 +880,21 @@ const archive = {
       "nashville",
       "place"
     ],
-    "note": "",
+    "note": "choose how you move!",
     "related": [
       "scan25.jpg",
-      "scan38.jpg",
       "scan39.jpg",
-      "scan43.jpg"
+      "scan168.jpg",
+      "scan70.jpg"
     ]
   },
   "scan38.jpg": {
     "filename": "scan38.jpg",
-    "title": "nirvanna the band ticket",
+    "title": "nirvanna the band the show the movie ticket",
     "description": "ticket receipt for a screening of 'nirvanna the band the show the movie' at the belcourt",
     "category": "ephemera",
     "type": "ticket",
-    "date": "",
+    "date": "february 2026",
     "location": "Nashville, TN",
     "source": "The Belcourt",
     "tags": [
@@ -832,18 +905,18 @@ const archive = {
       "event",
       "memory"
     ],
-    "note": "",
+    "note": "saw this with my parents",
     "related": [
-      "scan25.jpg",
-      "scan37.jpg",
-      "scan39.jpg",
-      "scan43.jpg"
+      "scan171.jpg",
+      "scan8.jpg",
+      "scan180.jpg",
+      "scan73.jpg"
     ]
   },
   "scan39.jpg": {
     "filename": "scan39.jpg",
-    "title": "weak coffee shop",
-    "description": "sticker for weak coffee shop featuring an exhausted coffee cup mascot",
+    "title": "weak coffee shop sticker",
+    "description": "supporting my local coffee shop",
     "category": "ephemera",
     "type": "sticker",
     "date": "",
@@ -860,14 +933,15 @@ const archive = {
     "related": [
       "scan25.jpg",
       "scan37.jpg",
-      "scan38.jpg",
-      "scan43.jpg"
+      "scan78.jpg",
+      "scan43.jpg",
+      "scan10.jpg"
     ]
   },
   "scan40.jpg": {
     "filename": "scan40.jpg",
     "title": "everybody hurts",
-    "description": "embroidered patch reading 'everybody hurts everybody cries'",
+    "description": "silly depressed froggy",
     "category": "ephemera",
     "type": "patch",
     "date": "",
@@ -883,15 +957,17 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan32.jpg",
       "scan41.jpg",
-      "scan42.jpg"
+      "scan42.jpg",
+      "scan32.jpg",
+      "scan13.jpg",
+      "scan122.jpg"
     ]
   },
   "scan41.jpg": {
     "filename": "scan41.jpg",
     "title": "death's-head moth",
-    "description": "embroidered patch depicting a death's-head moth with a skull-shaped face",
+    "description": "embroidered patch depicting a death's-head moth with a skull face",
     "category": "ephemera",
     "type": "patch",
     "date": "",
@@ -907,15 +983,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan40.jpg",
       "scan42.jpg",
-      "scan44.jpg"
+      "scan40.jpg",
+      "scan44.jpg",
+      "scan8.jpg"
     ]
   },
   "scan42.jpg": {
     "filename": "scan42.jpg",
     "title": "spending my time worrying",
-    "description": "embroidered tombstone patch reading 'spent all my time worrying and all i got was this shitty tombstone'",
+    "description": "a cute patch and a helpful reminder",
     "category": "ephemera",
     "type": "patch",
     "date": "",
@@ -931,20 +1008,22 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan40.jpg",
+      "scan19.jpg",
       "scan41.jpg",
-      "scan46.jpg"
+      "scan211.jpg",
+      "scan52.jpg",
+      "scan40.jpg"
     ]
   },
   "scan43.jpg": {
     "filename": "scan43.jpg",
-    "title": "sound garden",
-    "description": "sound garden record store patch",
+    "title": "the sound garden patch",
+    "description": "",
     "category": "ephemera",
     "type": "patch",
     "date": "",
     "location": "Baltimore, MD",
-    "source": "Sound Garden",
+    "source": "The Sound Garden",
     "tags": [
       "record store",
       "music",
@@ -955,19 +1034,20 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan37.jpg",
-      "scan38.jpg",
-      "scan39.jpg"
+      "scan213.jpg",
+      "scan164.jpg",
+      "scan39.jpg",
+      "scan167.jpg"
     ]
   },
   "scan44.jpg": {
     "filename": "scan44.jpg",
-    "title": "moon moustache",
-    "description": "embroidered moon face with a curled moustache",
+    "title": "natty boh patch",
+    "description": "our fearless Baltimore mascot",
     "category": "ephemera",
     "type": "patch",
     "date": "",
-    "location": "",
+    "location": "Baltimore, MD",
     "source": "",
     "tags": [
       "moon",
@@ -979,14 +1059,17 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan31.jpg",
-      "scan41.jpg"
+      "scan26.jpg",
+      "scan217.jpg",
+      "scan41.jpg",
+      "scan51.jpg",
+      "scan45.jpg"
     ]
   },
   "scan45.jpg": {
     "filename": "scan45.jpg",
-    "title": "journeyman distillery",
-    "description": "journeyman distillery souvenir patch from three oaks, michigan",
+    "title": "journeyman distillery patch",
+    "description": "",
     "category": "ephemera",
     "type": "patch",
     "date": "",
@@ -1002,20 +1085,21 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan22.jpg",
-      "scan23.jpg",
-      "scan46.jpg"
+      "scan44.jpg",
+      "scan46.jpg",
+      "scan145.jpg",
+      "scan105.jpg"
     ]
   },
   "scan46.jpg": {
     "filename": "scan46.jpg",
-    "title": "joshua tree warning",
-    "description": "round patch reading 'it's too dang hot in joshua tree'",
+    "title": "joshua tree patch",
+    "description": "it really is that dang hot",
     "category": "ephemera",
     "type": "patch",
     "date": "",
     "location": "Joshua Tree, CA",
-    "source": "",
+    "source": "The Station",
     "tags": [
       "joshua tree",
       "road trip",
@@ -1026,15 +1110,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan24.jpg",
+      "scan49.jpg",
+      "scan50.jpg",
       "scan45.jpg",
-      "scan50.jpg"
+      "scan1.jpg"
     ]
   },
   "scan47.jpg": {
     "filename": "scan47.jpg",
     "title": "mirror lovers",
-    "description": "illustration of two figures reflected in an ornate hand mirror",
+    "description": "two women sharing spaghetti",
     "category": "print",
     "type": "illustration",
     "date": "",
@@ -1049,7 +1134,12 @@ const archive = {
       "connection"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan214.jpg",
+      "scan62.jpg",
+      "scan123.jpg",
+      "scan22.jpg"
+    ]
   },
   "scan48.jpg": {
     "filename": "scan48.jpg",
@@ -1070,13 +1160,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan17.jpg"
+      "scan17.jpg",
+      "scan31.jpg",
+      "scan62.jpg",
+      "scan87.jpg"
     ]
   },
   "scan49.jpg": {
     "filename": "scan49.jpg",
     "title": "canyon wreck",
-    "description": "photograph of an overturned car at the bottom of a canyon",
+    "description": "clipping of an overturned car at the bottom of a canyon",
     "category": "print",
     "type": "photograph clipping",
     "date": "",
@@ -1092,14 +1185,16 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan211.jpg",
       "scan46.jpg",
-      "scan50.jpg"
+      "scan50.jpg",
+      "scan31.jpg"
     ]
   },
   "scan50.jpg": {
     "filename": "scan50.jpg",
-    "title": "dog and mountain",
-    "description": "three-panel comic showing a dog setting off toward distant mountains",
+    "title": "dog fight",
+    "description": "comic where two dogs defeat man",
     "category": "print",
     "type": "comic clipping",
     "date": "",
@@ -1115,15 +1210,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan24.jpg",
       "scan46.jpg",
-      "scan49.jpg"
+      "scan49.jpg",
+      "scan51.jpg",
+      "scan204.jpg"
     ]
   },
   "scan51.jpg": {
     "filename": "scan51.jpg",
-    "title": "falling toward the plane",
-    "description": "figure suspended high above a tiny aircraft against an open blue sky",
+    "title": "flying high",
+    "description": "flying with the planes",
     "category": "artwork",
     "type": "print",
     "date": "",
@@ -1139,19 +1235,22 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan38.jpg",
-      "scan60.jpg"
+      "scan205.jpg",
+      "scan54.jpg",
+      "scan50.jpg",
+      "scan203.jpg",
+      "scan44.jpg"
     ]
   },
   "scan52.jpg": {
     "filename": "scan52.jpg",
     "title": "how i learned to stop worrying and start hammering",
-    "description": "cartoon illustration of domestic chaos with a hammer lodged in a figure's head",
+    "description": "cartoon by edward steed",
     "category": "artwork",
     "type": "cartoon",
-    "date": "",
+    "date": "2019",
     "location": "",
-    "source": "",
+    "source": "The New Yorker",
     "tags": [
       "humor",
       "anxiety",
@@ -1160,16 +1259,18 @@ const archive = {
       "cartoon",
       "found image"
     ],
-    "note": "",
+    "note": "my favorite comic",
     "related": [
-      "scan12.jpg",
-      "scan50.jpg"
+      "scan42.jpg",
+      "scan118.jpg",
+      "scan156.jpg",
+      "scan159.jpg"
     ]
   },
   "scan53.jpg": {
     "filename": "scan53.jpg",
     "title": "swan lake rehearsal",
-    "description": "newspaper photograph of dancers and a swan during ballet rehearsal",
+    "description": "monotone ballet rehearsal",
     "category": "performance",
     "type": "newspaper clipping",
     "date": "",
@@ -1186,18 +1287,20 @@ const archive = {
     "note": "",
     "related": [
       "scan54.jpg",
-      "scan58.jpg"
+      "scan55.jpg",
+      "scan72.jpg",
+      "scan62.jpg"
     ]
   },
   "scan54.jpg": {
     "filename": "scan54.jpg",
-    "title": "tea in the flood",
-    "description": "photograph of friends sharing tea while seated in floodwater",
+    "title": "tea in the river",
+    "description": "dream tea location",
     "category": "photograph",
     "type": "photograph",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Berlin, DE",
+    "source": "C/O Berlin",
     "tags": [
       "community",
       "flood",
@@ -1209,18 +1312,20 @@ const archive = {
     "note": "",
     "related": [
       "scan51.jpg",
-      "scan57.jpg"
+      "scan55.jpg",
+      "scan53.jpg",
+      "scan203.jpg"
     ]
   },
   "scan55.jpg": {
     "filename": "scan55.jpg",
     "title": "cake massacre",
-    "description": "hands crushing and smearing cake across a vividly colored surface",
+    "description": "hands crushing and smearing cake",
     "category": "photograph",
     "type": "photograph",
     "date": "",
     "location": "",
-    "source": "",
+    "source": "AAA24 Subscription",
     "tags": [
       "cake",
       "celebration",
@@ -1231,14 +1336,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan12.jpg",
-      "scan60.jpg"
+      "scan54.jpg",
+      "scan60.jpg",
+      "scan53.jpg",
+      "scan72.jpg"
     ]
   },
   "scan56.jpg": {
     "filename": "scan56.jpg",
     "title": "get in touch with your soul",
-    "description": "hand-drawn illustration of two tigers cuddling beneath mountains",
+    "description": "animalistic wisdom",
     "category": "artwork",
     "type": "drawing",
     "date": "",
@@ -1254,14 +1361,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan57.jpg",
-      "scan12.jpg"
+      "scan64.jpg",
+      "scan75.jpg",
+      "scan32.jpg",
+      "scan122.jpg"
     ]
   },
   "scan57.jpg": {
     "filename": "scan57.jpg",
     "title": "if i can stop one heart from breaking",
-    "description": "typewritten copy of an emily dickinson poem from shakespeare and company paris",
+    "description": "typewritten copy of an emily dickinson poem",
     "category": "literature",
     "type": "typed poem",
     "date": "",
@@ -1278,13 +1387,15 @@ const archive = {
     "note": "",
     "related": [
       "scan3.jpg",
-      "scan56.jpg"
+      "scan63.jpg",
+      "scan61.jpg",
+      "scan84.jpg"
     ]
   },
   "scan58.jpg": {
     "filename": "scan58.jpg",
     "title": "monolith",
-    "description": "downtown skyscraper rising as a dark reflective block against the city",
+    "description": "architecture i am fond of",
     "category": "architecture",
     "type": "photograph",
     "date": "",
@@ -1300,14 +1411,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan59.jpg",
-      "scan53.jpg"
+      "scan31.jpg",
+      "scan200.jpg",
+      "scan202.jpg",
+      "scan215.jpg"
     ]
   },
   "scan59.jpg": {
     "filename": "scan59.jpg",
     "title": "durham cathedral",
-    "description": "vintage postcard view of durham cathedral in england",
+    "description": "more architecture i am fond of (gothic)",
     "category": "travel",
     "type": "postcard",
     "date": "",
@@ -1323,14 +1436,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan58.jpg",
-      "scan57.jpg"
+      "scan89.jpg",
+      "scan166.jpg",
+      "scan108.jpg",
+      "scan102.jpg"
     ]
   },
   "scan60.jpg": {
     "filename": "scan60.jpg",
     "title": "field of eyes",
-    "description": "abstract artwork filled with watchful eyes and bright organic forms",
+    "description": "abstract watercolor artwork",
     "category": "artwork",
     "type": "print",
     "date": "",
@@ -1344,10 +1459,12 @@ const archive = {
       "dreamlike",
       "abstract"
     ],
-    "note": "",
+    "note": "my favorite body part: eyes",
     "related": [
-      "scan51.jpg",
-      "scan55.jpg"
+      "scan103.jpg",
+      "scan113.jpg",
+      "scan55.jpg",
+      "scan201.jpg"
     ]
   },
   "scan61.jpg": {
@@ -1356,7 +1473,7 @@ const archive = {
     "description": "typed visual poem by will kelley exploring beauty inspiration and small moments of grace",
     "category": "literature",
     "type": "typed poem",
-    "date": "",
+    "date": "halloween 2024",
     "location": "Nashville, TN",
     "source": "Will Kelley",
     "tags": [
@@ -1369,14 +1486,16 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan63.jpg",
       "scan57.jpg",
-      "scan63.jpg"
+      "scan79.jpg",
+      "scan84.jpg"
     ]
   },
   "scan62.jpg": {
     "filename": "scan62.jpg",
     "title": "look look",
-    "description": "fashion illustration of a woman gazing downward paired with a simple imperative caption",
+    "description": "gorgeous patrick nagel style illustration",
     "category": "artwork",
     "type": "magazine clipping",
     "date": "",
@@ -1392,14 +1511,16 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan60.jpg",
-      "scan63.jpg"
+      "scan47.jpg",
+      "scan119.jpg",
+      "scan48.jpg",
+      "scan53.jpg"
     ]
   },
   "scan63.jpg": {
     "filename": "scan63.jpg",
     "title": "only that day dawns to which we are awake",
-    "description": "printed henry david thoreau quotation on awareness and presence",
+    "description": "henry david thoreau quote",
     "category": "literature",
     "type": "quotation",
     "date": "",
@@ -1415,19 +1536,21 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan61.jpg",
       "scan57.jpg",
-      "scan61.jpg"
+      "scan79.jpg",
+      "scan80.jpg"
     ]
   },
   "scan64.jpg": {
     "filename": "scan64.jpg",
     "title": "admiration is for poets and dairy cows",
-    "description": "hand-drawn note featuring a cow and an irreverent handwritten aphorism",
+    "description": "hand-drawn note",
     "category": "artwork",
     "type": "drawing",
-    "date": "",
-    "location": "",
-    "source": "",
+    "date": "september 2020",
+    "location": "Nashville, TN",
+    "source": "crack in the Fido brick wall",
     "tags": [
       "cow",
       "humor",
@@ -1436,10 +1559,12 @@ const archive = {
       "folk art",
       "absurdity"
     ],
-    "note": "",
+    "note": "from my first trip to Nashville",
     "related": [
       "scan56.jpg",
-      "scan61.jpg"
+      "scan75.jpg",
+      "scan214.jpg",
+      "scan133.jpg"
     ]
   },
   "scan65.jpg": {
@@ -1448,7 +1573,7 @@ const archive = {
     "description": "peabody hotel napkin recounting the origin story of the famous lobby ducks",
     "category": "ephemera",
     "type": "napkin",
-    "date": "",
+    "date": "september 2024",
     "location": "Memphis, TN",
     "source": "Peabody Hotel",
     "tags": [
@@ -1460,19 +1585,21 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan54.jpg",
-      "scan66.jpg"
+      "scan11.jpg",
+      "scan77.jpg",
+      "scan78.jpg",
+      "scan147.jpg"
     ]
   },
   "scan66.jpg": {
     "filename": "scan66.jpg",
-    "title": "2011 al central champions ticket",
-    "description": "detroit tigers ticket stub from the 2011 division championship season featuring delmon young",
+    "title": "2011 AL central champions ticket",
+    "description": "detroit tigers ticket stub from the 2011 division championship season",
     "category": "sports",
     "type": "ticket stub",
     "date": "2011",
     "location": "Detroit, MI",
-    "source": "Detroit Tigers",
+    "source": "Comerica Park",
     "tags": [
       "detroit tigers",
       "baseball",
@@ -1481,21 +1608,23 @@ const archive = {
       "memorabilia",
       "detroit"
     ],
-    "note": "",
+    "note": "when the Tigers were good",
     "related": [
       "scan69.jpg",
-      "scan68.jpg"
+      "scan71.jpg",
+      "scan68.jpg",
+      "scan112.jpg"
     ]
   },
   "scan67.jpg": {
     "filename": "scan67.jpg",
     "title": "barcelona to new york",
-    "description": "delta boarding pass from barcelona to jfk carried during international travel",
+    "description": "from my 19th birthday trip to Spain",
     "category": "travel",
     "type": "boarding pass",
-    "date": "",
+    "date": "march 2019",
     "location": "Barcelona, Spain / New York, NY",
-    "source": "Delta",
+    "source": "Josep Tarradellas Barcelona-El Prat Airport",
     "tags": [
       "air travel",
       "barcelona",
@@ -1506,19 +1635,22 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan51.jpg",
-      "scan68.jpg"
+      "scan68.jpg",
+      "scan137.jpg",
+      "scan10.jpg",
+      "scan125.jpg",
+      "scan2.jpg"
     ]
   },
   "scan68.jpg": {
     "filename": "scan68.jpg",
     "title": "baltimore to detroit",
-    "description": "delta boarding pass documenting travel between two formative cities",
+    "description": "from school to home",
     "category": "travel",
     "type": "boarding pass",
     "date": "",
     "location": "Baltimore, MD / Detroit, MI",
-    "source": "Delta",
+    "source": "Baltimore/Washington International Thurgood Marshall Airport",
     "tags": [
       "detroit",
       "baltimore",
@@ -1530,6 +1662,8 @@ const archive = {
     "note": "",
     "related": [
       "scan67.jpg",
+      "scan2.jpg",
+      "scan69.jpg",
       "scan66.jpg"
     ]
   },
@@ -1550,21 +1684,23 @@ const archive = {
       "memorabilia",
       "youth"
     ],
-    "note": "",
+    "note": "when I stanned the high school baseball team",
     "related": [
       "scan66.jpg",
-      "scan53.jpg"
+      "scan68.jpg",
+      "scan71.jpg",
+      "scan151.jpg"
     ]
   },
   "scan70.jpg": {
     "filename": "scan70.jpg",
     "title": "the budos band at the basement east",
-    "description": "concert ticket from a 2025 performance by the budos band in nashville",
+    "description": "free ticket to see The Budos Band",
     "category": "music",
     "type": "concert ticket",
     "date": "2025",
     "location": "Nashville, TN",
-    "source": "Basement East",
+    "source": "Grimey's",
     "tags": [
       "live music",
       "nashville",
@@ -1573,19 +1709,21 @@ const archive = {
       "budos band",
       "nightlife"
     ],
-    "note": "",
+    "note": "won this ticket from a Grimey's raffle",
     "related": [
-      "scan2.jpg",
-      "scan61.jpg"
+      "scan206.jpg",
+      "scan121.jpg",
+      "scan25.jpg",
+      "scan37.jpg"
     ]
   },
   "scan71.jpg": {
     "filename": "scan71.jpg",
     "title": "miami marlins versus cincinnati reds",
-    "description": "ticket stub from a 2016 baseball game at marlins park in miami",
+    "description": "ticket stub from a 2016 baseball game at marlins park",
     "category": "sports",
     "type": "ticket stub",
-    "date": "2016",
+    "date": "summer 2016",
     "location": "Miami, FL",
     "source": "Marlins Park",
     "tags": [
@@ -1595,19 +1733,21 @@ const archive = {
       "sports",
       "memorabilia"
     ],
-    "note": "",
+    "note": "from the 2 months I lived in Miami",
     "related": [
       "scan66.jpg",
-      "scan69.jpg"
+      "scan69.jpg",
+      "scan27.jpg",
+      "scan13.jpg"
     ]
   },
   "scan72.jpg": {
     "filename": "scan72.jpg",
     "title": "macbeth at stratford festival",
-    "description": "student ticket to a 2016 performance of shakespeare's macbeth at the stratford festival",
+    "description": "ticket to a 2016 performance of shakespeare's macbeth at the stratford festival",
     "category": "arts",
     "type": "theater ticket",
-    "date": "2016",
+    "date": "october 2016",
     "location": "Stratford, ON",
     "source": "Stratford Festival",
     "tags": [
@@ -1617,21 +1757,23 @@ const archive = {
       "performance",
       "literature"
     ],
-    "note": "",
+    "note": "APLit bus trip",
     "related": [
-      "scan61.jpg",
-      "scan63.jpg"
+      "scan3.jpg",
+      "scan131.jpg",
+      "scan53.jpg",
+      "scan55.jpg"
     ]
   },
   "scan73.jpg": {
     "filename": "scan73.jpg",
     "title": "marty supreme",
-    "description": "movie ticket receipt from a screening at landmark theatres",
+    "description": "movie ticket from my trip to see Vic",
     "category": "entertainment",
     "type": "movie ticket",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Denver, CO",
+    "source": "Landmark Mayan Theater",
     "tags": [
       "cinema",
       "movie ticket",
@@ -1641,19 +1783,22 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan70.jpg",
-      "scan72.jpg"
+      "scan38.jpg",
+      "scan171.jpg",
+      "scan176.jpg",
+      "scan175.jpg",
+      "scan98.jpg"
     ]
   },
   "scan74.jpg": {
     "filename": "scan74.jpg",
-    "title": "untitled watercolor pathways",
-    "description": "abstract watercolor composition of looping colorful lines crossing the page",
+    "title": "untitled watercolor",
+    "description": "from a slow shift at the Frist",
     "category": "artwork",
     "type": "painting",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Frist Art Museum",
     "tags": [
       "watercolor",
       "abstract",
@@ -1664,8 +1809,10 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan75.jpg",
-      "scan90.jpg"
+      "scan90.jpg",
+      "scan103.jpg",
+      "scan81.jpg",
+      "scan86.jpg"
     ]
   },
   "scan75.jpg": {
@@ -1687,8 +1834,10 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan74.jpg",
-      "scan76.jpg"
+      "scan91.jpg",
+      "scan64.jpg",
+      "scan99.jpg",
+      "scan56.jpg"
     ]
   },
   "scan76.jpg": {
@@ -1710,8 +1859,10 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan75.jpg",
-      "scan80.jpg"
+      "scan130.jpg",
+      "scan198.jpg",
+      "scan124.jpg",
+      "scan98.jpg"
     ]
   },
   "scan77.jpg": {
@@ -1732,8 +1883,11 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan78.jpg",
       "scan65.jpg",
-      "scan78.jpg"
+      "scan11.jpg",
+      "scan86.jpg",
+      "scan81.jpg"
     ]
   },
   "scan78.jpg": {
@@ -1755,7 +1909,10 @@ const archive = {
     "note": "",
     "related": [
       "scan77.jpg",
-      "scan74.jpg"
+      "scan146.jpg",
+      "scan147.jpg",
+      "scan39.jpg",
+      "scan65.jpg"
     ]
   },
   "scan79.jpg": {
@@ -1776,8 +1933,10 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan80.jpg",
+      "scan84.jpg",
       "scan63.jpg",
-      "scan80.jpg"
+      "scan61.jpg"
     ]
   },
   "scan80.jpg": {
@@ -1799,8 +1958,10 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan79.jpg",
+      "scan84.jpg",
       "scan63.jpg",
-      "scan79.jpg"
+      "scan123.jpg"
     ]
   },
   "scan81.jpg": {
@@ -1823,7 +1984,10 @@ const archive = {
     "note": "",
     "related": [
       "scan86.jpg",
-      "scan90.jpg"
+      "scan74.jpg",
+      "scan77.jpg",
+      "scan155.jpg",
+      "scan116.jpg"
     ]
   },
   "scan82.jpg": {
@@ -1846,7 +2010,9 @@ const archive = {
     "note": "",
     "related": [
       "scan83.jpg",
-      "scan85.jpg"
+      "scan85.jpg",
+      "scan202.jpg",
+      "scan90.jpg"
     ]
   },
   "scan83.jpg": {
@@ -1869,7 +2035,9 @@ const archive = {
     "note": "",
     "related": [
       "scan82.jpg",
-      "scan85.jpg"
+      "scan85.jpg",
+      "scan90.jpg",
+      "scan200.jpg"
     ]
   },
   "scan84.jpg": {
@@ -1891,8 +2059,10 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan80.jpg",
       "scan79.jpg",
-      "scan80.jpg"
+      "scan61.jpg",
+      "scan57.jpg"
     ]
   },
   "scan85.jpg": {
@@ -1914,8 +2084,10 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan83.jpg",
       "scan82.jpg",
-      "scan83.jpg"
+      "scan202.jpg",
+      "scan200.jpg"
     ]
   },
   "scan86.jpg": {
@@ -1938,6 +2110,8 @@ const archive = {
     "note": "",
     "related": [
       "scan81.jpg",
+      "scan77.jpg",
+      "scan116.jpg",
       "scan74.jpg"
     ]
   },
@@ -1961,7 +2135,9 @@ const archive = {
     "note": "",
     "related": [
       "scan88.jpg",
-      "scan89.jpg"
+      "scan89.jpg",
+      "scan201.jpg",
+      "scan48.jpg"
     ]
   },
   "scan88.jpg": {
@@ -1971,7 +2147,7 @@ const archive = {
     "category": "photography",
     "type": "slide",
     "date": "",
-    "location": "Kafr Kana, Israel",
+    "location": "",
     "source": "",
     "tags": [
       "kodachrome",
@@ -1983,8 +2159,10 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan89.jpg",
       "scan87.jpg",
-      "scan89.jpg"
+      "scan201.jpg",
+      "scan114.jpg"
     ]
   },
   "scan89.jpg": {
@@ -1994,7 +2172,7 @@ const archive = {
     "category": "photography",
     "type": "slide",
     "date": "",
-    "location": "Qumran, Israel",
+    "location": "",
     "source": "",
     "tags": [
       "kodachrome",
@@ -2006,8 +2184,10 @@ const archive = {
     ],
     "note": "",
     "related": [
+      "scan88.jpg",
       "scan87.jpg",
-      "scan88.jpg"
+      "scan59.jpg",
+      "scan134.jpg"
     ]
   },
   "scan90.jpg": {
@@ -2030,7 +2210,9 @@ const archive = {
     "note": "",
     "related": [
       "scan74.jpg",
-      "scan81.jpg"
+      "scan82.jpg",
+      "scan83.jpg",
+      "scan91.jpg"
     ]
   },
   "scan91.jpg": {
@@ -2054,6 +2236,8 @@ const archive = {
     "note": "",
     "related": [
       "scan75.jpg",
+      "scan99.jpg",
+      "scan100.jpg",
       "scan90.jpg"
     ]
   },
@@ -2067,10 +2251,19 @@ const archive = {
     "location": "",
     "source": "Dave & Buster's",
     "tags": [
-      "star trek,spock,collectible,arcade"
+      "star trek",
+      "spock",
+      "collectible",
+      "arcade"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan96.jpg",
+      "scan9.jpg",
+      "scan126.jpg",
+      "scan104.jpg",
+      "scan132.jpg"
+    ]
   },
   "scan93.jpg": {
     "filename": "scan93.jpg",
@@ -2082,10 +2275,19 @@ const archive = {
     "location": "",
     "source": "Fischersund",
     "tags": [
-      "iceland,perfume,handwritten,travel"
+      "iceland",
+      "perfume",
+      "handwritten",
+      "travel"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan125.jpg",
+      "scan102.jpg",
+      "scan101.jpg",
+      "scan97.jpg",
+      "scan94.jpg"
+    ]
   },
   "scan94.jpg": {
     "filename": "scan94.jpg",
@@ -2097,25 +2299,42 @@ const archive = {
     "location": "",
     "source": "Crystal Farmacy",
     "tags": [
-      "crystal,shattuckite,metaphysical,label"
+      "crystal",
+      "shattuckite",
+      "metaphysical",
+      "label"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan95.jpg",
+      "scan97.jpg",
+      "scan93.jpg",
+      "scan125.jpg",
+      "scan154.jpg"
+    ]
   },
   "scan95.jpg": {
     "filename": "scan95.jpg",
-    "title": "sugilite crystal label",
-    "description": "crystal shop identification card for sugilite crystal",
+    "title": "sugilite crystal info",
+    "description": "id card for a ring",
     "category": "found object",
     "type": "label",
     "date": "",
-    "location": "",
-    "source": "Crystal Farmacy",
+    "location": "Nashville, TN",
+    "source": "Nashville Crystal Store",
     "tags": [
-      "crystal,sugilite,metaphysical,label"
+      "crystal",
+      "sugilite",
+      "metaphysical",
+      "label"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan94.jpg",
+      "scan97.jpg",
+      "scan93.jpg",
+      "scan125.jpg"
+    ]
   },
   "scan96.jpg": {
     "filename": "scan96.jpg",
@@ -2127,10 +2346,18 @@ const archive = {
     "location": "",
     "source": "Pokémon",
     "tags": [
-      "pokemon,arcanine,trading card,game"
+      "pokemon",
+      "arcanine",
+      "trading card",
+      "game"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan92.jpg",
+      "scan9.jpg",
+      "scan126.jpg",
+      "scan110.jpg"
+    ]
   },
   "scan97.jpg": {
     "filename": "scan97.jpg",
@@ -2142,10 +2369,18 @@ const archive = {
     "location": "",
     "source": "Crystal Farmacy",
     "tags": [
-      "crystal,ametrine,metaphysical,label"
+      "crystal",
+      "ametrine",
+      "metaphysical",
+      "label"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan95.jpg",
+      "scan94.jpg",
+      "scan93.jpg",
+      "scan125.jpg"
+    ]
   },
   "scan98.jpg": {
     "filename": "scan98.jpg",
@@ -2157,10 +2392,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "shopping,handwritten,note,scrap"
+      "shopping",
+      "handwritten",
+      "note",
+      "scrap"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan130.jpg",
+      "scan124.jpg",
+      "scan76.jpg",
+      "scan73.jpg"
+    ]
   },
   "scan99.jpg": {
     "filename": "scan99.jpg",
@@ -2172,10 +2415,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "folk art,tree,birds,illustration,fruit"
+      "folk art",
+      "tree",
+      "birds",
+      "illustration",
+      "fruit"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan100.jpg",
+      "scan157.jpg",
+      "scan91.jpg",
+      "scan75.jpg",
+      "scan160.jpg"
+    ]
   },
   "scan100.jpg": {
     "filename": "scan100.jpg",
@@ -2187,10 +2440,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "botanical,flowers,plants,nature,illustration"
+      "botanical",
+      "flowers",
+      "plants",
+      "nature",
+      "illustration"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan99.jpg",
+      "scan146.jpg",
+      "scan157.jpg",
+      "scan91.jpg",
+      "scan160.jpg"
+    ]
   },
   "scan101.jpg": {
     "filename": "scan101.jpg",
@@ -2202,10 +2465,18 @@ const archive = {
     "location": "",
     "source": "Iceland",
     "tags": [
-      "reykjavik,iceland,map,travel"
+      "reykjavik",
+      "iceland",
+      "map",
+      "travel"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan102.jpg",
+      "scan93.jpg",
+      "scan166.jpg",
+      "scan108.jpg"
+    ]
   },
   "scan102.jpg": {
     "filename": "scan102.jpg",
@@ -2217,10 +2488,18 @@ const archive = {
     "location": "",
     "source": "Iceland",
     "tags": [
-      "iceland,map,road trip,travel"
+      "iceland",
+      "map",
+      "road trip",
+      "travel"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan101.jpg",
+      "scan93.jpg",
+      "scan125.jpg",
+      "scan59.jpg"
+    ]
   },
   "scan103.jpg": {
     "filename": "scan103.jpg",
@@ -2232,10 +2511,18 @@ const archive = {
     "location": "",
     "source": "Stan Street",
     "tags": [
-      "painting,portrait,art print,colorful"
+      "painting",
+      "portrait",
+      "art print",
+      "colorful"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan60.jpg",
+      "scan74.jpg",
+      "scan140.jpg",
+      "scan129.jpg"
+    ]
   },
   "scan104.jpg": {
     "filename": "scan104.jpg",
@@ -2247,10 +2534,19 @@ const archive = {
     "location": "",
     "source": "A24",
     "tags": [
-      "film,music,performance,a24"
+      "film",
+      "music",
+      "performance",
+      "a24"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan183.jpg",
+      "scan111.jpg",
+      "scan207.jpg",
+      "scan4.jpg",
+      "scan92.jpg"
+    ]
   },
   "scan105.jpg": {
     "filename": "scan105.jpg",
@@ -2262,10 +2558,18 @@ const archive = {
     "location": "",
     "source": "Michigan Licensed Beverage Association",
     "tags": [
-      "michigan,sign,alcohol,retail"
+      "michigan",
+      "sign",
+      "alcohol",
+      "retail"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan216.jpg",
+      "scan112.jpg",
+      "scan145.jpg",
+      "scan45.jpg"
+    ]
   },
   "scan106.jpg": {
     "filename": "scan106.jpg",
@@ -2277,10 +2581,18 @@ const archive = {
     "location": "",
     "source": "Andie Peach",
     "tags": [
-      "poster,first friday,community,event"
+      "poster",
+      "first friday",
+      "community",
+      "event"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan150.jpg",
+      "scan114.jpg",
+      "scan170.jpg",
+      "scan205.jpg"
+    ]
   },
   "scan107.jpg": {
     "filename": "scan107.jpg",
@@ -2292,10 +2604,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "snake,hand,illustration,black and white"
+      "snake",
+      "hand",
+      "illustration",
+      "black and white"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan117.jpg",
+      "scan128.jpg",
+      "scan109.jpg",
+      "scan138.jpg"
+    ]
   },
   "scan108.jpg": {
     "filename": "scan108.jpg",
@@ -2307,10 +2627,18 @@ const archive = {
     "location": "",
     "source": "Nashville",
     "tags": [
-      "nashville,tennessee,postcard,travel"
+      "nashville",
+      "tennessee",
+      "postcard",
+      "travel"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan120.jpg",
+      "scan145.jpg",
+      "scan59.jpg",
+      "scan101.jpg"
+    ]
   },
   "scan109.jpg": {
     "filename": "scan109.jpg",
@@ -2322,10 +2650,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "bridge,sunset,illustration,landscape"
+      "bridge",
+      "sunset",
+      "illustration",
+      "landscape"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan154.jpg",
+      "scan113.jpg",
+      "scan204.jpg",
+      "scan107.jpg"
+    ]
   },
   "scan110.jpg": {
     "filename": "scan110.jpg",
@@ -2337,25 +2673,44 @@ const archive = {
     "location": "",
     "source": "Kim Chi",
     "tags": [
-      "drag,kim chi,signed poster,lgbtq"
+      "drag",
+      "kim chi",
+      "signed poster",
+      "lgbtq"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan104.jpg",
+      "scan111.jpg",
+      "scan119.jpg",
+      "scan156.jpg",
+      "scan96.jpg"
+    ]
   },
   "scan111.jpg": {
     "filename": "scan111.jpg",
-    "title": "the dj and mosh magazine clipping",
-    "description": "magazine clipping featuring the phrase the dj and mosh over a photograph",
+    "title": "2025 mood board",
+    "description": "my mood board for 2025, complete with djing, moshing, and a kurdish revolutionary woman",
     "category": "pop culture",
     "type": "magazine clipping",
-    "date": "",
+    "date": "2025",
     "location": "",
     "source": "",
     "tags": [
-      "music,dj,mosh,magazine,clipping"
+      "music",
+      "dj",
+      "mosh",
+      "magazine",
+      "clipping"
     ],
-    "note": "",
-    "related": []
+    "note": "and in some way, this was my year",
+    "related": [
+      "scan104.jpg",
+      "scan7.jpg",
+      "scan4.jpg",
+      "scan208.jpg",
+      "scan110.jpg"
+    ]
   },
   "scan112.jpg": {
     "filename": "scan112.jpg",
@@ -2367,10 +2722,18 @@ const archive = {
     "location": "",
     "source": "Michigan Moustache Hall of Fame",
     "tags": [
-      "michigan,moustache,certificate,novelty"
+      "michigan",
+      "moustache",
+      "certificate",
+      "novelty"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan213.jpg",
+      "scan105.jpg",
+      "scan66.jpg",
+      "scan145.jpg"
+    ]
   },
   "scan113.jpg": {
     "filename": "scan113.jpg",
@@ -2382,10 +2745,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "eye,occult,symbol,illustration"
+      "eye",
+      "occult",
+      "symbol",
+      "illustration"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan217.jpg",
+      "scan60.jpg",
+      "scan154.jpg",
+      "scan109.jpg"
+    ]
   },
   "scan114.jpg": {
     "filename": "scan114.jpg",
@@ -2397,25 +2768,41 @@ const archive = {
     "location": "",
     "source": "Ryszard Kaja",
     "tags": [
-      "poland,poster,factory,industrial"
+      "poland",
+      "poster",
+      "factory",
+      "industrial"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan115.jpg",
+      "scan106.jpg",
+      "scan110.jpg",
+      "scan88.jpg"
+    ]
   },
   "scan115.jpg": {
     "filename": "scan115.jpg",
     "title": "so weiter card",
-    "description": "minimalist card printed with the german phrase so weiter and three raised dots",
+    "description": "minimalist card with typewriter print and tactile cutouts",
     "category": "ephemera",
     "type": "card",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Berlin, DE",
+    "source": "C/O Berlin",
     "tags": [
-      "german,text,minimal,conceptual"
+      "german",
+      "text",
+      "minimal",
+      "conceptual"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan153.jpg",
+      "scan131.jpg",
+      "scan114.jpg",
+      "scan132.jpg"
+    ]
   },
   "scan116.jpg": {
     "filename": "scan116.jpg",
@@ -2427,10 +2814,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "420,cannabis,drawing,cartoon"
+      "420",
+      "cannabis",
+      "drawing",
+      "cartoon"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan118.jpg",
+      "scan81.jpg",
+      "scan86.jpg",
+      "scan129.jpg"
+    ]
   },
   "scan117.jpg": {
     "filename": "scan117.jpg",
@@ -2442,10 +2837,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "crab,knife,illustration,humor"
+      "crab",
+      "knife",
+      "illustration",
+      "humor"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan128.jpg",
+      "scan107.jpg",
+      "scan142.jpg",
+      "scan138.jpg"
+    ]
   },
   "scan118.jpg": {
     "filename": "scan118.jpg",
@@ -2457,10 +2860,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "anxiety,zine,mental health,illustration"
+      "anxiety",
+      "zine",
+      "mental health",
+      "illustration"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan123.jpg",
+      "scan52.jpg",
+      "scan30.jpg",
+      "scan116.jpg"
+    ]
   },
   "scan119.jpg": {
     "filename": "scan119.jpg",
@@ -2472,10 +2883,19 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
-      "new yorker,cartoon,children,satire"
+      "new yorker",
+      "cartoon",
+      "children",
+      "satire"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan156.jpg",
+      "scan24.jpg",
+      "scan214.jpg",
+      "scan62.jpg",
+      "scan110.jpg"
+    ]
   },
   "scan120.jpg": {
     "filename": "scan120.jpg",
@@ -2487,10 +2907,18 @@ const archive = {
     "location": "",
     "source": "Detroit",
     "tags": [
-      "detroit,michigan,postcard,travel"
+      "detroit",
+      "michigan",
+      "postcard",
+      "travel"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan1.jpg",
+      "scan216.jpg",
+      "scan215.jpg",
+      "scan108.jpg"
+    ]
   },
   "scan121.jpg": {
     "filename": "scan121.jpg",
@@ -2502,10 +2930,19 @@ const archive = {
     "location": "",
     "source": "Ramones",
     "tags": [
-      "punk,ramones,music,flyer,concert"
+      "punk",
+      "ramones",
+      "music",
+      "flyer",
+      "concert"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan206.jpg",
+      "scan208.jpg",
+      "scan7.jpg",
+      "scan70.jpg"
+    ]
   },
   "scan122.jpg": {
     "filename": "scan122.jpg",
@@ -2517,10 +2954,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "lizard,reptile,humor,drink"
+      "lizard",
+      "reptile",
+      "humor",
+      "drink"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan29.jpg",
+      "scan32.jpg",
+      "scan40.jpg",
+      "scan56.jpg"
+    ]
   },
   "scan123.jpg": {
     "filename": "scan123.jpg",
@@ -2532,10 +2977,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "rage,writing,artist statement,reflection"
+      "rage",
+      "writing",
+      "artist statement",
+      "reflection"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan118.jpg",
+      "scan30.jpg",
+      "scan47.jpg",
+      "scan80.jpg"
+    ]
   },
   "scan124.jpg": {
     "filename": "scan124.jpg",
@@ -2547,10 +3000,19 @@ const archive = {
     "location": "",
     "source": "Camille",
     "tags": [
-      "letter,artist,thank you,handwritten"
+      "letter",
+      "artist",
+      "thank you",
+      "handwritten"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan210.jpg",
+      "scan130.jpg",
+      "scan76.jpg",
+      "scan98.jpg",
+      "scan198.jpg"
+    ]
   },
   "scan125.jpg": {
     "filename": "scan125.jpg",
@@ -2562,10 +3024,19 @@ const archive = {
     "location": "",
     "source": "Fischersund",
     "tags": [
-      "perfume,fragrance,icelandic,scent"
+      "perfume",
+      "fragrance",
+      "icelandic",
+      "scent"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan93.jpg",
+      "scan67.jpg",
+      "scan102.jpg",
+      "scan97.jpg",
+      "scan94.jpg"
+    ]
   },
   "scan126.jpg": {
     "filename": "scan126.jpg",
@@ -2577,10 +3048,19 @@ const archive = {
     "location": "",
     "source": "Squishmallows",
     "tags": [
-      "eden,squishmallows,toy,tag"
+      "eden",
+      "squishmallows",
+      "toy",
+      "tag"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan212.jpg",
+      "scan9.jpg",
+      "scan96.jpg",
+      "scan154.jpg",
+      "scan92.jpg"
+    ]
   },
   "scan127.jpg": {
     "filename": "scan127.jpg",
@@ -2592,40 +3072,66 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "scratch off,novelty,humor,prize"
+      "scratch off",
+      "novelty",
+      "humor",
+      "prize"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan211.jpg",
+      "scan142.jpg",
+      "scan129.jpg",
+      "scan139.jpg",
+      "scan5.jpg"
+    ]
   },
   "scan128.jpg": {
     "filename": "scan128.jpg",
     "title": "frog with knife drawing",
-    "description": "simple black ink drawing of a frog holding a knife",
+    "description": "a dangerous linocut frog",
     "category": "artwork",
     "type": "drawing",
     "date": "",
     "location": "",
     "source": "",
     "tags": [
-      "frog,knife,doodle,drawing"
+      "frog",
+      "knife",
+      "doodle",
+      "drawing"
     ],
-    "note": "",
-    "related": []
+    "note": "one of my earlier linocut prints",
+    "related": [
+      "scan138.jpg",
+      "scan117.jpg",
+      "scan218.jpg",
+      "scan107.jpg",
+      "scan212.jpg"
+    ]
   },
-  "scan129.jpg": {
-    "filename": "scan129.jpg",
-    "title": "ivo doodle napkin",
-    "description": "small napkin doodle of a smiling character labeled ivo",
+  "scan129.webp": {
+    "filename": "scan129.webp",
+    "title": "osa coffee sleeve snoopy doodle",
+    "description": "fav coffee shop fav character",
     "category": "artwork",
     "type": "doodle",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Osa Coffee Roasters",
     "tags": [
-      "doodle,napkin,ivo,cartoon"
+      "doodle",
+      "napkin",
+      "ivo",
+      "cartoon"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan127.jpg",
+      "scan116.jpg",
+      "scan138.jpg",
+      "scan103.jpg"
+    ]
   },
   "scan130.jpg": {
     "filename": "scan130.jpg",
@@ -2637,10 +3143,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "love,note,handwritten,xoxo"
+      "love",
+      "note",
+      "handwritten",
+      "xoxo"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan124.jpg",
+      "scan76.jpg",
+      "scan98.jpg",
+      "scan210.jpg"
+    ]
   },
   "scan131.jpg": {
     "filename": "scan131.jpg",
@@ -2652,10 +3166,18 @@ const archive = {
     "location": "",
     "source": "Frances Hodgson Burnett",
     "tags": [
-      "german,poem,sunshine,inspiration"
+      "german",
+      "poem",
+      "sunshine",
+      "inspiration"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan132.jpg",
+      "scan133.jpg",
+      "scan72.jpg",
+      "scan115.jpg"
+    ]
   },
   "scan132.jpg": {
     "filename": "scan132.jpg",
@@ -2667,10 +3189,18 @@ const archive = {
     "location": "",
     "source": "Emanuel Geibel",
     "tags": [
-      "german,poem,childhood,wonder"
+      "german",
+      "poem",
+      "childhood",
+      "wonder"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan131.jpg",
+      "scan133.jpg",
+      "scan115.jpg",
+      "scan92.jpg"
+    ]
   },
   "scan133.jpg": {
     "filename": "scan133.jpg",
@@ -2682,10 +3212,18 @@ const archive = {
     "location": "",
     "source": "Gerhard Tersteegen",
     "tags": [
-      "german,poem,flowers,nature"
+      "german",
+      "poem",
+      "flowers",
+      "nature"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan132.jpg",
+      "scan131.jpg",
+      "scan153.jpg",
+      "scan64.jpg"
+    ]
   },
   "scan134.jpg": {
     "filename": "scan134.jpg",
@@ -2697,10 +3235,18 @@ const archive = {
     "location": "",
     "source": "Beech Mountain Resort",
     "tags": [
-      "skiing,resort,ticket,topography"
+      "skiing",
+      "resort",
+      "ticket",
+      "topography"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan135.jpg",
+      "scan136.jpg",
+      "scan175.jpg",
+      "scan89.jpg"
+    ]
   },
   "scan135.jpg": {
     "filename": "scan135.jpg",
@@ -2712,10 +3258,18 @@ const archive = {
     "location": "",
     "source": "Oceanogràfic Valencia",
     "tags": [
-      "valencia,aquarium,photo,ticket"
+      "valencia",
+      "aquarium",
+      "photo",
+      "ticket"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan134.jpg",
+      "scan136.jpg",
+      "scan137.jpg",
+      "scan175.jpg"
+    ]
   },
   "scan136.jpg": {
     "filename": "scan136.jpg",
@@ -2727,10 +3281,19 @@ const archive = {
     "location": "",
     "source": "FGC Montserrat",
     "tags": [
-      "spain,montserrat,train,funicular"
+      "spain",
+      "montserrat",
+      "train",
+      "funicular"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan135.jpg",
+      "scan137.jpg",
+      "scan170.jpg",
+      "scan134.jpg",
+      "scan2.jpg"
+    ]
   },
   "scan137.jpg": {
     "filename": "scan137.jpg",
@@ -2742,10 +3305,18 @@ const archive = {
     "location": "",
     "source": "Country Music Hall of Fame",
     "tags": [
-      "nashville,museum,ticket,music"
+      "nashville",
+      "museum",
+      "ticket",
+      "music"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan168.jpg",
+      "scan136.jpg",
+      "scan67.jpg",
+      "scan135.jpg"
+    ]
   },
   "scan138.jpg": {
     "filename": "scan138.jpg",
@@ -2757,10 +3328,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "frog,party,doodle,illustration"
+      "frog",
+      "party",
+      "doodle",
+      "illustration"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan128.jpg",
+      "scan117.jpg",
+      "scan107.jpg",
+      "scan129.jpg"
+    ]
   },
   "scan139.jpg": {
     "filename": "scan139.jpg",
@@ -2772,10 +3351,18 @@ const archive = {
     "location": "",
     "source": "Roshen",
     "tags": [
-      "candy,wrapper,ukraine,packaging"
+      "candy",
+      "wrapper",
+      "ukraine",
+      "packaging"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan142.jpg",
+      "scan141.jpg",
+      "scan5.jpg",
+      "scan127.jpg"
+    ]
   },
   "scan140.jpg": {
     "filename": "scan140.jpg",
@@ -2787,10 +3374,18 @@ const archive = {
     "location": "",
     "source": "Keith Haring",
     "tags": [
-      "sticker,art,pop art,figure"
+      "sticker",
+      "art",
+      "pop art",
+      "figure"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan212.jpg",
+      "scan165.jpg",
+      "scan12.jpg",
+      "scan103.jpg"
+    ]
   },
   "scan141.jpg": {
     "filename": "scan141.jpg",
@@ -2802,10 +3397,19 @@ const archive = {
     "location": "",
     "source": "Bazooka Joe",
     "tags": [
-      "gum,comic,fortune,nostalgia"
+      "gum",
+      "comic",
+      "fortune",
+      "nostalgia"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan5.jpg",
+      "scan139.jpg",
+      "scan142.jpg",
+      "scan127.jpg",
+      "scan151.jpg"
+    ]
   },
   "scan142.jpg": {
     "filename": "scan142.jpg",
@@ -2817,10 +3421,19 @@ const archive = {
     "location": "",
     "source": "Red October",
     "tags": [
-      "russia,candy,wrapper,crayfish"
+      "russia",
+      "candy",
+      "wrapper",
+      "crayfish"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan139.jpg",
+      "scan199.jpg",
+      "scan117.jpg",
+      "scan127.jpg",
+      "scan5.jpg"
+    ]
   },
   "scan143.jpg": {
     "filename": "scan143.jpg",
@@ -2832,10 +3445,19 @@ const archive = {
     "location": "",
     "source": "CODA Berlin",
     "tags": [
-      "restaurant,tasting menu,berlin,fine dining"
+      "restaurant",
+      "tasting menu",
+      "berlin",
+      "fine dining"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan144.jpg",
+      "scan155.jpg",
+      "scan148.jpg",
+      "scan147.jpg",
+      "scan11.jpg"
+    ]
   },
   "scan144.jpg": {
     "filename": "scan144.jpg",
@@ -2847,10 +3469,18 @@ const archive = {
     "location": "",
     "source": "CODA Berlin",
     "tags": [
-      "restaurant,tasting menu,dessert,berlin"
+      "restaurant",
+      "tasting menu",
+      "dessert",
+      "berlin"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan143.jpg",
+      "scan155.jpg",
+      "scan161.jpg",
+      "scan148.jpg"
+    ]
   },
   "scan145.jpg": {
     "filename": "scan145.jpg",
@@ -2862,10 +3492,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "michigan,vintage,travel,pennant"
+      "michigan",
+      "vintage",
+      "travel",
+      "pennant"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan108.jpg",
+      "scan45.jpg",
+      "scan105.jpg",
+      "scan112.jpg"
+    ]
   },
   "scan146.jpg": {
     "filename": "scan146.jpg",
@@ -2877,10 +3515,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "animals,bar,cartoon,party"
+      "animals",
+      "bar",
+      "cartoon",
+      "party"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan78.jpg",
+      "scan100.jpg",
+      "scan218.jpg",
+      "scan160.jpg"
+    ]
   },
   "scan147.jpg": {
     "filename": "scan147.jpg",
@@ -2892,10 +3538,19 @@ const archive = {
     "location": "",
     "source": "The Catbird Seat",
     "tags": [
-      "nashville,tasting menu,fine dining,signed"
+      "nashville",
+      "tasting menu",
+      "fine dining",
+      "signed"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan148.jpg",
+      "scan155.jpg",
+      "scan78.jpg",
+      "scan143.jpg",
+      "scan65.jpg"
+    ]
   },
   "scan148.jpg": {
     "filename": "scan148.jpg",
@@ -2907,10 +3562,18 @@ const archive = {
     "location": "",
     "source": "June",
     "tags": [
-      "birthday,restaurant,menu,nashville"
+      "birthday",
+      "restaurant",
+      "menu",
+      "nashville"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan147.jpg",
+      "scan155.jpg",
+      "scan143.jpg",
+      "scan144.jpg"
+    ]
   },
   "scan149.jpg": {
     "filename": "scan149.jpg",
@@ -2922,10 +3585,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "collage,pegasus,tennessee,newspaper"
+      "collage",
+      "pegasus",
+      "tennessee",
+      "newspaper"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan159.jpg",
+      "scan36.jpg",
+      "scan35.jpg",
+      "scan6.jpg"
+    ]
   },
   "scan150.jpg": {
     "filename": "scan150.jpg",
@@ -2937,10 +3608,18 @@ const archive = {
     "location": "",
     "source": "Nashville Punk Rock Flea Market",
     "tags": [
-      "poster,punk,nashville,event"
+      "poster",
+      "punk",
+      "nashville",
+      "event"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan106.jpg",
+      "scan151.jpg",
+      "scan167.jpg",
+      "scan162.jpg"
+    ]
   },
   "scan151.jpg": {
     "filename": "scan151.jpg",
@@ -2952,10 +3631,18 @@ const archive = {
     "location": "",
     "source": "Rock 'n' Roll Running Series",
     "tags": [
-      "running,half marathon,nashville,st jude"
+      "running",
+      "half marathon",
+      "nashville",
+      "st jude"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan69.jpg",
+      "scan150.jpg",
+      "scan141.jpg",
+      "scan158.jpg"
+    ]
   },
   "scan152.jpg": {
     "filename": "scan152.jpg",
@@ -2967,10 +3654,18 @@ const archive = {
     "location": "",
     "source": "C/O Berlin",
     "tags": [
-      "berlin,museum,design,travel"
+      "berlin",
+      "museum",
+      "design",
+      "travel"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan12.jpg",
+      "scan153.jpg",
+      "scan166.jpg",
+      "scan157.jpg"
+    ]
   },
   "scan153.jpg": {
     "filename": "scan153.jpg",
@@ -2982,10 +3677,19 @@ const archive = {
     "location": "",
     "source": "Karl Valentin",
     "tags": [
-      "german,art,quote,berlin"
+      "german",
+      "art",
+      "quote",
+      "berlin"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan115.jpg",
+      "scan166.jpg",
+      "scan152.jpg",
+      "scan133.jpg",
+      "scan12.jpg"
+    ]
   },
   "scan154.jpg": {
     "filename": "scan154.jpg",
@@ -2997,10 +3701,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "butterfly,rainbow,toy,psychedelic"
+      "butterfly",
+      "rainbow",
+      "toy",
+      "psychedelic"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan109.jpg",
+      "scan113.jpg",
+      "scan126.jpg",
+      "scan94.jpg"
+    ]
   },
   "scan155.jpg": {
     "filename": "scan155.jpg",
@@ -3012,10 +3724,19 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "restaurant,tasting menu,ratings,notes"
+      "restaurant",
+      "tasting menu",
+      "ratings",
+      "notes"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan143.jpg",
+      "scan147.jpg",
+      "scan144.jpg",
+      "scan148.jpg",
+      "scan81.jpg"
+    ]
   },
   "scan156.jpg": {
     "filename": "scan156.jpg",
@@ -3027,10 +3748,19 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
-      "cartoon,office,humor,new yorker"
+      "cartoon",
+      "office",
+      "humor",
+      "new yorker"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan119.jpg",
+      "scan214.jpg",
+      "scan24.jpg",
+      "scan52.jpg",
+      "scan110.jpg"
+    ]
   },
   "scan157.jpg": {
     "filename": "scan157.jpg",
@@ -3042,10 +3772,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "mexico,alebrijes,folk art,museum"
+      "mexico",
+      "alebrijes",
+      "folk art",
+      "museum"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan99.jpg",
+      "scan100.jpg",
+      "scan160.jpg",
+      "scan152.jpg"
+    ]
   },
   "scan158.jpg": {
     "filename": "scan158.jpg",
@@ -3057,10 +3795,19 @@ const archive = {
     "location": "",
     "source": "The New York Times",
     "tags": [
-      "crossword,puzzle,newspaper,2025"
+      "crossword",
+      "puzzle",
+      "newspaper",
+      "2025"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan77.jpg",
+      "scan156.jpg",
+      "scan119.jpg",
+      "scan24.jpg",
+      "scan151.jpg"
+    ]
   },
   "scan159.jpg": {
     "filename": "scan159.jpg",
@@ -3072,10 +3819,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "collage,cartoon,humor,found paper"
+      "collage",
+      "cartoon",
+      "humor",
+      "found paper"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan218.jpg",
+      "scan149.jpg",
+      "scan52.jpg",
+      "scan36.jpg"
+    ]
   },
   "scan160.jpg": {
     "filename": "scan160.jpg",
@@ -3087,10 +3842,19 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "birthday,crows,greeting card,illustration"
+      "birthday",
+      "crows",
+      "greeting card",
+      "illustration"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan146.jpg",
+      "scan157.jpg",
+      "scan99.jpg",
+      "scan100.jpg",
+      "scan165.jpg"
+    ]
   },
   "scan161.jpg": {
     "filename": "scan161.jpg",
@@ -3102,10 +3866,19 @@ const archive = {
     "location": "",
     "source": "Zingerman's Delicatessen",
     "tags": [
-      "food,sticker,reuben,deli"
+      "food",
+      "sticker",
+      "reuben",
+      "deli"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan162.jpg",
+      "scan144.jpg",
+      "scan163.jpg",
+      "scan165.jpg",
+      "scan11.jpg"
+    ]
   },
   "scan162.jpg": {
     "filename": "scan162.jpg",
@@ -3117,10 +3890,18 @@ const archive = {
     "location": "",
     "source": "Baja Burrito",
     "tags": [
-      "nashville,restaurant,sticker,food"
+      "nashville",
+      "restaurant",
+      "sticker",
+      "food"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan161.jpg",
+      "scan25.jpg",
+      "scan163.jpg",
+      "scan150.jpg"
+    ]
   },
   "scan163.jpg": {
     "filename": "scan163.jpg",
@@ -3132,10 +3913,18 @@ const archive = {
     "location": "",
     "source": "Revolution Brewing",
     "tags": [
-      "chicago,beer,brewery,sticker"
+      "chicago",
+      "beer",
+      "brewery",
+      "sticker"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan13.jpg",
+      "scan162.jpg",
+      "scan165.jpg",
+      "scan161.jpg"
+    ]
   },
   "scan164.jpg": {
     "filename": "scan164.jpg",
@@ -3147,10 +3936,19 @@ const archive = {
     "location": "",
     "source": "Grimey's",
     "tags": [
-      "music,record store,nashville,sticker"
+      "music",
+      "record store",
+      "nashville",
+      "sticker"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan167.jpg",
+      "scan169.jpg",
+      "scan43.jpg",
+      "scan168.jpg",
+      "scan213.jpg"
+    ]
   },
   "scan165.jpg": {
     "filename": "scan165.jpg",
@@ -3162,10 +3960,18 @@ const archive = {
     "location": "",
     "source": "Rabbit Rabbit",
     "tags": [
-      "asheville,sticker,carrot,venue"
+      "asheville",
+      "sticker",
+      "carrot",
+      "venue"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan163.jpg",
+      "scan140.jpg",
+      "scan161.jpg",
+      "scan160.jpg"
+    ]
   },
   "scan166.jpg": {
     "filename": "scan166.jpg",
@@ -3177,10 +3983,19 @@ const archive = {
     "location": "",
     "source": "Safelight Berlin",
     "tags": [
-      "berlin,photography,spongebob,postcard"
+      "berlin",
+      "photography",
+      "spongebob",
+      "postcard"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan153.jpg",
+      "scan59.jpg",
+      "scan101.jpg",
+      "scan152.jpg",
+      "scan12.jpg"
+    ]
   },
   "scan167.jpg": {
     "filename": "scan167.jpg",
@@ -3192,10 +4007,18 @@ const archive = {
     "location": "",
     "source": "Fanny's House of Music",
     "tags": [
-      "music,nashville,guitar,shop"
+      "music",
+      "nashville",
+      "guitar",
+      "shop"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan164.jpg",
+      "scan169.jpg",
+      "scan43.jpg",
+      "scan150.jpg"
+    ]
   },
   "scan168.jpg": {
     "filename": "scan168.jpg",
@@ -3207,25 +4030,42 @@ const archive = {
     "location": "",
     "source": "Hatch Show Print",
     "tags": [
-      "nashville,letterpress,sticker,design"
+      "nashville",
+      "letterpress",
+      "sticker",
+      "design"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan169.jpg",
+      "scan137.jpg",
+      "scan164.jpg",
+      "scan37.jpg",
+      "scan25.jpg"
+    ]
   },
   "scan169.jpg": {
     "filename": "scan169.jpg",
-    "title": "the taue vine record shop sticker",
-    "description": "sticker from the taue vine record shop",
+    "title": "the true vine record shop sticker",
+    "description": "sticker from my favorite baltimore record store",
     "category": "ephemera",
     "type": "sticker",
     "date": "",
     "location": "",
-    "source": "The Taue Vine Record Shop",
+    "source": "The True Vine Record Shop",
     "tags": [
-      "music,records,sticker,shop"
+      "music",
+      "records",
+      "sticker",
+      "shop"
     ],
-    "note": "",
-    "related": []
+    "note": "rip",
+    "related": [
+      "scan213.jpg",
+      "scan168.jpg",
+      "scan164.jpg",
+      "scan167.jpg"
+    ]
   },
   "scan170.jpg": {
     "filename": "scan170.jpg",
@@ -3237,10 +4077,1184 @@ const archive = {
     "location": "",
     "source": "Bird in Hand",
     "tags": [
-      "baltimore,books,cafe,community"
+      "baltimore",
+      "books",
+      "cafe",
+      "community"
     ],
     "note": "",
-    "related": []
+    "related": [
+      "scan10.jpg",
+      "scan136.jpg",
+      "scan106.jpg",
+      "scan2.jpg"
+    ]
+  },
+  "scan171.jpg": {
+    "filename": "scan171.jpg",
+    "title": "no other land ticket",
+    "description": "belcourt screening receipt for the documentary no other land",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-03-12",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "documentary",
+      "belcourt",
+      "palestine",
+      "ticket"
+    ],
+    "note": "",
+    "related": [
+      "scan179.jpg",
+      "scan38.jpg",
+      "scan172.jpg",
+      "scan190.jpg",
+      "scan8.jpg"
+    ]
+  },
+  "scan172.jpg": {
+    "filename": "scan172.jpg",
+    "title": "mulholland drive ticket",
+    "description": "belcourt screening receipt for david lynch's mulholland drive",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-03-11",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "lynch",
+      "belcourt",
+      "ticket",
+      "cult film"
+    ],
+    "note": "",
+    "related": [
+      "scan196.jpg",
+      "scan192.jpg",
+      "scan171.jpg",
+      "scan173.jpg"
+    ]
+  },
+  "scan173.jpg": {
+    "filename": "scan173.jpg",
+    "title": "bugonia ticket",
+    "description": "belcourt screening receipt for bugonia in 35mm format",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-10-27",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "35mm",
+      "belcourt",
+      "ticket",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan188.jpg",
+      "scan194.jpg",
+      "scan172.jpg",
+      "scan177.jpg"
+    ]
+  },
+  "scan174.jpg": {
+    "filename": "scan174.jpg",
+    "title": "city of god ticket",
+    "description": "belcourt screening receipt for city of god",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-09-07",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "belcourt",
+      "brazil",
+      "ticket",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan190.jpg",
+      "scan177.jpg",
+      "scan178.jpg",
+      "scan179.jpg"
+    ]
+  },
+  "scan175.jpg": {
+    "filename": "scan175.jpg",
+    "title": "the last showgirl ticket",
+    "description": "austin film festival admission ticket",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-10-29",
+    "location": "Austin, TX",
+    "source": "Austin Film Festival",
+    "tags": [
+      "movie",
+      "festival",
+      "austin",
+      "ticket",
+      "cinema"
+    ],
+    "note": "i met gia coppola after this screening!",
+    "related": [
+      "scan190.jpg",
+      "scan187.jpg",
+      "scan193.jpg",
+      "scan184.jpg",
+      "scan73.jpg"
+    ]
+  },
+  "scan176.jpg": {
+    "filename": "scan176.jpg",
+    "title": "the big lebowski ticket",
+    "description": "midnight movie at the belcourt",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "november 2025",
+    "location": "Nashville, TN",
+    "source": "Belcourt",
+    "tags": [
+      "movie",
+      "comedy",
+      "belcourt",
+      "ticket",
+      "cult film"
+    ],
+    "note": "all-timer",
+    "related": [
+      "scan194.jpg",
+      "scan180.jpg",
+      "scan195.jpg",
+      "scan188.jpg",
+      "scan73.jpg"
+    ]
+  },
+  "scan177.jpg": {
+    "filename": "scan177.jpg",
+    "title": "the secret agent ticket",
+    "description": "belcourt admission ticket for the secret agent",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2026-03-08",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "belcourt",
+      "ticket",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan178.jpg",
+      "scan174.jpg",
+      "scan179.jpg",
+      "scan173.jpg"
+    ]
+  },
+  "scan178.jpg": {
+    "filename": "scan178.jpg",
+    "title": "sentimental value ticket",
+    "description": "belcourt admission ticket for sentimental value",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-12-01",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "belcourt",
+      "ticket",
+      "drama",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan177.jpg",
+      "scan174.jpg",
+      "scan179.jpg",
+      "scan188.jpg"
+    ]
+  },
+  "scan179.jpg": {
+    "filename": "scan179.jpg",
+    "title": "the zone of interest ticket",
+    "description": "belcourt admission ticket for the zone of interest",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-02-04",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "belcourt",
+      "holocaust",
+      "ticket",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan171.jpg",
+      "scan174.jpg",
+      "scan177.jpg",
+      "scan178.jpg"
+    ]
+  },
+  "scan180.jpg": {
+    "filename": "scan180.jpg",
+    "title": "the dark knight ticket",
+    "description": "an all-time favorite put back on the big screen",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-03-24",
+    "location": "Nashville, TN",
+    "source": "Belcourt",
+    "tags": [
+      "movie",
+      "batman",
+      "belcourt",
+      "ticket",
+      "nolan"
+    ],
+    "note": "",
+    "related": [
+      "scan182.jpg",
+      "scan176.jpg",
+      "scan183.jpg",
+      "scan38.jpg",
+      "scan8.jpg"
+    ]
+  },
+  "scan181.jpg": {
+    "filename": "scan181.jpg",
+    "title": "creature from the black lagoon ticket",
+    "description": "3d belcourt screening ticket for creature from the black lagoon",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2023-07-11",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "3d",
+      "horror",
+      "belcourt",
+      "ticket"
+    ],
+    "note": "",
+    "related": [
+      "scan191.jpg",
+      "scan8.jpg",
+      "scan192.jpg",
+      "scan196.jpg"
+    ]
+  },
+  "scan182.jpg": {
+    "filename": "scan182.jpg",
+    "title": "oppenheimer imax ticket",
+    "description": "explosions on the big screen!",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2023-09-10",
+    "location": "Nashville, TN",
+    "source": "Regal Opry Mills",
+    "tags": [
+      "movie",
+      "imax",
+      "oppenheimer",
+      "ticket",
+      "nolan"
+    ],
+    "note": "ate at the rainforest cafe for dinner before",
+    "related": [
+      "scan180.jpg",
+      "scan183.jpg",
+      "scan185.jpg",
+      "scan189.jpg",
+      "scan197.jpg"
+    ]
+  },
+  "scan183.jpg": {
+    "filename": "scan183.jpg",
+    "title": "stop making sense imax ticket",
+    "description": "imax ticket stub for stop making sense",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2023-09-11",
+    "location": "Hendersonville, TN",
+    "source": "indian lake cinema",
+    "tags": [
+      "movie",
+      "concert film",
+      "imax",
+      "ticket",
+      "music"
+    ],
+    "note": "",
+    "related": [
+      "scan182.jpg",
+      "scan185.jpg",
+      "scan180.jpg",
+      "scan104.jpg"
+    ]
+  },
+  "scan184.jpg": {
+    "filename": "scan184.jpg",
+    "title": "challengers ticket",
+    "description": "sexy tennis movie",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "may 2024",
+    "location": "Nashville, TN",
+    "source": "Regal Opry Mills",
+    "tags": [
+      "movie",
+      "tennis",
+      "ticket",
+      "cinema",
+      "zendaya"
+    ],
+    "note": "",
+    "related": [
+      "scan186.jpg",
+      "scan189.jpg",
+      "scan193.jpg",
+      "scan187.jpg",
+      "scan175.jpg"
+    ]
+  },
+  "scan185.jpg": {
+    "filename": "scan185.jpg",
+    "title": "midsommar imax ticket",
+    "description": "imax reissue screening ticket for midsommar",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-06-20",
+    "location": "Hendersonville, TN",
+    "source": "indian lake cinema",
+    "tags": [
+      "movie",
+      "horror",
+      "imax",
+      "ticket",
+      "a24"
+    ],
+    "note": "",
+    "related": [
+      "scan186.jpg",
+      "scan191.jpg",
+      "scan183.jpg",
+      "scan187.jpg",
+      "scan182.jpg"
+    ]
+  },
+  "scan186.jpg": {
+    "filename": "scan186.jpg",
+    "title": "longlegs ticket",
+    "description": "movie ticket stub for longlegs",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-07-22",
+    "location": "Nashville, TN",
+    "source": "opry mills cinema",
+    "tags": [
+      "movie",
+      "horror",
+      "ticket",
+      "serial killer",
+      "neon"
+    ],
+    "note": "",
+    "related": [
+      "scan185.jpg",
+      "scan197.jpg",
+      "scan184.jpg",
+      "scan191.jpg"
+    ]
+  },
+  "scan187.jpg": {
+    "filename": "scan187.jpg",
+    "title": "the brutalist ticket",
+    "description": "a24 member screening ticket for the brutalist",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-01-24",
+    "location": "Nashville, TN",
+    "source": "green hills cinema",
+    "tags": [
+      "movie",
+      "a24",
+      "ticket",
+      "cinema",
+      "architecture"
+    ],
+    "note": "",
+    "related": [
+      "scan190.jpg",
+      "scan193.jpg",
+      "scan185.jpg",
+      "scan184.jpg",
+      "scan175.jpg"
+    ]
+  },
+  "scan188.jpg": {
+    "filename": "scan188.jpg",
+    "title": "anora ticket",
+    "description": "35mm belcourt screening ticket for anora",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-11-10",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "35mm",
+      "belcourt",
+      "ticket",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan173.jpg",
+      "scan194.jpg",
+      "scan176.jpg",
+      "scan178.jpg"
+    ]
+  },
+  "scan189.jpg": {
+    "filename": "scan189.jpg",
+    "title": "sonic 3 ticket",
+    "description": "movie ticket stub for sonic the hedgehog 3",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-01-28",
+    "location": "Nashville, TN",
+    "source": "Regal Opry Mills",
+    "tags": [
+      "movie",
+      "video game",
+      "ticket",
+      "family film",
+      "sequel"
+    ],
+    "note": "one of the worst movies i have ever seen",
+    "related": [
+      "scan184.jpg",
+      "scan182.jpg",
+      "scan195.jpg",
+      "scan197.jpg"
+    ]
+  },
+  "scan190.jpg": {
+    "filename": "scan190.jpg",
+    "title": "i'm still here ticket",
+    "description": "movie ticket stub for i'm still here",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-02-27",
+    "location": "Nashville, TN",
+    "source": "green hills cinema",
+    "tags": [
+      "movie",
+      "foreign film",
+      "ticket",
+      "drama",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan187.jpg",
+      "scan193.jpg",
+      "scan174.jpg",
+      "scan171.jpg",
+      "scan175.jpg"
+    ]
+  },
+  "scan191.jpg": {
+    "filename": "scan191.jpg",
+    "title": "the substance ticket",
+    "description": "belcourt screening ticket for the substance",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-10-05",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "horror",
+      "belcourt",
+      "ticket",
+      "body horror"
+    ],
+    "note": "",
+    "related": [
+      "scan181.jpg",
+      "scan185.jpg",
+      "scan186.jpg",
+      "scan192.jpg"
+    ]
+  },
+  "scan192.jpg": {
+    "filename": "scan192.jpg",
+    "title": "twin peaks fire walk with me ticket",
+    "description": "late night belcourt screening ticket for twin peaks fire walk with me",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-08-30",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "lynch",
+      "twin peaks",
+      "belcourt",
+      "ticket"
+    ],
+    "note": "",
+    "related": [
+      "scan172.jpg",
+      "scan196.jpg",
+      "scan181.jpg",
+      "scan191.jpg"
+    ]
+  },
+  "scan193.jpg": {
+    "filename": "scan193.jpg",
+    "title": "turnstile never enough ticket",
+    "description": "for the turnstile concert movie #turnstilesummer",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-06-16",
+    "location": "Nashville, TN",
+    "source": "Regal Green Hills",
+    "tags": [
+      "movie",
+      "ticket",
+      "cinema",
+      "independent film"
+    ],
+    "note": "",
+    "related": [
+      "scan190.jpg",
+      "scan187.jpg",
+      "scan184.jpg",
+      "scan195.jpg",
+      "scan175.jpg"
+    ]
+  },
+  "scan194.jpg": {
+    "filename": "scan194.jpg",
+    "title": "pulp fiction 35mm ticket",
+    "description": "belcourt screening ticket for pulp fiction new 35mm print",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2024-12-04",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "35mm",
+      "tarantino",
+      "belcourt",
+      "ticket"
+    ],
+    "note": "",
+    "related": [
+      "scan173.jpg",
+      "scan188.jpg",
+      "scan176.jpg",
+      "scan196.jpg"
+    ]
+  },
+  "scan195.jpg": {
+    "filename": "scan195.jpg",
+    "title": "rocky horror 50th ticket",
+    "description": "green hills cinema ticket for rocky horror picture show 50th anniversary screening",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-10-17",
+    "location": "Nashville, TN",
+    "source": "green hills cinema",
+    "tags": [
+      "movie",
+      "cult film",
+      "ticket",
+      "musical",
+      "horror"
+    ],
+    "note": "",
+    "related": [
+      "scan197.jpg",
+      "scan176.jpg",
+      "scan193.jpg",
+      "scan189.jpg"
+    ]
+  },
+  "scan196.jpg": {
+    "filename": "scan196.jpg",
+    "title": "twin peaks fire walk with me ticket",
+    "description": "belcourt screening ticket redeemed from member pack",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-03-08",
+    "location": "Nashville, TN",
+    "source": "belcourt theatre",
+    "tags": [
+      "movie",
+      "lynch",
+      "twin peaks",
+      "belcourt",
+      "ticket"
+    ],
+    "note": "",
+    "related": [
+      "scan172.jpg",
+      "scan192.jpg",
+      "scan194.jpg",
+      "scan181.jpg"
+    ]
+  },
+  "scan197.jpg": {
+    "filename": "scan197.jpg",
+    "title": "weapons ticket",
+    "description": "amc theatres ticket for weapons",
+    "category": "ephemera",
+    "type": "ticket",
+    "date": "2025-08-16",
+    "location": "Antioch, TN",
+    "source": "amc theatres",
+    "tags": [
+      "movie",
+      "horror",
+      "ticket",
+      "amc",
+      "cinema"
+    ],
+    "note": "",
+    "related": [
+      "scan195.jpg",
+      "scan186.jpg",
+      "scan175.jpg",
+      "scan182.jpg",
+      "scan189.jpg"
+    ]
+  },
+  "scan198.jpg": {
+    "filename": "scan198.jpg",
+    "title": "canadian skull envelope",
+    "description": "hand addressed envelope from canada featuring a crowned skull drawing",
+    "category": "mail",
+    "type": "correspondence",
+    "date": "2020-08-05",
+    "location": "",
+    "source": "Etsy",
+    "tags": [
+      "letter",
+      "mail art",
+      "canada",
+      "skull",
+      "friendship"
+    ],
+    "note": "",
+    "related": [
+      "scan210.jpg",
+      "scan199.jpg",
+      "scan76.jpg",
+      "scan124.jpg"
+    ]
+  },
+  "scan199.jpg": {
+    "filename": "scan199.jpg",
+    "title": "russian package envelope",
+    "description": "international package envelope mailed from yekaterinburg russia with vintage stamps",
+    "category": "mail",
+    "type": "correspondence",
+    "date": "",
+    "location": "",
+    "source": "Etsy",
+    "tags": [
+      "mail",
+      "russia",
+      "stamps",
+      "international",
+      "package"
+    ],
+    "note": "",
+    "related": [
+      "scan198.jpg",
+      "scan210.jpg",
+      "scan142.jpg",
+      "scan124.jpg"
+    ]
+  },
+  "scan200.jpg": {
+    "filename": "scan200.jpg",
+    "title": "bauhaus alphabet specimen",
+    "description": "reproduction of herbert bayer bauhaus universal type alphabet study",
+    "category": "print",
+    "type": "design reference",
+    "date": "",
+    "location": "Berlin, DE",
+    "source": "bauhaus",
+    "tags": [
+      "type design",
+      "bauhaus",
+      "graphic design",
+      "alphabet",
+      "modernism"
+    ],
+    "note": "",
+    "related": [
+      "scan202.jpg",
+      "scan85.jpg",
+      "scan58.jpg",
+      "scan83.jpg",
+      "scan31.jpg"
+    ]
+  },
+  "scan201.jpg": {
+    "filename": "scan201.jpg",
+    "title": "tour de france photograph",
+    "description": "archival photograph of cyclist racing through a crowd lined road",
+    "category": "photograph",
+    "type": "archival photo",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "cycling",
+      "sport",
+      "history",
+      "photography",
+      "crowd"
+    ],
+    "note": "",
+    "related": [
+      "scan209.jpg",
+      "scan87.jpg",
+      "scan60.jpg",
+      "scan88.jpg"
+    ]
+  },
+  "scan202.jpg": {
+    "filename": "scan202.jpg",
+    "title": "bauhaus exhibition poster",
+    "description": "reproduction of 1923 bauhaus exhibition poster in weimar",
+    "category": "print",
+    "type": "design reference",
+    "date": "september 2024",
+    "location": "Berlin, DE",
+    "source": "bauhaus",
+    "tags": [
+      "bauhaus",
+      "poster",
+      "graphic design",
+      "modernism",
+      "typography"
+    ],
+    "note": "",
+    "related": [
+      "scan200.jpg",
+      "scan82.jpg",
+      "scan85.jpg",
+      "scan17.jpg",
+      "scan31.jpg"
+    ]
+  },
+  "scan203.jpg": {
+    "filename": "scan203.jpg",
+    "title": "flying machine collage",
+    "description": "surreal illustration of swimmers riding a beam of light projected from a machine",
+    "category": "print",
+    "type": "art print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "surrealism",
+      "collage",
+      "light",
+      "swimmers",
+      "dreamlike"
+    ],
+    "note": "",
+    "related": [
+      "scan204.jpg",
+      "scan51.jpg",
+      "scan54.jpg",
+      "scan6.jpg"
+    ]
+  },
+  "scan204.jpg": {
+    "filename": "scan204.jpg",
+    "title": "house in snow illustration",
+    "description": "minimal landscape illustration of a solitary house beside a winding river in snow",
+    "category": "print",
+    "type": "art print",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "landscape",
+      "minimalism",
+      "winter",
+      "house",
+      "illustration"
+    ],
+    "note": "",
+    "related": [
+      "scan203.jpg",
+      "scan109.jpg",
+      "scan50.jpg",
+      "scan160.jpg"
+    ]
+  },
+  "scan205.jpg": {
+    "filename": "scan205.jpg",
+    "title": "solar eclipse glasses",
+    "description": "paper eclipse viewing glasses from the north american eclipse",
+    "category": "ephemera",
+    "type": "event souvenir",
+    "date": "april 2024",
+    "location": "",
+    "source": "solar eclipse",
+    "tags": [
+      "eclipse",
+      "astronomy",
+      "science",
+      "event",
+      "sky"
+    ],
+    "note": "",
+    "related": [
+      "scan217.jpg",
+      "scan51.jpg",
+      "scan106.jpg",
+      "scan209.jpg"
+    ]
+  },
+  "scan206.jpg": {
+    "filename": "scan206.jpg",
+    "title": "grey eagle setlist",
+    "description": "the mountain goats setlist from the grey eagle in asheville",
+    "category": "ephemera",
+    "type": "setlist",
+    "date": "october 2021",
+    "location": "Asheville, NC",
+    "source": "the grey eagle",
+    "tags": [
+      "music",
+      "concert",
+      "setlist",
+      "mountain goats",
+      "live show"
+    ],
+    "note": "",
+    "related": [
+      "scan207.jpg",
+      "scan70.jpg",
+      "scan208.jpg",
+      "scan121.jpg"
+    ]
+  },
+  "scan207.jpg": {
+    "filename": "scan207.jpg",
+    "title": "black pumas setlist",
+    "description": "handwritten concert setlist",
+    "category": "ephemera",
+    "type": "setlist",
+    "date": "october 2021",
+    "location": "Harrisburg, PA",
+    "source": "XL Live",
+    "tags": [
+      "music",
+      "concert",
+      "setlist",
+      "tour",
+      "performance"
+    ],
+    "note": "",
+    "related": [
+      "scan208.jpg",
+      "scan206.jpg",
+      "scan104.jpg",
+      "scan7.jpg"
+    ]
+  },
+  "scan208.jpg": {
+    "filename": "scan208.jpg",
+    "title": "mountain goats setlist annotated",
+    "description": "annotated setlist with performance notes and song changes",
+    "category": "ephemera",
+    "type": "setlist",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "music",
+      "concert",
+      "setlist",
+      "annotation",
+      "tour"
+    ],
+    "note": "",
+    "related": [
+      "scan207.jpg",
+      "scan206.jpg",
+      "scan121.jpg",
+      "scan111.jpg"
+    ]
+  },
+  "scan209.jpg": {
+    "filename": "scan209.jpg",
+    "title": "choosing the hard road article",
+    "description": "science magazine article about interdisciplinary research and career paths",
+    "category": "print",
+    "type": "article",
+    "date": "2017",
+    "location": "",
+    "source": "",
+    "tags": [
+      "science",
+      "career",
+      "research",
+      "interdisciplinary",
+      "article"
+    ],
+    "note": "",
+    "related": [
+      "scan201.jpg",
+      "scan205.jpg",
+      "scan26.jpg",
+      "scan200.jpg"
+    ]
+  },
+  "scan210.jpg": {
+    "filename": "scan210.jpg",
+    "title": "ivy mcgee letter",
+    "description": "handwritten religious outreach letter mailed in nashville",
+    "category": "mail",
+    "type": "correspondence",
+    "date": "april 2021",
+    "location": "Nashville, TN",
+    "source": "",
+    "tags": [
+      "letter",
+      "handwritten",
+      "religion",
+      "mail",
+      "correspondence"
+    ],
+    "note": "",
+    "related": [
+      "scan198.jpg",
+      "scan124.jpg",
+      "scan199.jpg",
+      "scan130.jpg"
+    ]
+  },
+  "scan211.jpg": {
+    "filename": "scan211.jpg",
+    "title": "protection from bicycle mishap",
+    "description": "humorous warning card depicting Death in a wheelchair being pushed after a bicycle accident",
+    "category": "ephemera",
+    "type": "victorian novelty card",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "bicycle",
+      "death",
+      "grim reaper",
+      "safety",
+      "playing card"
+    ],
+    "note": "",
+    "related": [
+      "scan42.jpg",
+      "scan49.jpg",
+      "scan127.jpg",
+      "scan214.jpg"
+    ]
+  },
+  "scan212.jpg": {
+    "filename": "scan212.jpg",
+    "title": "snooper sticker",
+    "description": "small sticker featuring a mischievous green insect-like character perched on cherries",
+    "category": "sticker",
+    "type": "character art",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "green creature",
+      "sticker",
+      "mascot",
+      "lowbrow art",
+      "cherries"
+    ],
+    "note": "",
+    "related": [
+      "scan218.jpg",
+      "scan140.jpg",
+      "scan126.jpg",
+      "scan128.jpg"
+    ]
+  },
+  "scan213.webp": {
+    "filename": "scan213.webp",
+    "title": "dearborn music zeppelin sticker",
+    "description": "a sticker honoring two greats",
+    "category": "sticker",
+    "type": "local memorabilia",
+    "date": "",
+    "location": "Dearborn, MI",
+    "source": "Dearborn Music",
+    "tags": [
+      "dearborn",
+      "music",
+      "zeppelin",
+      "record store",
+      "sticker"
+    ],
+    "note": "where my love for records began",
+    "related": [
+      "scan43.jpg",
+      "scan164.jpg",
+      "scan169.jpg",
+      "scan215.jpg",
+      "scan112.jpg"
+    ]
+  },
+  "scan214.jpg": {
+    "filename": "scan214.jpg",
+    "title": "what's on a man's mind",
+    "description": "cartoon illustration of a reclining nude woman occupying the thoughts of Sigmund Freud",
+    "category": "print",
+    "type": "humor",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "freud",
+      "psychology",
+      "caricature",
+      "satire",
+      "cartoon"
+    ],
+    "note": "",
+    "related": [
+      "scan156.jpg",
+      "scan47.jpg",
+      "scan119.jpg",
+      "scan64.jpg",
+      "scan211.jpg"
+    ]
+  },
+  "scan215.jpg": {
+    "filename": "scan215.jpg",
+    "title": "fisher building postcard",
+    "description": "linen postcard showing Detroit's Fisher Building against a bright sky",
+    "category": "postcard",
+    "type": "detroit architecture",
+    "date": "",
+    "location": "Detroit, MI",
+    "source": "",
+    "tags": [
+      "fisher building",
+      "detroit",
+      "architecture",
+      "art deco",
+      "postcard"
+    ],
+    "note": "",
+    "related": [
+      "scan216.jpg",
+      "scan1.jpg",
+      "scan120.jpg",
+      "scan213.jpg",
+      "scan31.jpg"
+    ]
+  },
+  "scan216.jpg": {
+    "filename": "scan216.jpg",
+    "title": "detroit felt pennant insert",
+    "description": "advertisement featuring a red felt Detroit pennant and promotional slogan",
+    "category": "advertising",
+    "type": "felt pennant",
+    "date": "",
+    "location": "Detroit, MI",
+    "source": "",
+    "tags": [
+      "detroit",
+      "souvenir",
+      "travel",
+      "felt pennant",
+      "advertisement"
+    ],
+    "note": "",
+    "related": [
+      "scan215.jpg",
+      "scan120.jpg",
+      "scan1.jpg",
+      "scan105.jpg"
+    ]
+  },
+  "scan217.jpg": {
+    "filename": "scan217.jpg",
+    "title": "greetings from earth's moon",
+    "description": "novelty postcard imagining tourist attractions and landmarks on the moon",
+    "category": "postcard",
+    "type": "space age",
+    "date": "",
+    "location": "",
+    "source": "",
+    "tags": [
+      "moon",
+      "apollo",
+      "space",
+      "retro futurism",
+      "postcard"
+    ],
+    "note": "",
+    "related": [
+      "scan26.jpg",
+      "scan44.jpg",
+      "scan205.jpg",
+      "scan113.jpg"
+    ]
+  },
+  "scan218.jpg": {
+    "filename": "scan218.jpg",
+    "title": "frog picnic",
+    "description": "cute froggy picnic collage",
+    "category": "artwork",
+    "type": "collage",
+    "date": "",
+    "location": "",
+    "source": "Etsy",
+    "tags": [
+      "frog",
+      "wine",
+      "picnic",
+      "surreal",
+      "collage"
+    ],
+    "note": "",
+    "related": [
+      "scan212.jpg",
+      "scan159.jpg",
+      "scan128.jpg",
+      "scan146.jpg"
+    ]
   }
 };
 
