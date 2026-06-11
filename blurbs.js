@@ -542,7 +542,7 @@ const archive = {
   "scan24.jpg": {
     "filename": "scan24.jpg",
     "title": "resistance to tyranny",
-    "description": "",
+    "description": "is obedience to god",
     "category": "print",
     "type": "magazine clipping",
     "date": "",
@@ -1143,8 +1143,8 @@ const archive = {
   },
   "scan48.jpg": {
     "filename": "scan48.jpg",
-    "title": "thunderbird ad",
-    "description": "vintage ford thunderbird magazine advertisement",
+    "title": "vintage thunderbird ad",
+    "description": "vintage magazine advertisement with cool framing",
     "category": "print",
     "type": "advertisement",
     "date": "",
@@ -1158,7 +1158,7 @@ const archive = {
       "design",
       "aspiration"
     ],
-    "note": "",
+    "note": "my favorite thing about this is the sliver of the man's head in the car door",
     "related": [
       "scan17.jpg",
       "scan31.jpg",
@@ -1233,7 +1233,7 @@ const archive = {
       "surreal",
       "motion"
     ],
-    "note": "",
+    "note": "this image has faded with time, but i still love it",
     "related": [
       "scan205.jpg",
       "scan54.jpg",
@@ -2339,12 +2339,12 @@ const archive = {
   "scan96.jpg": {
     "filename": "scan96.jpg",
     "title": "arcanine pokemon card",
-    "description": "2003 pokemon arcanine trading card from the expedition era",
+    "description": "arcanine trading card from the expedition era",
     "category": "pop culture",
     "type": "trading card",
     "date": "",
     "location": "",
-    "source": "Pokémon",
+    "source": "Nate",
     "tags": [
       "pokemon",
       "arcanine",
@@ -2573,13 +2573,13 @@ const archive = {
   },
   "scan106.jpg": {
     "filename": "scan106.jpg",
-    "title": "first friday poster",
-    "description": "hand drawn first friday event poster dated march 7 2025",
+    "title": "frist friday poster",
+    "description": "hand drawn first friday event poster for art week 2025",
     "category": "artwork",
     "type": "poster",
-    "date": "",
-    "location": "",
-    "source": "Andie Peach",
+    "date": "march 2025",
+    "location": "Nashville, TN",
+    "source": "Andie Peach for Frist Art Museum",
     "tags": [
       "poster",
       "first friday",
@@ -3020,8 +3020,8 @@ const archive = {
     "description": "scent description card for fischersund no 8 fragrance in icelandic",
     "category": "ephemera",
     "type": "fragrance card",
-    "date": "",
-    "location": "",
+    "date": "may 2025",
+    "location": "Reykjavík, IS",
     "source": "Fischersund",
     "tags": [
       "perfume",
@@ -3029,7 +3029,7 @@ const archive = {
       "icelandic",
       "scent"
     ],
-    "note": "",
+    "note": "rhubarb, bergamot, asphalt",
     "related": [
       "scan93.jpg",
       "scan67.jpg",
@@ -3040,8 +3040,8 @@ const archive = {
   },
   "scan126.jpg": {
     "filename": "scan126.jpg",
-    "title": "eden squishdate tag",
-    "description": "collectible squishmallows hang tag featuring the name eden and a character biography",
+    "title": "eden squishmallow tag",
+    "description": "from the squishmallow sharing my name",
     "category": "ephemera",
     "type": "tag",
     "date": "",
@@ -3053,7 +3053,7 @@ const archive = {
       "toy",
       "tag"
     ],
-    "note": "",
+    "note": "my final form",
     "related": [
       "scan212.jpg",
       "scan9.jpg",
@@ -3507,20 +3507,20 @@ const archive = {
   },
   "scan146.jpg": {
     "filename": "scan146.jpg",
-    "title": "animal bar scene illustration",
-    "description": "whimsical illustration of anthropomorphic animals gathered at a bar",
+    "title": "catbird seat illustration",
+    "description": "whimsical illustration of anthropomorphic animals gathered at the catbird seat bar",
     "category": "artwork",
     "type": "illustration",
-    "date": "",
-    "location": "",
-    "source": "",
+    "date": "March 20, 2026",
+    "location": "Nashville, TN",
+    "source": "The Catbird Seat",
     "tags": [
       "animals",
       "bar",
       "cartoon",
       "party"
     ],
-    "note": "",
+    "note": "keepsake from my 2026 birthday dinner",
     "related": [
       "scan78.jpg",
       "scan100.jpg",
@@ -3554,20 +3554,20 @@ const archive = {
   },
   "scan148.jpg": {
     "filename": "scan148.jpg",
-    "title": "june birthday dinner menu",
-    "description": "personalized birthday tasting menu from march 2024 at june restaurant",
+    "title": "june tasting menu",
+    "description": "personalized tasting menu from my birthday dinner at june in march 2024",
     "category": "food",
     "type": "menu",
-    "date": "",
-    "location": "",
-    "source": "June",
+    "date": "march 21, 2024",
+    "location": "Nashville, TN",
+    "source": "june",
     "tags": [
       "birthday",
       "restaurant",
       "menu",
       "nashville"
     ],
-    "note": "",
+    "note": "rip june",
     "related": [
       "scan147.jpg",
       "scan155.jpg",
@@ -3605,7 +3605,7 @@ const archive = {
     "category": "ephemera",
     "type": "flyer",
     "date": "",
-    "location": "",
+    "location": "Nashville, TN",
     "source": "Nashville Punk Rock Flea Market",
     "tags": [
       "poster",
@@ -3624,11 +3624,11 @@ const archive = {
   "scan151.jpg": {
     "filename": "scan151.jpg",
     "title": "rock n roll half marathon bib",
-    "description": "race bib from the st jude rock n roll half marathon in nashville",
+    "description": "race bib from my first half marathon",
     "category": "ephemera",
     "type": "race bib",
-    "date": "",
-    "location": "",
+    "date": "april 2024",
+    "location": "Nashville, TN",
     "source": "Rock 'n' Roll Running Series",
     "tags": [
       "running",
@@ -3636,7 +3636,7 @@ const archive = {
       "nashville",
       "st jude"
     ],
-    "note": "",
+    "note": "wooooof",
     "related": [
       "scan69.jpg",
       "scan150.jpg",
@@ -3644,14 +3644,14 @@ const archive = {
       "scan158.jpg"
     ]
   },
-  "scan152.jpg": {
-    "filename": "scan152.jpg",
-    "title": "co berlin napkin",
-    "description": "paper napkin from co berlin museum or cultural institution",
+  "scan152.webp": {
+    "filename": "scan152.webp",
+    "title": "c/o berlin keepsake",
+    "description": "paper bag scrap from c/o berlin museum",
     "category": "ephemera",
     "type": "memorabilia",
-    "date": "",
-    "location": "",
+    "date": "september 2024",
+    "location": "Berlin, DE",
     "source": "C/O Berlin",
     "tags": [
       "berlin",
@@ -3882,12 +3882,12 @@ const archive = {
   },
   "scan162.jpg": {
     "filename": "scan162.jpg",
-    "title": "yo quiero baja burrito sticker",
-    "description": "black and white promotional sticker for baja burrito restaurant",
+    "title": "baja burrito sticker",
+    "description": "support your local burrito",
     "category": "ephemera",
     "type": "sticker",
     "date": "",
-    "location": "",
+    "location": "Nashville, TN",
     "source": "Baja Burrito",
     "tags": [
       "nashville",
@@ -3895,7 +3895,7 @@ const archive = {
       "sticker",
       "food"
     ],
-    "note": "",
+    "note": "the best burrito in nashville",
     "related": [
       "scan161.jpg",
       "scan25.jpg",
@@ -4069,12 +4069,12 @@ const archive = {
   },
   "scan170.jpg": {
     "filename": "scan170.jpg",
-    "title": "bird in hand sketch card",
-    "description": "illustrated card depicting a communal table at bird in hand bookstore cafe in baltimore",
+    "title": "bird in hand sticker",
+    "description": "illustrated sticker of the communal table from bird in hand in charles village",
     "category": "ephemera",
     "type": "illustration",
     "date": "",
-    "location": "",
+    "location": "Baltimore, MD",
     "source": "Bird in Hand",
     "tags": [
       "baltimore",
@@ -4082,7 +4082,7 @@ const archive = {
       "cafe",
       "community"
     ],
-    "note": "",
+    "note": "i miss this place",
     "related": [
       "scan10.jpg",
       "scan136.jpg",
@@ -4263,12 +4263,12 @@ const archive = {
   "scan178.jpg": {
     "filename": "scan178.jpg",
     "title": "sentimental value ticket",
-    "description": "belcourt admission ticket for sentimental value",
+    "description": "admission ticket",
     "category": "ephemera",
     "type": "ticket",
     "date": "2025-12-01",
     "location": "Nashville, TN",
-    "source": "belcourt theatre",
+    "source": "Belcourt",
     "tags": [
       "movie",
       "belcourt",
@@ -4276,7 +4276,7 @@ const archive = {
       "drama",
       "cinema"
     ],
-    "note": "",
+    "note": "cried in the theater",
     "related": [
       "scan177.jpg",
       "scan174.jpg",
@@ -4581,12 +4581,12 @@ const archive = {
   "scan191.jpg": {
     "filename": "scan191.jpg",
     "title": "the substance ticket",
-    "description": "belcourt screening ticket for the substance",
+    "description": "screening ticket for the substance",
     "category": "ephemera",
     "type": "ticket",
     "date": "2024-10-05",
     "location": "Nashville, TN",
-    "source": "belcourt theatre",
+    "source": "Belcourt",
     "tags": [
       "movie",
       "horror",
@@ -4594,7 +4594,7 @@ const archive = {
       "ticket",
       "body horror"
     ],
-    "note": "",
+    "note": "someone threw up in the theater when i saw this",
     "related": [
       "scan181.jpg",
       "scan185.jpg",
@@ -4991,13 +4991,13 @@ const archive = {
   },
   "scan208.jpg": {
     "filename": "scan208.jpg",
-    "title": "mountain goats setlist annotated",
+    "title": "madison cunningham setlist",
     "description": "annotated setlist with performance notes and song changes",
     "category": "ephemera",
     "type": "setlist",
-    "date": "",
-    "location": "",
-    "source": "",
+    "date": "september 2021",
+    "location": "Asheville, NC",
+    "source": "The Grey Eagle",
     "tags": [
       "music",
       "concert",
@@ -5039,13 +5039,13 @@ const archive = {
   },
   "scan210.jpg": {
     "filename": "scan210.jpg",
-    "title": "ivy mcgee letter",
-    "description": "handwritten religious outreach letter mailed in nashville",
+    "title": "religious outreach letter",
+    "description": "an interesting thing to receive in the mail",
     "category": "mail",
     "type": "correspondence",
     "date": "april 2021",
     "location": "Nashville, TN",
-    "source": "",
+    "source": "Ivy McGee",
     "tags": [
       "letter",
       "handwritten",
@@ -5053,7 +5053,7 @@ const archive = {
       "mail",
       "correspondence"
     ],
-    "note": "",
+    "note": "how did she find me?",
     "related": [
       "scan198.jpg",
       "scan124.jpg",
@@ -5248,7 +5248,7 @@ const archive = {
       "surreal",
       "collage"
     ],
-    "note": "",
+    "note": "i love frogs",
     "related": [
       "scan212.jpg",
       "scan159.jpg",
