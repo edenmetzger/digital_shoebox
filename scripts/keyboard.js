@@ -67,6 +67,7 @@ function shakeBoxOnce() {
 }
 
 function handleShoeboxKeydown(event) {
+  if (event.metaKey || event.ctrlKey) return;
   if (isTypingInInput(event)) return;
 
   const directAction = shoeboxKeyActions[event.key];
@@ -110,6 +111,7 @@ function handleShoeboxKeydown(event) {
 }
 
 function handleShoeboxKeyup(event) {
+  if (event.metaKey || event.ctrlKey) return;
   if (isTypingInInput(event)) return;
 
   if (event.key.toLowerCase() === "s") {
@@ -123,6 +125,7 @@ function initializeAudioKeyboardControls() {
 }
 
 function handleAudioKeyboardControls(event) {
+  if (event.metaKey || event.ctrlKey) return;
   if (isTypingInInput(event)) return;
 
   const key = event.key.length === 1
