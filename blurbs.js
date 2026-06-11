@@ -416,8 +416,8 @@ const archive = {
       "scan20.jpg"
     ]
   },
-  "scan19.webp": {
-    "filename": "scan19.webp",
+  "scan19.jpg": {
+    "filename": "scan19.jpg",
     "title": "who let you in here?",
     "description": "i fucking let myself in",
     "category": "print",
@@ -515,8 +515,8 @@ const archive = {
       "scan33.jpg"
     ]
   },
-  "scan23.webp": {
-    "filename": "scan23.webp",
+  "scan23.jpg": {
+    "filename": "scan23.jpg",
     "title": "resist!",
     "description": "",
     "category": "print",
@@ -3110,8 +3110,8 @@ const archive = {
       "scan212.jpg"
     ]
   },
-  "scan129.webp": {
-    "filename": "scan129.webp",
+  "scan129.jpg": {
+    "filename": "scan129.jpg",
     "title": "osa coffee sleeve snoopy doodle",
     "description": "fav coffee shop fav character",
     "category": "artwork",
@@ -5109,8 +5109,8 @@ const archive = {
       "scan128.jpg"
     ]
   },
-  "scan213.webp": {
-    "filename": "scan213.webp",
+  "scan213.jpg": {
+    "filename": "scan213.jpg",
     "title": "dearborn music zeppelin sticker",
     "description": "a sticker honoring two greats",
     "category": "sticker",
