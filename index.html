@@ -12,8 +12,11 @@
 <body>
 
   <div id="introOverlay">
-    <img id="introAnimation" src="assets/intro.png" alt="" />
-  </div>
+  <picture>
+    <source srcset="assets/intro-mobile.png" media="(max-width: 700px)" />
+    <img id="introAnimation" src="assets/intro-desktop.png" alt="" />
+  </picture>
+</div>
 
   <div id="workspace"></div>
 

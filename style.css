@@ -115,9 +115,14 @@ body.metadata-mode .scan:hover {
   pointer-events: none;
 }
 
+#introOverlay picture,
 #introAnimation {
   width: 100vw;
   height: 100vh;
+  display: block;
+}
+
+#introAnimation {
   object-fit: cover;
 }
 
