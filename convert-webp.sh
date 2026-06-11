@@ -3,23 +3,17 @@
 SOURCE_DIR="./images"
 OUTPUT_DIR="./images-web"
 
-for file in "$SOURCE_DIR"/*.jpg; do
+for file in "$SOURCE_DIR"/*.jpg "$SOURCE_DIR"/*.webp; do
     [ -e "$file" ] || continue
 
-    filename=$(basename "$file" .jpg)
+    filename=$(basename "${file%.*}")
     output="$OUTPUT_DIR/$filename.webp"
 
-    if [ -f "$output" ]; then
-        echo "Skipping $filename.jpg"
-        continue
-    fi
-
-    echo "Converting $filename.jpg"
+    echo "Converting $(basename "$file")"
 
     cwebp "$file" \
         -resize 1000 0 \
         -q 50 \
-        -m 6 \
         -o "$output"
 done
 
