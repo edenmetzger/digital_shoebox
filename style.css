@@ -228,6 +228,35 @@ body.metadata-mode .scan:hover {
   margin: 0 0 10px;
 }
 
+.object-metadata {
+  margin: 0 0 10px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(47, 36, 26, 0.18);
+  border-bottom: 1px solid rgba(47, 36, 26, 0.18);
+  font-size: 12px;
+}
+
+.object-metadata dt {
+  display: inline;
+  color: var(--muted-ink);
+  font-style: italic;
+}
+
+.object-metadata dt::after {
+  content: ": ";
+}
+
+.object-metadata dd {
+  display: inline;
+  margin: 0;
+}
+
+.object-metadata dd::after {
+  content: "";
+  display: block;
+  margin-bottom: 3px;
+}
+
 .note-button,
 .related-objects button {
   margin-top: 8px;

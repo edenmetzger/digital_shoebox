@@ -9,10 +9,11 @@ function showInfoCard(scan, x, y, offsetFromClick = true) {
     infoText.textContent =
       "No information has been added for this object yet.";
   } else {
-    infoTitle.textContent = objectInfo.title;
-    infoText.textContent = objectInfo.description;
+    infoTitle.textContent = objectInfo.title || "Untitled Object";
+    infoText.textContent = objectInfo.description || "";
   }
 
+  renderObjectMetadata(objectInfo, filename);
   renderNote(objectInfo);
   renderRelatedObjects(objectInfo);
 
@@ -24,8 +25,72 @@ function showInfoCard(scan, x, y, offsetFromClick = true) {
 
 function closeInfoCard() {
   if (!infoCard) return;
-
   infoCard.classList.add("hidden");
+}
+
+function getOrCreateObjectMetadataList() {
+  let metadataList = document.getElementById("objectMetadata");
+
+  if (!metadataList) {
+    metadataList = document.createElement("dl");
+    metadataList.id = "objectMetadata";
+    metadataList.className = "object-metadata";
+    infoCard.insertBefore(metadataList, noteButton);
+  }
+
+  return metadataList;
+}
+
+function renderObjectMetadata(objectInfo, filename) {
+  const metadataList = getOrCreateObjectMetadataList();
+  metadataList.innerHTML = "";
+
+  if (!objectInfo) {
+    metadataList.classList.add("hidden");
+    return;
+  }
+
+  const rows = [
+    ["file", objectInfo.filename || filename],
+    ["category", objectInfo.category],
+    ["type", objectInfo.type],
+    ["date", objectInfo.date],
+    ["location", objectInfo.location],
+    ["source", objectInfo.source],
+    ["tags", objectInfo.tags]
+  ].filter(([, value]) => hasMetadataValue(value));
+
+  rows.forEach(([label, value]) => {
+    const term = document.createElement("dt");
+    term.textContent = label;
+
+    const detail = document.createElement("dd");
+    detail.textContent = formatMetadataValue(value);
+
+    metadataList.appendChild(term);
+    metadataList.appendChild(detail);
+  });
+
+  metadataList.classList.toggle("hidden", rows.length === 0);
+}
+
+function hasMetadataValue(value) {
+  if (Array.isArray(value)) {
+    return value.some((item) => String(item).trim() !== "");
+  }
+
+  return value !== undefined && value !== null && String(value).trim() !== "";
+}
+
+function formatMetadataValue(value) {
+  if (Array.isArray(value)) {
+    return value
+      .map((item) => String(item).trim())
+      .filter(Boolean)
+      .join(", ");
+  }
+
+  return String(value).trim();
 }
 
 function markObjectAsFound(filename) {
@@ -147,7 +212,7 @@ function openObjectByFilename(filename, shouldHighlight = false) {
     const rect = relatedScan.getBoundingClientRect();
 
     const CARD_WIDTH = 320;
-    const CARD_HEIGHT = 220;
+    const CARD_HEIGHT = 260;
 
     let cardX = rect.left + rect.width * 0.35;
     let cardY = rect.top + rect.height * 0.65;
