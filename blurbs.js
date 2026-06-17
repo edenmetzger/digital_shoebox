@@ -2830,7 +2830,7 @@ const archive = {
   "scan117.jpg": {
     "filename": "scan117.jpg",
     "title": "crab with knife illustration",
-    "description": "black and white illustration of a crab carrying a kitchen knife",
+    "description": "commissioned linocut print i made of a viral video still",
     "category": "artwork",
     "type": "print",
     "date": "",
@@ -2840,7 +2840,7 @@ const archive = {
       "crab",
       "knife",
       "illustration",
-      "humor"
+      "linocut"
     ],
     "note": "",
     "related": [
@@ -3272,12 +3272,12 @@ const archive = {
   },
   "scan136.jpg": {
     "filename": "scan136.jpg",
-    "title": "montserrat funicular ticket",
-    "description": "ticket for the montserrat rack railway and funicular system in catalonia",
+    "title": "montserrat tram ticket",
+    "description": "ticket for the montserrat railway",
     "category": "travel",
     "type": "ticket",
-    "date": "",
-    "location": "",
+    "date": "march 2019",
+    "location": "Barcelona, ES",
     "source": "FGC Montserrat",
     "tags": [
       "spain",
