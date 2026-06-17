@@ -20,9 +20,9 @@ const archive = {
     "related": [
       "scan215.jpg",
       "scan216.jpg",
-      "scan120.jpg",
       "scan46.jpg",
-      "scan45.jpg"
+      "scan120.jpg",
+      "scan213.jpg"
     ]
   },
   "scan2.jpg": {
@@ -43,11 +43,11 @@ const archive = {
     ],
     "note": "from a trip to meet a friend for dinner and drinks",
     "related": [
-      "scan68.webp",
-      "scan170.jpg",
-      "scan208.jpg",
+      "scan68.jpg",
       "scan137.jpg",
-      "scan135.jpg"
+      "scan135.jpg",
+      "scan187.jpg",
+      "scan136.jpg"
     ]
   },
   "scan3.jpg": {
@@ -62,16 +62,17 @@ const archive = {
     "tags": [
       "the new yorker",
       "poetry",
-      "poem",
-      "literature"
+      "print",
+      "literature",
+      "poem"
     ],
     "note": "this poem lives on my wall permanently",
     "related": [
       "scan27.jpg",
-      "scan52.jpg",
       "scan119.jpg",
-      "scan57.jpg",
-      "scan132.jpg"
+      "scan24.jpg",
+      "scan19.jpg",
+      "scan79.jpg"
     ]
   },
   "scan4.jpg": {
@@ -86,15 +87,16 @@ const archive = {
     "tags": [
       "music",
       "collage",
+      "print",
       "fashion"
     ],
     "note": "an ode to a high school favorite",
     "related": [
       "scan104.jpg",
       "scan111.jpg",
-      "scan18.jpg",
       "scan62.jpg",
-      "scan15.jpg"
+      "scan15.jpg",
+      "scan119.jpg"
     ]
   },
   "scan5.jpg": {
@@ -109,15 +111,16 @@ const archive = {
     "tags": [
       "cartoon",
       "bazooka joe",
+      "ephemera",
       "language"
     ],
     "note": "que bueno",
     "related": [
       "scan141.jpg",
       "scan156.jpg",
-      "scan27.jpg",
       "scan127.jpg",
-      "scan139.jpg"
+      "scan139.jpg",
+      "scan142.jpg"
     ]
   },
   "scan6.jpg": {
@@ -131,18 +134,18 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
-      "collage material",
       "art material",
+      "collage material",
       "body",
       "materials"
     ],
     "note": "fragments waiting to become something else",
     "related": [
-      "scan14.jpg",
-      "scan149.jpg",
-      "scan15.jpg",
-      "scan203.jpg",
-      "scan104.jpg"
+      "scan104.jpg",
+      "scan111.jpg",
+      "scan118.jpg",
+      "scan119.jpg",
+      "scan14.jpg"
     ]
   },
   "scan7.jpg": {
@@ -164,9 +167,9 @@ const archive = {
     "related": [
       "scan164.jpg",
       "scan169.jpg",
-      "scan121.jpg",
-      "scan104.jpg",
-      "scan70.jpg"
+      "scan70.jpg",
+      "scan167.jpg",
+      "scan213.jpg"
     ]
   },
   "scan8.jpg": {
@@ -188,8 +191,8 @@ const archive = {
     ],
     "note": "Evidence of watching a monster movie the old-fashioned way.",
     "related": [
-      "scan181.jpg",
       "scan38.jpg",
+      "scan181.jpg",
       "scan180.jpg",
       "scan191.jpg",
       "scan171.jpg"
@@ -207,8 +210,8 @@ const archive = {
     "tags": [
       "nashville",
       "postcard",
-      "trading card",
       "game",
+      "trading card",
       "pokemon",
       "halloween"
     ],
@@ -218,7 +221,7 @@ const archive = {
       "scan96.jpg",
       "scan127.jpg",
       "scan181.jpg",
-      "scan64.jpg"
+      "scan167.jpg"
     ]
   },
   "scan10.jpg": {
@@ -232,19 +235,19 @@ const archive = {
     "source": "Vigilante Coffee",
     "tags": [
       "food",
-      "coffee bag",
       "packaging",
+      "coffee bag",
       "coffee",
       "hyattsville",
       "maryland"
     ],
     "note": "",
     "related": [
-      "scan39.webp",
-      "scan170.jpg",
-      "scan129.webp",
-      "scan147.jpg",
-      "scan148.jpg"
+      "scan139.jpg",
+      "scan142.jpg",
+      "scan39.jpg",
+      "scan129.jpg",
+      "scan147.jpg"
     ]
   },
   "scan11.jpg": {
@@ -266,9 +269,9 @@ const archive = {
     "related": [
       "scan65.jpg",
       "scan143.jpg",
-      "scan77.jpg",
-      "scan10.jpg",
-      "scan161.jpg"
+      "scan144.jpg",
+      "scan147.jpg",
+      "scan148.jpg"
     ]
   },
   "scan12.jpg": {
@@ -288,11 +291,11 @@ const archive = {
     ],
     "note": "i love butterflies",
     "related": [
-      "scan54.jpg",
       "scan115.jpg",
-      "scan152.webp",
-      "scan153.jpg",
-      "scan166.jpg"
+      "scan54.jpg",
+      "scan152.jpg",
+      "scan166.jpg",
+      "scan153.jpg"
     ]
   },
   "scan13.jpg": {
@@ -309,16 +312,16 @@ const archive = {
       "sticker",
       "humor",
       "souvenir",
-      "button",
-      "beer"
+      "ephemera",
+      "button"
     ],
     "note": "iykyk",
     "related": [
-      "scan39.webp",
+      "scan39.jpg",
       "scan127.jpg",
-      "scan129.webp",
-      "scan155.jpg",
-      "scan170.jpg"
+      "scan162.jpg",
+      "scan181.jpg",
+      "scan167.jpg"
     ]
   },
   "scan14.jpg": {
@@ -332,19 +335,19 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "print",
       "handmade",
       "humor",
       "zine collage",
-      "zine",
-      "spirit"
+      "zine"
     ],
     "note": "bat shit crazy",
     "related": [
+      "scan19.jpg",
+      "scan21.jpg",
+      "scan27.jpg",
       "scan15.jpg",
-      "scan16.jpg",
-      "scan34.jpg",
-      "scan118.jpg",
-      "scan19.webp"
+      "scan50.jpg"
     ]
   },
   "scan15.jpg": {
@@ -360,17 +363,17 @@ const archive = {
       "music",
       "typography",
       "collage",
+      "print",
       "feelings",
-      "handmade",
-      "collage page"
+      "handmade"
     ],
     "note": "",
     "related": [
       "scan17.jpg",
       "scan16.jpg",
-      "scan19.webp",
-      "scan203.jpg",
-      "scan28.jpg"
+      "scan19.jpg",
+      "scan28.jpg",
+      "scan33.jpg"
     ]
   },
   "scan16.jpg": {
@@ -385,18 +388,18 @@ const archive = {
     "tags": [
       "collage",
       "politics",
+      "print",
       "handmade",
       "collage page",
-      "mushroom",
-      "revolution"
+      "mushroom"
     ],
     "note": "",
     "related": [
-      "scan15.jpg",
       "scan17.jpg",
-      "scan34.jpg",
+      "scan15.jpg",
       "scan28.jpg",
-      "scan106.jpg"
+      "scan21.jpg",
+      "scan22.jpg"
     ]
   },
   "scan17.jpg": {
@@ -411,18 +414,18 @@ const archive = {
     "tags": [
       "typography",
       "collage",
+      "print",
       "handmade",
       "collage page",
-      "advertisement",
-      "health"
+      "advertisement"
     ],
     "note": "",
     "related": [
       "scan15.jpg",
       "scan16.jpg",
-      "scan203.jpg",
-      "scan202.jpg",
-      "scan20.webp"
+      "scan23.jpg",
+      "scan200.jpg",
+      "scan202.jpg"
     ]
   },
   "scan18.jpg": {
@@ -437,22 +440,22 @@ const archive = {
     "tags": [
       "poetry",
       "collage",
+      "print",
       "handmade",
       "text clipping",
-      "quote",
-      "typewriter"
+      "quote"
     ],
     "note": "",
     "related": [
-      "scan19.webp",
-      "scan21.webp",
-      "scan23.webp",
-      "scan26.jpg",
-      "scan28.jpg"
+      "scan19.jpg",
+      "scan23.jpg",
+      "scan21.jpg",
+      "scan15.jpg",
+      "scan26.jpg"
     ]
   },
-  "scan19.webp": {
-    "filename": "scan19.webp",
+  "scan19.jpg": {
+    "filename": "scan19.jpg",
     "title": "who let you in here?",
     "description": "i fucking let myself in",
     "category": "print",
@@ -463,22 +466,22 @@ const archive = {
     "tags": [
       "poetry",
       "collage",
+      "print",
       "feelings",
       "humor",
-      "handmade",
-      "text clipping"
+      "handmade"
     ],
     "note": "i mean...yeah",
     "related": [
       "scan18.jpg",
-      "scan21.webp",
-      "scan118.jpg",
-      "scan123.jpg",
-      "scan42.jpg"
+      "scan21.jpg",
+      "scan23.jpg",
+      "scan15.jpg",
+      "scan118.jpg"
     ]
   },
-  "scan20.webp": {
-    "filename": "scan20.webp",
+  "scan20.jpg": {
+    "filename": "scan20.jpg",
     "title": "chaos",
     "description": "chaos egg",
     "category": "print",
@@ -488,23 +491,23 @@ const archive = {
     "source": "",
     "tags": [
       "typography",
+      "print",
       "handmade",
       "text fragment",
       "chaos",
-      "minimalism",
-      "black"
+      "minimalism"
     ],
     "note": "",
     "related": [
-      "scan19.webp",
-      "scan17.jpg",
-      "scan33.jpg",
+      "scan19.jpg",
       "scan200.jpg",
-      "scan202.jpg"
+      "scan202.jpg",
+      "scan203.jpg",
+      "scan15.jpg"
     ]
   },
-  "scan21.webp": {
-    "filename": "scan21.webp",
+  "scan21.jpg": {
+    "filename": "scan21.jpg",
     "title": "communism happens",
     "description": "",
     "category": "print",
@@ -515,18 +518,18 @@ const archive = {
     "tags": [
       "collage",
       "politics",
+      "print",
       "humor",
       "handmade",
-      "text clipping",
-      "communism"
+      "text clipping"
     ],
     "note": "red scare propaganda",
     "related": [
-      "scan23.webp",
-      "scan19.webp",
+      "scan23.jpg",
+      "scan19.jpg",
       "scan18.jpg",
-      "scan22.jpg",
-      "scan28.jpg"
+      "scan28.jpg",
+      "scan16.jpg"
     ]
   },
   "scan22.jpg": {
@@ -541,22 +544,22 @@ const archive = {
     "tags": [
       "collage",
       "politics",
+      "print",
       "handmade",
       "illustration clipping",
-      "match",
-      "flag"
+      "match"
     ],
     "note": "",
     "related": [
       "scan32.jpg",
-      "scan23.webp",
-      "scan24.jpg",
       "scan28.jpg",
-      "scan34.jpg"
+      "scan23.jpg",
+      "scan24.jpg",
+      "scan16.jpg"
     ]
   },
-  "scan23.webp": {
-    "filename": "scan23.webp",
+  "scan23.jpg": {
+    "filename": "scan23.jpg",
     "title": "resist!",
     "description": "",
     "category": "print",
@@ -568,17 +571,17 @@ const archive = {
       "typography",
       "collage",
       "politics",
+      "print",
       "handmade",
-      "text clipping",
-      "resist"
+      "text clipping"
     ],
     "note": "may i offer you a nice egg in this trying time",
     "related": [
-      "scan21.webp",
+      "scan21.jpg",
       "scan28.jpg",
       "scan18.jpg",
-      "scan106.jpg",
-      "scan22.jpg"
+      "scan22.jpg",
+      "scan24.jpg"
     ]
   },
   "scan24.jpg": {
@@ -594,17 +597,17 @@ const archive = {
       "the new yorker",
       "collage",
       "politics",
+      "print",
       "handmade",
-      "suffrage",
-      "protest"
+      "suffrage"
     ],
     "note": "hell yeah!!!",
     "related": [
       "scan119.jpg",
       "scan27.jpg",
-      "scan156.jpg",
+      "scan3.jpg",
       "scan28.jpg",
-      "scan23.webp"
+      "scan23.jpg"
     ]
   },
   "scan25.jpg": {
@@ -620,17 +623,17 @@ const archive = {
       "nashville",
       "sticker",
       "politics",
+      "ephemera",
       "cannabis",
-      "local business",
-      "qr code"
+      "local business"
     ],
     "note": "",
     "related": [
       "scan37.jpg",
+      "scan39.jpg",
       "scan162.jpg",
-      "scan168.webp",
-      "scan170.jpg",
-      "scan106.jpg"
+      "scan171.jpg",
+      "scan170.jpg"
     ]
   },
   "scan26.jpg": {
@@ -645,18 +648,18 @@ const archive = {
     "tags": [
       "poetry",
       "collage",
+      "print",
       "handmade",
       "space",
-      "quotation clipping",
-      "moon"
+      "quotation clipping"
     ],
     "note": "this makes me giggle",
     "related": [
-      "scan205.webp",
+      "scan19.jpg",
       "scan18.jpg",
-      "scan217.jpg",
-      "scan19.webp",
-      "scan203.jpg"
+      "scan28.jpg",
+      "scan49.jpg",
+      "scan209.jpg"
     ]
   },
   "scan27.jpg": {
@@ -672,17 +675,17 @@ const archive = {
       "the new yorker",
       "collage",
       "cartoon",
+      "print",
       "humor",
-      "handmade",
-      "beer"
+      "handmade"
     ],
     "note": "",
     "related": [
+      "scan24.jpg",
       "scan52.jpg",
-      "scan156.jpg",
       "scan119.jpg",
       "scan29.jpg",
-      "scan24.jpg"
+      "scan19.jpg"
     ]
   },
   "scan28.jpg": {
@@ -699,16 +702,16 @@ const archive = {
       "typography",
       "collage",
       "politics",
-      "handmade",
-      "poster clipping"
+      "print",
+      "handmade"
     ],
     "note": "good reminder",
     "related": [
-      "scan23.webp",
+      "scan23.jpg",
       "scan22.jpg",
       "scan24.jpg",
       "scan106.jpg",
-      "scan34.jpg"
+      "scan15.jpg"
     ]
   },
   "scan29.jpg": {
@@ -723,18 +726,18 @@ const archive = {
     "tags": [
       "collage",
       "cartoon",
+      "print",
       "humor",
       "handmade",
-      "godzilla",
-      "monsters"
+      "godzilla"
     ],
     "note": "",
     "related": [
       "scan27.jpg",
-      "scan156.jpg",
-      "scan52.jpg",
-      "scan32.jpg",
-      "scan19.webp"
+      "scan19.jpg",
+      "scan14.jpg",
+      "scan15.jpg",
+      "scan50.jpg"
     ]
   },
   "scan30.jpg": {
@@ -748,19 +751,19 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "print",
       "handmade",
       "zine page",
       "courage",
-      "love",
-      "wisdom"
+      "love"
     ],
     "note": "<3333",
     "related": [
-      "scan118.jpg",
       "scan15.jpg",
-      "scan19.webp",
-      "scan18.jpg",
-      "scan33.jpg"
+      "scan19.jpg",
+      "scan14.jpg",
+      "scan118.jpg",
+      "scan16.jpg"
     ]
   },
   "scan31.jpg": {
@@ -775,18 +778,18 @@ const archive = {
     "tags": [
       "collage",
       "architecture",
+      "print",
       "handmade",
       "alabama",
-      "logo clipping",
-      "scale"
+      "logo clipping"
     ],
     "note": "",
     "related": [
-      "scan215.jpg",
       "scan200.jpg",
       "scan202.jpg",
-      "scan114.jpg",
-      "scan203.jpg"
+      "scan203.jpg",
+      "scan49.jpg",
+      "scan26.jpg"
     ]
   },
   "scan32.jpg": {
@@ -800,19 +803,19 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "print",
       "humor",
       "handmade",
       "illustration clipping",
-      "globe",
-      "climate"
+      "globe"
     ],
     "note": "",
     "related": [
       "scan22.jpg",
-      "scan29.jpg",
-      "scan19.webp",
-      "scan56.jpg",
-      "scan15.jpg"
+      "scan19.jpg",
+      "scan14.jpg",
+      "scan15.jpg",
+      "scan50.jpg"
     ]
   },
   "scan33.jpg": {
@@ -827,18 +830,18 @@ const archive = {
     "tags": [
       "typography",
       "collage",
+      "print",
       "handmade",
       "typography clipping",
-      "blackletter",
-      "word fragment"
+      "blackletter"
     ],
     "note": "one of my favorite pieces of type I've found in my clippings",
     "related": [
       "scan15.jpg",
       "scan17.jpg",
-      "scan203.jpg",
-      "scan20.webp",
-      "scan200.jpg"
+      "scan23.jpg",
+      "scan200.jpg",
+      "scan202.jpg"
     ]
   },
   "scan34.jpg": {
@@ -862,9 +865,9 @@ const archive = {
     "related": [
       "scan35.jpg",
       "scan36.jpg",
-      "scan22.jpg",
       "scan28.jpg",
-      "scan23.webp"
+      "scan22.jpg",
+      "scan23.jpg"
     ]
   },
   "scan35.jpg": {
@@ -889,8 +892,8 @@ const archive = {
       "scan34.jpg",
       "scan36.jpg",
       "scan149.jpg",
-      "scan16.jpg",
-      "scan4.jpg"
+      "scan4.jpg",
+      "scan62.jpg"
     ]
   },
   "scan36.jpg": {
@@ -932,17 +935,17 @@ const archive = {
       "nashville",
       "sticker",
       "politics",
+      "ephemera",
       "transit",
-      "city",
-      "place"
+      "city"
     ],
     "note": "choose how you move!",
     "related": [
-      "scan171.jpg",
       "scan25.jpg",
-      "scan168.webp",
-      "scan170.jpg",
-      "scan106.jpg"
+      "scan162.jpg",
+      "scan164.jpg",
+      "scan171.jpg",
+      "scan170.jpg"
     ]
   },
   "scan38.jpg": {
@@ -964,15 +967,15 @@ const archive = {
     ],
     "note": "saw this with my parents",
     "related": [
-      "scan8.jpg",
-      "scan171.jpg",
-      "scan180.jpg",
       "scan177.jpg",
-      "scan172.jpg"
+      "scan171.jpg",
+      "scan172.jpg",
+      "scan173.jpg",
+      "scan174.jpg"
     ]
   },
-  "scan39.webp": {
-    "filename": "scan39.webp",
+  "scan39.jpg": {
+    "filename": "scan39.jpg",
     "title": "weak coffee shop sticker",
     "description": "supporting my local coffee shop",
     "category": "ephemera",
@@ -986,19 +989,19 @@ const archive = {
       "sticker",
       "illustration",
       "humor",
-      "coffee"
+      "ephemera"
     ],
     "note": "",
     "related": [
+      "scan162.jpg",
       "scan25.jpg",
-      "scan37.jpg",
-      "scan78.jpg",
-      "scan170.jpg",
-      "scan162.jpg"
+      "scan164.jpg",
+      "scan13.jpg",
+      "scan170.jpg"
     ]
   },
-  "scan40.webp": {
-    "filename": "scan40.webp",
+  "scan40.jpg": {
+    "filename": "scan40.jpg",
     "title": "everybody hurts",
     "description": "silly depressed froggy",
     "category": "ephemera",
@@ -1010,21 +1013,21 @@ const archive = {
       "patch",
       "sticker",
       "humor",
-      "mushroom",
-      "empathy",
-      "sadness"
+      "etsy",
+      "ephemera",
+      "mushroom"
     ],
     "note": "",
     "related": [
       "scan42.jpg",
-      "scan41.webp",
+      "scan41.jpg",
       "scan44.jpg",
-      "scan56.jpg",
-      "scan211.jpg"
+      "scan211.jpg",
+      "scan46.jpg"
     ]
   },
-  "scan41.webp": {
-    "filename": "scan41.webp",
+  "scan41.jpg": {
+    "filename": "scan41.jpg",
     "title": "death's-head moth",
     "description": "embroidered patch depicting a death's-head moth with a skull face",
     "category": "ephemera",
@@ -1037,16 +1040,16 @@ const archive = {
       "sticker",
       "creatures",
       "feelings",
-      "moth",
-      "skull"
+      "ephemera",
+      "moth"
     ],
     "note": "",
     "related": [
       "scan42.jpg",
-      "scan40.webp",
-      "scan1.jpg",
+      "scan40.jpg",
+      "scan44.jpg",
       "scan211.jpg",
-      "scan56.jpg"
+      "scan46.jpg"
     ]
   },
   "scan42.jpg": {
@@ -1063,16 +1066,16 @@ const archive = {
       "sticker",
       "feelings",
       "humor",
-      "anxiety",
-      "tombstone"
+      "ephemera",
+      "anxiety"
     ],
     "note": "",
     "related": [
-      "scan41.webp",
-      "scan40.webp",
-      "scan19.webp",
-      "scan52.jpg",
-      "scan118.jpg"
+      "scan41.jpg",
+      "scan40.jpg",
+      "scan44.jpg",
+      "scan19.jpg",
+      "scan211.jpg"
     ]
   },
   "scan43.jpg": {
@@ -1090,15 +1093,15 @@ const archive = {
       "music",
       "patch",
       "sticker",
-      "record store"
+      "ephemera"
     ],
     "note": "",
     "related": [
-      "scan169.jpg",
       "scan44.jpg",
+      "scan169.jpg",
+      "scan170.jpg",
       "scan164.jpg",
-      "scan167.jpg",
-      "scan213.jpg"
+      "scan167.jpg"
     ]
   },
   "scan44.jpg": {
@@ -1116,15 +1119,15 @@ const archive = {
       "sticker",
       "humor",
       "space",
-      "moon"
+      "ephemera"
     ],
     "note": "",
     "related": [
       "scan43.jpg",
-      "scan41.webp",
-      "scan45.jpg",
-      "scan51.jpg",
-      "scan170.jpg"
+      "scan42.jpg",
+      "scan40.jpg",
+      "scan170.jpg",
+      "scan169.jpg"
     ]
   },
   "scan45.jpg": {
@@ -1142,14 +1145,14 @@ const archive = {
       "patch",
       "sticker",
       "souvenir",
-      "distillery"
+      "ephemera"
     ],
     "note": "",
     "related": [
-      "scan1.jpg",
-      "scan105.jpg",
-      "scan112.jpg",
+      "scan46.jpg",
       "scan145.jpg",
+      "scan105.jpg",
+      "scan1.jpg",
       "scan216.jpg"
     ]
   },
@@ -1168,15 +1171,15 @@ const archive = {
       "sticker",
       "humor",
       "joshua tree",
-      "road trip"
+      "ephemera"
     ],
     "note": "",
     "related": [
-      "scan1.jpg",
       "scan45.jpg",
-      "scan40.webp",
-      "scan41.webp",
-      "scan42.jpg"
+      "scan42.jpg",
+      "scan40.jpg",
+      "scan1.jpg",
+      "scan41.jpg"
     ]
   },
   "scan47.jpg": {
@@ -1190,19 +1193,19 @@ const archive = {
     "source": "",
     "tags": [
       "illustration",
+      "print",
       "handmade",
       "intimacy",
       "reflection",
-      "queer",
-      "romance"
+      "queer"
     ],
     "note": "",
     "related": [
-      "scan146.jpg",
-      "scan170.jpg",
-      "scan78.jpg",
       "scan214.jpg",
-      "scan64.jpg"
+      "scan204.jpg",
+      "scan14.jpg",
+      "scan119.jpg",
+      "scan62.jpg"
     ]
   },
   "scan48.jpg": {
@@ -1215,19 +1218,19 @@ const archive = {
     "location": "",
     "source": "Ford",
     "tags": [
+      "print",
       "handmade",
       "advertisement",
       "automobile",
       "vintage",
-      "luxury",
-      "americana"
+      "luxury"
     ],
     "note": "my favorite thing about this is the sliver of the man's head in the car door",
     "related": [
-      "scan31.jpg",
-      "scan168.webp",
+      "scan17.jpg",
       "scan200.jpg",
       "scan202.jpg",
+      "scan31.jpg",
       "scan82.jpg"
     ]
   },
@@ -1243,16 +1246,16 @@ const archive = {
     "tags": [
       "typography",
       "collage",
+      "print",
       "handmade",
       "accident",
-      "landscape",
-      "disaster"
+      "landscape"
     ],
     "note": "thelma and louise type shit",
     "related": [
+      "scan24.jpg",
       "scan15.jpg",
       "scan17.jpg",
-      "scan203.jpg",
       "scan200.jpg",
       "scan202.jpg"
     ]
@@ -1268,19 +1271,19 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "print",
       "creatures",
       "handmade",
       "comic clipping",
-      "dog",
-      "journey"
+      "dog"
     ],
     "note": "",
     "related": [
+      "scan14.jpg",
+      "scan19.jpg",
+      "scan21.jpg",
       "scan51.jpg",
-      "scan218.jpg",
-      "scan36.jpg",
-      "scan49.jpg",
-      "scan56.jpg"
+      "scan107.jpg"
     ]
   },
   "scan51.jpg": {
@@ -1295,18 +1298,18 @@ const archive = {
     "tags": [
       "collage",
       "travel",
+      "print",
       "space",
-      "flight",
-      "falling",
-      "sky"
+      "artwork",
+      "flight"
     ],
     "note": "this image has faded with time, but i still love it",
     "related": [
+      "scan109.jpg",
+      "scan62.jpg",
+      "scan60.jpg",
       "scan203.jpg",
-      "scan205.webp",
-      "scan44.jpg",
-      "scan50.jpg",
-      "scan26.jpg"
+      "scan31.jpg"
     ]
   },
   "scan52.jpg": {
@@ -1323,16 +1326,16 @@ const archive = {
       "cartoon",
       "feelings",
       "humor",
-      "anxiety",
-      "diy"
+      "artwork",
+      "anxiety"
     ],
     "note": "my favorite comic",
     "related": [
-      "scan156.jpg",
       "scan27.jpg",
+      "scan156.jpg",
       "scan119.jpg",
-      "scan42.jpg",
-      "scan118.jpg"
+      "scan118.jpg",
+      "scan42.jpg"
     ]
   },
   "scan53.jpg": {
@@ -1346,19 +1349,19 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "print",
       "performance",
       "dance",
       "ballet",
-      "theatre",
-      "rehearsal"
+      "theatre"
     ],
     "note": "",
     "related": [
       "scan104.jpg",
       "scan62.jpg",
-      "scan72.jpg",
-      "scan54.jpg",
-      "scan111.jpg"
+      "scan111.jpg",
+      "scan119.jpg",
+      "scan158.jpg"
     ]
   },
   "scan54.jpg": {
@@ -1382,9 +1385,9 @@ const archive = {
     "related": [
       "scan12.jpg",
       "scan115.jpg",
-      "scan152.webp",
-      "scan203.jpg",
-      "scan106.jpg"
+      "scan152.jpg",
+      "scan106.jpg",
+      "scan203.jpg"
     ]
   },
   "scan55.jpg": {
@@ -1428,15 +1431,15 @@ const archive = {
       "feelings",
       "humor",
       "handmade",
-      "tiger"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan128.jpg",
+      "scan116.jpg",
+      "scan129.jpg",
       "scan64.jpg",
-      "scan138.jpg",
-      "scan218.jpg",
-      "scan19.webp"
+      "scan138.jpg"
     ]
   },
   "scan57.jpg": {
@@ -1452,17 +1455,17 @@ const archive = {
       "poetry",
       "feelings",
       "paris",
-      "typed poem",
       "literature",
+      "typed poem",
       "emily dickinson"
     ],
     "note": "",
     "related": [
       "scan61.jpg",
       "scan63.jpg",
-      "scan3.jpg",
+      "scan79.jpg",
       "scan132.jpg",
-      "scan19.webp"
+      "scan19.jpg"
     ]
   },
   "scan58.jpg": {
@@ -1484,9 +1487,9 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan215.jpg",
       "scan122.jpg",
       "scan54.jpg",
+      "scan55.jpg",
       "scan200.jpg",
       "scan202.jpg"
     ]
@@ -1510,11 +1513,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan114.jpg",
       "scan120.jpg",
+      "scan114.jpg",
+      "scan12.jpg",
       "scan215.jpg",
-      "scan200.jpg",
-      "scan202.jpg"
+      "scan187.jpg"
     ]
   },
   "scan60.jpg": {
@@ -1527,20 +1530,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "print",
       "handmade",
+      "artwork",
       "eyes",
       "surreal",
-      "psychedelic",
-      "observation",
-      "dreamlike"
+      "psychedelic"
     ],
     "note": "my favorite body part: eyes",
     "related": [
+      "scan83.jpg",
+      "scan100.jpg",
       "scan103.jpg",
-      "scan113.jpg",
-      "scan62.jpg",
-      "scan198.jpg",
-      "scan83.jpg"
+      "scan107.jpg",
+      "scan109.jpg"
     ]
   },
   "scan61.jpg": {
@@ -1555,18 +1558,18 @@ const archive = {
     "tags": [
       "nashville",
       "poetry",
-      "typed poem",
       "literature",
+      "typed poem",
       "artist book",
       "typed text"
     ],
     "note": "",
     "related": [
-      "scan57.jpg",
       "scan80.jpg",
       "scan84.jpg",
-      "scan79.jpg",
-      "scan63.jpg"
+      "scan57.jpg",
+      "scan64.jpg",
+      "scan106.jpg"
     ]
   },
   "scan62.jpg": {
@@ -1580,19 +1583,19 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "print",
+      "artwork",
       "fashion",
       "feminine gaze",
-      "beauty",
-      "advertising",
-      "observation"
+      "beauty"
     ],
     "note": "",
     "related": [
-      "scan4.jpg",
-      "scan119.jpg",
-      "scan53.jpg",
+      "scan51.jpg",
+      "scan60.jpg",
+      "scan100.jpg",
       "scan47.jpg",
-      "scan35.jpg"
+      "scan4.jpg"
     ]
   },
   "scan63.jpg": {
@@ -1606,8 +1609,8 @@ const archive = {
     "source": "",
     "tags": [
       "poetry",
-      "quotation",
       "literature",
+      "quotation",
       "thoreau",
       "awakening",
       "mindfulness"
@@ -1640,11 +1643,11 @@ const archive = {
     ],
     "note": "from my first trip to Nashville",
     "related": [
-      "scan129.webp",
-      "scan56.jpg",
-      "scan128.jpg",
+      "scan129.jpg",
+      "scan81.jpg",
+      "scan86.jpg",
       "scan76.jpg",
-      "scan75.jpg"
+      "scan56.jpg"
     ]
   },
   "scan65.jpg": {
@@ -1659,18 +1662,18 @@ const archive = {
     "tags": [
       "memphis",
       "souvenir",
+      "ephemera",
       "napkin",
       "ducks",
-      "southern history",
-      "hotel"
+      "southern history"
     ],
     "note": "",
     "related": [
+      "scan13.jpg",
+      "scan45.jpg",
       "scan11.jpg",
-      "scan216.jpg",
-      "scan78.jpg",
-      "scan9.jpg",
-      "scan181.jpg"
+      "scan181.jpg",
+      "scan216.jpg"
     ]
   },
   "scan66.jpg": {
@@ -1693,7 +1696,7 @@ const archive = {
     "note": "when the Tigers were good",
     "related": [
       "scan69.jpg",
-      "scan68.webp",
+      "scan68.jpg",
       "scan71.jpg",
       "scan120.jpg",
       "scan145.jpg"
@@ -1720,13 +1723,13 @@ const archive = {
     "related": [
       "scan136.jpg",
       "scan135.jpg",
-      "scan134.jpg",
-      "scan68.webp",
-      "scan2.jpg"
+      "scan68.jpg",
+      "scan2.jpg",
+      "scan134.jpg"
     ]
   },
-  "scan68.webp": {
-    "filename": "scan68.webp",
+  "scan68.jpg": {
+    "filename": "scan68.jpg",
     "title": "baltimore to detroit",
     "description": "a flight from school to home",
     "category": "travel",
@@ -1745,10 +1748,10 @@ const archive = {
     "note": "",
     "related": [
       "scan2.jpg",
-      "scan120.jpg",
       "scan66.jpg",
+      "scan69.jpg",
       "scan137.jpg",
-      "scan213.jpg"
+      "scan120.jpg"
     ]
   },
   "scan69.jpg": {
@@ -1771,7 +1774,7 @@ const archive = {
     "note": "when I stanned the high school baseball team",
     "related": [
       "scan66.jpg",
-      "scan68.webp",
+      "scan68.jpg",
       "scan71.jpg",
       "scan120.jpg",
       "scan145.jpg"
@@ -1797,10 +1800,10 @@ const archive = {
     "note": "won this ticket from a Grimey's raffle",
     "related": [
       "scan164.jpg",
-      "scan121.jpg",
       "scan193.jpg",
-      "scan167.jpg",
-      "scan43.jpg"
+      "scan121.jpg",
+      "scan183.jpg",
+      "scan38.jpg"
     ]
   },
   "scan71.jpg": {
@@ -1824,9 +1827,9 @@ const archive = {
     "related": [
       "scan66.jpg",
       "scan69.jpg",
-      "scan13.jpg",
-      "scan155.jpg",
-      "scan72.jpg"
+      "scan72.jpg",
+      "scan134.jpg",
+      "scan135.jpg"
     ]
   },
   "scan72.jpg": {
@@ -1841,18 +1844,18 @@ const archive = {
     "tags": [
       "travel",
       "ticket",
+      "arts",
       "theatre",
       "shakespeare",
-      "macbeth",
-      "performance"
+      "macbeth"
     ],
     "note": "APLit bus trip",
     "related": [
-      "scan53.jpg",
-      "scan131.jpg",
       "scan134.jpg",
       "scan135.jpg",
-      "scan136.jpg"
+      "scan136.jpg",
+      "scan187.jpg",
+      "scan73.jpg"
     ]
   },
   "scan73.jpg": {
@@ -1869,16 +1872,16 @@ const archive = {
       "travel",
       "ticket",
       "denver",
-      "landmark theatres",
-      "cultural ephemera"
+      "entertainment",
+      "landmark theatres"
     ],
     "note": "",
     "related": [
       "scan175.jpg",
-      "scan38.jpg",
-      "scan171.jpg",
-      "scan176.jpg",
-      "scan183.jpg"
+      "scan183.jpg",
+      "scan187.jpg",
+      "scan193.jpg",
+      "scan38.jpg"
     ]
   },
   "scan74.jpg": {
@@ -1894,17 +1897,17 @@ const archive = {
       "nashville",
       "handmade",
       "frist",
+      "artwork",
       "painting",
-      "watercolor",
-      "abstract"
+      "watercolor"
     ],
     "note": "",
     "related": [
       "scan90.jpg",
       "scan106.jpg",
       "scan75.jpg",
-      "scan86.jpg",
-      "scan81.jpg"
+      "scan83.jpg",
+      "scan82.jpg"
     ]
   },
   "scan75.jpg": {
@@ -1921,15 +1924,15 @@ const archive = {
       "feelings",
       "handmade",
       "frist",
-      "mixed media",
-      "hearts"
+      "artwork",
+      "mixed media"
     ],
     "note": "gifted by a child during a shift at the Frist",
     "related": [
-      "scan76.jpg",
       "scan106.jpg",
       "scan74.jpg",
-      "scan64.jpg",
+      "scan90.jpg",
+      "scan76.jpg",
       "scan118.jpg"
     ]
   },
@@ -1955,7 +1958,7 @@ const archive = {
       "scan75.jpg",
       "scan106.jpg",
       "scan74.jpg",
-      "scan198.jpg",
+      "scan64.jpg",
       "scan210.jpg"
     ]
   },
@@ -1972,9 +1975,9 @@ const archive = {
       "catbird seat",
       "nashville",
       "food",
+      "games",
       "puzzle",
-      "word search",
-      "leisure"
+      "word search"
     ],
     "note": "analogue entertainment",
     "related": [
@@ -2000,15 +2003,15 @@ const archive = {
       "illustration",
       "creatures",
       "humor",
-      "bird"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan146.jpg",
       "scan147.jpg",
       "scan77.jpg",
-      "scan170.jpg",
-      "scan39.webp"
+      "scan64.jpg",
+      "scan81.jpg"
     ]
   },
   "scan79.jpg": {
@@ -2021,20 +2024,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "letterpress",
       "poetry",
       "typography",
       "postcard",
       "handmade",
+      "literature",
       "poetry card"
     ],
     "note": "",
     "related": [
       "scan80.jpg",
       "scan84.jpg",
-      "scan168.webp",
-      "scan82.jpg",
-      "scan83.jpg"
+      "scan57.jpg",
+      "scan168.jpg",
+      "scan114.jpg"
     ]
   },
   "scan80.jpg": {
@@ -2052,15 +2055,15 @@ const archive = {
       "poetry",
       "typography",
       "postcard",
-      "poetry card"
+      "literature"
     ],
     "note": "",
     "related": [
       "scan84.jpg",
-      "scan81.jpg",
       "scan82.jpg",
-      "scan79.jpg",
-      "scan83.jpg"
+      "scan83.jpg",
+      "scan168.jpg",
+      "scan85.jpg"
     ]
   },
   "scan81.jpg": {
@@ -2083,10 +2086,10 @@ const archive = {
     "note": "",
     "related": [
       "scan86.jpg",
-      "scan80.jpg",
       "scan82.jpg",
       "scan83.jpg",
-      "scan168.webp"
+      "scan168.jpg",
+      "scan85.jpg"
     ]
   },
   "scan82.jpg": {
@@ -2102,17 +2105,17 @@ const archive = {
       "letterpress",
       "nashville",
       "typography",
+      "print",
       "handmade",
-      "geometry",
-      "numbers"
+      "artwork"
     ],
     "note": "can't miss a chance to take an art class from a Hatch Show Print artist",
     "related": [
       "scan83.jpg",
       "scan86.jpg",
-      "scan80.jpg",
-      "scan168.webp",
-      "scan85.jpg"
+      "scan85.jpg",
+      "scan81.jpg",
+      "scan168.jpg"
     ]
   },
   "scan83.jpg": {
@@ -2128,17 +2131,17 @@ const archive = {
       "letterpress",
       "nashville",
       "typography",
+      "print",
       "handmade",
-      "geometry",
-      "abstract"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan82.jpg",
       "scan86.jpg",
-      "scan80.jpg",
-      "scan168.webp",
-      "scan85.jpg"
+      "scan85.jpg",
+      "scan81.jpg",
+      "scan168.jpg"
     ]
   },
   "scan84.jpg": {
@@ -2156,15 +2159,15 @@ const archive = {
       "poetry",
       "typography",
       "postcard",
-      "poetry card"
+      "literature"
     ],
     "note": "",
     "related": [
       "scan80.jpg",
-      "scan81.jpg",
       "scan82.jpg",
-      "scan79.jpg",
-      "scan83.jpg"
+      "scan83.jpg",
+      "scan168.jpg",
+      "scan85.jpg"
     ]
   },
   "scan85.jpg": {
@@ -2180,16 +2183,16 @@ const archive = {
       "letterpress",
       "nashville",
       "typography",
+      "artwork",
       "design",
-      "symbol",
-      "logo"
+      "symbol"
     ],
     "note": "",
     "related": [
-      "scan80.jpg",
-      "scan81.jpg",
       "scan82.jpg",
       "scan83.jpg",
+      "scan81.jpg",
+      "scan80.jpg",
       "scan84.jpg"
     ]
   },
@@ -2208,15 +2211,15 @@ const archive = {
       "typography",
       "food",
       "drawing",
-      "handmade"
+      "print"
     ],
     "note": "",
     "related": [
-      "scan81.jpg",
       "scan82.jpg",
       "scan83.jpg",
-      "scan168.webp",
-      "scan80.jpg"
+      "scan81.jpg",
+      "scan168.jpg",
+      "scan85.jpg"
     ]
   },
   "scan87.jpg": {
@@ -2230,8 +2233,8 @@ const archive = {
     "source": "",
     "tags": [
       "film",
-      "slide",
       "photography",
+      "slide",
       "film photography",
       "analog photography",
       "vintage"
@@ -2256,8 +2259,8 @@ const archive = {
     "source": "",
     "tags": [
       "travel",
-      "slide",
       "photography",
+      "slide",
       "israel",
       "cana",
       "pilgrimage"
@@ -2267,8 +2270,8 @@ const archive = {
       "scan89.jpg",
       "scan87.jpg",
       "scan201.jpg",
-      "scan166.jpg",
-      "scan114.jpg"
+      "scan59.jpg",
+      "scan101.jpg"
     ]
   },
   "scan89.jpg": {
@@ -2282,8 +2285,8 @@ const archive = {
     "source": "",
     "tags": [
       "travel",
-      "slide",
       "photography",
+      "slide",
       "qumran",
       "archaeology",
       "history"
@@ -2294,7 +2297,7 @@ const archive = {
       "scan87.jpg",
       "scan201.jpg",
       "scan59.jpg",
-      "scan166.jpg"
+      "scan101.jpg"
     ]
   },
   "scan90.jpg": {
@@ -2310,9 +2313,9 @@ const archive = {
       "nashville",
       "handmade",
       "frist",
+      "artwork",
       "painting",
-      "watercolor",
-      "abstract"
+      "watercolor"
     ],
     "note": "from a slow day at the museum",
     "related": [
@@ -2334,19 +2337,19 @@ const archive = {
     "source": "",
     "tags": [
       "handmade",
-      "fiber art",
       "textile",
+      "fiber art",
       "bracelet",
       "friendship bracelet",
       "weaving"
     ],
     "note": "",
     "related": [
+      "scan198.jpg",
       "scan100.jpg",
-      "scan75.jpg",
-      "scan90.jpg",
-      "scan99.jpg",
-      "scan198.jpg"
+      "scan103.jpg",
+      "scan106.jpg",
+      "scan107.jpg"
     ]
   },
   "scan92.jpg": {
@@ -2361,10 +2364,10 @@ const archive = {
     "tags": [
       "nashville",
       "postcard",
+      "pop culture",
       "trading card",
       "star trek",
-      "spock",
-      "collectible"
+      "spock"
     ],
     "note": "",
     "related": [
@@ -2390,14 +2393,14 @@ const archive = {
       "travel",
       "sensory",
       "fischersund",
-      "perfume"
+      "ephemera"
     ],
     "note": "",
     "related": [
       "scan125.jpg",
+      "scan98.jpg",
       "scan101.jpg",
-      "scan102.jpg",
-      "scan76.jpg",
+      "scan64.jpg",
       "scan94.jpg"
     ]
   },
@@ -2415,16 +2418,16 @@ const archive = {
       "postcard",
       "sensory",
       "crystal shop",
-      "label",
-      "crystal"
+      "found object",
+      "label"
     ],
     "note": "rip",
     "related": [
       "scan95.jpg",
       "scan97.jpg",
       "scan127.jpg",
-      "scan125.jpg",
-      "scan93.jpg"
+      "scan167.jpg",
+      "scan80.jpg"
     ]
   },
   "scan95.jpg": {
@@ -2441,16 +2444,16 @@ const archive = {
       "postcard",
       "sensory",
       "crystal shop",
-      "label",
-      "crystal"
+      "found object",
+      "label"
     ],
     "note": "",
     "related": [
       "scan94.jpg",
       "scan97.jpg",
       "scan127.jpg",
-      "scan125.jpg",
-      "scan93.jpg"
+      "scan167.jpg",
+      "scan80.jpg"
     ]
   },
   "scan96.jpg": {
@@ -2464,6 +2467,7 @@ const archive = {
     "source": "Nate",
     "tags": [
       "postcard",
+      "pop culture",
       "trading card",
       "pokemon",
       "arcanine",
@@ -2471,11 +2475,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan9.jpg",
       "scan92.jpg",
+      "scan9.jpg",
+      "scan122.jpg",
       "scan160.jpg",
-      "scan215.jpg",
-      "scan216.jpg"
+      "scan215.jpg"
     ]
   },
   "scan97.jpg": {
@@ -2492,16 +2496,16 @@ const archive = {
       "postcard",
       "sensory",
       "crystal shop",
-      "label",
-      "crystal"
+      "found object",
+      "label"
     ],
     "note": "",
     "related": [
       "scan94.jpg",
       "scan95.jpg",
       "scan127.jpg",
-      "scan125.jpg",
-      "scan93.jpg"
+      "scan167.jpg",
+      "scan80.jpg"
     ]
   },
   "scan98.jpg": {
@@ -2516,17 +2520,18 @@ const archive = {
     "tags": [
       "correspondence",
       "sticker",
+      "ephemera",
       "shopping",
       "handwriting",
       "scrap"
     ],
     "note": "",
     "related": [
+      "scan93.jpg",
       "scan124.jpg",
       "scan130.jpg",
       "scan210.jpg",
-      "scan76.jpg",
-      "scan199.jpg"
+      "scan76.jpg"
     ]
   },
   "scan99.jpg": {
@@ -2540,19 +2545,19 @@ const archive = {
     "source": "ffern",
     "tags": [
       "illustration",
+      "print",
       "handmade",
+      "artwork",
       "folk art",
-      "tree",
-      "birds",
-      "fruit"
+      "tree"
     ],
     "note": "",
     "related": [
       "scan100.jpg",
       "scan107.jpg",
       "scan109.jpg",
-      "scan75.jpg",
-      "scan146.jpg"
+      "scan113.jpg",
+      "scan117.jpg"
     ]
   },
   "scan100.jpg": {
@@ -2566,19 +2571,19 @@ const archive = {
     "source": "ffern",
     "tags": [
       "illustration",
+      "print",
       "handmade",
+      "artwork",
       "botanical",
-      "flowers",
-      "plants",
-      "nature"
+      "flowers"
     ],
     "note": "",
     "related": [
       "scan99.jpg",
       "scan107.jpg",
       "scan109.jpg",
-      "scan146.jpg",
-      "scan160.jpg"
+      "scan113.jpg",
+      "scan117.jpg"
     ]
   },
   "scan101.jpg": {
@@ -2601,7 +2606,7 @@ const archive = {
       "scan93.jpg",
       "scan125.jpg",
       "scan108.jpg",
-      "scan166.jpg"
+      "scan120.jpg"
     ]
   },
   "scan102.jpg": {
@@ -2624,8 +2629,8 @@ const archive = {
       "scan101.jpg",
       "scan93.jpg",
       "scan125.jpg",
-      "scan46.jpg",
-      "scan108.jpg"
+      "scan108.jpg",
+      "scan120.jpg"
     ]
   },
   "scan103.jpg": {
@@ -2638,19 +2643,20 @@ const archive = {
     "location": "Clarksdale, MS",
     "source": "Stan Street",
     "tags": [
+      "print",
       "handmade",
+      "artwork",
       "painting",
       "portrait",
-      "art print",
-      "colorful"
+      "art print"
     ],
     "note": "",
     "related": [
-      "scan74.jpg",
-      "scan60.jpg",
-      "scan129.webp",
-      "scan204.jpg",
-      "scan90.jpg"
+      "scan100.jpg",
+      "scan107.jpg",
+      "scan109.jpg",
+      "scan113.jpg",
+      "scan117.jpg"
     ]
   },
   "scan104.jpg": {
@@ -2666,16 +2672,17 @@ const archive = {
       "film",
       "music",
       "collage",
-      "performance",
-      "a24"
+      "print",
+      "pop culture",
+      "performance"
     ],
     "note": "",
     "related": [
       "scan111.jpg",
+      "scan119.jpg",
       "scan4.jpg",
-      "scan207.jpg",
-      "scan15.jpg",
-      "scan183.jpg"
+      "scan53.jpg",
+      "scan158.jpg"
     ]
   },
   "scan105.jpg": {
@@ -2689,6 +2696,7 @@ const archive = {
     "source": "Michigan Licensed Beverage Association",
     "tags": [
       "michigan",
+      "ephemera",
       "sign",
       "alcohol",
       "retail"
@@ -2699,7 +2707,7 @@ const archive = {
       "scan45.jpg",
       "scan145.jpg",
       "scan120.jpg",
-      "scan1.jpg"
+      "scan115.jpg"
     ]
   },
   "scan106.jpg": {
@@ -2717,15 +2725,15 @@ const archive = {
       "politics",
       "handmade",
       "frist",
-      "poster"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan74.jpg",
       "scan75.jpg",
       "scan90.jpg",
-      "scan28.jpg",
-      "scan150.jpg"
+      "scan82.jpg",
+      "scan83.jpg"
     ]
   },
   "scan107.jpg": {
@@ -2740,18 +2748,18 @@ const archive = {
     "tags": [
       "asheville",
       "illustration",
+      "print",
       "creatures",
       "handmade",
-      "snake",
-      "hand"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan117.jpg",
       "scan138.jpg",
-      "scan165.jpg",
-      "scan128.jpg",
-      "scan64.jpg"
+      "scan109.jpg",
+      "scan82.jpg",
+      "scan83.jpg"
     ]
   },
   "scan108.jpg": {
@@ -2766,16 +2774,17 @@ const archive = {
     "tags": [
       "nashville",
       "travel",
+      "print",
       "handmade",
       "tennessee"
     ],
     "note": "",
     "related": [
-      "scan137.jpg",
       "scan82.jpg",
       "scan83.jpg",
-      "scan64.jpg",
-      "scan86.jpg"
+      "scan86.jpg",
+      "scan109.jpg",
+      "scan137.jpg"
     ]
   },
   "scan109.jpg": {
@@ -2791,17 +2800,17 @@ const archive = {
       "austin",
       "travel",
       "illustration",
+      "print",
       "handmade",
-      "bridge",
-      "sunset"
+      "artwork"
     ],
     "note": "from 22nd birthday trip to Austin, TX",
     "related": [
-      "scan175.jpg",
       "scan107.jpg",
+      "scan100.jpg",
       "scan113.jpg",
-      "scan204.jpg",
-      "scan81.jpg"
+      "scan108.jpg",
+      "scan51.jpg"
     ]
   },
   "scan110.jpg": {
@@ -2815,19 +2824,19 @@ const archive = {
     "source": "Lawrence Lavender, Kim Chi",
     "tags": [
       "typography",
+      "pop culture",
       "poster",
       "drag",
       "kim chi",
-      "signed poster",
-      "lgbtq"
+      "signed poster"
     ],
     "note": "my airbnb host in Canada was her representative and gave me this for free",
     "related": [
       "scan106.jpg",
+      "scan104.jpg",
+      "scan111.jpg",
       "scan114.jpg",
-      "scan202.jpg",
-      "scan150.jpg",
-      "scan200.jpg"
+      "scan202.jpg"
     ]
   },
   "scan111.jpg": {
@@ -2842,15 +2851,16 @@ const archive = {
     "tags": [
       "music",
       "collage",
+      "print",
+      "pop culture",
       "dj",
-      "mosh",
-      "clipping"
+      "mosh"
     ],
     "note": "and in some way, this was my year",
     "related": [
       "scan104.jpg",
+      "scan119.jpg",
       "scan4.jpg",
-      "scan70.jpg",
       "scan15.jpg",
       "scan158.jpg"
     ]
@@ -2867,6 +2877,7 @@ const archive = {
     "tags": [
       "michigan",
       "humor",
+      "ephemera",
       "certificate",
       "moustache",
       "novelty"
@@ -2876,8 +2887,8 @@ const archive = {
       "scan105.jpg",
       "scan45.jpg",
       "scan145.jpg",
-      "scan1.jpg",
-      "scan215.jpg"
+      "scan41.jpg",
+      "scan211.jpg"
     ]
   },
   "scan113.jpg": {
@@ -2891,18 +2902,19 @@ const archive = {
     "source": "",
     "tags": [
       "illustration",
+      "print",
       "handmade",
+      "artwork",
       "eye",
-      "occult",
-      "symbol"
+      "occult"
     ],
     "note": "",
     "related": [
-      "scan109.jpg",
       "scan100.jpg",
       "scan107.jpg",
-      "scan205.webp",
-      "scan60.jpg"
+      "scan109.jpg",
+      "scan117.jpg",
+      "scan138.jpg"
     ]
   },
   "scan114.jpg": {
@@ -2918,17 +2930,17 @@ const archive = {
       "typography",
       "architecture",
       "postcard",
+      "artwork",
       "poland",
-      "poster",
-      "factory"
+      "poster"
     ],
     "note": "",
     "related": [
       "scan59.jpg",
-      "scan200.jpg",
+      "scan82.jpg",
+      "scan83.jpg",
       "scan202.jpg",
-      "scan203.jpg",
-      "scan31.jpg"
+      "scan137.jpg"
     ]
   },
   "scan115.jpg": {
@@ -2946,15 +2958,15 @@ const archive = {
       "poetry",
       "postcard",
       "handmade",
-      "card"
+      "ephemera"
     ],
     "note": "",
     "related": [
+      "scan152.jpg",
       "scan12.jpg",
-      "scan152.webp",
       "scan54.jpg",
-      "scan132.jpg",
-      "scan153.jpg"
+      "scan153.jpg",
+      "scan132.jpg"
     ]
   },
   "scan116.jpg": {
@@ -2971,16 +2983,16 @@ const archive = {
       "cartoon",
       "humor",
       "handmade",
-      "420",
-      "cannabis"
+      "artwork",
+      "420"
     ],
     "note": "",
     "related": [
-      "scan129.webp",
       "scan56.jpg",
+      "scan129.jpg",
       "scan128.jpg",
       "scan64.jpg",
-      "scan86.jpg"
+      "scan138.jpg"
     ]
   },
   "scan117.jpg": {
@@ -2994,19 +3006,19 @@ const archive = {
     "source": "",
     "tags": [
       "illustration",
+      "print",
       "creatures",
       "handmade",
-      "crab",
-      "knife",
-      "linocut"
+      "artwork",
+      "crab"
     ],
     "note": "",
     "related": [
       "scan107.jpg",
-      "scan128.jpg",
       "scan138.jpg",
-      "scan56.jpg",
-      "scan64.jpg"
+      "scan100.jpg",
+      "scan128.jpg",
+      "scan109.jpg"
     ]
   },
   "scan118.jpg": {
@@ -3023,16 +3035,16 @@ const archive = {
       "collage",
       "illustration",
       "feelings",
-      "zine page",
-      "anxiety"
+      "artwork",
+      "zine page"
     ],
     "note": "",
     "related": [
-      "scan30.jpg",
-      "scan19.webp",
-      "scan146.jpg",
       "scan75.jpg",
-      "scan81.jpg"
+      "scan146.jpg",
+      "scan78.jpg",
+      "scan19.jpg",
+      "scan106.jpg"
     ]
   },
   "scan119.jpg": {
@@ -3048,16 +3060,17 @@ const archive = {
       "the new yorker",
       "collage",
       "cartoon",
+      "print",
       "humor",
-      "children"
+      "pop culture"
     ],
     "note": "",
     "related": [
       "scan24.jpg",
-      "scan156.jpg",
       "scan27.jpg",
-      "scan22.jpg",
-      "scan23.webp"
+      "scan156.jpg",
+      "scan47.jpg",
+      "scan104.jpg"
     ]
   },
   "scan120.jpg": {
@@ -3077,10 +3090,10 @@ const archive = {
     "note": "",
     "related": [
       "scan145.jpg",
-      "scan68.webp",
+      "scan68.jpg",
+      "scan216.jpg",
       "scan215.jpg",
-      "scan1.jpg",
-      "scan216.jpg"
+      "scan59.jpg"
     ]
   },
   "scan121.jpg": {
@@ -3106,7 +3119,7 @@ const archive = {
       "scan70.jpg",
       "scan164.jpg",
       "scan167.jpg",
-      "scan43.jpg"
+      "scan183.jpg"
     ]
   },
   "scan122.jpg": {
@@ -3120,6 +3133,7 @@ const archive = {
     "source": "",
     "tags": [
       "creatures",
+      "pop culture",
       "photograph",
       "lizard",
       "reptile",
@@ -3130,7 +3144,7 @@ const archive = {
       "scan54.jpg",
       "scan55.jpg",
       "scan58.jpg",
-      "scan212.webp",
+      "scan212.jpg",
       "scan56.jpg"
     ]
   },
@@ -3147,14 +3161,14 @@ const archive = {
       "poetry",
       "correspondence",
       "feelings",
-      "artist statement",
       "writing",
+      "artist statement",
       "rage"
     ],
     "note": "",
     "related": [
       "scan132.jpg",
-      "scan19.webp",
+      "scan19.jpg",
       "scan131.jpg",
       "scan64.jpg",
       "scan76.jpg"
@@ -3198,14 +3212,14 @@ const archive = {
       "postcard",
       "sensory",
       "fischersund",
-      "fragrance card",
-      "perfume"
+      "ephemera",
+      "fragrance card"
     ],
     "note": "rhubarb, bergamot, asphalt",
     "related": [
       "scan93.jpg",
-      "scan102.jpg",
-      "scan101.jpg",
+      "scan115.jpg",
+      "scan127.jpg",
       "scan94.jpg",
       "scan95.jpg"
     ]
@@ -3220,6 +3234,7 @@ const archive = {
     "location": "",
     "source": "Squishmallows",
     "tags": [
+      "ephemera",
       "tag",
       "eden",
       "squishmallows",
@@ -3227,11 +3242,11 @@ const archive = {
     ],
     "note": "my final form",
     "related": [
-      "scan154.jpg",
-      "scan212.webp",
-      "scan9.jpg",
-      "scan96.jpg",
-      "scan1.jpg"
+      "scan160.jpg",
+      "scan170.jpg",
+      "scan181.jpg",
+      "scan41.jpg",
+      "scan65.jpg"
     ]
   },
   "scan127.jpg": {
@@ -3248,16 +3263,16 @@ const archive = {
       "ticket",
       "postcard",
       "humor",
-      "novelty card",
-      "scratch off"
+      "ephemera",
+      "novelty card"
     ],
     "note": "",
     "related": [
-      "scan129.webp",
-      "scan13.jpg",
-      "scan137.jpg",
       "scan181.jpg",
-      "scan64.jpg"
+      "scan13.jpg",
+      "scan167.jpg",
+      "scan171.jpg",
+      "scan172.jpg"
     ]
   },
   "scan128.jpg": {
@@ -3273,21 +3288,21 @@ const archive = {
       "drawing",
       "creatures",
       "handmade",
+      "artwork",
       "frog",
-      "knife",
-      "linocut"
+      "knife"
     ],
     "note": "one of my earlier linocut prints",
     "related": [
       "scan56.jpg",
-      "scan117.jpg",
       "scan138.jpg",
+      "scan116.jpg",
       "scan218.jpg",
-      "scan107.jpg"
+      "scan117.jpg"
     ]
   },
-  "scan129.webp": {
-    "filename": "scan129.webp",
+  "scan129.jpg": {
+    "filename": "scan129.jpg",
     "title": "osa coffee sleeve snoopy doodle",
     "description": "fav coffee shop fav character",
     "category": "artwork",
@@ -3301,13 +3316,13 @@ const archive = {
       "drawing",
       "cartoon",
       "humor",
-      "napkin"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan64.jpg",
-      "scan116.jpg",
       "scan146.jpg",
+      "scan116.jpg",
       "scan81.jpg",
       "scan86.jpg"
     ]
@@ -3349,15 +3364,15 @@ const archive = {
     "tags": [
       "poetry",
       "postcard",
-      "poem",
       "writing",
+      "poem",
       "german",
       "sunshine"
     ],
     "note": "The sun is shining, the sun is shining, that's the magic, the flowers are growing, the roots are stretching, that's the magic. To live and be strong, that's the magic, it's in me, it's in all of us.",
     "related": [
-      "scan133.jpg",
       "scan132.jpg",
+      "scan133.jpg",
       "scan3.jpg",
       "scan79.jpg",
       "scan80.jpg"
@@ -3377,16 +3392,16 @@ const archive = {
       "poetry",
       "postcard",
       "feelings",
-      "poem",
-      "writing"
+      "writing",
+      "poem"
     ],
     "note": "It is sweet to soak up the world's charm, when heart and mind are in bloom, but sweeter still, to see the world fresh once more through your child's eyes.",
     "related": [
       "scan131.jpg",
       "scan133.jpg",
       "scan115.jpg",
-      "scan57.jpg",
-      "scan80.jpg"
+      "scan80.jpg",
+      "scan84.jpg"
     ]
   },
   "scan133.jpg": {
@@ -3400,8 +3415,8 @@ const archive = {
     "source": "Gerhard Tersteegen",
     "tags": [
       "poetry",
-      "poem",
       "writing",
+      "poem",
       "german",
       "flowers",
       "nature"
@@ -3412,7 +3427,7 @@ const archive = {
       "scan132.jpg",
       "scan3.jpg",
       "scan57.jpg",
-      "scan61.jpg"
+      "scan123.jpg"
     ]
   },
   "scan134.jpg": {
@@ -3438,7 +3453,7 @@ const archive = {
       "scan136.jpg",
       "scan137.jpg",
       "scan67.jpg",
-      "scan68.webp"
+      "scan68.jpg"
     ]
   },
   "scan135.jpg": {
@@ -3462,9 +3477,9 @@ const archive = {
     "related": [
       "scan136.jpg",
       "scan67.jpg",
-      "scan134.jpg",
       "scan137.jpg",
-      "scan68.webp"
+      "scan68.jpg",
+      "scan2.jpg"
     ]
   },
   "scan136.jpg": {
@@ -3488,9 +3503,9 @@ const archive = {
     "related": [
       "scan67.jpg",
       "scan135.jpg",
-      "scan134.jpg",
       "scan137.jpg",
-      "scan68.webp"
+      "scan68.jpg",
+      "scan134.jpg"
     ]
   },
   "scan137.jpg": {
@@ -3512,9 +3527,9 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan168.webp",
       "scan183.jpg",
       "scan193.jpg",
+      "scan38.jpg",
       "scan80.jpg",
       "scan84.jpg"
     ]
@@ -3531,16 +3546,16 @@ const archive = {
     "tags": [
       "drawing",
       "illustration",
+      "print",
       "creatures",
       "handmade",
-      "frog",
-      "party"
+      "artwork"
     ],
     "note": "",
     "related": [
       "scan107.jpg",
       "scan117.jpg",
-      "scan128.jpg",
+      "scan100.jpg",
       "scan218.jpg",
       "scan56.jpg"
     ]
@@ -3557,18 +3572,18 @@ const archive = {
     "tags": [
       "food",
       "alekseys market",
+      "ephemera",
       "packaging",
       "candy",
-      "wrapper",
-      "ukraine"
+      "wrapper"
     ],
     "note": "melts in your mouth",
     "related": [
       "scan142.jpg",
       "scan141.jpg",
-      "scan10.jpg",
-      "scan11.jpg",
-      "scan127.jpg"
+      "scan161.jpg",
+      "scan162.jpg",
+      "scan39.jpg"
     ]
   },
   "scan140.jpg": {
@@ -3582,17 +3597,18 @@ const archive = {
     "source": "",
     "tags": [
       "sticker",
+      "artwork",
       "art",
       "pop art",
       "figure"
     ],
     "note": "",
     "related": [
-      "scan12.jpg",
-      "scan165.jpg",
-      "scan153.jpg",
-      "scan34.jpg",
-      "scan35.jpg"
+      "scan161.jpg",
+      "scan162.jpg",
+      "scan163.jpg",
+      "scan164.jpg",
+      "scan165.jpg"
     ]
   },
   "scan141.jpg": {
@@ -3608,17 +3624,17 @@ const archive = {
       "food",
       "cartoon",
       "bazooka joe",
+      "ephemera",
       "candy wrapper",
-      "gum",
-      "fortune"
+      "gum"
     ],
     "note": "",
     "related": [
       "scan5.jpg",
       "scan139.jpg",
       "scan142.jpg",
-      "scan129.webp",
-      "scan27.jpg"
+      "scan161.jpg",
+      "scan162.jpg"
     ]
   },
   "scan142.jpg": {
@@ -3633,18 +3649,18 @@ const archive = {
     "tags": [
       "food",
       "alekseys market",
+      "ephemera",
       "packaging",
       "russia",
-      "candy",
-      "wrapper"
+      "candy"
     ],
     "note": "roughly translates to lobster's necks?",
     "related": [
       "scan139.jpg",
       "scan141.jpg",
-      "scan10.jpg",
-      "scan11.jpg",
-      "scan127.jpg"
+      "scan161.jpg",
+      "scan162.jpg",
+      "scan39.jpg"
     ]
   },
   "scan143.jpg": {
@@ -3668,7 +3684,7 @@ const archive = {
       "scan147.jpg",
       "scan148.jpg",
       "scan155.jpg",
-      "scan162.jpg"
+      "scan115.jpg"
     ]
   },
   "scan144.jpg": {
@@ -3693,7 +3709,7 @@ const archive = {
       "scan148.jpg",
       "scan147.jpg",
       "scan155.jpg",
-      "scan162.jpg"
+      "scan12.jpg"
     ]
   },
   "scan145.jpg": {
@@ -3709,16 +3725,17 @@ const archive = {
       "detroit",
       "travel",
       "postcard",
+      "ephemera",
       "vintage",
       "pennant"
     ],
     "note": "",
     "related": [
       "scan120.jpg",
+      "scan45.jpg",
       "scan216.jpg",
       "scan215.jpg",
-      "scan68.webp",
-      "scan66.jpg"
+      "scan68.jpg"
     ]
   },
   "scan146.jpg": {
@@ -3736,15 +3753,15 @@ const archive = {
       "illustration",
       "cartoon",
       "humor",
-      "animals"
+      "artwork"
     ],
     "note": "keepsake from my 2026 birthday dinner",
     "related": [
       "scan78.jpg",
       "scan147.jpg",
       "scan77.jpg",
-      "scan218.jpg",
-      "scan56.jpg"
+      "scan118.jpg",
+      "scan129.jpg"
     ]
   },
   "scan147.jpg": {
@@ -3767,9 +3784,9 @@ const archive = {
     "related": [
       "scan77.jpg",
       "scan78.jpg",
-      "scan146.jpg",
       "scan148.jpg",
-      "scan155.jpg"
+      "scan155.jpg",
+      "scan162.jpg"
     ]
   },
   "scan148.jpg": {
@@ -3794,7 +3811,7 @@ const archive = {
       "scan155.jpg",
       "scan144.jpg",
       "scan162.jpg",
-      "scan77.jpg"
+      "scan143.jpg"
     ]
   },
   "scan149.jpg": {
@@ -3808,6 +3825,7 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "artwork",
       "pegasus",
       "tennessee",
       "newspaper"
@@ -3815,10 +3833,10 @@ const archive = {
     "note": "",
     "related": [
       "scan159.jpg",
-      "scan35.jpg",
-      "scan36.jpg",
-      "scan6.jpg",
-      "scan158.jpg"
+      "scan218.jpg",
+      "scan118.jpg",
+      "scan51.jpg",
+      "scan62.jpg"
     ]
   },
   "scan150.jpg": {
@@ -3834,17 +3852,17 @@ const archive = {
       "nashville",
       "music",
       "typography",
+      "ephemera",
       "flyer",
-      "poster",
-      "punk"
+      "poster"
     ],
     "note": "",
     "related": [
       "scan121.jpg",
+      "scan168.jpg",
+      "scan183.jpg",
       "scan106.jpg",
-      "scan137.jpg",
-      "scan168.webp",
-      "scan80.jpg"
+      "scan137.jpg"
     ]
   },
   "scan151.jpg": {
@@ -3858,6 +3876,7 @@ const archive = {
     "source": "Rock 'n' Roll Running Series",
     "tags": [
       "nashville",
+      "ephemera",
       "race bib",
       "running",
       "half marathon",
@@ -3865,15 +3884,15 @@ const archive = {
     ],
     "note": "wooooof",
     "related": [
-      "scan150.jpg",
-      "scan148.jpg",
       "scan179.jpg",
       "scan180.jpg",
-      "scan184.jpg"
+      "scan184.jpg",
+      "scan185.jpg",
+      "scan186.jpg"
     ]
   },
-  "scan152.webp": {
-    "filename": "scan152.webp",
+  "scan152.jpg": {
+    "filename": "scan152.jpg",
     "title": "c/o berlin keepsake",
     "description": "paper bag scrap from c/o berlin museum",
     "category": "ephemera",
@@ -3885,14 +3904,14 @@ const archive = {
       "c/o berlin",
       "berlin",
       "travel",
+      "ephemera",
       "memorabilia",
-      "museum",
-      "design"
+      "museum"
     ],
     "note": "",
     "related": [
-      "scan12.jpg",
       "scan115.jpg",
+      "scan12.jpg",
       "scan54.jpg",
       "scan202.jpg",
       "scan200.jpg"
@@ -3911,17 +3930,17 @@ const archive = {
       "berlin",
       "poetry",
       "postcard",
+      "ephemera",
       "bag",
-      "german",
-      "art"
+      "german"
     ],
     "note": "Art is beautiful, but it's a lot of work.",
     "related": [
       "scan115.jpg",
-      "scan12.jpg",
       "scan166.jpg",
+      "scan152.jpg",
       "scan132.jpg",
-      "scan200.jpg"
+      "scan12.jpg"
     ]
   },
   "scan154.jpg": {
@@ -3934,6 +3953,7 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "object",
       "toy",
       "butterfly",
       "rainbow",
@@ -3942,10 +3962,10 @@ const archive = {
     "note": "",
     "related": [
       "scan126.jpg",
+      "scan60.jpg",
       "scan1.jpg",
       "scan107.jpg",
-      "scan117.jpg",
-      "scan122.jpg"
+      "scan117.jpg"
     ]
   },
   "scan155.jpg": {
@@ -3970,8 +3990,8 @@ const archive = {
       "scan147.jpg",
       "scan148.jpg",
       "scan162.jpg",
-      "scan77.jpg",
-      "scan143.jpg"
+      "scan13.jpg",
+      "scan38.jpg"
     ]
   },
   "scan156.jpg": {
@@ -3987,6 +4007,7 @@ const archive = {
       "the new yorker",
       "cartoon",
       "humor",
+      "ephemera",
       "office"
     ],
     "note": "",
@@ -3994,8 +4015,8 @@ const archive = {
       "scan52.jpg",
       "scan27.jpg",
       "scan119.jpg",
-      "scan24.jpg",
-      "scan171.jpg"
+      "scan171.jpg",
+      "scan24.jpg"
     ]
   },
   "scan157.jpg": {
@@ -4008,6 +4029,7 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "ephemera",
       "placard",
       "mexico",
       "alebrijes",
@@ -4016,11 +4038,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan99.jpg",
-      "scan100.jpg",
-      "scan146.jpg",
       "scan160.jpg",
-      "scan152.webp"
+      "scan152.jpg",
+      "scan105.jpg",
+      "scan99.jpg",
+      "scan100.jpg"
     ]
   },
   "scan158.jpg": {
@@ -4034,18 +4056,19 @@ const archive = {
     "source": "The New York Times",
     "tags": [
       "collage",
+      "print",
+      "ephemera",
       "crossword",
       "puzzle",
-      "newspaper",
-      "2025"
+      "newspaper"
     ],
     "note": "",
     "related": [
+      "scan111.jpg",
+      "scan104.jpg",
       "scan119.jpg",
       "scan24.jpg",
-      "scan111.jpg",
-      "scan149.jpg",
-      "scan104.jpg"
+      "scan4.jpg"
     ]
   },
   "scan159.jpg": {
@@ -4061,15 +4084,16 @@ const archive = {
       "collage",
       "cartoon",
       "humor",
+      "artwork",
       "found paper"
     ],
     "note": "",
     "related": [
       "scan218.jpg",
       "scan149.jpg",
-      "scan36.jpg",
-      "scan119.jpg",
-      "scan27.jpg"
+      "scan116.jpg",
+      "scan118.jpg",
+      "scan19.jpg"
     ]
   },
   "scan160.jpg": {
@@ -4085,17 +4109,17 @@ const archive = {
       "postcard",
       "illustration",
       "creatures",
+      "ephemera",
       "greeting card",
-      "birthday",
-      "crows"
+      "birthday"
     ],
     "note": "",
     "related": [
-      "scan138.jpg",
-      "scan100.jpg",
-      "scan122.jpg",
-      "scan212.webp",
-      "scan56.jpg"
+      "scan170.jpg",
+      "scan181.jpg",
+      "scan127.jpg",
+      "scan212.jpg",
+      "scan215.jpg"
     ]
   },
   "scan161.jpg": {
@@ -4111,17 +4135,17 @@ const archive = {
       "food",
       "sticker",
       "ann arbor",
+      "ephemera",
       "reuben",
-      "deli",
-      "german"
+      "deli"
     ],
     "note": "iktr",
     "related": [
       "scan162.jpg",
       "scan163.jpg",
+      "scan39.jpg",
       "scan143.jpg",
-      "scan144.jpg",
-      "scan147.jpg"
+      "scan164.jpg"
     ]
   },
   "scan162.jpg": {
@@ -4136,15 +4160,16 @@ const archive = {
     "tags": [
       "nashville",
       "food",
-      "sticker"
+      "sticker",
+      "ephemera"
     ],
     "note": "the best burrito in nashville",
     "related": [
-      "scan25.jpg",
+      "scan39.jpg",
+      "scan164.jpg",
+      "scan168.jpg",
       "scan147.jpg",
-      "scan148.jpg",
-      "scan155.jpg",
-      "scan77.jpg"
+      "scan148.jpg"
     ]
   },
   "scan163.jpg": {
@@ -4160,16 +4185,17 @@ const archive = {
       "sticker",
       "politics",
       "chicago",
+      "ephemera",
       "beer",
       "brewery"
     ],
     "note": "",
     "related": [
-      "scan25.jpg",
-      "scan37.jpg",
-      "scan170.jpg",
       "scan161.jpg",
-      "scan162.jpg"
+      "scan162.jpg",
+      "scan25.jpg",
+      "scan170.jpg",
+      "scan37.jpg"
     ]
   },
   "scan164.jpg": {
@@ -4186,14 +4212,15 @@ const archive = {
       "music",
       "sticker",
       "grimeys",
+      "ephemera",
       "record store"
     ],
     "note": "",
     "related": [
       "scan70.jpg",
+      "scan162.jpg",
+      "scan168.jpg",
       "scan167.jpg",
-      "scan121.jpg",
-      "scan43.jpg",
       "scan169.jpg"
     ]
   },
@@ -4209,16 +4236,17 @@ const archive = {
     "tags": [
       "asheville",
       "sticker",
+      "ephemera",
       "carrot",
       "venue"
     ],
     "note": "",
     "related": [
-      "scan107.jpg",
       "scan206.jpg",
-      "scan140.jpg",
-      "scan161.jpg",
-      "scan162.jpg"
+      "scan162.jpg",
+      "scan164.jpg",
+      "scan166.jpg",
+      "scan168.jpg"
     ]
   },
   "scan166.jpg": {
@@ -4235,15 +4263,16 @@ const archive = {
       "sticker",
       "postcard",
       "photography",
+      "ephemera",
       "spongebob"
     ],
     "note": "",
     "related": [
       "scan115.jpg",
-      "scan12.jpg",
-      "scan143.jpg",
+      "scan152.jpg",
+      "scan162.jpg",
       "scan153.jpg",
-      "scan144.jpg"
+      "scan12.jpg"
     ]
   },
   "scan167.jpg": {
@@ -4260,20 +4289,20 @@ const archive = {
       "music",
       "postcard",
       "sticker",
-      "card",
-      "guitar"
+      "ephemera",
+      "card"
     ],
     "note": "one of the coolest stickers in town",
     "related": [
       "scan164.jpg",
-      "scan121.jpg",
-      "scan70.jpg",
+      "scan183.jpg",
+      "scan193.jpg",
       "scan43.jpg",
-      "scan169.jpg"
+      "scan127.jpg"
     ]
   },
-  "scan168.webp": {
-    "filename": "scan168.webp",
+  "scan168.jpg": {
+    "filename": "scan168.jpg",
     "title": "hatch show print sticker",
     "description": "round red sticker from hatch show print",
     "category": "ephemera",
@@ -4287,15 +4316,15 @@ const archive = {
       "typography",
       "sticker",
       "handmade",
-      "design"
+      "ephemera"
     ],
     "note": "",
     "related": [
-      "scan85.jpg",
       "scan82.jpg",
       "scan83.jpg",
+      "scan81.jpg",
       "scan86.jpg",
-      "scan81.jpg"
+      "scan80.jpg"
     ]
   },
   "scan169.jpg": {
@@ -4311,6 +4340,7 @@ const archive = {
       "baltimore",
       "music",
       "sticker",
+      "ephemera",
       "record store",
       "local business"
     ],
@@ -4318,7 +4348,7 @@ const archive = {
     "related": [
       "scan43.jpg",
       "scan164.jpg",
-      "scan7.jpg",
+      "scan170.jpg",
       "scan167.jpg",
       "scan213.jpg"
     ]
@@ -4338,15 +4368,15 @@ const archive = {
       "illustration",
       "politics",
       "creatures",
-      "books"
+      "ephemera"
     ],
     "note": "i miss this place",
     "related": [
-      "scan2.jpg",
-      "scan78.jpg",
+      "scan44.jpg",
       "scan169.jpg",
-      "scan106.jpg",
-      "scan25.jpg"
+      "scan43.jpg",
+      "scan25.jpg",
+      "scan39.jpg"
     ]
   },
   "scan171.jpg": {
@@ -4364,7 +4394,7 @@ const archive = {
       "film",
       "ticket",
       "politics",
-      "palestine"
+      "ephemera"
     ],
     "note": "free palestine!",
     "related": [
@@ -4389,16 +4419,16 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "lynch",
-      "cult film"
+      "ephemera",
+      "lynch"
     ],
     "note": "",
     "related": [
       "scan192.jpg",
+      "scan171.jpg",
+      "scan173.jpg",
       "scan181.jpg",
-      "scan194.jpg",
-      "scan196.jpg",
-      "scan176.jpg"
+      "scan194.jpg"
     ]
   },
   "scan173.jpg": {
@@ -4414,7 +4444,8 @@ const archive = {
       "belcourt",
       "nashville",
       "film",
-      "ticket"
+      "ticket",
+      "ephemera"
     ],
     "note": "",
     "related": [
@@ -4439,6 +4470,7 @@ const archive = {
       "nashville",
       "film",
       "ticket",
+      "ephemera",
       "brazil"
     ],
     "note": "",
@@ -4464,15 +4496,16 @@ const archive = {
       "film",
       "ticket",
       "film festival",
+      "ephemera",
       "festival"
     ],
     "note": "i met gia coppola after this screening!",
     "related": [
       "scan184.jpg",
-      "scan109.jpg",
-      "scan187.jpg",
       "scan193.jpg",
-      "scan190.jpg"
+      "scan179.jpg",
+      "scan183.jpg",
+      "scan187.jpg"
     ]
   },
   "scan176.jpg": {
@@ -4489,8 +4522,8 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "comedy",
-      "cult film"
+      "ephemera",
+      "comedy"
     ],
     "note": "all-timer",
     "related": [
@@ -4514,7 +4547,8 @@ const archive = {
       "belcourt",
       "nashville",
       "film",
-      "ticket"
+      "ticket",
+      "ephemera"
     ],
     "note": "went w Nate",
     "related": [
@@ -4539,6 +4573,7 @@ const archive = {
       "nashville",
       "film",
       "ticket",
+      "ephemera",
       "drama"
     ],
     "note": "cried in the theater",
@@ -4564,6 +4599,7 @@ const archive = {
       "nashville",
       "film",
       "ticket",
+      "ephemera",
       "holocaust"
     ],
     "note": "",
@@ -4589,8 +4625,8 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "batman",
-      "nolan"
+      "ephemera",
+      "batman"
     ],
     "note": "went w justin",
     "related": [
@@ -4616,15 +4652,15 @@ const archive = {
       "film",
       "ticket",
       "creatures",
-      "3d"
+      "ephemera"
     ],
     "note": "",
     "related": [
       "scan172.jpg",
       "scan171.jpg",
       "scan173.jpg",
-      "scan8.jpg",
-      "scan191.jpg"
+      "scan174.jpg",
+      "scan177.jpg"
     ]
   },
   "scan182.jpg": {
@@ -4641,8 +4677,8 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "imax",
-      "oppenheimer"
+      "ephemera",
+      "imax"
     ],
     "note": "ate at the rainforest cafe for dinner before",
     "related": [
@@ -4650,7 +4686,7 @@ const archive = {
       "scan186.jpg",
       "scan189.jpg",
       "scan183.jpg",
-      "scan185.jpg"
+      "scan193.jpg"
     ]
   },
   "scan183.jpg": {
@@ -4668,7 +4704,7 @@ const archive = {
       "film",
       "music",
       "ticket",
-      "concert film"
+      "ephemera"
     ],
     "note": "saw with justin",
     "related": [
@@ -4693,8 +4729,8 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "tennis",
-      "zendaya"
+      "ephemera",
+      "tennis"
     ],
     "note": "",
     "related": [
@@ -4719,16 +4755,16 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "horror",
-      "imax"
+      "ephemera",
+      "horror"
     ],
     "note": "",
     "related": [
       "scan183.jpg",
       "scan186.jpg",
-      "scan182.jpg",
+      "scan184.jpg",
       "scan193.jpg",
-      "scan187.jpg"
+      "scan182.jpg"
     ]
   },
   "scan186.jpg": {
@@ -4745,8 +4781,8 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "horror",
-      "serial killer"
+      "ephemera",
+      "horror"
     ],
     "note": "",
     "related": [
@@ -4772,12 +4808,12 @@ const archive = {
       "film",
       "architecture",
       "ticket",
-      "a24"
+      "ephemera"
     ],
     "note": "",
     "related": [
-      "scan190.jpg",
       "scan193.jpg",
+      "scan190.jpg",
       "scan195.jpg",
       "scan183.jpg",
       "scan185.jpg"
@@ -4796,7 +4832,8 @@ const archive = {
       "belcourt",
       "nashville",
       "film",
-      "ticket"
+      "ticket",
+      "ephemera"
     ],
     "note": "",
     "related": [
@@ -4821,8 +4858,8 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "video game",
-      "family film"
+      "ephemera",
+      "video game"
     ],
     "note": "one of the worst movies i have ever seen",
     "related": [
@@ -4847,13 +4884,13 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "foreign film",
-      "drama"
+      "ephemera",
+      "foreign film"
     ],
     "note": "",
     "related": [
-      "scan187.jpg",
       "scan193.jpg",
+      "scan187.jpg",
       "scan195.jpg",
       "scan183.jpg",
       "scan189.jpg"
@@ -4873,16 +4910,16 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "horror",
-      "body horror"
+      "ephemera",
+      "horror"
     ],
     "note": "someone threw up in the theater when i saw this",
     "related": [
       "scan176.jpg",
       "scan178.jpg",
+      "scan179.jpg",
       "scan172.jpg",
-      "scan181.jpg",
-      "scan179.jpg"
+      "scan181.jpg"
     ]
   },
   "scan192.jpg": {
@@ -4899,16 +4936,16 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "lynch",
-      "twin peaks"
+      "ephemera",
+      "lynch"
     ],
     "note": "",
     "related": [
       "scan172.jpg",
       "scan179.jpg",
       "scan180.jpg",
-      "scan196.jpg",
-      "scan188.jpg"
+      "scan188.jpg",
+      "scan194.jpg"
     ]
   },
   "scan193.jpg": {
@@ -4926,7 +4963,7 @@ const archive = {
       "film",
       "music",
       "ticket",
-      "independent film"
+      "ephemera"
     ],
     "note": "#turnstilesummer",
     "related": [
@@ -4951,14 +4988,15 @@ const archive = {
       "nashville",
       "film",
       "ticket",
+      "ephemera",
       "tarantino"
     ],
     "note": "",
     "related": [
-      "scan172.jpg",
       "scan179.jpg",
       "scan180.jpg",
       "scan188.jpg",
+      "scan172.jpg",
       "scan192.jpg"
     ]
   },
@@ -4976,14 +5014,14 @@ const archive = {
       "nashville",
       "film",
       "ticket",
-      "cult film",
-      "musical"
+      "ephemera",
+      "cult film"
     ],
     "note": "",
     "related": [
+      "scan193.jpg",
       "scan187.jpg",
       "scan190.jpg",
-      "scan193.jpg",
       "scan183.jpg",
       "scan185.jpg"
     ]
@@ -5003,15 +5041,15 @@ const archive = {
       "film",
       "ticket",
       "amc",
-      "lynch"
+      "ephemera"
     ],
     "note": "",
     "related": [
       "scan197.jpg",
       "scan172.jpg",
-      "scan192.jpg",
       "scan171.jpg",
-      "scan173.jpg"
+      "scan192.jpg",
+      "scan193.jpg"
     ]
   },
   "scan197.jpg": {
@@ -5028,6 +5066,7 @@ const archive = {
       "film",
       "ticket",
       "amc",
+      "ephemera",
       "horror"
     ],
     "note": "",
@@ -5036,7 +5075,7 @@ const archive = {
       "scan185.jpg",
       "scan186.jpg",
       "scan193.jpg",
-      "scan191.jpg"
+      "scan183.jpg"
     ]
   },
   "scan198.jpg": {
@@ -5052,17 +5091,17 @@ const archive = {
       "correspondence",
       "feelings",
       "handmade",
+      "etsy",
       "mail",
-      "canada",
-      "skull"
+      "canada"
     ],
     "note": "one of my favorite linocut artists",
     "related": [
       "scan199.jpg",
       "scan210.jpg",
+      "scan40.jpg",
       "scan76.jpg",
-      "scan19.webp",
-      "scan64.jpg"
+      "scan19.jpg"
     ]
   },
   "scan199.jpg": {
@@ -5076,6 +5115,7 @@ const archive = {
     "source": "Etsy",
     "tags": [
       "correspondence",
+      "etsy",
       "mail",
       "russia",
       "stamps",
@@ -5083,11 +5123,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan210.jpg",
       "scan198.jpg",
-      "scan124.jpg",
+      "scan210.jpg",
+      "scan218.jpg",
       "scan76.jpg",
-      "scan130.jpg"
+      "scan124.jpg"
     ]
   },
   "scan200.jpg": {
@@ -5104,16 +5144,16 @@ const archive = {
       "berlin",
       "typography",
       "architecture",
-      "handmade",
-      "design reference"
+      "print",
+      "handmade"
     ],
     "note": "",
     "related": [
       "scan202.jpg",
       "scan203.jpg",
-      "scan115.jpg",
       "scan31.jpg",
-      "scan114.jpg"
+      "scan82.jpg",
+      "scan83.jpg"
     ]
   },
   "scan201.jpg": {
@@ -5127,8 +5167,8 @@ const archive = {
     "source": "",
     "tags": [
       "photography",
-      "archival photo",
       "photograph",
+      "archival photo",
       "cycling",
       "sport",
       "history"
@@ -5136,10 +5176,10 @@ const archive = {
     "note": "",
     "related": [
       "scan89.jpg",
-      "scan87.jpg",
-      "scan88.jpg",
+      "scan54.jpg",
+      "scan55.jpg",
       "scan209.jpg",
-      "scan54.jpg"
+      "scan87.jpg"
     ]
   },
   "scan202.jpg": {
@@ -5156,16 +5196,16 @@ const archive = {
       "berlin",
       "typography",
       "architecture",
-      "handmade",
-      "design reference"
+      "print",
+      "handmade"
     ],
     "note": "",
     "related": [
       "scan200.jpg",
       "scan203.jpg",
-      "scan115.jpg",
-      "scan114.jpg",
-      "scan31.jpg"
+      "scan31.jpg",
+      "scan82.jpg",
+      "scan83.jpg"
     ]
   },
   "scan203.jpg": {
@@ -5183,15 +5223,15 @@ const archive = {
       "typography",
       "collage",
       "architecture",
-      "handmade"
+      "print"
     ],
     "note": "",
     "related": [
       "scan200.jpg",
       "scan202.jpg",
       "scan54.jpg",
-      "scan51.jpg",
-      "scan168.webp"
+      "scan82.jpg",
+      "scan83.jpg"
     ]
   },
   "scan204.jpg": {
@@ -5205,23 +5245,23 @@ const archive = {
     "source": "",
     "tags": [
       "illustration",
+      "print",
       "handmade",
       "art print",
       "landscape",
-      "minimalism",
-      "winter"
+      "minimalism"
     ],
     "note": "",
     "related": [
-      "scan109.jpg",
-      "scan50.jpg",
       "scan203.jpg",
-      "scan100.jpg",
-      "scan103.jpg"
+      "scan20.jpg",
+      "scan47.jpg",
+      "scan109.jpg",
+      "scan49.jpg"
     ]
   },
-  "scan205.webp": {
-    "filename": "scan205.webp",
+  "scan205.jpg": {
+    "filename": "scan205.jpg",
     "title": "solar eclipse glasses",
     "description": "paper eclipse viewing glasses from the north american eclipse",
     "category": "ephemera",
@@ -5231,19 +5271,19 @@ const archive = {
     "source": "solar eclipse",
     "tags": [
       "space",
+      "ephemera",
       "event souvenir",
       "eclipse",
       "astronomy",
-      "science",
-      "event"
+      "science"
     ],
     "note": "saw totality!",
     "related": [
-      "scan209.jpg",
-      "scan217.jpg",
+      "scan44.jpg",
+      "scan151.jpg",
+      "scan152.jpg",
       "scan26.jpg",
-      "scan51.jpg",
-      "scan113.jpg"
+      "scan51.jpg"
     ]
   },
   "scan206.jpg": {
@@ -5258,18 +5298,18 @@ const archive = {
     "tags": [
       "asheville",
       "music",
+      "ephemera",
       "setlist",
       "concert",
-      "mountain goats",
-      "live show"
+      "mountain goats"
     ],
     "note": "met her after this",
     "related": [
       "scan207.jpg",
       "scan208.jpg",
-      "scan121.jpg",
-      "scan70.jpg",
-      "scan104.jpg"
+      "scan165.jpg",
+      "scan164.jpg",
+      "scan167.jpg"
     ]
   },
   "scan207.jpg": {
@@ -5283,6 +5323,7 @@ const archive = {
     "source": "XL Live",
     "tags": [
       "music",
+      "ephemera",
       "setlist",
       "concert",
       "tour",
@@ -5292,9 +5333,9 @@ const archive = {
     "related": [
       "scan208.jpg",
       "scan206.jpg",
+      "scan164.jpg",
       "scan104.jpg",
-      "scan121.jpg",
-      "scan70.jpg"
+      "scan167.jpg"
     ]
   },
   "scan208.jpg": {
@@ -5309,18 +5350,18 @@ const archive = {
     "tags": [
       "music",
       "washington dc",
+      "ephemera",
       "setlist",
       "concert",
-      "annotation",
-      "tour"
+      "annotation"
     ],
     "note": "",
     "related": [
       "scan207.jpg",
       "scan206.jpg",
-      "scan2.jpg",
-      "scan121.jpg",
-      "scan70.jpg"
+      "scan164.jpg",
+      "scan167.jpg",
+      "scan169.jpg"
     ]
   },
   "scan209.jpg": {
@@ -5333,20 +5374,20 @@ const archive = {
     "location": "",
     "source": "Vance Nannini",
     "tags": [
+      "print",
       "handmade",
       "article",
       "science",
       "career",
-      "research",
-      "interdisciplinary"
+      "research"
     ],
     "note": "my high school physics teacher printed this out and gave it to me after a group of guys in my class told me getting a psychology degree was \"stupid\"",
     "related": [
-      "scan205.webp",
-      "scan200.jpg",
       "scan26.jpg",
-      "scan201.jpg",
-      "scan58.jpg"
+      "scan200.jpg",
+      "scan14.jpg",
+      "scan15.jpg",
+      "scan16.jpg"
     ]
   },
   "scan210.jpg": {
@@ -5368,10 +5409,10 @@ const archive = {
     "note": "how did she find me?",
     "related": [
       "scan199.jpg",
-      "scan124.jpg",
-      "scan130.jpg",
       "scan76.jpg",
-      "scan98.jpg"
+      "scan124.jpg",
+      "scan64.jpg",
+      "scan130.jpg"
     ]
   },
   "scan211.jpg": {
@@ -5387,21 +5428,21 @@ const archive = {
       "postcard",
       "feelings",
       "humor",
+      "ephemera",
       "victorian novelty card",
-      "bicycle",
-      "death"
+      "bicycle"
     ],
     "note": "",
     "related": [
       "scan42.jpg",
-      "scan52.jpg",
-      "scan118.jpg",
-      "scan41.webp",
-      "scan123.jpg"
+      "scan41.jpg",
+      "scan40.jpg",
+      "scan132.jpg",
+      "scan127.jpg"
     ]
   },
-  "scan212.webp": {
-    "filename": "scan212.webp",
+  "scan212.jpg": {
+    "filename": "scan212.jpg",
     "title": "snooper sticker",
     "description": "small sticker featuring snooper mascot",
     "category": "sticker",
@@ -5419,11 +5460,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan218.jpg",
       "scan56.jpg",
-      "scan122.jpg",
+      "scan40.jpg",
+      "scan218.jpg",
       "scan160.jpg",
-      "scan128.jpg"
+      "scan41.jpg"
     ]
   },
   "scan213.jpg": {
@@ -5446,8 +5487,8 @@ const archive = {
     "note": "where my love for records began",
     "related": [
       "scan1.jpg",
+      "scan68.jpg",
       "scan120.jpg",
-      "scan145.jpg",
       "scan164.jpg",
       "scan169.jpg"
     ]
@@ -5463,19 +5504,19 @@ const archive = {
     "source": "",
     "tags": [
       "cartoon",
+      "print",
       "humor",
       "handmade",
       "freud",
-      "psychology",
-      "caricature"
+      "psychology"
     ],
     "note": "",
     "related": [
+      "scan27.jpg",
+      "scan29.jpg",
       "scan47.jpg",
-      "scan64.jpg",
-      "scan119.jpg",
-      "scan56.jpg",
-      "scan198.jpg"
+      "scan19.jpg",
+      "scan14.jpg"
     ]
   },
   "scan215.jpg": {
@@ -5500,8 +5541,8 @@ const archive = {
       "scan216.jpg",
       "scan1.jpg",
       "scan120.jpg",
-      "scan200.jpg",
-      "scan114.jpg"
+      "scan114.jpg",
+      "scan145.jpg"
     ]
   },
   "scan216.jpg": {
@@ -5527,7 +5568,7 @@ const archive = {
       "scan1.jpg",
       "scan120.jpg",
       "scan145.jpg",
-      "scan68.webp"
+      "scan68.jpg"
     ]
   },
   "scan217.jpg": {
@@ -5549,11 +5590,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan205.webp",
-      "scan44.jpg",
-      "scan26.jpg",
       "scan215.jpg",
-      "scan51.jpg"
+      "scan205.jpg",
+      "scan59.jpg",
+      "scan114.jpg",
+      "scan187.jpg"
     ]
   },
   "scan218.jpg": {
@@ -5568,17 +5609,17 @@ const archive = {
     "tags": [
       "collage",
       "creatures",
+      "etsy",
+      "artwork",
       "frog",
-      "wine",
-      "picnic",
-      "surreal"
+      "wine"
     ],
     "note": "i love frogs",
     "related": [
       "scan159.jpg",
+      "scan40.jpg",
       "scan128.jpg",
       "scan138.jpg",
-      "scan212.webp",
       "scan56.jpg"
     ]
   }
