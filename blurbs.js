@@ -184,7 +184,7 @@ const archive = {
     "category": "game",
     "type": "trading card",
     "date": "halloween 2024",
-    "location": "",
+    "location": "Nashville, TN",
     "source": "",
     "tags": [
       "pokemon",
@@ -573,7 +573,7 @@ const archive = {
     "type": "sticker",
     "date": "",
     "location": "Nashville, TN",
-    "source": "",
+    "source": "Garden Family",
     "tags": [
       "cannabis",
       "local business",
@@ -618,10 +618,10 @@ const archive = {
   "scan27.jpg": {
     "filename": "scan27.jpg",
     "title": "the label wins",
-    "description": "",
+    "description": "cartoon by William Haefeli",
     "category": "print",
     "type": "cartoon clipping",
-    "date": "",
+    "date": "september 2019",
     "location": "",
     "source": "The New Yorker",
     "tags": [
@@ -1069,7 +1069,7 @@ const archive = {
   "scan45.jpg": {
     "filename": "scan45.jpg",
     "title": "journeyman distillery patch",
-    "description": "",
+    "description": "from a distillery in southwest michigan",
     "category": "ephemera",
     "type": "patch",
     "date": "",
@@ -1168,10 +1168,10 @@ const archive = {
   },
   "scan49.jpg": {
     "filename": "scan49.jpg",
-    "title": "canyon wreck",
-    "description": "clipping of an overturned car at the bottom of a canyon",
+    "title": "wreck",
+    "description": "magazine clipping of an overturned car at the bottom of a canyon",
     "category": "print",
-    "type": "photograph clipping",
+    "type": "magazine clipping",
     "date": "",
     "location": "",
     "source": "",
@@ -1183,7 +1183,7 @@ const archive = {
       "spectacle",
       "fragility"
     ],
-    "note": "",
+    "note": "thelma and louise type shit",
     "related": [
       "scan211.jpg",
       "scan46.jpg",
@@ -1469,8 +1469,8 @@ const archive = {
   },
   "scan61.jpg": {
     "filename": "scan61.jpg",
-    "title": "effervescent",
-    "description": "typed visual poem by will kelley exploring beauty inspiration and small moments of grace",
+    "title": "effervecent",
+    "description": "typewriter poem",
     "category": "literature",
     "type": "typed poem",
     "date": "halloween 2024",
@@ -1642,10 +1642,10 @@ const archive = {
       "scan2.jpg"
     ]
   },
-  "scan68.jpg": {
-    "filename": "scan68.jpg",
+  "scan68.webp": {
+    "filename": "scan68.webp",
     "title": "baltimore to detroit",
-    "description": "from school to home",
+    "description": "a flight from school to home",
     "category": "travel",
     "type": "boarding pass",
     "date": "",
@@ -1817,13 +1817,13 @@ const archive = {
   },
   "scan75.jpg": {
     "filename": "scan75.jpg",
-    "title": "love grid",
-    "description": "handmade pattern constructed from repeating heart motifs and the word love",
+    "title": "heart grid",
+    "description": "freeform heart tape pattern",
     "category": "artwork",
     "type": "mixed media",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Frist Art Museum, Arden",
     "tags": [
       "hearts",
       "love",
@@ -1832,7 +1832,7 @@ const archive = {
       "folk art",
       "playful"
     ],
-    "note": "",
+    "note": "gifted by a child during a shift at the Frist",
     "related": [
       "scan91.jpg",
       "scan64.jpg",
@@ -1871,7 +1871,7 @@ const archive = {
     "description": "completed word search puzzle from the catbird seat restaurant",
     "category": "games",
     "type": "puzzle",
-    "date": "",
+    "date": "march 20, 2026",
     "location": "Nashville, TN",
     "source": "The Catbird Seat",
     "tags": [
@@ -1881,7 +1881,7 @@ const archive = {
       "puzzle",
       "leisure"
     ],
-    "note": "",
+    "note": "analogue entertainment",
     "related": [
       "scan78.jpg",
       "scan65.jpg",
@@ -1942,12 +1942,12 @@ const archive = {
   "scan80.jpg": {
     "filename": "scan80.jpg",
     "title": "the light of a candle",
-    "description": "printed haiku comparing shared light to the passing of a candle flame",
+    "description": "letterpress printed haiku by yosa buson",
     "category": "literature",
     "type": "poetry card",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Turnip Green Creative Reuse",
     "tags": [
       "haiku",
       "light",
@@ -1992,13 +1992,13 @@ const archive = {
   },
   "scan82.jpg": {
     "filename": "scan82.jpg",
-    "title": "2416",
-    "description": "graphic composition featuring the number 2416 alongside colored geometric forms",
+    "title": "2416 letterpress print",
+    "description": "letterpress compositional ode to an old domicile",
     "category": "artwork",
     "type": "print",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Turnip Green Creative Reuse",
     "tags": [
       "geometry",
       "numbers",
@@ -2007,7 +2007,7 @@ const archive = {
       "shapes",
       "color study"
     ],
-    "note": "",
+    "note": "can't miss a chance to take an art class from a Hatch Show Print artist",
     "related": [
       "scan83.jpg",
       "scan85.jpg",
@@ -2042,13 +2042,13 @@ const archive = {
   },
   "scan84.jpg": {
     "filename": "scan84.jpg",
-    "title": "a world of dew card",
-    "description": "printed card featuring a haiku about struggle and impermanence",
+    "title": "dewdrops haiku",
+    "description": "letterpress printed haiku by Kobayashi Issa",
     "category": "literature",
     "type": "poetry card",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Turnip Green Creative Reuse",
     "tags": [
       "haiku",
       "poetry",
@@ -2067,13 +2067,13 @@ const archive = {
   },
   "scan85.jpg": {
     "filename": "scan85.jpg",
-    "title": "run symbol",
-    "description": "abstract emblem composed of geometric forms and mirrored letterforms spelling run",
+    "title": "letterpress class composition",
+    "description": "abstract emblem composed of geometric forms",
     "category": "artwork",
     "type": "graphic design",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "Turnip Green Creative Reuse",
     "tags": [
       "symbol",
       "logo",
@@ -2291,20 +2291,20 @@ const archive = {
   },
   "scan94.jpg": {
     "filename": "scan94.jpg",
-    "title": "shattuckite crystal label",
-    "description": "crystal shop identification card for shattuckite crystal",
+    "title": "shattuckite crystal card",
+    "description": "crystal shop identification card for a ring",
     "category": "found object",
     "type": "label",
     "date": "",
-    "location": "",
-    "source": "Crystal Farmacy",
+    "location": "Nashville, TN",
+    "source": "Nashville Crystal Store",
     "tags": [
       "crystal",
       "shattuckite",
       "metaphysical",
       "label"
     ],
-    "note": "",
+    "note": "rip",
     "related": [
       "scan95.jpg",
       "scan97.jpg",
@@ -2339,7 +2339,7 @@ const archive = {
   "scan96.jpg": {
     "filename": "scan96.jpg",
     "title": "arcanine pokemon card",
-    "description": "arcanine trading card from the expedition era",
+    "description": "fire pokemon card",
     "category": "pop culture",
     "type": "trading card",
     "date": "",
@@ -2438,7 +2438,7 @@ const archive = {
     "type": "print",
     "date": "",
     "location": "",
-    "source": "",
+    "source": "ffern",
     "tags": [
       "botanical",
       "flowers",
@@ -2458,12 +2458,12 @@ const archive = {
   "scan101.jpg": {
     "filename": "scan101.jpg",
     "title": "reykjavik city map",
-    "description": "foldout illustrated tourist map of downtown reykjavik iceland",
+    "description": "foldout illustrated tourist map of downtown",
     "category": "travel",
     "type": "map",
     "date": "",
-    "location": "",
-    "source": "Iceland",
+    "location": "Reykjavík, IS",
+    "source": "",
     "tags": [
       "reykjavik",
       "iceland",
@@ -2666,19 +2666,19 @@ const archive = {
   "scan110.jpg": {
     "filename": "scan110.jpg",
     "title": "kim chi signed poster",
-    "description": "signed promotional poster featuring drag performer kim chi",
+    "description": "signed poster featuring drag performer kim chi",
     "category": "pop culture",
     "type": "poster",
-    "date": "",
-    "location": "",
-    "source": "Kim Chi",
+    "date": "september 2018",
+    "location": "Windsor, ON",
+    "source": "Lawrence Lavender, Kim Chi",
     "tags": [
       "drag",
       "kim chi",
       "signed poster",
       "lgbtq"
     ],
-    "note": "",
+    "note": "my airbnb host in Canada was her representative and gave me this for free",
     "related": [
       "scan104.jpg",
       "scan111.jpg",
@@ -2727,7 +2727,7 @@ const archive = {
       "certificate",
       "novelty"
     ],
-    "note": "",
+    "note": "one of my fav pieces of wall decor",
     "related": [
       "scan213.jpg",
       "scan105.jpg",
@@ -2852,13 +2852,13 @@ const archive = {
   },
   "scan118.jpg": {
     "filename": "scan118.jpg",
-    "title": "stress melting zine page",
-    "description": "illustrated zine page about anxiety and overthinking featuring a melting figure",
+    "title": "stress melting",
+    "description": "misanthropic illustrated zine page",
     "category": "artwork",
     "type": "zine page",
     "date": "",
-    "location": "",
-    "source": "",
+    "location": "Nashville, TN",
+    "source": "someone I met once and never saw again",
     "tags": [
       "anxiety",
       "zine",
@@ -2946,8 +2946,8 @@ const archive = {
   },
   "scan122.jpg": {
     "filename": "scan122.jpg",
-    "title": "lizard with lime and shot",
-    "description": "photograph of a lounging lizard with a lime wedge and drink on a red booth",
+    "title": "party lizard",
+    "description": "lizard on it's five o'clock somewhere grind",
     "category": "pop culture",
     "type": "photograph",
     "date": "",
@@ -2956,10 +2956,9 @@ const archive = {
     "tags": [
       "lizard",
       "reptile",
-      "humor",
       "drink"
     ],
-    "note": "",
+    "note": "vibe",
     "related": [
       "scan29.jpg",
       "scan32.jpg",
@@ -2969,13 +2968,13 @@ const archive = {
   },
   "scan123.jpg": {
     "filename": "scan123.jpg",
-    "title": "a letter about rage artist statement",
-    "description": "typed artist statement reflecting on rage creativity and self preservation",
+    "title": "a letter about rage*",
+    "description": "typed artist statement reflecting on rage, creativity, and self preservation",
     "category": "writing",
     "type": "artist statement",
     "date": "",
     "location": "",
-    "source": "",
+    "source": "Cierra Rauch",
     "tags": [
       "rage",
       "writing",
@@ -3158,8 +3157,8 @@ const archive = {
   },
   "scan131.jpg": {
     "filename": "scan131.jpg",
-    "title": "die sonne scheint poem card",
-    "description": "german poem card about sunshine growth and inner strength with smiling sun illustration",
+    "title": "die sonne scheint poem",
+    "description": "german poem card about sunshine growth and inner strength",
     "category": "writing",
     "type": "poem",
     "date": "",
@@ -3171,7 +3170,7 @@ const archive = {
       "sunshine",
       "inspiration"
     ],
-    "note": "",
+    "note": "\"The sun is shining, the sun is shining, that's the magic, the flowers are growing, the roots are stretching, that's the magic. To live and be strong, that's the magic, it's in me, it's in all of us.\"",
     "related": [
       "scan132.jpg",
       "scan133.jpg",
@@ -3181,12 +3180,12 @@ const archive = {
   },
   "scan132.jpg": {
     "filename": "scan132.jpg",
-    "title": "suss ist's den reiz der welt poem card",
-    "description": "german poem card about seeing the world through a child's eyes with flower illustration",
+    "title": "suss ist's den reiz der welt poem",
+    "description": "german poem card about seeing the world through a child's eyes",
     "category": "writing",
     "type": "poem",
     "date": "",
-    "location": "",
+    "location": "Berlin, DE",
     "source": "Emanuel Geibel",
     "tags": [
       "german",
@@ -3194,7 +3193,7 @@ const archive = {
       "childhood",
       "wonder"
     ],
-    "note": "",
+    "note": "It is sweet to soak up the world's charm, when heart and mind are in bloom, but sweeter still, to see the world fresh once more through your child's eyes.",
     "related": [
       "scan131.jpg",
       "scan133.jpg",
@@ -3437,12 +3436,12 @@ const archive = {
   },
   "scan143.jpg": {
     "filename": "scan143.jpg",
-    "title": "coda tasting menu menu page",
-    "description": "experimental tasting menu featuring caviar popsicle tomato and cacao courses",
+    "title": "coda tasting menu page 1",
+    "description": "experimental tasting menu",
     "category": "food",
     "type": "menu",
     "date": "",
-    "location": "",
+    "location": "Berlin, DE",
     "source": "CODA Berlin",
     "tags": [
       "restaurant",
@@ -3450,7 +3449,7 @@ const archive = {
       "berlin",
       "fine dining"
     ],
-    "note": "",
+    "note": "most insane meal of my life",
     "related": [
       "scan144.jpg",
       "scan155.jpg",
@@ -3461,12 +3460,12 @@ const archive = {
   },
   "scan144.jpg": {
     "filename": "scan144.jpg",
-    "title": "coda tasting menu second page",
+    "title": "coda tasting menu page 1",
     "description": "menu page listing gummy bear rhubarb eggplant and raclette waffle courses",
     "category": "food",
     "type": "menu",
-    "date": "",
-    "location": "",
+    "date": "september 2024",
+    "location": "Berlin, DE",
     "source": "CODA Berlin",
     "tags": [
       "restaurant",
@@ -3474,7 +3473,7 @@ const archive = {
       "dessert",
       "berlin"
     ],
-    "note": "",
+    "note": "fuckin nuts",
     "related": [
       "scan143.jpg",
       "scan155.jpg",
@@ -3531,11 +3530,11 @@ const archive = {
   "scan147.jpg": {
     "filename": "scan147.jpg",
     "title": "the catbird seat menu signed",
-    "description": "signed tasting menu from the catbird seat featuring seasonal multi course dinner",
+    "description": "signed tasting menu from the catbird seat",
     "category": "food",
     "type": "menu",
-    "date": "",
-    "location": "",
+    "date": "march 20, 2026",
+    "location": "Nashville, TN",
     "source": "The Catbird Seat",
     "tags": [
       "nashville",
@@ -3543,7 +3542,7 @@ const archive = {
       "fine dining",
       "signed"
     ],
-    "note": "",
+    "note": "one of the best meal experiences ever",
     "related": [
       "scan148.jpg",
       "scan155.jpg",
@@ -3835,7 +3834,7 @@ const archive = {
   "scan160.jpg": {
     "filename": "scan160.jpg",
     "title": "happy birthday crow card",
-    "description": "greeting card featuring crows in top hats and fans with birthday message",
+    "description": "greeting card featuring fancy crows in top hats and fans",
     "category": "ephemera",
     "type": "greeting card",
     "date": "",
@@ -3929,11 +3928,11 @@ const archive = {
   "scan164.jpg": {
     "filename": "scan164.jpg",
     "title": "grimeys record store sticker",
-    "description": "sticker from grimeys new and pre loved music and books in nashville",
+    "description": "modeled after the 70s Opryland USA logo",
     "category": "ephemera",
     "type": "sticker",
     "date": "",
-    "location": "",
+    "location": "Nashville, TN",
     "source": "Grimey's",
     "tags": [
       "music",
@@ -4051,7 +4050,7 @@ const archive = {
     "category": "ephemera",
     "type": "sticker",
     "date": "",
-    "location": "",
+    "location": "Baltimore, MD",
     "source": "The True Vine Record Shop",
     "tags": [
       "music",
@@ -4142,7 +4141,7 @@ const archive = {
   "scan173.jpg": {
     "filename": "scan173.jpg",
     "title": "bugonia ticket",
-    "description": "belcourt screening receipt for bugonia in 35mm format",
+    "description": "35mm",
     "category": "ephemera",
     "type": "ticket",
     "date": "2025-10-27",
@@ -4287,7 +4286,7 @@ const archive = {
   "scan179.jpg": {
     "filename": "scan179.jpg",
     "title": "the zone of interest ticket",
-    "description": "belcourt admission ticket for the zone of interest",
+    "description": "",
     "category": "ephemera",
     "type": "ticket",
     "date": "2024-02-04",
@@ -4385,12 +4384,12 @@ const archive = {
   "scan183.jpg": {
     "filename": "scan183.jpg",
     "title": "stop making sense imax ticket",
-    "description": "imax ticket stub for stop making sense",
+    "description": "",
     "category": "ephemera",
     "type": "ticket",
     "date": "2023-09-11",
     "location": "Hendersonville, TN",
-    "source": "indian lake cinema",
+    "source": "Regal Indian Lake",
     "tags": [
       "movie",
       "concert film",
@@ -4398,7 +4397,7 @@ const archive = {
       "ticket",
       "music"
     ],
-    "note": "",
+    "note": "saw with justin",
     "related": [
       "scan182.jpg",
       "scan185.jpg",
@@ -4459,12 +4458,12 @@ const archive = {
   "scan186.jpg": {
     "filename": "scan186.jpg",
     "title": "longlegs ticket",
-    "description": "movie ticket stub for longlegs",
+    "description": "",
     "category": "ephemera",
     "type": "ticket",
     "date": "2024-07-22",
     "location": "Nashville, TN",
-    "source": "opry mills cinema",
+    "source": "Regal Opry Mills",
     "tags": [
       "movie",
       "horror",
@@ -4483,15 +4482,15 @@ const archive = {
   "scan187.jpg": {
     "filename": "scan187.jpg",
     "title": "the brutalist ticket",
-    "description": "a24 member screening ticket for the brutalist",
+    "description": "",
     "category": "ephemera",
     "type": "ticket",
     "date": "2025-01-24",
     "location": "Nashville, TN",
-    "source": "green hills cinema",
+    "source": "Regal Green Hills",
     "tags": [
       "movie",
-      "a24",
+      "aaa24",
       "ticket",
       "cinema",
       "architecture"
@@ -4605,12 +4604,12 @@ const archive = {
   "scan192.jpg": {
     "filename": "scan192.jpg",
     "title": "twin peaks fire walk with me ticket",
-    "description": "late night belcourt screening ticket for twin peaks fire walk with me",
+    "description": "midnight showing at the belcourt",
     "category": "ephemera",
     "type": "ticket",
     "date": "2024-08-30",
     "location": "Nashville, TN",
-    "source": "belcourt theatre",
+    "source": "Belcourt Theatre",
     "tags": [
       "movie",
       "lynch",
@@ -4676,13 +4675,13 @@ const archive = {
   },
   "scan195.jpg": {
     "filename": "scan195.jpg",
-    "title": "rocky horror 50th ticket",
-    "description": "green hills cinema ticket for rocky horror picture show 50th anniversary screening",
+    "title": "rocky horror 50th anniversary ticket",
+    "description": "",
     "category": "ephemera",
     "type": "ticket",
     "date": "2025-10-17",
     "location": "Nashville, TN",
-    "source": "green hills cinema",
+    "source": "Regal Green Hills",
     "tags": [
       "movie",
       "cult film",
@@ -4774,7 +4773,7 @@ const archive = {
   "scan199.jpg": {
     "filename": "scan199.jpg",
     "title": "russian package envelope",
-    "description": "international package envelope mailed from yekaterinburg russia with vintage stamps",
+    "description": "international postage for a ring",
     "category": "mail",
     "type": "correspondence",
     "date": "",
@@ -5186,19 +5185,19 @@ const archive = {
   },
   "scan216.jpg": {
     "filename": "scan216.jpg",
-    "title": "detroit felt pennant insert",
-    "description": "advertisement featuring a red felt Detroit pennant and promotional slogan",
+    "title": "detroit greeting card",
+    "description": "vintage detroit greeting card. love's the thing!",
     "category": "advertising",
     "type": "felt pennant",
     "date": "",
     "location": "Detroit, MI",
-    "source": "",
+    "source": "City Bird, Cass Corridor",
     "tags": [
       "detroit",
       "souvenir",
       "travel",
       "felt pennant",
-      "advertisement"
+      "love"
     ],
     "note": "",
     "related": [
