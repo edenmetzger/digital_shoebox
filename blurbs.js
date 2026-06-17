@@ -10,15 +10,19 @@ const archive = {
     "source": "City Bird in Cass Corridor",
     "tags": [
       "detroit",
-      "folklore",
-      "creature"
+      "city bird",
+      "patch",
+      "sticker",
+      "creatures",
+      "folklore"
     ],
     "note": "A little talisman from Detroit mythology. It feels like both a warning and a souvenir.",
     "related": [
-      "scan120.jpg",
       "scan215.jpg",
       "scan216.jpg",
-      "scan46.jpg"
+      "scan120.jpg",
+      "scan46.jpg",
+      "scan45.jpg"
     ]
   },
   "scan2.jpg": {
@@ -32,16 +36,18 @@ const archive = {
     "source": "",
     "tags": [
       "baltimore",
+      "travel",
+      "ticket",
       "washington dc",
       "transit"
     ],
     "note": "from a trip to meet a friend for dinner and drinks",
     "related": [
-      "scan68.jpg",
-      "scan67.jpg",
-      "scan10.jpg",
-      "scan136.jpg",
-      "scan170.jpg"
+      "scan68.webp",
+      "scan170.jpg",
+      "scan208.jpg",
+      "scan137.jpg",
+      "scan135.jpg"
     ]
   },
   "scan3.jpg": {
@@ -54,16 +60,18 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
+      "the new yorker",
       "poetry",
-      "magazine",
-      "new yorker"
+      "poem",
+      "literature"
     ],
     "note": "this poem lives on my wall permanently",
     "related": [
+      "scan27.jpg",
+      "scan52.jpg",
+      "scan119.jpg",
       "scan57.jpg",
-      "scan4.jpg",
-      "scan72.jpg",
-      "scan12.jpg"
+      "scan132.jpg"
     ]
   },
   "scan4.jpg": {
@@ -77,15 +85,16 @@ const archive = {
     "source": "GQ",
     "tags": [
       "music",
-      "fashion",
-      "magazine"
+      "collage",
+      "fashion"
     ],
     "note": "an ode to a high school favorite",
     "related": [
-      "scan3.jpg",
-      "scan7.jpg",
+      "scan104.jpg",
       "scan111.jpg",
-      "scan104.jpg"
+      "scan18.jpg",
+      "scan62.jpg",
+      "scan15.jpg"
     ]
   },
   "scan5.jpg": {
@@ -98,16 +107,17 @@ const archive = {
     "location": "",
     "source": "Bazooka Joe",
     "tags": [
-      "comic",
-      "language",
-      "ephemera"
+      "cartoon",
+      "bazooka joe",
+      "language"
     ],
     "note": "que bueno",
     "related": [
       "scan141.jpg",
-      "scan139.jpg",
-      "scan142.jpg",
-      "scan127.jpg"
+      "scan156.jpg",
+      "scan27.jpg",
+      "scan127.jpg",
+      "scan139.jpg"
     ]
   },
   "scan6.jpg": {
@@ -121,15 +131,18 @@ const archive = {
     "source": "",
     "tags": [
       "collage",
+      "collage material",
+      "art material",
       "body",
       "materials"
     ],
     "note": "fragments waiting to become something else",
     "related": [
       "scan14.jpg",
+      "scan149.jpg",
       "scan15.jpg",
       "scan203.jpg",
-      "scan149.jpg"
+      "scan104.jpg"
     ]
   },
   "scan7.jpg": {
@@ -143,15 +156,17 @@ const archive = {
     "source": "black midi, Schlagenheim",
     "tags": [
       "music",
+      "sticker",
       "black midi",
       "album"
     ],
     "note": "a remnant from the packaging, the packaging became the object",
     "related": [
-      "scan4.jpg",
+      "scan164.jpg",
+      "scan169.jpg",
       "scan121.jpg",
-      "scan111.jpg",
-      "scan207.jpg"
+      "scan104.jpg",
+      "scan70.jpg"
     ]
   },
   "scan8.jpg": {
@@ -164,17 +179,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "The Belcourt",
     "tags": [
-      "movie",
       "belcourt",
+      "nashville",
+      "film",
+      "creatures",
+      "glasses",
       "3d"
     ],
     "note": "Evidence of watching a monster movie the old-fashioned way.",
     "related": [
       "scan181.jpg",
       "scan38.jpg",
-      "scan171.jpg",
       "scan180.jpg",
-      "scan41.jpg"
+      "scan191.jpg",
+      "scan171.jpg"
     ]
   },
   "scan9.jpg": {
@@ -187,16 +205,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "",
     "tags": [
+      "nashville",
+      "postcard",
+      "trading card",
+      "game",
       "pokemon",
-      "halloween",
-      "party"
+      "halloween"
     ],
     "note": "",
     "related": [
+      "scan92.jpg",
       "scan96.jpg",
-      "scan29.jpg",
-      "scan126.jpg",
-      "scan92.jpg"
+      "scan127.jpg",
+      "scan181.jpg",
+      "scan64.jpg"
     ]
   },
   "scan10.jpg": {
@@ -209,17 +231,20 @@ const archive = {
     "location": "Hyattsville, MD",
     "source": "Vigilante Coffee",
     "tags": [
+      "food",
+      "coffee bag",
+      "packaging",
       "coffee",
       "hyattsville",
       "maryland"
     ],
     "note": "",
     "related": [
-      "scan2.jpg",
+      "scan39.webp",
       "scan170.jpg",
-      "scan11.jpg",
-      "scan39.jpg",
-      "scan67.jpg"
+      "scan129.webp",
+      "scan147.jpg",
+      "scan148.jpg"
     ]
   },
   "scan11.jpg": {
@@ -233,16 +258,17 @@ const archive = {
     "source": "Rendezvous BBQ",
     "tags": [
       "memphis",
-      "bbq",
-      "restaurant"
+      "food",
+      "wrapper",
+      "bbq"
     ],
     "note": "I received a job offer after a month of searching while at this restaurant",
     "related": [
       "scan65.jpg",
-      "scan77.jpg",
       "scan143.jpg",
-      "scan161.jpg",
-      "scan10.jpg"
+      "scan77.jpg",
+      "scan10.jpg",
+      "scan161.jpg"
     ]
   },
   "scan12.jpg": {
@@ -255,17 +281,18 @@ const archive = {
     "location": "Berlin, DE",
     "source": "C/O Berlin",
     "tags": [
-      "art",
+      "c/o berlin",
       "berlin",
-      "postcard"
+      "postcard",
+      "art"
     ],
     "note": "i love butterflies",
     "related": [
-      "scan152.jpg",
+      "scan54.jpg",
+      "scan115.jpg",
+      "scan152.webp",
       "scan153.jpg",
-      "scan166.jpg",
-      "scan3.jpg",
-      "scan140.jpg"
+      "scan166.jpg"
     ]
   },
   "scan13.jpg": {
@@ -278,19 +305,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Lakeside Lounge",
     "tags": [
-      "beer",
-      "baseball",
-      "lakeside",
+      "nashville",
+      "sticker",
       "humor",
       "souvenir",
-      "summer"
+      "button",
+      "beer"
     ],
     "note": "iykyk",
     "related": [
-      "scan163.jpg",
-      "scan27.jpg",
-      "scan71.jpg",
-      "scan40.jpg"
+      "scan39.webp",
+      "scan127.jpg",
+      "scan129.webp",
+      "scan155.jpg",
+      "scan170.jpg"
     ]
   },
   "scan14.jpg": {
@@ -303,19 +331,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "zine",
-      "spirit",
-      "found text",
-      "blackout",
       "collage",
-      "absurdity"
+      "handmade",
+      "humor",
+      "zine collage",
+      "zine",
+      "spirit"
     ],
     "note": "bat shit crazy",
     "related": [
       "scan15.jpg",
       "scan16.jpg",
       "scan34.jpg",
-      "scan6.jpg"
+      "scan118.jpg",
+      "scan19.webp"
     ]
   },
   "scan15.jpg": {
@@ -328,19 +357,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "zine",
-      "punk",
-      "masculinity",
-      "sadness",
+      "music",
       "typography",
-      "identity"
+      "collage",
+      "feelings",
+      "handmade",
+      "collage page"
     ],
     "note": "",
     "related": [
-      "scan14.jpg",
-      "scan16.jpg",
       "scan17.jpg",
-      "scan6.jpg"
+      "scan16.jpg",
+      "scan19.webp",
+      "scan203.jpg",
+      "scan28.jpg"
     ]
   },
   "scan16.jpg": {
@@ -353,19 +383,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "politics",
+      "handmade",
+      "collage page",
       "mushroom",
-      "revolution",
-      "crush",
-      "bubble",
-      "found text",
-      "transformation"
+      "revolution"
     ],
     "note": "",
     "related": [
       "scan15.jpg",
+      "scan17.jpg",
       "scan34.jpg",
-      "scan14.jpg",
-      "scan35.jpg"
+      "scan28.jpg",
+      "scan106.jpg"
     ]
   },
   "scan17.jpg": {
@@ -378,18 +409,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "advertisement",
-      "health",
       "typography",
-      "distortion",
-      "consumption"
+      "collage",
+      "handmade",
+      "collage page",
+      "advertisement",
+      "health"
     ],
     "note": "",
     "related": [
-      "scan48.jpg",
       "scan15.jpg",
-      "scan20.jpg",
-      "scan202.jpg"
+      "scan16.jpg",
+      "scan203.jpg",
+      "scan202.jpg",
+      "scan20.webp"
     ]
   },
   "scan18.jpg": {
@@ -402,18 +435,20 @@ const archive = {
     "location": "",
     "source": "GQ",
     "tags": [
+      "poetry",
+      "collage",
+      "handmade",
+      "text clipping",
       "quote",
-      "typewriter",
-      "manifesto",
-      "criticism",
-      "society"
+      "typewriter"
     ],
     "note": "",
     "related": [
-      "scan19.jpg",
+      "scan19.webp",
+      "scan21.webp",
+      "scan23.webp",
       "scan26.jpg",
-      "scan30.jpg",
-      "scan20.jpg"
+      "scan28.jpg"
     ]
   },
   "scan19.webp": {
@@ -426,18 +461,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "quote",
-      "self-awareness",
+      "poetry",
+      "collage",
+      "feelings",
       "humor",
-      "anxiety",
-      "belonging"
+      "handmade",
+      "text clipping"
     ],
     "note": "i mean...yeah",
     "related": [
-      "scan42.jpg",
       "scan18.jpg",
-      "scan20.jpg",
-      "scan21.jpg"
+      "scan21.webp",
+      "scan118.jpg",
+      "scan123.jpg",
+      "scan42.jpg"
     ]
   },
   "scan20.webp": {
@@ -450,18 +487,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "chaos",
       "typography",
+      "handmade",
+      "text fragment",
+      "chaos",
       "minimalism",
-      "black",
-      "disorder"
+      "black"
     ],
     "note": "",
     "related": [
+      "scan19.webp",
+      "scan17.jpg",
       "scan33.jpg",
-      "scan19.jpg",
-      "scan18.jpg",
-      "scan17.jpg"
+      "scan200.jpg",
+      "scan202.jpg"
     ]
   },
   "scan21.webp": {
@@ -474,19 +513,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "communism",
-      "taxation",
-      "humor",
+      "collage",
       "politics",
-      "slogan",
-      "ideology"
+      "humor",
+      "handmade",
+      "text clipping",
+      "communism"
     ],
     "note": "red scare propaganda",
     "related": [
-      "scan27.jpg",
+      "scan23.webp",
+      "scan19.webp",
+      "scan18.jpg",
       "scan22.jpg",
-      "scan23.jpg",
-      "scan19.jpg"
+      "scan28.jpg"
     ]
   },
   "scan22.jpg": {
@@ -499,20 +539,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "match",
-      "flag",
-      "rebellion",
+      "collage",
       "politics",
-      "symbolism",
-      "resistance"
+      "handmade",
+      "illustration clipping",
+      "match",
+      "flag"
     ],
     "note": "",
     "related": [
-      "scan23.jpg",
+      "scan32.jpg",
+      "scan23.webp",
       "scan24.jpg",
       "scan28.jpg",
-      "scan21.jpg",
-      "scan33.jpg"
+      "scan34.jpg"
     ]
   },
   "scan23.webp": {
@@ -525,18 +565,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "resist",
-      "protest",
-      "action",
       "typography",
-      "resistance"
+      "collage",
+      "politics",
+      "handmade",
+      "text clipping",
+      "resist"
     ],
     "note": "may i offer you a nice egg in this trying time",
     "related": [
-      "scan24.jpg",
-      "scan22.jpg",
-      "scan21.jpg",
-      "scan28.jpg"
+      "scan21.webp",
+      "scan28.jpg",
+      "scan18.jpg",
+      "scan106.jpg",
+      "scan22.jpg"
     ]
   },
   "scan24.jpg": {
@@ -549,20 +591,20 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
+      "the new yorker",
+      "collage",
+      "politics",
+      "handmade",
       "suffrage",
-      "protest",
-      "feminism",
-      "history",
-      "new yorker",
-      "activism"
+      "protest"
     ],
     "note": "hell yeah!!!",
     "related": [
       "scan119.jpg",
+      "scan27.jpg",
       "scan156.jpg",
-      "scan23.jpg",
       "scan28.jpg",
-      "scan22.jpg"
+      "scan23.webp"
     ]
   },
   "scan25.jpg": {
@@ -575,19 +617,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Garden Family",
     "tags": [
+      "nashville",
+      "sticker",
+      "politics",
       "cannabis",
       "local business",
-      "qr code",
-      "nashville",
-      "community"
+      "qr code"
     ],
     "note": "",
     "related": [
       "scan37.jpg",
-      "scan39.jpg",
       "scan162.jpg",
-      "scan168.jpg",
-      "scan70.jpg"
+      "scan168.webp",
+      "scan170.jpg",
+      "scan106.jpg"
     ]
   },
   "scan26.jpg": {
@@ -600,19 +643,20 @@ const archive = {
     "location": "",
     "source": "Samuel Butler",
     "tags": [
-      "moon",
-      "science",
-      "curiosity",
-      "samuel butler",
-      "inquiry"
+      "poetry",
+      "collage",
+      "handmade",
+      "space",
+      "quotation clipping",
+      "moon"
     ],
     "note": "this makes me giggle",
     "related": [
-      "scan217.jpg",
+      "scan205.webp",
       "scan18.jpg",
-      "scan44.jpg",
-      "scan33.jpg",
-      "scan209.jpg"
+      "scan217.jpg",
+      "scan19.webp",
+      "scan203.jpg"
     ]
   },
   "scan27.jpg": {
@@ -625,18 +669,20 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
-      "beer",
-      "perfectionism",
-      "obsession",
+      "the new yorker",
+      "collage",
+      "cartoon",
       "humor",
-      "absurdity"
+      "handmade",
+      "beer"
     ],
     "note": "",
     "related": [
-      "scan21.jpg",
-      "scan13.jpg",
-      "scan71.jpg",
-      "scan29.jpg"
+      "scan52.jpg",
+      "scan156.jpg",
+      "scan119.jpg",
+      "scan29.jpg",
+      "scan24.jpg"
     ]
   },
   "scan28.jpg": {
@@ -649,19 +695,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "grace lee boggs",
-      "community",
-      "change",
-      "future",
-      "imagination"
+      "poetry",
+      "typography",
+      "collage",
+      "politics",
+      "handmade",
+      "poster clipping"
     ],
     "note": "good reminder",
     "related": [
+      "scan23.webp",
+      "scan22.jpg",
       "scan24.jpg",
-      "scan34.jpg",
-      "scan23.jpg",
-      "scan31.jpg",
-      "scan22.jpg"
+      "scan106.jpg",
+      "scan34.jpg"
     ]
   },
   "scan29.jpg": {
@@ -674,18 +721,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "godzilla",
-      "monsters",
-      "island",
+      "collage",
+      "cartoon",
       "humor",
-      "fantasy"
+      "handmade",
+      "godzilla",
+      "monsters"
     ],
     "note": "",
     "related": [
-      "scan9.jpg",
       "scan27.jpg",
+      "scan156.jpg",
+      "scan52.jpg",
       "scan32.jpg",
-      "scan122.jpg"
+      "scan19.webp"
     ]
   },
   "scan30.jpg": {
@@ -698,19 +747,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "handmade",
+      "zine page",
       "courage",
       "love",
-      "wisdom",
-      "guidance",
-      "philosophy",
-      "living"
+      "wisdom"
     ],
     "note": "<3333",
     "related": [
-      "scan18.jpg",
       "scan118.jpg",
-      "scan33.jpg",
-      "scan123.jpg"
+      "scan15.jpg",
+      "scan19.webp",
+      "scan18.jpg",
+      "scan33.jpg"
     ]
   },
   "scan31.jpg": {
@@ -723,20 +773,20 @@ const archive = {
     "location": "Cullman, AL",
     "source": "Ave Maria Grotto",
     "tags": [
+      "collage",
       "architecture",
-      "scale",
-      "design",
-      "miniature",
-      "imagination",
-      "making"
+      "handmade",
+      "alabama",
+      "logo clipping",
+      "scale"
     ],
     "note": "",
     "related": [
-      "scan58.jpg",
       "scan215.jpg",
       "scan200.jpg",
       "scan202.jpg",
-      "scan28.jpg"
+      "scan114.jpg",
+      "scan203.jpg"
     ]
   },
   "scan32.jpg": {
@@ -749,19 +799,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "globe",
-      "climate",
-      "guilt",
+      "collage",
       "humor",
-      "environment",
-      "responsibility"
+      "handmade",
+      "illustration clipping",
+      "globe",
+      "climate"
     ],
     "note": "",
     "related": [
-      "scan40.jpg",
+      "scan22.jpg",
       "scan29.jpg",
+      "scan19.webp",
       "scan56.jpg",
-      "scan122.jpg"
+      "scan15.jpg"
     ]
   },
   "scan33.jpg": {
@@ -774,18 +825,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "typography",
+      "collage",
+      "handmade",
+      "typography clipping",
       "blackletter",
-      "word fragment",
-      "confrontation",
-      "identity",
-      "conflict"
+      "word fragment"
     ],
     "note": "one of my favorite pieces of type I've found in my clippings",
     "related": [
-      "scan20.jpg",
-      "scan26.jpg",
-      "scan30.jpg",
-      "scan22.jpg"
+      "scan15.jpg",
+      "scan17.jpg",
+      "scan203.jpg",
+      "scan20.webp",
+      "scan200.jpg"
     ]
   },
   "scan34.jpg": {
@@ -798,20 +851,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "politics",
+      "art",
       "abolition",
       "anarchy",
-      "confidence",
-      "work",
-      "zine",
-      "critique"
+      "confidence"
     ],
     "note": "",
     "related": [
       "scan35.jpg",
       "scan36.jpg",
-      "scan16.jpg",
+      "scan22.jpg",
       "scan28.jpg",
-      "scan14.jpg"
+      "scan23.webp"
     ]
   },
   "scan35.jpg": {
@@ -824,19 +877,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "art",
       "fashion",
       "bee",
       "peacock",
-      "scooter",
-      "surrealism",
-      "assemblage"
+      "scooter"
     ],
     "note": "",
     "related": [
       "scan34.jpg",
       "scan36.jpg",
       "scan149.jpg",
-      "scan16.jpg"
+      "scan16.jpg",
+      "scan4.jpg"
     ]
   },
   "scan36.jpg": {
@@ -849,18 +903,19 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "creatures",
+      "art",
       "ghosts",
       "tiger",
-      "earth",
-      "angels",
-      "authenticity",
-      "unreality"
+      "earth"
     ],
     "note": "",
     "related": [
-      "scan35.jpg",
-      "scan149.jpg",
       "scan34.jpg",
+      "scan35.jpg",
+      "scan218.jpg",
+      "scan50.jpg",
       "scan159.jpg"
     ]
   },
@@ -874,18 +929,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "",
     "tags": [
+      "nashville",
+      "sticker",
+      "politics",
       "transit",
       "city",
-      "politics",
-      "nashville",
       "place"
     ],
     "note": "choose how you move!",
     "related": [
+      "scan171.jpg",
       "scan25.jpg",
-      "scan39.jpg",
-      "scan168.jpg",
-      "scan70.jpg"
+      "scan168.webp",
+      "scan170.jpg",
+      "scan106.jpg"
     ]
   },
   "scan38.jpg": {
@@ -899,18 +956,19 @@ const archive = {
     "source": "The Belcourt",
     "tags": [
       "belcourt",
-      "film",
       "nashville",
-      "movie",
-      "event",
+      "film",
+      "music",
+      "ticket",
       "memory"
     ],
     "note": "saw this with my parents",
     "related": [
-      "scan171.jpg",
       "scan8.jpg",
+      "scan171.jpg",
       "scan180.jpg",
-      "scan73.jpg"
+      "scan177.jpg",
+      "scan172.jpg"
     ]
   },
   "scan39.webp": {
@@ -923,19 +981,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Weak Coffee Shop",
     "tags": [
-      "coffee",
+      "nashville",
+      "food",
+      "sticker",
       "illustration",
-      "local business",
-      "mascot",
-      "local"
+      "humor",
+      "coffee"
     ],
     "note": "",
     "related": [
       "scan25.jpg",
       "scan37.jpg",
       "scan78.jpg",
-      "scan43.jpg",
-      "scan10.jpg"
+      "scan170.jpg",
+      "scan162.jpg"
     ]
   },
   "scan40.webp": {
@@ -948,20 +1007,20 @@ const archive = {
     "location": "",
     "source": "Etsy",
     "tags": [
+      "patch",
+      "sticker",
+      "humor",
       "mushroom",
       "empathy",
-      "sadness",
-      "humor",
-      "patch",
-      "tenderness"
+      "sadness"
     ],
     "note": "",
     "related": [
-      "scan41.jpg",
       "scan42.jpg",
-      "scan32.jpg",
-      "scan13.jpg",
-      "scan122.jpg"
+      "scan41.webp",
+      "scan44.jpg",
+      "scan56.jpg",
+      "scan211.jpg"
     ]
   },
   "scan41.webp": {
@@ -974,19 +1033,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "patch",
+      "sticker",
+      "creatures",
+      "feelings",
       "moth",
-      "skull",
-      "gothic",
-      "insect",
-      "mortality",
-      "transformation"
+      "skull"
     ],
     "note": "",
     "related": [
       "scan42.jpg",
-      "scan40.jpg",
-      "scan44.jpg",
-      "scan8.jpg"
+      "scan40.webp",
+      "scan1.jpg",
+      "scan211.jpg",
+      "scan56.jpg"
     ]
   },
   "scan42.jpg": {
@@ -999,20 +1059,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "anxiety",
-      "tombstone",
+      "patch",
+      "sticker",
+      "feelings",
       "humor",
-      "overthinking",
-      "mortality",
-      "self-awareness"
+      "anxiety",
+      "tombstone"
     ],
     "note": "",
     "related": [
-      "scan19.jpg",
-      "scan41.jpg",
-      "scan211.jpg",
+      "scan41.webp",
+      "scan40.webp",
+      "scan19.webp",
       "scan52.jpg",
-      "scan40.jpg"
+      "scan118.jpg"
     ]
   },
   "scan43.jpg": {
@@ -1025,19 +1085,20 @@ const archive = {
     "location": "Baltimore, MD",
     "source": "The Sound Garden",
     "tags": [
-      "record store",
-      "music",
       "nashville",
-      "local business",
-      "vinyl",
-      "place"
+      "baltimore",
+      "music",
+      "patch",
+      "sticker",
+      "record store"
     ],
     "note": "",
     "related": [
-      "scan213.jpg",
+      "scan169.jpg",
+      "scan44.jpg",
       "scan164.jpg",
-      "scan39.jpg",
-      "scan167.jpg"
+      "scan167.jpg",
+      "scan213.jpg"
     ]
   },
   "scan44.jpg": {
@@ -1050,20 +1111,20 @@ const archive = {
     "location": "Baltimore, MD",
     "source": "",
     "tags": [
-      "moon",
-      "face",
-      "surreal",
-      "night",
-      "whimsy",
-      "wonder"
+      "baltimore",
+      "patch",
+      "sticker",
+      "humor",
+      "space",
+      "moon"
     ],
     "note": "",
     "related": [
-      "scan26.jpg",
-      "scan217.jpg",
-      "scan41.jpg",
+      "scan43.jpg",
+      "scan41.webp",
+      "scan45.jpg",
       "scan51.jpg",
-      "scan45.jpg"
+      "scan170.jpg"
     ]
   },
   "scan45.jpg": {
@@ -1076,19 +1137,20 @@ const archive = {
     "location": "Three Oaks, MI",
     "source": "Journeyman Distillery",
     "tags": [
-      "travel",
-      "distillery",
       "michigan",
+      "travel",
+      "patch",
+      "sticker",
       "souvenir",
-      "craft",
-      "place"
+      "distillery"
     ],
     "note": "",
     "related": [
-      "scan44.jpg",
-      "scan46.jpg",
+      "scan1.jpg",
+      "scan105.jpg",
+      "scan112.jpg",
       "scan145.jpg",
-      "scan105.jpg"
+      "scan216.jpg"
     ]
   },
   "scan46.jpg": {
@@ -1101,19 +1163,20 @@ const archive = {
     "location": "Joshua Tree, CA",
     "source": "The Station",
     "tags": [
-      "joshua tree",
-      "road trip",
-      "caution",
-      "desert",
+      "travel",
+      "patch",
+      "sticker",
       "humor",
-      "movement"
+      "joshua tree",
+      "road trip"
     ],
     "note": "",
     "related": [
-      "scan49.jpg",
-      "scan50.jpg",
+      "scan1.jpg",
       "scan45.jpg",
-      "scan1.jpg"
+      "scan40.webp",
+      "scan41.webp",
+      "scan42.jpg"
     ]
   },
   "scan47.jpg": {
@@ -1126,19 +1189,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "illustration",
+      "handmade",
       "intimacy",
       "reflection",
       "queer",
-      "romance",
-      "mirror",
-      "connection"
+      "romance"
     ],
     "note": "",
     "related": [
+      "scan146.jpg",
+      "scan170.jpg",
+      "scan78.jpg",
       "scan214.jpg",
-      "scan62.jpg",
-      "scan123.jpg",
-      "scan22.jpg"
+      "scan64.jpg"
     ]
   },
   "scan48.jpg": {
@@ -1151,19 +1215,20 @@ const archive = {
     "location": "",
     "source": "Ford",
     "tags": [
+      "handmade",
+      "advertisement",
       "automobile",
       "vintage",
       "luxury",
-      "americana",
-      "design",
-      "aspiration"
+      "americana"
     ],
     "note": "my favorite thing about this is the sliver of the man's head in the car door",
     "related": [
-      "scan17.jpg",
       "scan31.jpg",
-      "scan62.jpg",
-      "scan87.jpg"
+      "scan168.webp",
+      "scan200.jpg",
+      "scan202.jpg",
+      "scan82.jpg"
     ]
   },
   "scan49.jpg": {
@@ -1176,19 +1241,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "typography",
+      "collage",
+      "handmade",
       "accident",
       "landscape",
-      "disaster",
-      "scale",
-      "spectacle",
-      "fragility"
+      "disaster"
     ],
     "note": "thelma and louise type shit",
     "related": [
-      "scan211.jpg",
-      "scan46.jpg",
-      "scan50.jpg",
-      "scan31.jpg"
+      "scan15.jpg",
+      "scan17.jpg",
+      "scan203.jpg",
+      "scan200.jpg",
+      "scan202.jpg"
     ]
   },
   "scan50.jpg": {
@@ -1201,19 +1267,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "creatures",
+      "handmade",
+      "comic clipping",
       "dog",
-      "journey",
-      "landscape",
-      "fable",
-      "simplicity",
-      "wandering"
+      "journey"
     ],
     "note": "",
     "related": [
-      "scan46.jpg",
-      "scan49.jpg",
       "scan51.jpg",
-      "scan204.jpg"
+      "scan218.jpg",
+      "scan36.jpg",
+      "scan49.jpg",
+      "scan56.jpg"
     ]
   },
   "scan51.jpg": {
@@ -1226,20 +1293,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "travel",
+      "space",
       "flight",
       "falling",
-      "sky",
-      "scale",
-      "surreal",
-      "motion"
+      "sky"
     ],
     "note": "this image has faded with time, but i still love it",
     "related": [
-      "scan205.jpg",
-      "scan54.jpg",
-      "scan50.jpg",
       "scan203.jpg",
-      "scan44.jpg"
+      "scan205.webp",
+      "scan44.jpg",
+      "scan50.jpg",
+      "scan26.jpg"
     ]
   },
   "scan52.jpg": {
@@ -1252,19 +1319,20 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
+      "the new yorker",
+      "cartoon",
+      "feelings",
       "humor",
       "anxiety",
-      "diy",
-      "absurdity",
-      "cartoon",
-      "found image"
+      "diy"
     ],
     "note": "my favorite comic",
     "related": [
-      "scan42.jpg",
-      "scan118.jpg",
       "scan156.jpg",
-      "scan159.jpg"
+      "scan27.jpg",
+      "scan119.jpg",
+      "scan42.jpg",
+      "scan118.jpg"
     ]
   },
   "scan53.jpg": {
@@ -1277,19 +1345,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
+      "performance",
       "dance",
       "ballet",
-      "theater",
-      "rehearsal",
-      "swan",
-      "vintage"
+      "theatre",
+      "rehearsal"
     ],
     "note": "",
     "related": [
-      "scan54.jpg",
-      "scan55.jpg",
+      "scan104.jpg",
+      "scan62.jpg",
       "scan72.jpg",
-      "scan62.jpg"
+      "scan54.jpg",
+      "scan111.jpg"
     ]
   },
   "scan54.jpg": {
@@ -1302,19 +1371,20 @@ const archive = {
     "location": "Berlin, DE",
     "source": "C/O Berlin",
     "tags": [
+      "c/o berlin",
+      "berlin",
+      "politics",
+      "photograph",
       "community",
-      "flood",
-      "surreal",
-      "everyday life",
-      "friendship",
-      "resilience"
+      "flood"
     ],
     "note": "",
     "related": [
-      "scan51.jpg",
-      "scan55.jpg",
-      "scan53.jpg",
-      "scan203.jpg"
+      "scan12.jpg",
+      "scan115.jpg",
+      "scan152.webp",
+      "scan203.jpg",
+      "scan106.jpg"
     ]
   },
   "scan55.jpg": {
@@ -1327,19 +1397,20 @@ const archive = {
     "location": "",
     "source": "AAA24 Subscription",
     "tags": [
+      "food",
+      "photograph",
       "cake",
       "celebration",
       "chaos",
-      "mess",
-      "color",
-      "performance"
+      "mess"
     ],
     "note": "",
     "related": [
       "scan54.jpg",
-      "scan60.jpg",
-      "scan53.jpg",
-      "scan72.jpg"
+      "scan122.jpg",
+      "scan58.jpg",
+      "scan10.jpg",
+      "scan11.jpg"
     ]
   },
   "scan56.jpg": {
@@ -1352,19 +1423,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "tiger",
-      "love",
-      "mountains",
+      "drawing",
+      "creatures",
+      "feelings",
       "humor",
-      "spirituality",
-      "animals"
+      "handmade",
+      "tiger"
     ],
     "note": "",
     "related": [
+      "scan128.jpg",
       "scan64.jpg",
-      "scan75.jpg",
-      "scan32.jpg",
-      "scan122.jpg"
+      "scan138.jpg",
+      "scan218.jpg",
+      "scan19.webp"
     ]
   },
   "scan57.jpg": {
@@ -1378,18 +1450,19 @@ const archive = {
     "source": "Shakespeare and Company",
     "tags": [
       "poetry",
-      "emily dickinson",
+      "feelings",
       "paris",
-      "kindness",
-      "books",
-      "typewriter"
+      "typed poem",
+      "literature",
+      "emily dickinson"
     ],
     "note": "",
     "related": [
-      "scan3.jpg",
-      "scan63.jpg",
       "scan61.jpg",
-      "scan84.jpg"
+      "scan63.jpg",
+      "scan3.jpg",
+      "scan132.jpg",
+      "scan19.webp"
     ]
   },
   "scan58.jpg": {
@@ -1403,18 +1476,19 @@ const archive = {
     "source": "",
     "tags": [
       "architecture",
+      "photograph",
       "city",
       "modernism",
       "skyscraper",
-      "urban",
-      "geometry"
+      "urban"
     ],
     "note": "",
     "related": [
-      "scan31.jpg",
+      "scan215.jpg",
+      "scan122.jpg",
+      "scan54.jpg",
       "scan200.jpg",
-      "scan202.jpg",
-      "scan215.jpg"
+      "scan202.jpg"
     ]
   },
   "scan59.jpg": {
@@ -1427,19 +1501,20 @@ const archive = {
     "location": "Durham, England",
     "source": "",
     "tags": [
-      "cathedral",
-      "england",
-      "architecture",
-      "history",
       "travel",
-      "gothic"
+      "architecture",
+      "postcard",
+      "england",
+      "cathedral",
+      "history"
     ],
     "note": "",
     "related": [
-      "scan89.jpg",
-      "scan166.jpg",
-      "scan108.jpg",
-      "scan102.jpg"
+      "scan114.jpg",
+      "scan120.jpg",
+      "scan215.jpg",
+      "scan200.jpg",
+      "scan202.jpg"
     ]
   },
   "scan60.jpg": {
@@ -1452,19 +1527,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "handmade",
       "eyes",
       "surreal",
       "psychedelic",
       "observation",
-      "dreamlike",
-      "abstract"
+      "dreamlike"
     ],
     "note": "my favorite body part: eyes",
     "related": [
       "scan103.jpg",
       "scan113.jpg",
-      "scan55.jpg",
-      "scan201.jpg"
+      "scan62.jpg",
+      "scan198.jpg",
+      "scan83.jpg"
     ]
   },
   "scan61.jpg": {
@@ -1477,19 +1553,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Will Kelley",
     "tags": [
-      "poetry",
-      "artist book",
-      "typed text",
       "nashville",
-      "effervescence",
-      "reflection"
+      "poetry",
+      "typed poem",
+      "literature",
+      "artist book",
+      "typed text"
     ],
     "note": "",
     "related": [
-      "scan63.jpg",
       "scan57.jpg",
+      "scan80.jpg",
+      "scan84.jpg",
       "scan79.jpg",
-      "scan84.jpg"
+      "scan63.jpg"
     ]
   },
   "scan62.jpg": {
@@ -1502,19 +1579,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "collage",
       "fashion",
       "feminine gaze",
       "beauty",
       "advertising",
-      "observation",
-      "vintage"
+      "observation"
     ],
     "note": "",
     "related": [
-      "scan47.jpg",
+      "scan4.jpg",
       "scan119.jpg",
-      "scan48.jpg",
-      "scan53.jpg"
+      "scan53.jpg",
+      "scan47.jpg",
+      "scan35.jpg"
     ]
   },
   "scan63.jpg": {
@@ -1527,19 +1605,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "poetry",
+      "quotation",
+      "literature",
       "thoreau",
       "awakening",
-      "mindfulness",
-      "quotation",
-      "transcendentalism",
-      "reflection"
+      "mindfulness"
     ],
     "note": "",
     "related": [
-      "scan61.jpg",
       "scan57.jpg",
+      "scan61.jpg",
       "scan79.jpg",
-      "scan80.jpg"
+      "scan80.jpg",
+      "scan84.jpg"
     ]
   },
   "scan64.jpg": {
@@ -1552,19 +1631,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "crack in the Fido brick wall",
     "tags": [
-      "cow",
-      "humor",
+      "nashville",
       "poetry",
-      "handmade",
-      "folk art",
-      "absurdity"
+      "travel",
+      "correspondence",
+      "drawing",
+      "creatures"
     ],
     "note": "from my first trip to Nashville",
     "related": [
+      "scan129.webp",
       "scan56.jpg",
-      "scan75.jpg",
-      "scan214.jpg",
-      "scan133.jpg"
+      "scan128.jpg",
+      "scan76.jpg",
+      "scan75.jpg"
     ]
   },
   "scan65.jpg": {
@@ -1577,18 +1657,20 @@ const archive = {
     "location": "Memphis, TN",
     "source": "Peabody Hotel",
     "tags": [
-      "ducks",
       "memphis",
       "souvenir",
+      "napkin",
+      "ducks",
       "southern history",
       "hotel"
     ],
     "note": "",
     "related": [
       "scan11.jpg",
-      "scan77.jpg",
+      "scan216.jpg",
       "scan78.jpg",
-      "scan147.jpg"
+      "scan9.jpg",
+      "scan181.jpg"
     ]
   },
   "scan66.jpg": {
@@ -1601,19 +1683,20 @@ const archive = {
     "location": "Detroit, MI",
     "source": "Comerica Park",
     "tags": [
-      "detroit tigers",
-      "baseball",
+      "detroit",
+      "ticket",
       "comerica park",
       "sports",
-      "memorabilia",
-      "detroit"
+      "detroit tigers",
+      "baseball"
     ],
     "note": "when the Tigers were good",
     "related": [
       "scan69.jpg",
+      "scan68.webp",
       "scan71.jpg",
-      "scan68.jpg",
-      "scan112.jpg"
+      "scan120.jpg",
+      "scan145.jpg"
     ]
   },
   "scan67.jpg": {
@@ -1626,19 +1709,19 @@ const archive = {
     "location": "Barcelona, Spain / New York, NY",
     "source": "Josep Tarradellas Barcelona-El Prat Airport",
     "tags": [
-      "air travel",
+      "travel",
+      "ticket",
       "barcelona",
+      "air travel",
       "new york",
-      "journey",
-      "transit",
-      "movement"
+      "journey"
     ],
     "note": "",
     "related": [
-      "scan68.jpg",
-      "scan137.jpg",
-      "scan10.jpg",
-      "scan125.jpg",
+      "scan136.jpg",
+      "scan135.jpg",
+      "scan134.jpg",
+      "scan68.webp",
       "scan2.jpg"
     ]
   },
@@ -1654,17 +1737,18 @@ const archive = {
     "tags": [
       "detroit",
       "baltimore",
-      "air travel",
-      "homecoming",
-      "mobility",
-      "personal archive"
+      "travel",
+      "ticket",
+      "memory",
+      "washington dc"
     ],
     "note": "",
     "related": [
-      "scan67.jpg",
       "scan2.jpg",
-      "scan69.jpg",
-      "scan66.jpg"
+      "scan120.jpg",
+      "scan66.jpg",
+      "scan137.jpg",
+      "scan213.jpg"
     ]
   },
   "scan69.jpg": {
@@ -1677,19 +1761,20 @@ const archive = {
     "location": "Detroit, MI",
     "source": "Comerica Park",
     "tags": [
-      "baseball",
       "detroit",
-      "high school sports",
+      "ticket",
       "comerica park",
-      "memorabilia",
-      "youth"
+      "sports",
+      "baseball",
+      "high school sports"
     ],
     "note": "when I stanned the high school baseball team",
     "related": [
       "scan66.jpg",
-      "scan68.jpg",
+      "scan68.webp",
       "scan71.jpg",
-      "scan151.jpg"
+      "scan120.jpg",
+      "scan145.jpg"
     ]
   },
   "scan70.jpg": {
@@ -1702,19 +1787,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Grimey's",
     "tags": [
-      "live music",
       "nashville",
-      "concert",
-      "basement east",
-      "budos band",
-      "nightlife"
+      "music",
+      "ticket",
+      "grimeys",
+      "live music",
+      "concert"
     ],
     "note": "won this ticket from a Grimey's raffle",
     "related": [
-      "scan206.jpg",
+      "scan164.jpg",
       "scan121.jpg",
-      "scan25.jpg",
-      "scan37.jpg"
+      "scan193.jpg",
+      "scan167.jpg",
+      "scan43.jpg"
     ]
   },
   "scan71.jpg": {
@@ -1727,18 +1813,20 @@ const archive = {
     "location": "Miami, FL",
     "source": "Marlins Park",
     "tags": [
+      "ticket",
+      "miami",
+      "sports",
       "baseball",
       "miami marlins",
-      "cincinnati reds",
-      "sports",
-      "memorabilia"
+      "cincinnati reds"
     ],
     "note": "from the 2 months I lived in Miami",
     "related": [
       "scan66.jpg",
       "scan69.jpg",
-      "scan27.jpg",
-      "scan13.jpg"
+      "scan13.jpg",
+      "scan155.jpg",
+      "scan72.jpg"
     ]
   },
   "scan72.jpg": {
@@ -1751,18 +1839,20 @@ const archive = {
     "location": "Stratford, ON",
     "source": "Stratford Festival",
     "tags": [
-      "theater",
+      "travel",
+      "ticket",
+      "theatre",
       "shakespeare",
       "macbeth",
-      "performance",
-      "literature"
+      "performance"
     ],
     "note": "APLit bus trip",
     "related": [
-      "scan3.jpg",
-      "scan131.jpg",
       "scan53.jpg",
-      "scan55.jpg"
+      "scan131.jpg",
+      "scan134.jpg",
+      "scan135.jpg",
+      "scan136.jpg"
     ]
   },
   "scan73.jpg": {
@@ -1775,19 +1865,20 @@ const archive = {
     "location": "Denver, CO",
     "source": "Landmark Mayan Theater",
     "tags": [
-      "cinema",
-      "movie ticket",
-      "landmark theatres",
       "film",
+      "travel",
+      "ticket",
+      "denver",
+      "landmark theatres",
       "cultural ephemera"
     ],
     "note": "",
     "related": [
+      "scan175.jpg",
       "scan38.jpg",
       "scan171.jpg",
       "scan176.jpg",
-      "scan175.jpg",
-      "scan98.jpg"
+      "scan183.jpg"
     ]
   },
   "scan74.jpg": {
@@ -1800,19 +1891,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Frist Art Museum",
     "tags": [
-      "watercolor",
-      "abstract",
-      "color",
+      "nashville",
       "handmade",
+      "frist",
       "painting",
-      "play"
+      "watercolor",
+      "abstract"
     ],
     "note": "",
     "related": [
       "scan90.jpg",
-      "scan103.jpg",
-      "scan81.jpg",
-      "scan86.jpg"
+      "scan106.jpg",
+      "scan75.jpg",
+      "scan86.jpg",
+      "scan81.jpg"
     ]
   },
   "scan75.jpg": {
@@ -1825,19 +1917,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Frist Art Museum, Arden",
     "tags": [
-      "hearts",
-      "love",
-      "pattern",
+      "nashville",
+      "feelings",
       "handmade",
-      "folk art",
-      "playful"
+      "frist",
+      "mixed media",
+      "hearts"
     ],
     "note": "gifted by a child during a shift at the Frist",
     "related": [
-      "scan91.jpg",
+      "scan76.jpg",
+      "scan106.jpg",
+      "scan74.jpg",
       "scan64.jpg",
-      "scan99.jpg",
-      "scan56.jpg"
+      "scan118.jpg"
     ]
   },
   "scan76.jpg": {
@@ -1850,19 +1943,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Frist Art Museum, Arden",
     "tags": [
-      "friendship",
-      "inscription",
-      "handwriting",
-      "note",
-      "personal archive",
-      "affection"
+      "nashville",
+      "correspondence",
+      "feelings",
+      "memory",
+      "frist",
+      "inscription"
     ],
     "note": "part 2 of the little girl at the museum's artwork gift to me",
     "related": [
-      "scan130.jpg",
+      "scan75.jpg",
+      "scan106.jpg",
+      "scan74.jpg",
       "scan198.jpg",
-      "scan124.jpg",
-      "scan98.jpg"
+      "scan210.jpg"
     ]
   },
   "scan77.jpg": {
@@ -1875,19 +1969,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "The Catbird Seat",
     "tags": [
-      "word search",
-      "restaurant",
+      "catbird seat",
+      "nashville",
       "food",
       "puzzle",
+      "word search",
       "leisure"
     ],
     "note": "analogue entertainment",
     "related": [
+      "scan147.jpg",
       "scan78.jpg",
-      "scan65.jpg",
-      "scan11.jpg",
-      "scan86.jpg",
-      "scan81.jpg"
+      "scan146.jpg",
+      "scan148.jpg",
+      "scan155.jpg"
     ]
   },
   "scan78.jpg": {
@@ -1900,19 +1995,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "The Catbird Seat",
     "tags": [
-      "bird",
-      "cat",
-      "mascot",
+      "catbird seat",
+      "nashville",
       "illustration",
-      "design"
+      "creatures",
+      "humor",
+      "bird"
     ],
     "note": "",
     "related": [
-      "scan77.jpg",
       "scan146.jpg",
       "scan147.jpg",
-      "scan39.jpg",
-      "scan65.jpg"
+      "scan77.jpg",
+      "scan170.jpg",
+      "scan39.webp"
     ]
   },
   "scan79.jpg": {
@@ -1925,18 +2021,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "haiku",
-      "reflection",
-      "struggle",
-      "minimalism",
-      "wisdom"
+      "letterpress",
+      "poetry",
+      "typography",
+      "postcard",
+      "handmade",
+      "poetry card"
     ],
     "note": "",
     "related": [
       "scan80.jpg",
       "scan84.jpg",
-      "scan63.jpg",
-      "scan61.jpg"
+      "scan168.webp",
+      "scan82.jpg",
+      "scan83.jpg"
     ]
   },
   "scan80.jpg": {
@@ -1949,19 +2047,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
-      "haiku",
-      "light",
-      "candle",
-      "reflection",
-      "minimalism",
-      "wisdom"
+      "letterpress",
+      "nashville",
+      "poetry",
+      "typography",
+      "postcard",
+      "poetry card"
     ],
     "note": "",
     "related": [
-      "scan79.jpg",
       "scan84.jpg",
-      "scan63.jpg",
-      "scan123.jpg"
+      "scan81.jpg",
+      "scan82.jpg",
+      "scan79.jpg",
+      "scan83.jpg"
     ]
   },
   "scan81.jpg": {
@@ -1974,20 +2073,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
-      "pie",
-      "dessert",
-      "drawing",
-      "food illustration",
-      "ink sketch",
-      "handmade"
+      "letterpress",
+      "nashville",
+      "typography",
+      "food",
+      "illustration",
+      "drawing"
     ],
     "note": "",
     "related": [
       "scan86.jpg",
-      "scan74.jpg",
-      "scan77.jpg",
-      "scan155.jpg",
-      "scan116.jpg"
+      "scan80.jpg",
+      "scan82.jpg",
+      "scan83.jpg",
+      "scan168.webp"
     ]
   },
   "scan82.jpg": {
@@ -2000,19 +2099,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
+      "letterpress",
+      "nashville",
+      "typography",
+      "handmade",
       "geometry",
-      "numbers",
-      "minimalism",
-      "graphic design",
-      "shapes",
-      "color study"
+      "numbers"
     ],
     "note": "can't miss a chance to take an art class from a Hatch Show Print artist",
     "related": [
       "scan83.jpg",
-      "scan85.jpg",
-      "scan202.jpg",
-      "scan90.jpg"
+      "scan86.jpg",
+      "scan80.jpg",
+      "scan168.webp",
+      "scan85.jpg"
     ]
   },
   "scan83.jpg": {
@@ -2025,19 +2125,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
+      "letterpress",
+      "nashville",
+      "typography",
+      "handmade",
       "geometry",
-      "abstract",
-      "minimalism",
-      "shapes",
-      "design",
-      "color study"
+      "abstract"
     ],
     "note": "",
     "related": [
       "scan82.jpg",
-      "scan85.jpg",
-      "scan90.jpg",
-      "scan200.jpg"
+      "scan86.jpg",
+      "scan80.jpg",
+      "scan168.webp",
+      "scan85.jpg"
     ]
   },
   "scan84.jpg": {
@@ -2050,19 +2151,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
-      "haiku",
+      "letterpress",
+      "nashville",
       "poetry",
-      "reflection",
-      "minimalism",
-      "japanese literature",
-      "wisdom"
+      "typography",
+      "postcard",
+      "poetry card"
     ],
     "note": "",
     "related": [
       "scan80.jpg",
+      "scan81.jpg",
+      "scan82.jpg",
       "scan79.jpg",
-      "scan61.jpg",
-      "scan57.jpg"
+      "scan83.jpg"
     ]
   },
   "scan85.jpg": {
@@ -2075,19 +2177,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
-      "symbol",
-      "logo",
+      "letterpress",
+      "nashville",
       "typography",
-      "geometry",
-      "graphic design",
-      "minimalism"
+      "design",
+      "symbol",
+      "logo"
     ],
     "note": "",
     "related": [
-      "scan83.jpg",
+      "scan80.jpg",
+      "scan81.jpg",
       "scan82.jpg",
-      "scan202.jpg",
-      "scan200.jpg"
+      "scan83.jpg",
+      "scan84.jpg"
     ]
   },
   "scan86.jpg": {
@@ -2100,19 +2203,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Turnip Green Creative Reuse",
     "tags": [
-      "pie",
-      "dessert",
-      "food illustration",
+      "letterpress",
+      "nashville",
+      "typography",
+      "food",
       "drawing",
-      "handmade",
-      "ink sketch"
+      "handmade"
     ],
     "note": "",
     "related": [
       "scan81.jpg",
-      "scan77.jpg",
-      "scan116.jpg",
-      "scan74.jpg"
+      "scan82.jpg",
+      "scan83.jpg",
+      "scan168.webp",
+      "scan80.jpg"
     ]
   },
   "scan87.jpg": {
@@ -2125,19 +2229,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "kodachrome",
-      "film photography",
+      "film",
       "slide",
+      "photography",
+      "film photography",
       "analog photography",
-      "vintage",
-      "archive"
+      "vintage"
     ],
     "note": "",
     "related": [
       "scan88.jpg",
       "scan89.jpg",
       "scan201.jpg",
-      "scan48.jpg"
+      "scan104.jpg",
+      "scan183.jpg"
     ]
   },
   "scan88.jpg": {
@@ -2150,11 +2255,11 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "kodachrome",
-      "israel",
-      "travel slide",
-      "cana",
+      "travel",
+      "slide",
       "photography",
+      "israel",
+      "cana",
       "pilgrimage"
     ],
     "note": "",
@@ -2162,6 +2267,7 @@ const archive = {
       "scan89.jpg",
       "scan87.jpg",
       "scan201.jpg",
+      "scan166.jpg",
       "scan114.jpg"
     ]
   },
@@ -2175,19 +2281,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "kodachrome",
+      "travel",
+      "slide",
+      "photography",
       "qumran",
       "archaeology",
-      "travel slide",
-      "history",
-      "photography"
+      "history"
     ],
     "note": "",
     "related": [
       "scan88.jpg",
       "scan87.jpg",
+      "scan201.jpg",
       "scan59.jpg",
-      "scan134.jpg"
+      "scan166.jpg"
     ]
   },
   "scan90.jpg": {
@@ -2200,19 +2307,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Frist Art Museum",
     "tags": [
-      "watercolor",
-      "abstract",
-      "color study",
-      "pastel",
+      "nashville",
+      "handmade",
+      "frist",
       "painting",
-      "handmade"
+      "watercolor",
+      "abstract"
     ],
     "note": "from a slow day at the museum",
     "related": [
       "scan74.jpg",
-      "scan82.jpg",
+      "scan106.jpg",
+      "scan75.jpg",
       "scan83.jpg",
-      "scan91.jpg"
+      "scan82.jpg"
     ]
   },
   "scan91.jpg": {
@@ -2225,20 +2333,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "handmade",
+      "fiber art",
+      "textile",
       "bracelet",
       "friendship bracelet",
-      "weaving",
-      "textile",
-      "fiber art",
-      "craft",
-      "handmade"
+      "weaving"
     ],
     "note": "",
     "related": [
-      "scan75.jpg",
-      "scan99.jpg",
       "scan100.jpg",
-      "scan90.jpg"
+      "scan75.jpg",
+      "scan90.jpg",
+      "scan99.jpg",
+      "scan198.jpg"
     ]
   },
   "scan92.jpg": {
@@ -2251,18 +2359,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Dave & Buster's",
     "tags": [
+      "nashville",
+      "postcard",
+      "trading card",
       "star trek",
       "spock",
-      "collectible",
-      "arcade"
+      "collectible"
     ],
     "note": "",
     "related": [
-      "scan96.jpg",
       "scan9.jpg",
-      "scan126.jpg",
-      "scan104.jpg",
-      "scan132.jpg"
+      "scan96.jpg",
+      "scan127.jpg",
+      "scan167.jpg",
+      "scan80.jpg"
     ]
   },
   "scan93.jpg": {
@@ -2276,16 +2386,18 @@ const archive = {
     "source": "Fischersund",
     "tags": [
       "iceland",
-      "perfume",
-      "handwritten",
-      "travel"
+      "correspondence",
+      "travel",
+      "sensory",
+      "fischersund",
+      "perfume"
     ],
     "note": "",
     "related": [
       "scan125.jpg",
-      "scan102.jpg",
       "scan101.jpg",
-      "scan97.jpg",
+      "scan102.jpg",
+      "scan76.jpg",
       "scan94.jpg"
     ]
   },
@@ -2299,18 +2411,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Nashville Crystal Store",
     "tags": [
-      "crystal",
-      "shattuckite",
-      "metaphysical",
-      "label"
+      "nashville",
+      "postcard",
+      "sensory",
+      "crystal shop",
+      "label",
+      "crystal"
     ],
     "note": "rip",
     "related": [
       "scan95.jpg",
       "scan97.jpg",
-      "scan93.jpg",
+      "scan127.jpg",
       "scan125.jpg",
-      "scan154.jpg"
+      "scan93.jpg"
     ]
   },
   "scan95.jpg": {
@@ -2323,17 +2437,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Nashville Crystal Store",
     "tags": [
-      "crystal",
-      "sugilite",
-      "metaphysical",
-      "label"
+      "nashville",
+      "postcard",
+      "sensory",
+      "crystal shop",
+      "label",
+      "crystal"
     ],
     "note": "",
     "related": [
       "scan94.jpg",
       "scan97.jpg",
-      "scan93.jpg",
-      "scan125.jpg"
+      "scan127.jpg",
+      "scan125.jpg",
+      "scan93.jpg"
     ]
   },
   "scan96.jpg": {
@@ -2346,17 +2463,19 @@ const archive = {
     "location": "",
     "source": "Nate",
     "tags": [
+      "postcard",
+      "trading card",
       "pokemon",
       "arcanine",
-      "trading card",
       "game"
     ],
     "note": "",
     "related": [
-      "scan92.jpg",
       "scan9.jpg",
-      "scan126.jpg",
-      "scan110.jpg"
+      "scan92.jpg",
+      "scan160.jpg",
+      "scan215.jpg",
+      "scan216.jpg"
     ]
   },
   "scan97.jpg": {
@@ -2369,17 +2488,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Nashville Crystal Store",
     "tags": [
-      "crystal",
-      "ametrine",
-      "metaphysical",
-      "label"
+      "nashville",
+      "postcard",
+      "sensory",
+      "crystal shop",
+      "label",
+      "crystal"
     ],
     "note": "",
     "related": [
-      "scan95.jpg",
       "scan94.jpg",
-      "scan93.jpg",
-      "scan125.jpg"
+      "scan95.jpg",
+      "scan127.jpg",
+      "scan125.jpg",
+      "scan93.jpg"
     ]
   },
   "scan98.jpg": {
@@ -2392,17 +2514,19 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "correspondence",
+      "sticker",
       "shopping",
-      "handwritten",
-      "note",
+      "handwriting",
       "scrap"
     ],
     "note": "",
     "related": [
-      "scan130.jpg",
       "scan124.jpg",
+      "scan130.jpg",
+      "scan210.jpg",
       "scan76.jpg",
-      "scan73.jpg"
+      "scan199.jpg"
     ]
   },
   "scan99.jpg": {
@@ -2415,19 +2539,20 @@ const archive = {
     "location": "",
     "source": "ffern",
     "tags": [
+      "illustration",
+      "handmade",
       "folk art",
       "tree",
       "birds",
-      "illustration",
       "fruit"
     ],
     "note": "",
     "related": [
       "scan100.jpg",
-      "scan157.jpg",
-      "scan91.jpg",
+      "scan107.jpg",
+      "scan109.jpg",
       "scan75.jpg",
-      "scan160.jpg"
+      "scan146.jpg"
     ]
   },
   "scan100.jpg": {
@@ -2440,18 +2565,19 @@ const archive = {
     "location": "",
     "source": "ffern",
     "tags": [
+      "illustration",
+      "handmade",
       "botanical",
       "flowers",
       "plants",
-      "nature",
-      "illustration"
+      "nature"
     ],
     "note": "",
     "related": [
       "scan99.jpg",
+      "scan107.jpg",
+      "scan109.jpg",
       "scan146.jpg",
-      "scan157.jpg",
-      "scan91.jpg",
       "scan160.jpg"
     ]
   },
@@ -2465,17 +2591,17 @@ const archive = {
     "location": "Reykjavík, IS",
     "source": "",
     "tags": [
-      "reykjavik",
       "iceland",
-      "map",
-      "travel"
+      "travel",
+      "map"
     ],
     "note": "",
     "related": [
       "scan102.jpg",
       "scan93.jpg",
-      "scan166.jpg",
-      "scan108.jpg"
+      "scan125.jpg",
+      "scan108.jpg",
+      "scan166.jpg"
     ]
   },
   "scan102.jpg": {
@@ -2489,16 +2615,17 @@ const archive = {
     "source": "",
     "tags": [
       "iceland",
+      "travel",
       "map",
-      "road trip",
-      "travel"
+      "road trip"
     ],
     "note": "",
     "related": [
       "scan101.jpg",
       "scan93.jpg",
       "scan125.jpg",
-      "scan59.jpg"
+      "scan46.jpg",
+      "scan108.jpg"
     ]
   },
   "scan103.jpg": {
@@ -2511,6 +2638,7 @@ const archive = {
     "location": "Clarksdale, MS",
     "source": "Stan Street",
     "tags": [
+      "handmade",
       "painting",
       "portrait",
       "art print",
@@ -2518,10 +2646,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan60.jpg",
       "scan74.jpg",
-      "scan140.jpg",
-      "scan129.jpg"
+      "scan60.jpg",
+      "scan129.webp",
+      "scan204.jpg",
+      "scan90.jpg"
     ]
   },
   "scan104.jpg": {
@@ -2536,16 +2665,17 @@ const archive = {
     "tags": [
       "film",
       "music",
+      "collage",
       "performance",
       "a24"
     ],
     "note": "",
     "related": [
-      "scan183.jpg",
       "scan111.jpg",
-      "scan207.jpg",
       "scan4.jpg",
-      "scan92.jpg"
+      "scan207.jpg",
+      "scan15.jpg",
+      "scan183.jpg"
     ]
   },
   "scan105.jpg": {
@@ -2565,10 +2695,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan216.jpg",
       "scan112.jpg",
+      "scan45.jpg",
       "scan145.jpg",
-      "scan45.jpg"
+      "scan120.jpg",
+      "scan1.jpg"
     ]
   },
   "scan106.jpg": {
@@ -2581,17 +2712,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Andie Peach for Frist Art Museum",
     "tags": [
-      "poster",
-      "first friday",
-      "community",
-      "event"
+      "nashville",
+      "typography",
+      "politics",
+      "handmade",
+      "frist",
+      "poster"
     ],
     "note": "",
     "related": [
-      "scan150.jpg",
-      "scan114.jpg",
-      "scan170.jpg",
-      "scan205.jpg"
+      "scan74.jpg",
+      "scan75.jpg",
+      "scan90.jpg",
+      "scan28.jpg",
+      "scan150.jpg"
     ]
   },
   "scan107.jpg": {
@@ -2604,17 +2738,20 @@ const archive = {
     "location": "Asheville, NC",
     "source": "",
     "tags": [
-      "snake",
-      "hand",
+      "asheville",
       "illustration",
-      "black and white"
+      "creatures",
+      "handmade",
+      "snake",
+      "hand"
     ],
     "note": "",
     "related": [
       "scan117.jpg",
+      "scan138.jpg",
+      "scan165.jpg",
       "scan128.jpg",
-      "scan109.jpg",
-      "scan138.jpg"
+      "scan64.jpg"
     ]
   },
   "scan108.jpg": {
@@ -2628,16 +2765,17 @@ const archive = {
     "source": "",
     "tags": [
       "nashville",
-      "tennessee",
-      "print",
-      "travel"
+      "travel",
+      "handmade",
+      "tennessee"
     ],
     "note": "",
     "related": [
-      "scan120.jpg",
-      "scan145.jpg",
-      "scan59.jpg",
-      "scan101.jpg"
+      "scan137.jpg",
+      "scan82.jpg",
+      "scan83.jpg",
+      "scan64.jpg",
+      "scan86.jpg"
     ]
   },
   "scan109.jpg": {
@@ -2650,17 +2788,20 @@ const archive = {
     "location": "Austin, TX",
     "source": "",
     "tags": [
-      "bridge",
-      "sunset",
+      "austin",
+      "travel",
       "illustration",
-      "landscape"
+      "handmade",
+      "bridge",
+      "sunset"
     ],
     "note": "from 22nd birthday trip to Austin, TX",
     "related": [
-      "scan154.jpg",
+      "scan175.jpg",
+      "scan107.jpg",
       "scan113.jpg",
       "scan204.jpg",
-      "scan107.jpg"
+      "scan81.jpg"
     ]
   },
   "scan110.jpg": {
@@ -2673,6 +2814,8 @@ const archive = {
     "location": "Windsor, ON",
     "source": "Lawrence Lavender, Kim Chi",
     "tags": [
+      "typography",
+      "poster",
       "drag",
       "kim chi",
       "signed poster",
@@ -2680,11 +2823,11 @@ const archive = {
     ],
     "note": "my airbnb host in Canada was her representative and gave me this for free",
     "related": [
-      "scan104.jpg",
-      "scan111.jpg",
-      "scan119.jpg",
-      "scan156.jpg",
-      "scan96.jpg"
+      "scan106.jpg",
+      "scan114.jpg",
+      "scan202.jpg",
+      "scan150.jpg",
+      "scan200.jpg"
     ]
   },
   "scan111.jpg": {
@@ -2698,18 +2841,18 @@ const archive = {
     "source": "",
     "tags": [
       "music",
+      "collage",
       "dj",
       "mosh",
-      "magazine",
       "clipping"
     ],
     "note": "and in some way, this was my year",
     "related": [
       "scan104.jpg",
-      "scan7.jpg",
       "scan4.jpg",
-      "scan208.jpg",
-      "scan110.jpg"
+      "scan70.jpg",
+      "scan15.jpg",
+      "scan158.jpg"
     ]
   },
   "scan112.jpg": {
@@ -2723,16 +2866,18 @@ const archive = {
     "source": "Michigan Moustache Hall of Fame",
     "tags": [
       "michigan",
-      "moustache",
+      "humor",
       "certificate",
+      "moustache",
       "novelty"
     ],
     "note": "one of my fav pieces of wall decor",
     "related": [
-      "scan213.jpg",
       "scan105.jpg",
-      "scan66.jpg",
-      "scan145.jpg"
+      "scan45.jpg",
+      "scan145.jpg",
+      "scan1.jpg",
+      "scan215.jpg"
     ]
   },
   "scan113.jpg": {
@@ -2745,17 +2890,19 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "illustration",
+      "handmade",
       "eye",
       "occult",
-      "symbol",
-      "illustration"
+      "symbol"
     ],
     "note": "",
     "related": [
-      "scan217.jpg",
-      "scan60.jpg",
-      "scan154.jpg",
-      "scan109.jpg"
+      "scan109.jpg",
+      "scan100.jpg",
+      "scan107.jpg",
+      "scan205.webp",
+      "scan60.jpg"
     ]
   },
   "scan114.jpg": {
@@ -2768,17 +2915,20 @@ const archive = {
     "location": "",
     "source": "Ryszard Kaja",
     "tags": [
+      "typography",
+      "architecture",
+      "postcard",
       "poland",
       "poster",
-      "factory",
-      "industrial"
+      "factory"
     ],
     "note": "",
     "related": [
-      "scan115.jpg",
-      "scan106.jpg",
-      "scan110.jpg",
-      "scan88.jpg"
+      "scan59.jpg",
+      "scan200.jpg",
+      "scan202.jpg",
+      "scan203.jpg",
+      "scan31.jpg"
     ]
   },
   "scan115.jpg": {
@@ -2791,17 +2941,20 @@ const archive = {
     "location": "Berlin, DE",
     "source": "C/O Berlin",
     "tags": [
-      "german",
-      "text",
-      "minimal",
-      "conceptual"
+      "c/o berlin",
+      "berlin",
+      "poetry",
+      "postcard",
+      "handmade",
+      "card"
     ],
     "note": "",
     "related": [
-      "scan153.jpg",
-      "scan131.jpg",
-      "scan114.jpg",
-      "scan132.jpg"
+      "scan12.jpg",
+      "scan152.webp",
+      "scan54.jpg",
+      "scan132.jpg",
+      "scan153.jpg"
     ]
   },
   "scan116.jpg": {
@@ -2814,17 +2967,20 @@ const archive = {
     "location": "",
     "source": "from someone I met once and never saw again",
     "tags": [
-      "420",
-      "cannabis",
       "drawing",
-      "cartoon"
+      "cartoon",
+      "humor",
+      "handmade",
+      "420",
+      "cannabis"
     ],
     "note": "",
     "related": [
-      "scan118.jpg",
-      "scan81.jpg",
-      "scan86.jpg",
-      "scan129.jpg"
+      "scan129.webp",
+      "scan56.jpg",
+      "scan128.jpg",
+      "scan64.jpg",
+      "scan86.jpg"
     ]
   },
   "scan117.jpg": {
@@ -2837,17 +2993,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "illustration",
+      "creatures",
+      "handmade",
       "crab",
       "knife",
-      "illustration",
       "linocut"
     ],
     "note": "",
     "related": [
-      "scan128.jpg",
       "scan107.jpg",
-      "scan142.jpg",
-      "scan138.jpg"
+      "scan128.jpg",
+      "scan138.jpg",
+      "scan56.jpg",
+      "scan64.jpg"
     ]
   },
   "scan118.jpg": {
@@ -2860,17 +3019,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "someone I met once and never saw again",
     "tags": [
-      "anxiety",
-      "zine",
-      "mental health",
-      "illustration"
+      "nashville",
+      "collage",
+      "illustration",
+      "feelings",
+      "zine page",
+      "anxiety"
     ],
     "note": "",
     "related": [
-      "scan123.jpg",
-      "scan52.jpg",
       "scan30.jpg",
-      "scan116.jpg"
+      "scan19.webp",
+      "scan146.jpg",
+      "scan75.jpg",
+      "scan81.jpg"
     ]
   },
   "scan119.jpg": {
@@ -2883,18 +3045,19 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
-      "new yorker",
+      "the new yorker",
+      "collage",
       "cartoon",
-      "children",
-      "satire"
+      "humor",
+      "children"
     ],
     "note": "",
     "related": [
-      "scan156.jpg",
       "scan24.jpg",
-      "scan214.jpg",
-      "scan62.jpg",
-      "scan110.jpg"
+      "scan156.jpg",
+      "scan27.jpg",
+      "scan22.jpg",
+      "scan23.webp"
     ]
   },
   "scan120.jpg": {
@@ -2908,16 +3071,16 @@ const archive = {
     "source": "",
     "tags": [
       "detroit",
-      "michigan",
-      "postcard",
-      "travel"
+      "travel",
+      "postcard"
     ],
     "note": "",
     "related": [
-      "scan1.jpg",
-      "scan216.jpg",
+      "scan145.jpg",
+      "scan68.webp",
       "scan215.jpg",
-      "scan108.jpg"
+      "scan1.jpg",
+      "scan216.jpg"
     ]
   },
   "scan121.jpg": {
@@ -2930,18 +3093,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Nashville Punk Rock Flea Market",
     "tags": [
-      "punk",
-      "ramones",
+      "nashville",
       "music",
       "flyer",
+      "punk",
+      "ramones",
       "concert"
     ],
     "note": "",
     "related": [
-      "scan206.jpg",
-      "scan208.jpg",
-      "scan7.jpg",
-      "scan70.jpg"
+      "scan150.jpg",
+      "scan70.jpg",
+      "scan164.jpg",
+      "scan167.jpg",
+      "scan43.jpg"
     ]
   },
   "scan122.jpg": {
@@ -2954,15 +3119,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "creatures",
+      "photograph",
       "lizard",
       "reptile",
       "drink"
     ],
     "note": "vibe",
     "related": [
-      "scan29.jpg",
-      "scan32.jpg",
-      "scan40.jpg",
+      "scan54.jpg",
+      "scan55.jpg",
+      "scan58.jpg",
+      "scan212.webp",
       "scan56.jpg"
     ]
   },
@@ -2976,17 +3144,20 @@ const archive = {
     "location": "",
     "source": "Cierra Rauch",
     "tags": [
-      "rage",
-      "writing",
+      "poetry",
+      "correspondence",
+      "feelings",
       "artist statement",
-      "reflection"
+      "writing",
+      "rage"
     ],
     "note": "",
     "related": [
-      "scan118.jpg",
-      "scan30.jpg",
-      "scan47.jpg",
-      "scan80.jpg"
+      "scan132.jpg",
+      "scan19.webp",
+      "scan131.jpg",
+      "scan64.jpg",
+      "scan76.jpg"
     ]
   },
   "scan124.jpg": {
@@ -2999,18 +3170,18 @@ const archive = {
     "location": "",
     "source": "Camille (Cakolyre)",
     "tags": [
-      "letter",
+      "correspondence",
       "artist",
       "thank you",
-      "handwritten"
+      "handwriting"
     ],
     "note": "",
     "related": [
-      "scan210.jpg",
       "scan130.jpg",
-      "scan76.jpg",
+      "scan210.jpg",
       "scan98.jpg",
-      "scan198.jpg"
+      "scan76.jpg",
+      "scan199.jpg"
     ]
   },
   "scan125.jpg": {
@@ -3023,18 +3194,20 @@ const archive = {
     "location": "Reykjavík, IS",
     "source": "Fischersund",
     "tags": [
-      "perfume",
-      "fragrance",
-      "icelandic",
-      "scent"
+      "iceland",
+      "postcard",
+      "sensory",
+      "fischersund",
+      "fragrance card",
+      "perfume"
     ],
     "note": "rhubarb, bergamot, asphalt",
     "related": [
       "scan93.jpg",
-      "scan67.jpg",
       "scan102.jpg",
-      "scan97.jpg",
-      "scan94.jpg"
+      "scan101.jpg",
+      "scan94.jpg",
+      "scan95.jpg"
     ]
   },
   "scan126.jpg": {
@@ -3047,18 +3220,18 @@ const archive = {
     "location": "",
     "source": "Squishmallows",
     "tags": [
+      "tag",
       "eden",
       "squishmallows",
-      "toy",
-      "tag"
+      "toy"
     ],
     "note": "my final form",
     "related": [
-      "scan212.jpg",
+      "scan154.jpg",
+      "scan212.webp",
       "scan9.jpg",
       "scan96.jpg",
-      "scan154.jpg",
-      "scan92.jpg"
+      "scan1.jpg"
     ]
   },
   "scan127.jpg": {
@@ -3071,18 +3244,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "3rd & Lindsley, Liz Cooper",
     "tags": [
-      "scratch off",
-      "novelty",
+      "nashville",
+      "ticket",
+      "postcard",
       "humor",
-      "prize"
+      "novelty card",
+      "scratch off"
     ],
     "note": "",
     "related": [
-      "scan211.jpg",
-      "scan142.jpg",
-      "scan129.jpg",
-      "scan139.jpg",
-      "scan5.jpg"
+      "scan129.webp",
+      "scan13.jpg",
+      "scan137.jpg",
+      "scan181.jpg",
+      "scan64.jpg"
     ]
   },
   "scan128.jpg": {
@@ -3095,18 +3270,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "drawing",
+      "creatures",
+      "handmade",
       "frog",
       "knife",
-      "doodle",
-      "drawing"
+      "linocut"
     ],
     "note": "one of my earlier linocut prints",
     "related": [
-      "scan138.jpg",
+      "scan56.jpg",
       "scan117.jpg",
+      "scan138.jpg",
       "scan218.jpg",
-      "scan107.jpg",
-      "scan212.jpg"
+      "scan107.jpg"
     ]
   },
   "scan129.webp": {
@@ -3119,17 +3296,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Osa Coffee Roasters",
     "tags": [
-      "doodle",
-      "napkin",
-      "ivo",
-      "cartoon"
+      "nashville",
+      "food",
+      "drawing",
+      "cartoon",
+      "humor",
+      "napkin"
     ],
     "note": "",
     "related": [
-      "scan127.jpg",
+      "scan64.jpg",
       "scan116.jpg",
-      "scan138.jpg",
-      "scan103.jpg"
+      "scan146.jpg",
+      "scan81.jpg",
+      "scan86.jpg"
     ]
   },
   "scan130.jpg": {
@@ -3142,17 +3322,19 @@ const archive = {
     "location": "",
     "source": "Mom",
     "tags": [
+      "correspondence",
+      "mom",
       "love",
-      "note",
-      "handwritten",
+      "handwriting",
       "xoxo"
     ],
     "note": "",
     "related": [
       "scan124.jpg",
-      "scan76.jpg",
+      "scan210.jpg",
       "scan98.jpg",
-      "scan210.jpg"
+      "scan76.jpg",
+      "scan198.jpg"
     ]
   },
   "scan131.jpg": {
@@ -3165,17 +3347,20 @@ const archive = {
     "location": "",
     "source": "Frances Hodgson Burnett",
     "tags": [
-      "german",
+      "poetry",
+      "postcard",
       "poem",
-      "sunshine",
-      "inspiration"
+      "writing",
+      "german",
+      "sunshine"
     ],
     "note": "The sun is shining, the sun is shining, that's the magic, the flowers are growing, the roots are stretching, that's the magic. To live and be strong, that's the magic, it's in me, it's in all of us.",
     "related": [
-      "scan132.jpg",
       "scan133.jpg",
-      "scan72.jpg",
-      "scan115.jpg"
+      "scan132.jpg",
+      "scan3.jpg",
+      "scan79.jpg",
+      "scan80.jpg"
     ]
   },
   "scan132.jpg": {
@@ -3188,17 +3373,20 @@ const archive = {
     "location": "Berlin, DE",
     "source": "Emanuel Geibel",
     "tags": [
-      "german",
+      "berlin",
+      "poetry",
+      "postcard",
+      "feelings",
       "poem",
-      "childhood",
-      "wonder"
+      "writing"
     ],
     "note": "It is sweet to soak up the world's charm, when heart and mind are in bloom, but sweeter still, to see the world fresh once more through your child's eyes.",
     "related": [
       "scan131.jpg",
       "scan133.jpg",
       "scan115.jpg",
-      "scan92.jpg"
+      "scan57.jpg",
+      "scan80.jpg"
     ]
   },
   "scan133.jpg": {
@@ -3211,17 +3399,20 @@ const archive = {
     "location": "",
     "source": "Gerhard Tersteegen",
     "tags": [
-      "german",
+      "poetry",
       "poem",
+      "writing",
+      "german",
       "flowers",
       "nature"
     ],
     "note": "Like the delicate flowers willingly unfold and silently face the sun, let me so still and joyfully grasp your rays and let you work your magic.",
     "related": [
-      "scan132.jpg",
       "scan131.jpg",
-      "scan153.jpg",
-      "scan64.jpg"
+      "scan132.jpg",
+      "scan3.jpg",
+      "scan57.jpg",
+      "scan61.jpg"
     ]
   },
   "scan134.jpg": {
@@ -3234,17 +3425,20 @@ const archive = {
     "location": "Beech Mountain, NC",
     "source": "Beech Mountain Resort",
     "tags": [
+      "travel",
+      "ticket",
+      "north carolina",
       "skiing",
       "resort",
-      "ticket",
       "topography"
     ],
     "note": "",
     "related": [
       "scan135.jpg",
       "scan136.jpg",
-      "scan175.jpg",
-      "scan89.jpg"
+      "scan137.jpg",
+      "scan67.jpg",
+      "scan68.webp"
     ]
   },
   "scan135.jpg": {
@@ -3257,17 +3451,20 @@ const archive = {
     "location": "Valencia, ES",
     "source": "Oceanogràfic Valencia",
     "tags": [
+      "spain",
+      "travel",
+      "ticket",
       "valencia",
       "aquarium",
-      "photo",
-      "ticket"
+      "photo"
     ],
     "note": "",
     "related": [
-      "scan134.jpg",
       "scan136.jpg",
+      "scan67.jpg",
+      "scan134.jpg",
       "scan137.jpg",
-      "scan175.jpg"
+      "scan68.webp"
     ]
   },
   "scan136.jpg": {
@@ -3281,17 +3478,19 @@ const archive = {
     "source": "FGC Montserrat",
     "tags": [
       "spain",
+      "travel",
+      "ticket",
+      "barcelona",
       "montserrat",
-      "train",
-      "funicular"
+      "train"
     ],
     "note": "",
     "related": [
+      "scan67.jpg",
       "scan135.jpg",
-      "scan137.jpg",
-      "scan170.jpg",
       "scan134.jpg",
-      "scan2.jpg"
+      "scan137.jpg",
+      "scan68.webp"
     ]
   },
   "scan137.jpg": {
@@ -3304,17 +3503,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Country Music Hall of Fame",
     "tags": [
+      "letterpress",
       "nashville",
-      "museum",
-      "ticket",
-      "music"
+      "music",
+      "travel",
+      "typography",
+      "ticket"
     ],
     "note": "",
     "related": [
-      "scan168.jpg",
-      "scan136.jpg",
-      "scan67.jpg",
-      "scan135.jpg"
+      "scan168.webp",
+      "scan183.jpg",
+      "scan193.jpg",
+      "scan80.jpg",
+      "scan84.jpg"
     ]
   },
   "scan138.jpg": {
@@ -3327,17 +3529,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "drawing",
+      "illustration",
+      "creatures",
+      "handmade",
       "frog",
-      "party",
-      "doodle",
-      "illustration"
+      "party"
     ],
     "note": "",
     "related": [
-      "scan128.jpg",
-      "scan117.jpg",
       "scan107.jpg",
-      "scan129.jpg"
+      "scan117.jpg",
+      "scan128.jpg",
+      "scan218.jpg",
+      "scan56.jpg"
     ]
   },
   "scan139.jpg": {
@@ -3350,16 +3555,19 @@ const archive = {
     "location": "",
     "source": "Aleksey's Market",
     "tags": [
+      "food",
+      "alekseys market",
+      "packaging",
       "candy",
       "wrapper",
-      "ukraine",
-      "packaging"
+      "ukraine"
     ],
     "note": "melts in your mouth",
     "related": [
       "scan142.jpg",
       "scan141.jpg",
-      "scan5.jpg",
+      "scan10.jpg",
+      "scan11.jpg",
       "scan127.jpg"
     ]
   },
@@ -3380,10 +3588,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan212.jpg",
-      "scan165.jpg",
       "scan12.jpg",
-      "scan103.jpg"
+      "scan165.jpg",
+      "scan153.jpg",
+      "scan34.jpg",
+      "scan35.jpg"
     ]
   },
   "scan141.jpg": {
@@ -3396,18 +3605,20 @@ const archive = {
     "location": "",
     "source": "Bazooka Joe",
     "tags": [
+      "food",
+      "cartoon",
+      "bazooka joe",
+      "candy wrapper",
       "gum",
-      "comic",
-      "fortune",
-      "nostalgia"
+      "fortune"
     ],
     "note": "",
     "related": [
       "scan5.jpg",
       "scan139.jpg",
       "scan142.jpg",
-      "scan127.jpg",
-      "scan151.jpg"
+      "scan129.webp",
+      "scan27.jpg"
     ]
   },
   "scan142.jpg": {
@@ -3420,18 +3631,20 @@ const archive = {
     "location": "",
     "source": "Aleksey's Market",
     "tags": [
+      "food",
+      "alekseys market",
+      "packaging",
       "russia",
       "candy",
-      "wrapper",
-      "crayfish"
+      "wrapper"
     ],
     "note": "roughly translates to lobster's necks?",
     "related": [
       "scan139.jpg",
-      "scan199.jpg",
-      "scan117.jpg",
-      "scan127.jpg",
-      "scan5.jpg"
+      "scan141.jpg",
+      "scan10.jpg",
+      "scan11.jpg",
+      "scan127.jpg"
     ]
   },
   "scan143.jpg": {
@@ -3444,18 +3657,18 @@ const archive = {
     "location": "Berlin, DE",
     "source": "CODA Berlin",
     "tags": [
-      "restaurant",
-      "tasting menu",
       "berlin",
-      "fine dining"
+      "food",
+      "menu",
+      "coda"
     ],
     "note": "most insane meal of my life",
     "related": [
       "scan144.jpg",
-      "scan155.jpg",
-      "scan148.jpg",
       "scan147.jpg",
-      "scan11.jpg"
+      "scan148.jpg",
+      "scan155.jpg",
+      "scan162.jpg"
     ]
   },
   "scan144.jpg": {
@@ -3468,17 +3681,19 @@ const archive = {
     "location": "Berlin, DE",
     "source": "CODA Berlin",
     "tags": [
-      "restaurant",
-      "tasting menu",
-      "dessert",
-      "berlin"
+      "berlin",
+      "food",
+      "menu",
+      "coda",
+      "dessert"
     ],
     "note": "fuckin nuts",
     "related": [
       "scan143.jpg",
+      "scan148.jpg",
+      "scan147.jpg",
       "scan155.jpg",
-      "scan161.jpg",
-      "scan148.jpg"
+      "scan162.jpg"
     ]
   },
   "scan145.jpg": {
@@ -3491,17 +3706,19 @@ const archive = {
     "location": "Detroit, MI",
     "source": "",
     "tags": [
-      "michigan",
-      "vintage",
+      "detroit",
       "travel",
+      "postcard",
+      "vintage",
       "pennant"
     ],
     "note": "",
     "related": [
-      "scan108.jpg",
-      "scan45.jpg",
-      "scan105.jpg",
-      "scan112.jpg"
+      "scan120.jpg",
+      "scan216.jpg",
+      "scan215.jpg",
+      "scan68.webp",
+      "scan66.jpg"
     ]
   },
   "scan146.jpg": {
@@ -3514,17 +3731,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "The Catbird Seat",
     "tags": [
-      "animals",
-      "bar",
+      "catbird seat",
+      "nashville",
+      "illustration",
       "cartoon",
-      "party"
+      "humor",
+      "animals"
     ],
     "note": "keepsake from my 2026 birthday dinner",
     "related": [
       "scan78.jpg",
-      "scan100.jpg",
+      "scan147.jpg",
+      "scan77.jpg",
       "scan218.jpg",
-      "scan160.jpg"
+      "scan56.jpg"
     ]
   },
   "scan147.jpg": {
@@ -3537,18 +3757,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "The Catbird Seat",
     "tags": [
+      "catbird seat",
       "nashville",
-      "tasting menu",
-      "fine dining",
+      "food",
+      "menu",
       "signed"
     ],
     "note": "one of the best meal experiences ever",
     "related": [
-      "scan148.jpg",
-      "scan155.jpg",
+      "scan77.jpg",
       "scan78.jpg",
-      "scan143.jpg",
-      "scan65.jpg"
+      "scan146.jpg",
+      "scan148.jpg",
+      "scan155.jpg"
     ]
   },
   "scan148.jpg": {
@@ -3561,17 +3782,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "june",
     "tags": [
-      "birthday",
-      "restaurant",
+      "nashville",
+      "food",
       "menu",
-      "nashville"
+      "june",
+      "birthday"
     ],
     "note": "rip june",
     "related": [
       "scan147.jpg",
       "scan155.jpg",
-      "scan143.jpg",
-      "scan144.jpg"
+      "scan144.jpg",
+      "scan162.jpg",
+      "scan77.jpg"
     ]
   },
   "scan149.jpg": {
@@ -3592,9 +3815,10 @@ const archive = {
     "note": "",
     "related": [
       "scan159.jpg",
-      "scan36.jpg",
       "scan35.jpg",
-      "scan6.jpg"
+      "scan36.jpg",
+      "scan6.jpg",
+      "scan158.jpg"
     ]
   },
   "scan150.jpg": {
@@ -3607,17 +3831,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Nashville Punk Rock Flea Market",
     "tags": [
-      "poster",
-      "punk",
       "nashville",
-      "event"
+      "music",
+      "typography",
+      "flyer",
+      "poster",
+      "punk"
     ],
     "note": "",
     "related": [
+      "scan121.jpg",
       "scan106.jpg",
-      "scan151.jpg",
-      "scan167.jpg",
-      "scan162.jpg"
+      "scan137.jpg",
+      "scan168.webp",
+      "scan80.jpg"
     ]
   },
   "scan151.jpg": {
@@ -3630,17 +3857,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Rock 'n' Roll Running Series",
     "tags": [
+      "nashville",
+      "race bib",
       "running",
       "half marathon",
-      "nashville",
       "st jude"
     ],
     "note": "wooooof",
     "related": [
-      "scan69.jpg",
       "scan150.jpg",
-      "scan141.jpg",
-      "scan158.jpg"
+      "scan148.jpg",
+      "scan179.jpg",
+      "scan180.jpg",
+      "scan184.jpg"
     ]
   },
   "scan152.webp": {
@@ -3653,17 +3882,20 @@ const archive = {
     "location": "Berlin, DE",
     "source": "C/O Berlin",
     "tags": [
+      "c/o berlin",
       "berlin",
+      "travel",
+      "memorabilia",
       "museum",
-      "design",
-      "travel"
+      "design"
     ],
     "note": "",
     "related": [
       "scan12.jpg",
-      "scan153.jpg",
-      "scan166.jpg",
-      "scan157.jpg"
+      "scan115.jpg",
+      "scan54.jpg",
+      "scan202.jpg",
+      "scan200.jpg"
     ]
   },
   "scan153.jpg": {
@@ -3676,18 +3908,20 @@ const archive = {
     "location": "",
     "source": "Karl Valentin",
     "tags": [
+      "berlin",
+      "poetry",
+      "postcard",
+      "bag",
       "german",
-      "art",
-      "quote",
-      "berlin"
+      "art"
     ],
     "note": "Art is beautiful, but it's a lot of work.",
     "related": [
       "scan115.jpg",
+      "scan12.jpg",
       "scan166.jpg",
-      "scan152.jpg",
-      "scan133.jpg",
-      "scan12.jpg"
+      "scan132.jpg",
+      "scan200.jpg"
     ]
   },
   "scan154.jpg": {
@@ -3700,17 +3934,18 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "toy",
       "butterfly",
       "rainbow",
-      "toy",
       "psychedelic"
     ],
     "note": "",
     "related": [
-      "scan109.jpg",
-      "scan113.jpg",
       "scan126.jpg",
-      "scan94.jpg"
+      "scan1.jpg",
+      "scan107.jpg",
+      "scan117.jpg",
+      "scan122.jpg"
     ]
   },
   "scan155.jpg": {
@@ -3723,18 +3958,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Locust",
     "tags": [
-      "restaurant",
-      "tasting menu",
-      "ratings",
-      "notes"
+      "nashville",
+      "food",
+      "ticket",
+      "menu",
+      "locust",
+      "memorabilia"
     ],
     "note": "",
     "related": [
-      "scan143.jpg",
       "scan147.jpg",
-      "scan144.jpg",
       "scan148.jpg",
-      "scan81.jpg"
+      "scan162.jpg",
+      "scan77.jpg",
+      "scan143.jpg"
     ]
   },
   "scan156.jpg": {
@@ -3747,18 +3984,18 @@ const archive = {
     "location": "",
     "source": "The New Yorker",
     "tags": [
+      "the new yorker",
       "cartoon",
-      "office",
       "humor",
-      "new yorker"
+      "office"
     ],
     "note": "",
     "related": [
-      "scan119.jpg",
-      "scan214.jpg",
-      "scan24.jpg",
       "scan52.jpg",
-      "scan110.jpg"
+      "scan27.jpg",
+      "scan119.jpg",
+      "scan24.jpg",
+      "scan171.jpg"
     ]
   },
   "scan157.jpg": {
@@ -3771,6 +4008,7 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "placard",
       "mexico",
       "alebrijes",
       "folk art",
@@ -3780,8 +4018,9 @@ const archive = {
     "related": [
       "scan99.jpg",
       "scan100.jpg",
+      "scan146.jpg",
       "scan160.jpg",
-      "scan152.jpg"
+      "scan152.webp"
     ]
   },
   "scan158.jpg": {
@@ -3794,6 +4033,7 @@ const archive = {
     "location": "",
     "source": "The New York Times",
     "tags": [
+      "collage",
       "crossword",
       "puzzle",
       "newspaper",
@@ -3801,11 +4041,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan77.jpg",
-      "scan156.jpg",
       "scan119.jpg",
       "scan24.jpg",
-      "scan151.jpg"
+      "scan111.jpg",
+      "scan149.jpg",
+      "scan104.jpg"
     ]
   },
   "scan159.jpg": {
@@ -3827,8 +4067,9 @@ const archive = {
     "related": [
       "scan218.jpg",
       "scan149.jpg",
-      "scan52.jpg",
-      "scan36.jpg"
+      "scan36.jpg",
+      "scan119.jpg",
+      "scan27.jpg"
     ]
   },
   "scan160.jpg": {
@@ -3841,18 +4082,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "birthday",
-      "crows",
+      "postcard",
+      "illustration",
+      "creatures",
       "greeting card",
-      "illustration"
+      "birthday",
+      "crows"
     ],
     "note": "",
     "related": [
-      "scan146.jpg",
-      "scan157.jpg",
-      "scan99.jpg",
+      "scan138.jpg",
       "scan100.jpg",
-      "scan165.jpg"
+      "scan122.jpg",
+      "scan212.webp",
+      "scan56.jpg"
     ]
   },
   "scan161.jpg": {
@@ -3867,16 +4110,18 @@ const archive = {
     "tags": [
       "food",
       "sticker",
+      "ann arbor",
       "reuben",
-      "deli"
+      "deli",
+      "german"
     ],
     "note": "iktr",
     "related": [
       "scan162.jpg",
-      "scan144.jpg",
       "scan163.jpg",
-      "scan165.jpg",
-      "scan11.jpg"
+      "scan143.jpg",
+      "scan144.jpg",
+      "scan147.jpg"
     ]
   },
   "scan162.jpg": {
@@ -3890,16 +4135,16 @@ const archive = {
     "source": "Baja Burrito",
     "tags": [
       "nashville",
-      "restaurant",
-      "sticker",
-      "food"
+      "food",
+      "sticker"
     ],
     "note": "the best burrito in nashville",
     "related": [
-      "scan161.jpg",
       "scan25.jpg",
-      "scan163.jpg",
-      "scan150.jpg"
+      "scan147.jpg",
+      "scan148.jpg",
+      "scan155.jpg",
+      "scan77.jpg"
     ]
   },
   "scan163.jpg": {
@@ -3912,17 +4157,19 @@ const archive = {
     "location": "Chicago, IL",
     "source": "Revolution Brewing",
     "tags": [
+      "sticker",
+      "politics",
       "chicago",
       "beer",
-      "brewery",
-      "sticker"
+      "brewery"
     ],
     "note": "",
     "related": [
-      "scan13.jpg",
-      "scan162.jpg",
-      "scan165.jpg",
-      "scan161.jpg"
+      "scan25.jpg",
+      "scan37.jpg",
+      "scan170.jpg",
+      "scan161.jpg",
+      "scan162.jpg"
     ]
   },
   "scan164.jpg": {
@@ -3935,18 +4182,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Grimey's",
     "tags": [
-      "music",
-      "record store",
       "nashville",
-      "sticker"
+      "music",
+      "sticker",
+      "grimeys",
+      "record store"
     ],
     "note": "",
     "related": [
+      "scan70.jpg",
       "scan167.jpg",
-      "scan169.jpg",
+      "scan121.jpg",
       "scan43.jpg",
-      "scan168.jpg",
-      "scan213.jpg"
+      "scan169.jpg"
     ]
   },
   "scan165.jpg": {
@@ -3966,10 +4214,11 @@ const archive = {
     ],
     "note": "",
     "related": [
-      "scan163.jpg",
+      "scan107.jpg",
+      "scan206.jpg",
       "scan140.jpg",
       "scan161.jpg",
-      "scan160.jpg"
+      "scan162.jpg"
     ]
   },
   "scan166.jpg": {
@@ -3983,17 +4232,18 @@ const archive = {
     "source": "Safelight Berlin",
     "tags": [
       "berlin",
+      "sticker",
+      "postcard",
       "photography",
-      "spongebob",
-      "postcard"
+      "spongebob"
     ],
     "note": "",
     "related": [
+      "scan115.jpg",
+      "scan12.jpg",
+      "scan143.jpg",
       "scan153.jpg",
-      "scan59.jpg",
-      "scan101.jpg",
-      "scan152.jpg",
-      "scan12.jpg"
+      "scan144.jpg"
     ]
   },
   "scan167.jpg": {
@@ -4006,17 +4256,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Fanny's House of Music",
     "tags": [
-      "music",
       "nashville",
-      "guitar",
-      "shop"
+      "music",
+      "postcard",
+      "sticker",
+      "card",
+      "guitar"
     ],
     "note": "one of the coolest stickers in town",
     "related": [
       "scan164.jpg",
-      "scan169.jpg",
+      "scan121.jpg",
+      "scan70.jpg",
       "scan43.jpg",
-      "scan150.jpg"
+      "scan169.jpg"
     ]
   },
   "scan168.webp": {
@@ -4029,18 +4282,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Hatch Show Print",
     "tags": [
-      "nashville",
       "letterpress",
+      "nashville",
+      "typography",
       "sticker",
+      "handmade",
       "design"
     ],
     "note": "",
     "related": [
-      "scan169.jpg",
-      "scan137.jpg",
-      "scan164.jpg",
-      "scan37.jpg",
-      "scan25.jpg"
+      "scan85.jpg",
+      "scan82.jpg",
+      "scan83.jpg",
+      "scan86.jpg",
+      "scan81.jpg"
     ]
   },
   "scan169.jpg": {
@@ -4053,17 +4308,19 @@ const archive = {
     "location": "Baltimore, MD",
     "source": "The True Vine Record Shop",
     "tags": [
+      "baltimore",
       "music",
-      "records",
       "sticker",
-      "shop"
+      "record store",
+      "local business"
     ],
     "note": "rip",
     "related": [
-      "scan213.jpg",
-      "scan168.jpg",
+      "scan43.jpg",
       "scan164.jpg",
-      "scan167.jpg"
+      "scan7.jpg",
+      "scan167.jpg",
+      "scan213.jpg"
     ]
   },
   "scan170.jpg": {
@@ -4077,16 +4334,19 @@ const archive = {
     "source": "Bird in Hand",
     "tags": [
       "baltimore",
-      "books",
-      "cafe",
-      "community"
+      "sticker",
+      "illustration",
+      "politics",
+      "creatures",
+      "books"
     ],
     "note": "i miss this place",
     "related": [
-      "scan10.jpg",
-      "scan136.jpg",
+      "scan2.jpg",
+      "scan78.jpg",
+      "scan169.jpg",
       "scan106.jpg",
-      "scan2.jpg"
+      "scan25.jpg"
     ]
   },
   "scan171.jpg": {
@@ -4099,19 +4359,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "documentary",
       "belcourt",
-      "palestine",
-      "ticket"
+      "nashville",
+      "film",
+      "ticket",
+      "politics",
+      "palestine"
     ],
     "note": "free palestine!",
     "related": [
-      "scan179.jpg",
-      "scan38.jpg",
       "scan172.jpg",
-      "scan190.jpg",
-      "scan8.jpg"
+      "scan173.jpg",
+      "scan174.jpg",
+      "scan177.jpg",
+      "scan179.jpg"
     ]
   },
   "scan172.jpg": {
@@ -4124,18 +4385,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "lynch",
       "belcourt",
+      "nashville",
+      "film",
       "ticket",
+      "lynch",
       "cult film"
     ],
     "note": "",
     "related": [
-      "scan196.jpg",
       "scan192.jpg",
-      "scan171.jpg",
-      "scan173.jpg"
+      "scan181.jpg",
+      "scan194.jpg",
+      "scan196.jpg",
+      "scan176.jpg"
     ]
   },
   "scan173.jpg": {
@@ -4148,18 +4411,18 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "35mm",
       "belcourt",
-      "ticket",
-      "cinema"
+      "nashville",
+      "film",
+      "ticket"
     ],
     "note": "",
     "related": [
-      "scan188.jpg",
-      "scan194.jpg",
+      "scan171.jpg",
       "scan172.jpg",
-      "scan177.jpg"
+      "scan174.jpg",
+      "scan177.jpg",
+      "scan179.jpg"
     ]
   },
   "scan174.jpg": {
@@ -4172,17 +4435,18 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
       "belcourt",
-      "brazil",
+      "nashville",
+      "film",
       "ticket",
-      "cinema"
+      "brazil"
     ],
     "note": "",
     "related": [
-      "scan190.jpg",
+      "scan171.jpg",
+      "scan172.jpg",
+      "scan173.jpg",
       "scan177.jpg",
-      "scan178.jpg",
       "scan179.jpg"
     ]
   },
@@ -4196,19 +4460,19 @@ const archive = {
     "location": "Austin, TX",
     "source": "Austin Film Festival",
     "tags": [
-      "movie",
-      "festival",
       "austin",
+      "film",
       "ticket",
-      "cinema"
+      "film festival",
+      "festival"
     ],
     "note": "i met gia coppola after this screening!",
     "related": [
-      "scan190.jpg",
+      "scan184.jpg",
+      "scan109.jpg",
       "scan187.jpg",
       "scan193.jpg",
-      "scan184.jpg",
-      "scan73.jpg"
+      "scan190.jpg"
     ]
   },
   "scan176.jpg": {
@@ -4221,19 +4485,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt",
     "tags": [
-      "movie",
-      "comedy",
       "belcourt",
+      "nashville",
+      "film",
       "ticket",
+      "comedy",
       "cult film"
     ],
     "note": "all-timer",
     "related": [
-      "scan194.jpg",
-      "scan180.jpg",
-      "scan195.jpg",
-      "scan188.jpg",
-      "scan73.jpg"
+      "scan178.jpg",
+      "scan191.jpg",
+      "scan172.jpg",
+      "scan171.jpg",
+      "scan173.jpg"
     ]
   },
   "scan177.jpg": {
@@ -4246,17 +4511,18 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
       "belcourt",
-      "ticket",
-      "cinema"
+      "nashville",
+      "film",
+      "ticket"
     ],
     "note": "went w Nate",
     "related": [
-      "scan178.jpg",
+      "scan171.jpg",
+      "scan172.jpg",
+      "scan173.jpg",
       "scan174.jpg",
-      "scan179.jpg",
-      "scan173.jpg"
+      "scan179.jpg"
     ]
   },
   "scan178.jpg": {
@@ -4269,18 +4535,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt",
     "tags": [
-      "movie",
       "belcourt",
+      "nashville",
+      "film",
       "ticket",
-      "drama",
-      "cinema"
+      "drama"
     ],
     "note": "cried in the theater",
     "related": [
-      "scan177.jpg",
-      "scan174.jpg",
-      "scan179.jpg",
-      "scan188.jpg"
+      "scan176.jpg",
+      "scan191.jpg",
+      "scan171.jpg",
+      "scan172.jpg",
+      "scan173.jpg"
     ]
   },
   "scan179.jpg": {
@@ -4293,18 +4560,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
       "belcourt",
-      "holocaust",
+      "nashville",
+      "film",
       "ticket",
-      "cinema"
+      "holocaust"
     ],
     "note": "",
     "related": [
-      "scan171.jpg",
-      "scan174.jpg",
-      "scan177.jpg",
-      "scan178.jpg"
+      "scan180.jpg",
+      "scan188.jpg",
+      "scan192.jpg",
+      "scan194.jpg",
+      "scan171.jpg"
     ]
   },
   "scan180.jpg": {
@@ -4317,19 +4585,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "batman",
       "belcourt",
+      "nashville",
+      "film",
       "ticket",
+      "batman",
       "nolan"
     ],
     "note": "went w justin",
     "related": [
-      "scan182.jpg",
-      "scan176.jpg",
-      "scan183.jpg",
-      "scan38.jpg",
-      "scan8.jpg"
+      "scan179.jpg",
+      "scan188.jpg",
+      "scan192.jpg",
+      "scan194.jpg",
+      "scan171.jpg"
     ]
   },
   "scan181.jpg": {
@@ -4342,18 +4611,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "3d",
-      "horror",
       "belcourt",
-      "ticket"
+      "nashville",
+      "film",
+      "ticket",
+      "creatures",
+      "3d"
     ],
     "note": "",
     "related": [
-      "scan191.jpg",
+      "scan172.jpg",
+      "scan171.jpg",
+      "scan173.jpg",
       "scan8.jpg",
-      "scan192.jpg",
-      "scan196.jpg"
+      "scan191.jpg"
     ]
   },
   "scan182.jpg": {
@@ -4366,19 +4637,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Opry Mills",
     "tags": [
-      "movie",
-      "imax",
-      "oppenheimer",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "nolan"
+      "imax",
+      "oppenheimer"
     ],
     "note": "ate at the rainforest cafe for dinner before",
     "related": [
-      "scan180.jpg",
-      "scan183.jpg",
-      "scan185.jpg",
+      "scan184.jpg",
+      "scan186.jpg",
       "scan189.jpg",
-      "scan197.jpg"
+      "scan183.jpg",
+      "scan185.jpg"
     ]
   },
   "scan183.jpg": {
@@ -4391,18 +4663,20 @@ const archive = {
     "location": "Hendersonville, TN",
     "source": "Regal Indian Lake",
     "tags": [
-      "movie",
-      "concert film",
-      "imax",
+      "regal",
+      "nashville",
+      "film",
+      "music",
       "ticket",
-      "music"
+      "concert film"
     ],
     "note": "saw with justin",
     "related": [
-      "scan182.jpg",
       "scan185.jpg",
-      "scan180.jpg",
-      "scan104.jpg"
+      "scan193.jpg",
+      "scan182.jpg",
+      "scan184.jpg",
+      "scan186.jpg"
     ]
   },
   "scan184.jpg": {
@@ -4415,19 +4689,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Opry Mills",
     "tags": [
-      "movie",
-      "tennis",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "cinema",
+      "tennis",
       "zendaya"
     ],
     "note": "",
     "related": [
       "scan186.jpg",
+      "scan182.jpg",
       "scan189.jpg",
-      "scan193.jpg",
-      "scan187.jpg",
-      "scan175.jpg"
+      "scan183.jpg",
+      "scan193.jpg"
     ]
   },
   "scan185.jpg": {
@@ -4440,19 +4715,20 @@ const archive = {
     "location": "Hendersonville, TN",
     "source": "Regal Indian Lake",
     "tags": [
-      "movie",
-      "horror",
-      "imax",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "a24"
+      "horror",
+      "imax"
     ],
     "note": "",
     "related": [
-      "scan186.jpg",
-      "scan191.jpg",
       "scan183.jpg",
-      "scan187.jpg",
-      "scan182.jpg"
+      "scan186.jpg",
+      "scan182.jpg",
+      "scan193.jpg",
+      "scan187.jpg"
     ]
   },
   "scan186.jpg": {
@@ -4465,18 +4741,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Opry Mills",
     "tags": [
-      "movie",
-      "horror",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "serial killer",
-      "neon"
+      "horror",
+      "serial killer"
     ],
     "note": "",
     "related": [
-      "scan185.jpg",
-      "scan197.jpg",
       "scan184.jpg",
-      "scan191.jpg"
+      "scan182.jpg",
+      "scan189.jpg",
+      "scan185.jpg",
+      "scan183.jpg"
     ]
   },
   "scan187.jpg": {
@@ -4489,19 +4767,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Green Hills",
     "tags": [
-      "movie",
-      "aaa24",
+      "regal",
+      "nashville",
+      "film",
+      "architecture",
       "ticket",
-      "cinema",
-      "architecture"
+      "a24"
     ],
     "note": "",
     "related": [
       "scan190.jpg",
       "scan193.jpg",
-      "scan185.jpg",
-      "scan184.jpg",
-      "scan175.jpg"
+      "scan195.jpg",
+      "scan183.jpg",
+      "scan185.jpg"
     ]
   },
   "scan188.jpg": {
@@ -4514,18 +4793,18 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "35mm",
       "belcourt",
-      "ticket",
-      "cinema"
+      "nashville",
+      "film",
+      "ticket"
     ],
     "note": "",
     "related": [
-      "scan173.jpg",
+      "scan179.jpg",
+      "scan180.jpg",
+      "scan192.jpg",
       "scan194.jpg",
-      "scan176.jpg",
-      "scan178.jpg"
+      "scan171.jpg"
     ]
   },
   "scan189.jpg": {
@@ -4538,18 +4817,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Opry Mills",
     "tags": [
-      "movie",
-      "video game",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "family film",
-      "sequel"
+      "video game",
+      "family film"
     ],
     "note": "one of the worst movies i have ever seen",
     "related": [
-      "scan184.jpg",
       "scan182.jpg",
-      "scan195.jpg",
-      "scan197.jpg"
+      "scan184.jpg",
+      "scan186.jpg",
+      "scan193.jpg",
+      "scan183.jpg"
     ]
   },
   "scan190.jpg": {
@@ -4562,19 +4843,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Green Hills",
     "tags": [
-      "movie",
-      "foreign film",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "drama",
-      "cinema"
+      "foreign film",
+      "drama"
     ],
     "note": "",
     "related": [
       "scan187.jpg",
       "scan193.jpg",
-      "scan174.jpg",
-      "scan171.jpg",
-      "scan175.jpg"
+      "scan195.jpg",
+      "scan183.jpg",
+      "scan189.jpg"
     ]
   },
   "scan191.jpg": {
@@ -4587,18 +4869,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt",
     "tags": [
-      "movie",
-      "horror",
       "belcourt",
+      "nashville",
+      "film",
       "ticket",
+      "horror",
       "body horror"
     ],
     "note": "someone threw up in the theater when i saw this",
     "related": [
+      "scan176.jpg",
+      "scan178.jpg",
+      "scan172.jpg",
       "scan181.jpg",
-      "scan185.jpg",
-      "scan186.jpg",
-      "scan192.jpg"
+      "scan179.jpg"
     ]
   },
   "scan192.jpg": {
@@ -4611,18 +4895,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "lynch",
-      "twin peaks",
       "belcourt",
-      "ticket"
+      "nashville",
+      "film",
+      "ticket",
+      "lynch",
+      "twin peaks"
     ],
     "note": "",
     "related": [
       "scan172.jpg",
+      "scan179.jpg",
+      "scan180.jpg",
       "scan196.jpg",
-      "scan181.jpg",
-      "scan191.jpg"
+      "scan188.jpg"
     ]
   },
   "scan193.jpg": {
@@ -4635,18 +4921,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Green Hills",
     "tags": [
-      "movie",
+      "regal",
+      "nashville",
+      "film",
+      "music",
       "ticket",
-      "cinema",
       "independent film"
     ],
     "note": "#turnstilesummer",
     "related": [
-      "scan190.jpg",
       "scan187.jpg",
-      "scan184.jpg",
+      "scan190.jpg",
       "scan195.jpg",
-      "scan175.jpg"
+      "scan183.jpg",
+      "scan189.jpg"
     ]
   },
   "scan194.jpg": {
@@ -4659,18 +4947,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Belcourt Theatre",
     "tags": [
-      "movie",
-      "35mm",
-      "tarantino",
       "belcourt",
-      "ticket"
+      "nashville",
+      "film",
+      "ticket",
+      "tarantino"
     ],
     "note": "",
     "related": [
-      "scan173.jpg",
+      "scan172.jpg",
+      "scan179.jpg",
+      "scan180.jpg",
       "scan188.jpg",
-      "scan176.jpg",
-      "scan196.jpg"
+      "scan192.jpg"
     ]
   },
   "scan195.jpg": {
@@ -4683,18 +4972,20 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Regal Green Hills",
     "tags": [
-      "movie",
-      "cult film",
+      "regal",
+      "nashville",
+      "film",
       "ticket",
-      "musical",
-      "horror"
+      "cult film",
+      "musical"
     ],
     "note": "",
     "related": [
-      "scan197.jpg",
-      "scan176.jpg",
+      "scan187.jpg",
+      "scan190.jpg",
       "scan193.jpg",
-      "scan189.jpg"
+      "scan183.jpg",
+      "scan185.jpg"
     ]
   },
   "scan196.jpg": {
@@ -4707,18 +4998,20 @@ const archive = {
     "location": "Antioch, TN",
     "source": "AMC Antioch",
     "tags": [
-      "movie",
-      "lynch",
-      "twin peaks",
       "belcourt",
-      "ticket"
+      "nashville",
+      "film",
+      "ticket",
+      "amc",
+      "lynch"
     ],
     "note": "",
     "related": [
+      "scan197.jpg",
       "scan172.jpg",
       "scan192.jpg",
-      "scan194.jpg",
-      "scan181.jpg"
+      "scan171.jpg",
+      "scan173.jpg"
     ]
   },
   "scan197.jpg": {
@@ -4731,19 +5024,19 @@ const archive = {
     "location": "Antioch, TN",
     "source": "amc theatres",
     "tags": [
-      "movie",
-      "horror",
+      "nashville",
+      "film",
       "ticket",
       "amc",
-      "cinema"
+      "horror"
     ],
     "note": "",
     "related": [
-      "scan195.jpg",
+      "scan196.jpg",
+      "scan185.jpg",
       "scan186.jpg",
-      "scan175.jpg",
-      "scan182.jpg",
-      "scan189.jpg"
+      "scan193.jpg",
+      "scan191.jpg"
     ]
   },
   "scan198.jpg": {
@@ -4756,18 +5049,20 @@ const archive = {
     "location": "",
     "source": "Etsy, Cakolyre",
     "tags": [
-      "letter",
-      "mail art",
+      "correspondence",
+      "feelings",
+      "handmade",
+      "mail",
       "canada",
-      "skull",
-      "friendship"
+      "skull"
     ],
     "note": "one of my favorite linocut artists",
     "related": [
-      "scan210.jpg",
       "scan199.jpg",
+      "scan210.jpg",
       "scan76.jpg",
-      "scan124.jpg"
+      "scan19.webp",
+      "scan64.jpg"
     ]
   },
   "scan199.jpg": {
@@ -4780,18 +5075,19 @@ const archive = {
     "location": "",
     "source": "Etsy",
     "tags": [
+      "correspondence",
       "mail",
       "russia",
       "stamps",
-      "international",
-      "package"
+      "international"
     ],
     "note": "",
     "related": [
-      "scan198.jpg",
       "scan210.jpg",
-      "scan142.jpg",
-      "scan124.jpg"
+      "scan198.jpg",
+      "scan124.jpg",
+      "scan76.jpg",
+      "scan130.jpg"
     ]
   },
   "scan200.jpg": {
@@ -4804,19 +5100,20 @@ const archive = {
     "location": "Berlin, DE",
     "source": "Das Bauhaus-Archiv",
     "tags": [
-      "type design",
       "bauhaus",
-      "graphic design",
-      "alphabet",
-      "modernism"
+      "berlin",
+      "typography",
+      "architecture",
+      "handmade",
+      "design reference"
     ],
     "note": "",
     "related": [
       "scan202.jpg",
-      "scan85.jpg",
-      "scan58.jpg",
-      "scan83.jpg",
-      "scan31.jpg"
+      "scan203.jpg",
+      "scan115.jpg",
+      "scan31.jpg",
+      "scan114.jpg"
     ]
   },
   "scan201.jpg": {
@@ -4829,18 +5126,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "photography",
+      "archival photo",
+      "photograph",
       "cycling",
       "sport",
-      "history",
-      "photography",
-      "crowd"
+      "history"
     ],
     "note": "",
     "related": [
-      "scan209.jpg",
+      "scan89.jpg",
       "scan87.jpg",
-      "scan60.jpg",
-      "scan88.jpg"
+      "scan88.jpg",
+      "scan209.jpg",
+      "scan54.jpg"
     ]
   },
   "scan202.jpg": {
@@ -4854,17 +5153,18 @@ const archive = {
     "source": "bauhaus",
     "tags": [
       "bauhaus",
-      "poster",
-      "graphic design",
-      "modernism",
-      "typography"
+      "berlin",
+      "typography",
+      "architecture",
+      "handmade",
+      "design reference"
     ],
     "note": "",
     "related": [
       "scan200.jpg",
-      "scan82.jpg",
-      "scan85.jpg",
-      "scan17.jpg",
+      "scan203.jpg",
+      "scan115.jpg",
+      "scan114.jpg",
       "scan31.jpg"
     ]
   },
@@ -4878,18 +5178,20 @@ const archive = {
     "location": "Berlin, DE",
     "source": "Das Bauhaus-Archiv",
     "tags": [
-      "surrealism",
+      "bauhaus",
+      "berlin",
+      "typography",
       "collage",
-      "light",
-      "swimmers",
-      "dreamlike"
+      "architecture",
+      "handmade"
     ],
     "note": "",
     "related": [
-      "scan204.jpg",
-      "scan51.jpg",
+      "scan200.jpg",
+      "scan202.jpg",
       "scan54.jpg",
-      "scan6.jpg"
+      "scan51.jpg",
+      "scan168.webp"
     ]
   },
   "scan204.jpg": {
@@ -4902,18 +5204,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "illustration",
+      "handmade",
+      "art print",
       "landscape",
       "minimalism",
-      "winter",
-      "house",
-      "illustration"
+      "winter"
     ],
     "note": "",
     "related": [
-      "scan203.jpg",
       "scan109.jpg",
       "scan50.jpg",
-      "scan160.jpg"
+      "scan203.jpg",
+      "scan100.jpg",
+      "scan103.jpg"
     ]
   },
   "scan205.webp": {
@@ -4926,18 +5230,20 @@ const archive = {
     "location": "Carbondale, KY",
     "source": "solar eclipse",
     "tags": [
+      "space",
+      "event souvenir",
       "eclipse",
       "astronomy",
       "science",
-      "event",
-      "sky"
+      "event"
     ],
     "note": "saw totality!",
     "related": [
+      "scan209.jpg",
       "scan217.jpg",
+      "scan26.jpg",
       "scan51.jpg",
-      "scan106.jpg",
-      "scan209.jpg"
+      "scan113.jpg"
     ]
   },
   "scan206.jpg": {
@@ -4950,18 +5256,20 @@ const archive = {
     "location": "Asheville, NC",
     "source": "The Grey Eagle",
     "tags": [
+      "asheville",
       "music",
-      "concert",
       "setlist",
+      "concert",
       "mountain goats",
       "live show"
     ],
     "note": "met her after this",
     "related": [
       "scan207.jpg",
-      "scan70.jpg",
       "scan208.jpg",
-      "scan121.jpg"
+      "scan121.jpg",
+      "scan70.jpg",
+      "scan104.jpg"
     ]
   },
   "scan207.jpg": {
@@ -4975,8 +5283,8 @@ const archive = {
     "source": "XL Live",
     "tags": [
       "music",
-      "concert",
       "setlist",
+      "concert",
       "tour",
       "performance"
     ],
@@ -4985,7 +5293,8 @@ const archive = {
       "scan208.jpg",
       "scan206.jpg",
       "scan104.jpg",
-      "scan7.jpg"
+      "scan121.jpg",
+      "scan70.jpg"
     ]
   },
   "scan208.jpg": {
@@ -4999,8 +5308,9 @@ const archive = {
     "source": "Miracle Theatre",
     "tags": [
       "music",
-      "concert",
+      "washington dc",
       "setlist",
+      "concert",
       "annotation",
       "tour"
     ],
@@ -5008,8 +5318,9 @@ const archive = {
     "related": [
       "scan207.jpg",
       "scan206.jpg",
+      "scan2.jpg",
       "scan121.jpg",
-      "scan111.jpg"
+      "scan70.jpg"
     ]
   },
   "scan209.jpg": {
@@ -5022,18 +5333,20 @@ const archive = {
     "location": "",
     "source": "Vance Nannini",
     "tags": [
+      "handmade",
+      "article",
       "science",
       "career",
       "research",
-      "interdisciplinary",
-      "article"
+      "interdisciplinary"
     ],
     "note": "my high school physics teacher printed this out and gave it to me after a group of guys in my class told me getting a psychology degree was \"stupid\"",
     "related": [
-      "scan201.jpg",
-      "scan205.jpg",
+      "scan205.webp",
+      "scan200.jpg",
       "scan26.jpg",
-      "scan200.jpg"
+      "scan201.jpg",
+      "scan58.jpg"
     ]
   },
   "scan210.jpg": {
@@ -5046,18 +5359,19 @@ const archive = {
     "location": "Nashville, TN",
     "source": "Ivy McGee",
     "tags": [
-      "letter",
-      "handwritten",
-      "religion",
+      "nashville",
+      "correspondence",
       "mail",
-      "correspondence"
+      "handwriting",
+      "religion"
     ],
     "note": "how did she find me?",
     "related": [
-      "scan198.jpg",
-      "scan124.jpg",
       "scan199.jpg",
-      "scan130.jpg"
+      "scan124.jpg",
+      "scan130.jpg",
+      "scan76.jpg",
+      "scan98.jpg"
     ]
   },
   "scan211.jpg": {
@@ -5070,18 +5384,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "postcard",
+      "feelings",
+      "humor",
+      "victorian novelty card",
       "bicycle",
-      "death",
-      "grim reaper",
-      "safety",
-      "playing card"
+      "death"
     ],
     "note": "",
     "related": [
       "scan42.jpg",
-      "scan49.jpg",
-      "scan127.jpg",
-      "scan214.jpg"
+      "scan52.jpg",
+      "scan118.jpg",
+      "scan41.webp",
+      "scan123.jpg"
     ]
   },
   "scan212.webp": {
@@ -5094,17 +5410,19 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "green creature",
       "sticker",
-      "mascot",
-      "lowbrow art",
-      "cherries"
+      "creatures",
+      "humor",
+      "character art",
+      "green creature",
+      "mascot"
     ],
     "note": "",
     "related": [
       "scan218.jpg",
-      "scan140.jpg",
-      "scan126.jpg",
+      "scan56.jpg",
+      "scan122.jpg",
+      "scan160.jpg",
       "scan128.jpg"
     ]
   },
@@ -5118,19 +5436,20 @@ const archive = {
     "location": "Dearborn, MI",
     "source": "Dearborn Music",
     "tags": [
-      "dearborn",
+      "detroit",
       "music",
-      "zeppelin",
-      "record store",
-      "sticker"
+      "sticker",
+      "local memorabilia",
+      "dearborn",
+      "zeppelin"
     ],
     "note": "where my love for records began",
     "related": [
-      "scan43.jpg",
+      "scan1.jpg",
+      "scan120.jpg",
+      "scan145.jpg",
       "scan164.jpg",
-      "scan169.jpg",
-      "scan215.jpg",
-      "scan112.jpg"
+      "scan169.jpg"
     ]
   },
   "scan214.jpg": {
@@ -5143,19 +5462,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
+      "cartoon",
+      "humor",
+      "handmade",
       "freud",
       "psychology",
-      "caricature",
-      "satire",
-      "cartoon"
+      "caricature"
     ],
     "note": "",
     "related": [
-      "scan156.jpg",
       "scan47.jpg",
-      "scan119.jpg",
       "scan64.jpg",
-      "scan211.jpg"
+      "scan119.jpg",
+      "scan56.jpg",
+      "scan198.jpg"
     ]
   },
   "scan215.jpg": {
@@ -5168,19 +5488,20 @@ const archive = {
     "location": "Detroit, MI",
     "source": "City Bird, Cass Corridor",
     "tags": [
-      "fisher building",
       "detroit",
+      "city bird",
       "architecture",
-      "art deco",
-      "postcard"
+      "postcard",
+      "creatures",
+      "detroit architecture"
     ],
     "note": "",
     "related": [
       "scan216.jpg",
       "scan1.jpg",
       "scan120.jpg",
-      "scan213.jpg",
-      "scan31.jpg"
+      "scan200.jpg",
+      "scan114.jpg"
     ]
   },
   "scan216.jpg": {
@@ -5194,17 +5515,19 @@ const archive = {
     "source": "City Bird, Cass Corridor",
     "tags": [
       "detroit",
-      "souvenir",
+      "city bird",
       "travel",
-      "felt pennant",
-      "love"
+      "postcard",
+      "creatures",
+      "souvenir"
     ],
     "note": "",
     "related": [
       "scan215.jpg",
-      "scan120.jpg",
       "scan1.jpg",
-      "scan105.jpg"
+      "scan120.jpg",
+      "scan145.jpg",
+      "scan68.webp"
     ]
   },
   "scan217.jpg": {
@@ -5217,18 +5540,20 @@ const archive = {
     "location": "",
     "source": "",
     "tags": [
-      "moon",
-      "apollo",
+      "travel",
+      "postcard",
+      "humor",
       "space",
-      "retro futurism",
-      "postcard"
+      "space age",
+      "moon"
     ],
     "note": "",
     "related": [
-      "scan26.jpg",
+      "scan205.webp",
       "scan44.jpg",
-      "scan205.jpg",
-      "scan113.jpg"
+      "scan26.jpg",
+      "scan215.jpg",
+      "scan51.jpg"
     ]
   },
   "scan218.jpg": {
@@ -5241,18 +5566,20 @@ const archive = {
     "location": "",
     "source": "Etsy",
     "tags": [
+      "collage",
+      "creatures",
       "frog",
       "wine",
       "picnic",
-      "surreal",
-      "collage"
+      "surreal"
     ],
     "note": "i love frogs",
     "related": [
-      "scan212.jpg",
       "scan159.jpg",
       "scan128.jpg",
-      "scan146.jpg"
+      "scan138.jpg",
+      "scan212.webp",
+      "scan56.jpg"
     ]
   }
 };
